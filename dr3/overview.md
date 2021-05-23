@@ -40,13 +40,13 @@ The Third Data Release of the Galactic Archaeology with HERMES (GALAH) survey pr
     - Galactic orbital dynamics
     - Binarity probabilities
 
-![Overview of distances and photometric information for the spectra](/assets/img/data_plots/plot_parallax_quality_and_cmds.png)
+![Overview of distances and photometric information for the spectra](/dr3/images/plot_parallax_quality_and_cmds.png)
 
 Above is an overview of distances and photometric information for the spectra (including repeats for some stars) observed as part of GALAH DR3. Panel a) shows the distances of stars in GALAH DR3. Due to the magnitude limited selection of stars, the majority of stars are not only dwarfs but also nearby; that is, within 1 kpc. Only 5.8% of stars are beyond 4 kpc. Panel b) shows a reddened color-absolute magnitude diagram in the optical Gaia DR2 passbands. Panel c) shows an analogous diagram made with the infrared 2MASS passbands.
 
 #### Sky Coverage
 
-![Sky coverage of GALAH DR3](/assets/img/data_plots/lb_overview_colored.png)
+![Sky coverage of GALAH DR3](/dr3/images/lb_overview_colored.png)
 
 Overview of the distribution of stars included in this data release in Galactic coordinates with the centre of the Galaxy at the origin. Shown are the GALAH main (blue) and faint (orange) targets, which avoid the Galactic plane. The targets of the *K2*-HERMES follow-up (green) fall within with the *K2* campaigns along the ecliptic and show the characteristic tile-pattern of the *Kepler* telescope. The *TESS*-HERMES observations (red) are focused on the *TESS* Southern Continuous Viewing Zone. Other HERMES targets (purple) are distributed across the sky and were observed during independent programs.
 
@@ -101,7 +101,7 @@ There are two main changes to the analysis methods for DR3 compared to DR2:
 
 Below is a comparison of GALAH DR2 (upper panels) and GALAH DR3 (lower panels, this release). The smooth light blue background indicates all measurements, whereas the colormap shows the number of unflagged measurements at each point. The stellar parameters and abundances from GALAH DR2 appear more tightly constrained, but we note that this is an artefact of the data-driven approach, which tends to find solutions closer to the mean parameter/abundance patterns.
 
-![Sky coverage of GALAH DR3](/assets/img/data_plots/galah_dr3_comparison_dr2.png)
+![Sky coverage of GALAH DR3](/dr3/images/galah_dr3_comparison_dr2.png)
 
 ### Need help?
 Questions about GALAH DR3 that are not answered in the documentation? Contact us:
