@@ -6,11 +6,10 @@
 
 @media only screen and (min-width: 1200px) {
   .list-circles {
-    width: 150%;
-    margin-left: -25%;
+    width: 100%;
+    margin-left: 0%;
   }
 }
-
 
 .list-circles-item {
   display: inline-block;

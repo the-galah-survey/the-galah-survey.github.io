@@ -11,6 +11,9 @@
       {% if item.name %}
         <h4 class="item-name">{{ item.name }}</h4>
       {% endif %}
+      {% if item.name %}
+        <h5 class="item-affiliation">{{ item.affiliation }}</h5>
+      {% endif %}
       {% if item.desc %}
         <div class="item-desc">{{ item.desc }}</div>
       {% endif %}
@@ -22,12 +25,17 @@
         {% endif %}
         {% if item.github %}
           <a class="item-link" href="{{ item.github }}" title="GitHub">
-            <span class="fa fa-github"></span>
+            <span class="fab fa-github"></span>
           </a>
         {% endif %}
         {% if item.twitter %}
           <a class="item-link" href="{{ item.twitter }}" title="Twitter">
-            <span class="fa fa-twitter"></span>
+            <span class="fab fa-twitter"></span>
+          </a>
+        {% endif %}
+        {% if item.twitter %}
+          <a class="item-link" href="mailto:{{ item.email }}" title="Emil">
+            <span class="fas fa-envelope"></span>
           </a>
         {% endif %}
       </div>
