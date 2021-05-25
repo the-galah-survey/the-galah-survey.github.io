@@ -53,7 +53,7 @@ Overview of the distribution of stars included in this data release in Galactic 
 ### The GALAH DR3 Data Products
 The two main data products of GALAH DR3 are the catalogue of stellar parameters & abundances, and the spectral library. We also provide several value-added catalogues.
 
-#### Catalogues
+#### GALAH DR3 Catalogues
 
 {: .box-warning}
 For science cases involving stellar parameters, it is highly recommended that you use the `galah_dr3.main_star` table, and that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_c3_iraf > 30`. See the Using GALAH Data page for short guide to the tables and our recommendations.
@@ -62,22 +62,39 @@ The GALAH DR3 catalogues can be accessed either by:
 * [Direct download from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) of the catalogues as FITS files
 * The query services on the Data Central webpage (note that these are currently out of date).
 
-We provide two versions of the GALAH DR3 catalogue (`galah_dr3.main_xx`), and several value-added catalogues (`galah_dr3.vac_xx`). Full instructions on how to retrieve GALAH DR3 catalogues can be found on the Catalogue data access documentation page. Full details on the value-added catalogues can be found here.
+We provide two versions of the GALAH DR3 catalogue (`galah_dr3.main_xx`):
 
-| Table name | File name | Description |
-| :------ |:--- | :--- |
-| galah_dr3.main_star | GALAH_DR3_main_allstar_v2.fits<br/>(833 MB) | **Strongly recommend the use of this table**. One entry per star observed. Radial velocity, stellar parameters and abundance data. Important data from Gaia, 2MASS, and WISE. |
-| galah_dr3.main_spec | GALAH_DR3_main_allspec_v2.fits<br/>(2.1 GB) | One entry per observation. Radial velocity, stellar parameters for each observation. Also contains abundances derived for each individual line. Important data from Gaia, 2MASS, and WISE. |
-| galah_dr3.vac_gaiaedr3 | GALAH_DR3_VAC_GaiaEDR3_v2.fits<br/>(338 MB) | Gaia eDR3 data for all stars in GALAH DR3 |
-| galah_dr3.vac_ages | GALAH_DR3_VAC_ages_v2.fits<br/>(362 MB | Stellar ages, masses, distances and other parameters estimated using isochrones |
-| galah_dr3.vac_dynamics | GALAH_DR3_VAC_dynamics_v2.fits<br/>(554 MB) | Galactic kinematic and dynamic parameters |
-| galah_dr3.vac_rv | GALAH_DR3_VAC_rv_v2.fits<br/>(67 MB) | Collated radial velocity measurements |
-| galahfco | target/galahfco_3_public.txt<br/>(957kB) | List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id.|
-| FGK binary stars |  | Identification of likely for double-lined spectroscopic binaries. This VAC is served on the Centre de Données astronomiques de Strasbourg rather than Data Central. |
+* `galah_dr3.main_star`
+    - GALAH_DR3_main_allstar_v2.fits (833 MB)
+    - **Strongly recommend the use of this table**. One entry per star observed. Radial velocity, stellar parameters and abundance data. Important data from Gaia, 2MASS, and WISE.
+* `galah_dr3.main_spec`
+    - GALAH_DR3_main_allspec_v2.fits (2.1 GB)
+    - **This table is for expert use only**. One entry per observation. Radial velocity, stellar parameters for each observation. Also contains abundances derived for each individual line. Important data from Gaia, 2MASS, and WISE.
 
-#### Spectra
+There are also several value-added catalogues (`galah_dr3.vac_xx`):
 
-GALAH DR3 provides the reduced one-dimensional spectrum for each star in the main catalogue. These files can be accessed via the Single Object Viewer or as a Bulk Download. Instructions on how to retrieve GALAH DR3 spectra can be found on the Spectra data access documentation page.
+* `galah_dr3.vac_gaiaedr3`
+    - GALAH_DR3_VAC_GaiaEDR3_v2.fits (338 MB)
+    - *Gaia* eDR3 data for all stars in GALAH DR3
+* `galah_dr3.vac_ages`
+    - GALAH_DR3_VAC_ages_v2.fits (362 MB)
+    - Stellar ages, masses, distances and other parameters estimated using isochrones
+* `galah_dr3.vac_dynamics`
+    - GALAH_DR3_VAC_dynamics_v2.fits (554 MB)
+    - Galactic kinematic and dynamic parameters
+* `galah_dr3.vac_rv`
+    - GALAH_DR3_VAC_rv_v2.fits (67 MB)
+    - Collated radial velocity measurements
+* `galah_dr3.vac_galahfco`
+    - target/galahfco_3_public.txt (957kB)
+    - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id.
+* FGK binary stars
+    - Identification of likely for double-lined spectroscopic binaries.
+    - This VAC is served on the Centre de Données astronomiques de Strasbourg rather than Data Central.
+
+#### GALAH DR3 Spectra
+
+GALAH DR3 provides the reduced one-dimensional spectrum for each star in the main catalogue. These can be downloaded either individually or in bulk. Instructions on how to retrieve GALAH DR3 spectra can be found on the Spectra data access documentation page.
 
 For each star there are four files, one for each of the four HERMES cameras, with each spectrum file containing:
 * The reduced spectrum
