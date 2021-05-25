@@ -15,10 +15,13 @@ author: GALAH Survey
 
 navbar-links:
   About GALAH: "aboutme"
-  Data Release 3:
+  GALAH Data Release 3:
     - Overview: "dr3/overview"
-    - Using GALAH DR3: "dr3/using_the_data"
+    - Get the DR3 catalogues: "dr3/get_the_catalogues"
     - Get the DR3 spectra: "dr3/get_the_spectra"
+    - Best practices: "dr3/using_the_data"
+    - Flags in GALAH DR3: "dr3/flags"
+    - Table schema: "dr3/table_schema"
     - Cite us: "dr3/cite_us"
   People: "people"
   Publications: "publications"
