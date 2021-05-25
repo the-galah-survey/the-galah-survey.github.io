@@ -24,7 +24,9 @@ navbar-links:
     - Table schema: "dr3/table_schema"
     - Cite us: "dr3/cite_us"
   People: "people"
-  Publications: "publications"
+  Publications:
+    - GALAH: "publications"
+    - Other work: "pubs_using_galah"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
