@@ -4,15 +4,6 @@ title: Get the GALAH DR3 spectra
 subtitle: Third Data Release
 ---
 
-<!-- GALAH DR3 consists of two main data products: [the catalogues](#getting-the-catalogue-data), and the spectral library.
-
-### Getting the catalogue data
-
-{: .box-warning}
-We recommend you use the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be directly downloaded from here (it has the file name `GALAH_DR3_main_allstar_v2.fits`).<br/><br/>
-For science cases involving stellar parameters, it is highly recommended that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element x, it is highly recommended that you only consider `X_fe` where `flag_X_fe == 0` and `snr_c3_iraf > 30`.<br/><br/>
-For more details, please read out [best practices for GALAH DR3](/dr3/using_the_data). -->
-
 **On this page:**
 * [Introduction to GALAH DR3 Spectral Library](#introduction-to-galah-dr3-spectral-library)
     - [Missing spectral data](#missing-spectral-data)
