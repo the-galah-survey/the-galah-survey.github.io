@@ -7,6 +7,8 @@ subtitle: Third Data Release
 <h3> On this page</h3>
 * This text gets replaced.
 {:toc}
+
+<!-- ### On this page:
 * [`galah_dr3.vac_gaiaedr3`](#galah_dr3vac_gaiaedr3)
     - *Gaia* eDR3 data for all stars in GALAH DR3
 * [`galah_dr3.vac_ages`](#galah_dr3vac_ages)
@@ -18,7 +20,7 @@ subtitle: Third Data Release
 * FGK binary stars
     - Identification of likely for double-lined spectroscopic binaries.
 * [`galah_dr3.vac_galahfco`](#galah_dr3vac_galahfco)
-    - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id.
+    - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id. -->
 
 ### `galah_dr3.vac_gaiaedr3`
 #### Gaia eDR3 data for all stars in GALAH DR3

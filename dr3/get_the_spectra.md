@@ -16,13 +16,11 @@ GALAH DR3 provides reduced one-dimensional spectra for each star in the main cat
 
 For a given star on a given camera, each file contains five extensions:
 
-| Element | Name | Description |
-| :------ |:--- | :--- |
-| 0 | PRIMARY | Unnormalised spectrum with sky subtraction |
-| 1 | input_sigma | Variance of the unnormalised spectrum with sky subtraction. This is expressed as the percentage of the unnormalised flux. |
-| 2 | no_sky_subspectrum | Unnormalised spectrum with no sky subtraction |
-| 3 | no_sky_sigma | Variance of the unnormalised spectrum with no sky subtraction |
-| 4 | normalised spectra | Pseudo-continuum normalised spectrum with sky subtraction |
+1. `PRIMARY`: Unnormalised spectrum with sky subtraction
+2. `input_sigma`: Variance of the unnormalised spectrum with sky subtraction. This is expressed as the percentage of the unnormalised flux.
+3. `no_sky_subspectrum`: Unnormalised spectrum with no sky subtraction
+4. `no_sky_sigma`: Variance of the unnormalised spectrum with no sky subtraction
+5. `normalised spectra`: Pseudo-continuum normalised spectrum with sky subtraction
 
 The naming convention of the spectra files is the `sobject_id` of a star followed by the camera number (i.e., 1=blue, 2=green, 3=red, 4=near-infrared). So, for example, for `sobject_id` 170418003701205, there are four files: 1704180037012051.fits, 1704180037012052.fits, 1704180037012053.fits, 1704180037012054.fits.
 
@@ -34,27 +32,21 @@ There are 12181 stars which are missing the spectra for some of their cameras. W
 * For the nights of 21--26 December 2018 (i.e., all `sobject_id` starting with 181221, 181222, 181223, 181224, 181225, 181226) there was a fault with the infrared camera of HERMES. This means that all stars observed on those nights lack a spectral file ending with 4.
     - For 227 stars of the stars observed on these nights, their spectrum files do not have the fifth extension described above – the normalized spectrum. We provide a file at [GALAH_DR3_list_missing_normalized_spectra_v2.csv](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_normalized_spectra_v2.csv) that lists the `sobject_id` of these files.
 
+---
+
 ### Acquiring the spectral data
 
 On this page we describe three methods for acquiring the spectra depending on your requirements:
 
-1. [A few stars](#downloading-the-spectra-for-a-few-stars)
-2. [A larger number of stars](#downloading-the-spectra-for-a-larger-number-of-stars)
-3. The entire GALAH spectral catalogue.
+* [A few stars](#downloading-the-spectra-for-a-few-stars)
+* [A larger number of stars](#downloading-the-spectra-for-a-larger-number-of-stars)
+* [The entire GALAH spectral catalogue.](#downloading-the-entire-galah-spectral-catalogue)
 
 #### Downloading the spectra for a few stars
 
 The spectrum of an individual star can be accessed via the [Data Central Single Object Viewer](https://datacentral.org.au/services/sov/).
-
 1. Search for the `sobject_id` of a given star, e.g., 170418003701205, and click on the entry that appears in the drop-down menu.
-
-    <!-- ![Searching for a single star with the Data Central Single Object Viewer.](/dr3/images/sov_step1.png) -->
-
 2. The results pages presents the normalized spectrum of the star. You can then either download all the available spectrum files for this `sobject_id` using the "Download all data products" button at the top-right of the page or download the spectrum from an individual camera.
-
-    <!-- ![Searching for a single star with the Data Central Single Object Viewer.](/dr3/images/sov_step2.png) -->
-    <!-- ![Searching for a single star with the Data Central Single Object Viewer.](/dr3/images/sov_step2b.png) -->
-    <!-- ![Searching for a single star with the Data Central Single Object Viewer.](/dr3/images/sov_step2a.png) -->
 
 #### Downloading the spectra for a larger number of stars
 
@@ -69,19 +61,23 @@ If you would like the spectra for a large number of stars, this can be achieved 
 #### Downloading the entire GALAH spectral catalogue
 
 {: .box-error}
-**This is possible using the [bulk download option described above](#downloading-the-spectra-for-a-larger-number-of-stars), but the query takes about 20 hours to complete. Do not do this.**
+It is possible to get the entire spectral catalogue with the [bulk download option described above](#downloading-the-spectra-for-a-larger-number-of-stars), but the query takes about 20 hours to complete.
 
-{: .box-warning}
-On decompression, you will require about 385 GB of free space. The decompressed files are located in a single directory, so please be aware of any file management limitations you might have dealing with 2 million files in a single directory.
+The entire GALAH DR3 spectral library is found in two files:
 
-The entire GALAH DR3 spectral library can be [dowloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/). It is split over two files:
+* `GALAH_DR3_all_spectra_with_normalisation_v2.tar.gz`
+    - GALAH DR3 spectral files that have been continuum normalised
+    - Spectra for 588,343 stars
+    - 2,341,345 individual files
+    - Compressed size of 228 GB
 
-|  | Number of stars | Number of FITS files | Size |
-| :------ |:--- | :--- |
-| `GALAH_DR3_all_spectra_with_normalisation_v2.tar.gz`<br/><br/>GALAH DR3 spectral files that have been continuum normalised | 588,343 | 2,341,345 | 228 GB |
-| `GALAH_DR3_all_spectra_missing_normalisation_v2.tar.gz`<br/><br/>GALAH DR3 spectral files that lack continuum normalisation. This is [discussed above](#missing-spectral-data) and their `sobject_id` are [listed here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_normalized_spectra_v2.csv).| 227 | 681 | 49 MB |
+* `GALAH_DR3_all_spectra_missing_normalisation_v2.tar.gz`
+    - GALAH DR3 spectral files that lack continuum normalisation. This is [discussed above](#missing-spectral-data) and their `sobject_id` are [listed here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_normalized_spectra_v2.csv)
+    - Spectra for 227 stars
+    - 681 individual files
+    - Compressed size of 49 MB
 
-As [discussed above](#missing-spectral-data), 12181 stars are missing spectra for one or two of their cameras due to reduction or instrumentation problems. A list of these missing spectra can be found in [GALAH_DR3_missing_reduced_spectra_v2.csv](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_missing_reduced_spectra_v2.csv).
+These two files can be [dowloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/). Due to the size of the compressed files, we would recommend using something like a `wget` command to download these spectra (removing the `--spider` flag):
 
 ```bash
 # Remove --spider to download
@@ -91,3 +87,8 @@ wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/s
 wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_all_spectra_missing_normalisation_v2.tar.gz
 ```
 
+{: .box-warning}
+On decompression, you will require about 385 GB of free space. The decompressed files are located in a single directory, so please be aware of any file management limitations you might have dealing with 2 million files in a single directory.
+
+{: .box-warning}
+As [discussed above](#missing-spectral-data), 12181 stars are missing spectra for one or two of their cameras due to reduction or instrumentation problems. A list of these missing spectra can be found in [GALAH_DR3_missing_reduced_spectra_v2.csv](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_reduced_spectra_v2.csv).
