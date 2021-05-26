@@ -14,7 +14,12 @@ author: GALAH Survey
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About GALAH: "aboutme"
+  About GALAH:
+    - Galactic Archaeology Basics: "about/aboutme"
+    - Workflow from stellar light to abundances: "about/workflow"
+    - Technical Details: "about/technical_details"
+    - Survey Managements: "about/survey_management"
+    - Survey Guidelines: "about/survey_guidelines"
   GALAH Data Release 3:
     - Overview: "dr3/overview"
     - Get the DR3 catalogues: "dr3/get_the_catalogues"
@@ -53,7 +58,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "mailto:galah.helpdesk@gmail.com"
   # facebook: deanattali
   # github: daattali
   twitter: galahsurvey
