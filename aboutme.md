@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About GALAH
-subtitle: Why you'd want to go on a date with me
 ---
 
 The GALAH survey examines the chemical changes of the Galaxy over time. Using specific observational techniques, we investigate the different chemical elements in stars of different ages. Not only does this teach us about how elements formed, it also helps us understand the formation of the Milky Way galaxy. Here we summarise some of the astronomical concepts integral to GALAH.
