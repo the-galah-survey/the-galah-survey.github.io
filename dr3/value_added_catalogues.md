@@ -5,20 +5,18 @@ subtitle: Third Data Release
 ---
 
 ### On this page:
-The GALAH DR3 is accompanied by several value-added-catalogs. On this page we describe these catalogues and their recommended use.
-
 * [`galah_dr3.vac_gaiaedr3`](#galah_dr3vac_gaiaedr3)
     - *Gaia* eDR3 data for all stars in GALAH DR3
 * [`galah_dr3.vac_ages`](#galah_dr3vac_ages)
     - Stellar ages, masses, distances and other parameters estimated using isochrones
-* `galah_dr3.vac_dynamics`
+* [`galah_dr3.vac_dynamics`](#galah_dr3vac_dynamics)
     - Galactic kinematic and dynamic parameters
-* `galah_dr3.vac_rv`
+* [`galah_dr3.vac_rv`](#galah_dr3vac_rv)
     - Collated radial velocity measurements
-* `galah_dr3.vac_galahfco`
-    - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id.
 * FGK binary stars
     - Identification of likely for double-lined spectroscopic binaries.
+* [`galah_dr3.vac_galahfco`](#galah_dr3vac_galahfco)
+    - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id.
 
 ### `galah_dr3.vac_gaiaedr3`
 #### Gaia eDR3 data for all stars in GALAH DR3
@@ -83,7 +81,7 @@ For the calculation of orbit information we use version 1.6 of the python packag
 * The Sun placed 25 pc above the plane (Jurić et al. 2008);
 * The peculiar solar velocities U = 11.1 km/s and W=7.25 km/s by Schönrich et al (2020) but V=15.17 km/s.
 
-### galah_dr3.vac_rv
+### `galah_dr3.vac_rv`
 #### Collated radial velocity measurements
 
 The `rv_galah` value in `galah_dr3.main_star`, `galah_dr3.main_spec` and `galah_dr3.vac_rv` catalogues reports our best value for the radial velocity of each spectrum. The radial velocity values were primarily (83 per cent of spectra) from values calculated by [Zwitter et al (2020)](https://arxiv.org/abs/2012.12201) from the GALAH DR3 spectra. Of the remainder, 13 per cent use the radial velocity calculated as part of the stellar parameter and abundance determination, 2 per cent use the Gaia DR2 value (which was not updated in Gaia eDR3), and 2 per cent have no radial velocity value. The method used for a given spectrum is provided by the `use_rv_flag` in the `galah_dr3.vac_dynamics` and `galah_dr3.vac_rv` catalogue.
@@ -98,3 +96,30 @@ The `galah_dr3.vac_rv` catalogue contains the possible radial velocities for the
 * `dr2_radial_velocity` (and its error columns)
     - Radial velocity from Gaia DR2
     - This value is also listed as `rv_gaia_dr2` in `galah_dr3.main_spec` and `galah_dr3.main_star`.
+
+### FGK binary stars
+Binary stellar systems represent a significant fraction of stars in our Galaxy. Therefore, their effect on observations, as well as their impact on the Galactic environment, have to be properly taken into account when studying Galactic structure and evolution. To this end, we present a sample of 12760 binary systems for which the properties of their stellar components were derived in a separate analysis from the main DR3 analysis.
+
+The details of the analysis are described in Traven et al. (2020), and the catalogue of derived parameters is available at CDS.
+
+### `galah_dr3.vac_galahfco`
+#### List of all possible GALAH fields and field configurations
+
+Each field is specified by its location (`ra`, `dec`) and has a unique identifier `field_id`. Each row describes a field configuration. There can be multiple rows with same `field_id` indicating different configurations that the field can be observed in, e.g., fields observed with different magnitude ranges specified by (`vmin` , `vmax`). Description of the available columns is given below.
+
+* `field_id`: (int) Unique field identifier
+* `ra`: (deg)
+* `dec`: (deg)
+* `radius`: (deg) Ranging from 0 to 1.0
+* `selfunc`: (int) Selection function
+* `vmin`: Minimum V(J,K) magnitude
+* `vmax`: Maximum V(J,K) magnitude
+* `vsplit`: V(J,K) mag used for complicated selection functions
+* `vexp`: V(J,K) magnitude used to set exposure time.
+* `progname`: (str) one of the following:
+    - `bright`, `galah`, `galah_faint`, `galah_ufaint`, `k2`, `ocluster`, `repeat0`, `tess`
+    -
+* `fco_id`: field configuration identifier, row number in the table
+* `priority`: (int) 0 or 1 (for internal use)
+* `active`: (int) 0 or 1 (for internal use)
+* `special`: (int) 0 or 1 (for internal use)

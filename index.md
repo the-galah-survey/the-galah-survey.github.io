@@ -4,16 +4,27 @@ title: GALAH Survey
 subtitle: GALactic Archeology with HERMES
 ---
 
+{: .box-error}
+**Want to start working right now with GALAH DR3?**<br/><br/>
+The GALAH survey published our third data release on 6 November 2020. It contains data for almost 600,000 stars, with reduced 1-D spectra, stellar parameters and up to 30 elemental abundances per star.<br/><br/>
+We recommend the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances.
+<br/><br/>
+<a class="btn btn-success btn-lg get-started-btn center" href="dr3/get_the_catalogues/#getting-the-catalogues"><i class="fa fa-download"></i> Get GALAH DR3</a><br/>
+<a class="btn btn-info btn-lg get-started-btn center" href="dr3/overview"><i class="fa fa-book"></i> Read the DR3 documentation</a>
+
+<!-- This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3) with the name `GALAH_DR3_main_allstar_v2.fits`.<br/><br/>
+Please read our [best practices for using GALAH DR3](dr3/using_the_data).
+
 <div class="box-error">
 <h3>Want to start working with GALAH data?</h3>
-The GALAH survey published our third data release on 6 November 2020. It contains data for almost 600,000 stars, with reduced 1-D spectra, stellar parameters and up to 30 elemental abundances per star.
+
 
 <p>Our recommended table of stellar parameters is <code>GALAH_DR3_main_allstar_v2.fits</code>.</p>
 
-<a class="btn btn-success btn-lg get-started-btn" href="https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits" download><i class="fa fa-download"></i> Get GALAH DR3 (833 MB)</a>
 
-<a class="btn btn-info btn-lg get-started-btn" href="https://github.com/daattali/beautiful-jekyll#readme"><i class="fa fa-book"></i> Read the DR3 documentation</a>
-</div>
+
+
+</div> -->
 
 The **GAL**actic **A**rchaeology with **H**ERMES (**GALAH**) survey is a Large Observing Program using the HERMES instrument with the Anglo-Australian Telescope. HERMES provides simultaneous spectra about 350 objects in four wavelength bands tailored to obtain a range of chemical element lines, from light elements up to heavy neutron-capture elements. Using this instrument, GALAH obtains precise radial velocities and abundances of nearly 30 different chemical elements per star, with the aim of observing approximately one million stars. Elemental abundances representing the main nucleosynthetic processes in both dwarf and giant stars will allow chemical tagging of the individual stars to their original formation event, and accurate velocities will permit differentiation of stars by their dynamics. The resulting data sets yields a comprehensive view of the formation and evolution of the Galaxy, enabling the reconstruction of the original stellar building blocks. It allows us to investigate the history of star formation in the Galaxy, the regularity, and importance, of merger events, and the changes in stellar dynamics over time.
 

@@ -9,14 +9,9 @@ subtitle: Third Data Release
 * [Introduction to GALAH DR3 Spectral Library](#introduction-to-the-galah-dr3-catalogues)
 * [How to get the GALAH DR3 catalogues](#getting-the-catalogues)
     - [Downloading the FITS files](#downloading-the-fits-files)
+    - [Using ADQL](#adql-query)
 
 ### Introduction to the GALAH DR3 Catalogues
-
-{: .box-warning}
-We recommend you use the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be directly downloaded from here (it has the file name `GALAH_DR3_main_allstar_v2.fits`)
-
-{: .box-warning}
-For science cases involving stellar parameters, it is highly recommended that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element x, it is highly recommended that you only consider `X_fe` where `flag_X_fe == 0` and `snr_c3_iraf > 30`.
 
 We provide two versions of the GALAH DR3 catalogue (`galah_dr3.main_xx`):
 
@@ -27,7 +22,7 @@ We provide two versions of the GALAH DR3 catalogue (`galah_dr3.main_xx`):
     - GALAH_DR3_main_allspec_v2.fits (2.1 GB)
     - **This table is for expert use only**. One entry per observation. Radial velocity, stellar parameters for each observation. Also contains abundances derived for each individual line. Important data from Gaia, 2MASS, and WISE.
 
-There are also several value-added catalogues (`galah_dr3.vac_xx`):
+There are also [several value-added catalogues](/dr3/value_added_catalogues/) (`galah_dr3.vac_xx`):
 
 * `galah_dr3.vac_gaiaedr3`
     - GALAH_DR3_VAC_GaiaEDR3_v2.fits (338 MB)
@@ -50,6 +45,12 @@ There are also several value-added catalogues (`galah_dr3.vac_xx`):
 
 
 ### Getting the catalogues
+
+{: .box-warning}
+We recommend you use the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be directly downloaded from here (it has the file name `GALAH_DR3_main_allstar_v2.fits`)
+
+{: .box-warning}
+For science cases involving stellar parameters, it is highly recommended that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element x, it is highly recommended that you only consider `X_fe` where `flag_X_fe == 0` and `snr_c3_iraf > 30`.
 
 There are two methods for accessing these catalogues depending on your requirements
 
