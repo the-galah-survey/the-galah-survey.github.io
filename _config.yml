@@ -15,7 +15,7 @@ author: GALAH Survey
 
 navbar-links:
   About GALAH:
-    - Galactic Archaeology Basics: "about/aboutme"
+    - Galactic Archaeology Basics: "about/galactic_archaeology"
     - Workflow from stellar light to abundances: "about/workflow"
     - Technical Details: "about/technical_details"
     - Survey Managements: "about/survey_management"
