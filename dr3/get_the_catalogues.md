@@ -58,10 +58,10 @@ There are two methods for accessing these catalogues depending on your requireme
 
 The catalogues can be [downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) as FITS files, or using the following command (removing the `--spider` flag and replacing with the appropriate file name from the table above):
 
-{% highlight bash %}
+```bash
   # Download the galah_dr3.main_star catalogue
   wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
-{% endhighlight %}
+```
 
 #### ADQL query
 
@@ -70,25 +70,25 @@ The versions served by Data Central are currently our initial DR3 release and co
 
 The catalogues can be accessed using the [query services provided by Data Central](https://datacentral.org.au/services/). For example, if you are interested in all of the entries for stars likely to be members of the globular cluster omega Centauri, these could be found using a query like:
 
-{% highlight sql %}
-  SELECT
-     TOP 100
-     *
-     FROM galah_dr3.main_star
-     WHERE
-        1=CONTAINS(POINT('ICRS', ra, dec),
-                   CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
-     AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
-     AND rv_galah > 170
-{% endhighlight %}
+```sql
+SELECT
+   TOP 100
+   *
+   FROM galah_dr3.main_star
+   WHERE
+      1=CONTAINS(POINT('ICRS', ra, dec),
+                 CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
+   AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
+   AND rv_galah > 170
+```
 
 **The catalogues of GALAH DR3 must be joined or cross-matched using the `sobject_id`**. Do not use Gaia source_id or the star_id for joining catalogues. These value-added catalogues are based upon the extended catalogue which contains measurements per observed spectrum. About 50000 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum. For instance, to join the `galah_dr3.main_star` to the value-added catalogue of ages (`galah_dr3.vac_ages`), the following ADQL query could be used:
 
-{% highlight sql %}
-  SELECT
-     TOP 100
-     g_ms.source_id, g_ages.sobject_id, g_ages.age_bstep, g_ages.e_age_bstep
-     FROM galah_dr3.main_star AS g_ms
-     JOIN galah_dr3.vac_ages AS g_ages
-     	ON g_ms.sobject_id = g_ages.sobject_id
-{% endhighlight %}
+```sql
+SELECT
+   TOP 100
+   g_ms.source_id, g_ages.sobject_id, g_ages.age_bstep, g_ages.e_age_bstep
+   FROM galah_dr3.main_star AS g_ms
+   JOIN galah_dr3.vac_ages AS g_ages
+   	ON g_ms.sobject_id = g_ages.sobject_id
+```

@@ -85,12 +85,11 @@ The entire GALAH DR3 spectral library can be [dowloaded from here](https://cloud
 
 As [discussed above](#missing-spectral-data), 12181 stars are missing spectra for one or two of their cameras due to reduction or instrumentation problems. A list of these missing spectra can be found in [GALAH_DR3_missing_reduced_spectra_v2.csv](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_missing_reduced_spectra_v2.csv).
 
-The two files can be downloaded with the following `wget` command (removing the `--spider` flag):
+```bash
+# Remove --spider to download
+# Download the spectra for 588,343 stars that were successfully normalised.
+wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_all_spectra_with_normalisation_v2.tar.gz
+# Download the spectra for 227 stars that were not normalised
+wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_all_spectra_missing_normalisation_v2.tar.gz
+```
 
-{% highlight bash %}
-  # Remove --spider to download
-  # Download the spectra for 588,343 stars that were successfully normalised.
-  wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_all_spectra_with_normalisation_v2.tar.gz
-  # Download the spectra for 227 stars that were not normalised
-  wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_all_spectra_missing_normalisation_v2.tar.gz
-{% endhighlight %}

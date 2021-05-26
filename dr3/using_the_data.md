@@ -16,9 +16,9 @@ On this page:
 
 We highly recommend using the `galah_dr3.main_star` catalogue if you want to work with the GALAH DR3 stellar parameters and elemental abundances. This catalogue contains one entry per star and is a cleaned version of the extended `galah_dr3.main_spec`. Details on accessing the data can be found on the Catalogue Data Access page. If you just want the entire table, it can be directly downloaded from here (it has the file name `GALAH_DR3_main_allstar_v2.fits`), or by using `wget` (removing the `--spider` flag):
 
-{% highlight bash %}
-  wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
-{% endhighlight %}
+```bash
+wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
+```
 
 {: .box-warning}
 **We make two strong recommendations about flags in GALAH DR3. Full details of the flags are found on the Table Schema page.**<br/><br/>
@@ -66,11 +66,11 @@ The results from the Gaia mission are integral to GALAH DR3. Our analysis makes 
 
 The catalogues of GALAH DR3 must be joined or cross-matched using the `sobject_id`. Do not use the `star_id` or *Gaia* `source_id` joining catalogues. These value-added catalogues are based upon the extended catalogue which contains measurements per observed spectrum. About 50000 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum. For instance, to join the `galah_dr3.main_star` to the value-added catalogue of ages (`galah_dr3.vac_ages`), the following ADQL query could be used:
 
-{% highlight sql %}
- SELECT
-    TOP 100
-    g_ms.source_id, g_ages.sobject_id, g_ages.age_bstep, g_ages.e_age_bstep
-    FROM galah_dr3.main_star AS g_ms
-    JOIN galah_dr3.vac_ages AS g_ages
-    	ON g_ms.sobject_id = g_ages.sobject_id
-{% endhighlight %}
+```sql
+SELECT
+  TOP 100
+  g_ms.source_id, g_ages.sobject_id, g_ages.age_bstep, g_ages.e_age_bstep
+  FROM galah_dr3.main_star AS g_ms
+  JOIN galah_dr3.vac_ages AS g_ages
+  	ON g_ms.sobject_id = g_ages.sobject_id
+```
