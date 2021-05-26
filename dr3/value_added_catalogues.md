@@ -4,7 +4,9 @@ title: Value-added catalogues
 subtitle: Third Data Release
 ---
 
-### On this page:
+<h3> On this page</h3>
+* This text gets replaced.
+{:toc}
 * [`galah_dr3.vac_gaiaedr3`](#galah_dr3vac_gaiaedr3)
     - *Gaia* eDR3 data for all stars in GALAH DR3
 * [`galah_dr3.vac_ages`](#galah_dr3vac_ages)

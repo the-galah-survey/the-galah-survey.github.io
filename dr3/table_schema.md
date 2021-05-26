@@ -4,6 +4,10 @@ title: Table Schema
 subtitle: Third Data Release
 ---
 
+<h3> On this page</h3>
+* This text gets replaced.
+{:toc}
+
 For GALAH DR3, we have provided two versions of the GALAH DR3 catalogue, and several value-added catalogues. These are described in detail on the Catalogue Data Access and Using the GALAH Catalogues pages. The table below collates the available columns across these catalogues into one table. It gives the catalogues that a given column is found within, and the description, unit, and data type of each column. To save space in the table below, the columns related to abundances have been collapsed in single entries (e.g., `X_fe`), and they are all listed in a table at the bottom of this page.
 
 Items of note:

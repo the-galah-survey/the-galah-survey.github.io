@@ -9,13 +9,11 @@ subtitle: Third Data Release
 We recommend the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3) with the name `GALAH_DR3_main_allstar_v2.fits`.<br/><br/>
 Please read our [best practices for using GALAH DR3](dr3/using_the_data).
 
-### On this page:
+<h3> On this page</h3>
+* This text gets replaced.
+{:toc}
 
-* [What's in GALAH+ DR3?](#whats-in-galah-dr3)
-* [The GALAH DR3 Data Products](#the-galah-dr3-data-products)
-    - [GALAH DR3 Catalogues](#galah-dr3-catalogues)
-    - [GALAH DR3 Spectra](#galah-dr3-spectra)
-* [Changes from the Second Data Release of GALAH](#changes-from-the-second-data-release-of-galah)
+---
 
 ### What's in GALAH+ DR3?
 
@@ -28,7 +26,7 @@ The Third Data Release of the Galactic Archaeology with HERMES (GALAH) survey pr
 * For ease of use, this release referred to as GALAH+ DR3 presents data from multiple programs as a single catalogue. It includes observations from GALAH Phase 1 (bright, main, and faint survey, 476,863 spectra), the K2-HERMES (112,943 spectra) and TESS-HERMES (34,263 spectra) surveys, as well as additional GALAH-related projects including the bulge and observations of more than 75 stellar clusters (54,354 spectra). See the Instrumentation, Target Selection and Observations page for more details.
 * Compared to GALAH DR2, we improve our spectrum analysis with external astro- and photometric information from Gaia DR2 and 2MASS to estimate more accurate stellar surface gravities, thus breaking spectroscopic degeneracies. We also use Spectroscopy Made Easy (SME) to analyse the entire spectral data set. See the data reduction and analysis page for more details.
 
-#### For all targets in DR3, we provide:
+#### Data provided in GALAH DR3
 
 * Reduced one-dimensional spectra across the four wavelength regions of the HERMES spectrograph
 * Barycentric radial velocities
@@ -54,6 +52,8 @@ Above is an overview of distances and photometric information for the spectra (i
 ![Sky coverage of GALAH DR3](/dr3/images/lb_overview_colored.png)
 
 Overview of the distribution of stars included in this data release in Galactic coordinates with the centre of the Galaxy at the origin. Shown are the GALAH main (blue) and faint (orange) targets, which avoid the Galactic plane. The targets of the *K2*-HERMES follow-up (green) fall within with the *K2* campaigns along the ecliptic and show the characteristic tile-pattern of the *Kepler* telescope. The *TESS*-HERMES observations (red) are focused on the *TESS* Southern Continuous Viewing Zone. Other HERMES targets (purple) are distributed across the sky and were observed during independent programs.
+
+---
 
 ### The GALAH DR3 Data Products
 The two main data products of GALAH DR3 are the catalogue of stellar parameters & abundances, and the spectral library. We also provide several value-added catalogues.
@@ -108,6 +108,8 @@ For each star there are four files, one for each of the four HERMES cameras, wit
 * The variance of the pseudo-continuum normalized spectrum
 * The sky spectrum used for sky subtraction
 
+---
+
 ### Changes from the Second Data Release of GALAH
 
 #### Data Reduction
@@ -125,21 +127,10 @@ Below is a comparison of GALAH DR2 (upper panels) and GALAH DR3 (lower panels, t
 
 ![Sky coverage of GALAH DR3](/dr3/images/galah_dr3_comparison_dr2.png)
 
+---
+
 ### Need help?
 Questions about GALAH DR3 that are not answered in the documentation? Contact us:
 
 * Email galah.helpdesk@gmail.com
 * Twitter: @galahsurvey
-
-<!-- ### Quick start
-
-Do you want the GALAH DR3 catalogue of stellar parameters and abundances for your research?
-
-We recommend the `galah_dr3.main_star` catalogue. This table can be downloaded from here (it has the file name `GALAH_DR3_main_allstar_v2.fits`), or by using `wget` (removing the ``--spider` flag) at the command line:
-
-```
-# Remove the --spider flag
-wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
-```
-
-For science cases involving stellar parameters, it is **highly recommended** that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element X, it is highly recommended that you only consider X_fe where ``flag_X_fe == 0`` and ``snr_c3_iraf > 30``. See the Using GALAH Data page for short guide to the tables and our recommendations. -->

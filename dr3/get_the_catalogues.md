@@ -4,12 +4,10 @@ title: Get the GALAH DR3 catalogues
 subtitle: Third Data Release
 ---
 
-### On this page:
-
-* [Introduction to GALAH DR3 Spectral Library](#introduction-to-the-galah-dr3-catalogues)
-* [How to get the GALAH DR3 catalogues](#getting-the-catalogues)
-    - [Downloading the FITS files](#downloading-the-fits-files)
-    - [Using ADQL](#adql-query)
+<h3> On this page</h3>
+* This text gets replaced.
+{:toc}
+---
 
 ### Introduction to the GALAH DR3 Catalogues
 
@@ -43,6 +41,7 @@ There are also [several value-added catalogues](/dr3/value_added_catalogues/) (`
     - Identification of likely for double-lined spectroscopic binaries.
     - This VAC is served on the Centre de Données astronomiques de Strasbourg rather than Data Central.
 
+---
 
 ### Getting the catalogues
 

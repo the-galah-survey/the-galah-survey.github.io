@@ -4,6 +4,10 @@ title: Flags in GALAH DR3
 subtitle: Third Data Release
 ---
 
+<h3> On this page</h3>
+* This text gets replaced.
+{:toc}
+
 ### `flag_sp` bitmask values
 
 {: .box-warning}
@@ -29,6 +33,8 @@ The value of `flag_sp` are found via the summation of the individual flags as ta
 | 256 | Problems with Fe lines, where line flux is not between 0.03 and 1.00, [Fe/H] not reliable, or blending suspected |
 | 512 | SME did not finish: (a) No convergence == non-finite stellar parameters; (b) Gaussian RV fit failed |
 | 1024 | MARCS grid limit reached or outside of reasonable parameter range |
+
+---
 
 ### `flag_X_fe` and `ind_flag_X1234` bitmask values
 

@@ -4,13 +4,11 @@ title: Get the GALAH DR3 spectra
 subtitle: Third Data Release
 ---
 
-**On this page:**
-* [Introduction to GALAH DR3 Spectral Library](#introduction-to-galah-dr3-spectral-library)
-    - [Missing spectral data](#missing-spectral-data)
-* [Acquiring the spectral data](#acquiring-the-spectral-data)
-    - [Downloading the spectra for a few stars](#downloading-the-spectra-for-a-few-stars)
-    - [Downloading the spectra for a larger number of stars](#downloading-the-spectra-for-a-larger-number-of-stars)
-    - [Downloading the entire GALAH spectral catalogue](#downloading-the-entire-galah-spectral-catalogue)
+<h3> On this page</h3>
+* This text gets replaced.
+{:toc}
+
+---
 
 ### Introduction to GALAH DR3 Spectral Library
 
