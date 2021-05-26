@@ -5,7 +5,7 @@ subtitle: GALactic Archeology with HERMES
 ---
 
 {: .box-error}
-**Want to start working right now with GALAH DR3?**<br/><br/>
+**Want to start working right now with GALAH DR3?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
 The GALAH survey published our third data release on 6 November 2020. It contains data for almost 600,000 stars, with reduced 1-D spectra, stellar parameters and up to 30 elemental abundances per star.<br/><br/>
 We recommend the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances.
 <br/><br/>

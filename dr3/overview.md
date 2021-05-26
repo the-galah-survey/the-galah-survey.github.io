@@ -5,7 +5,7 @@ subtitle: Third Data Release
 ---
 
 {: .box-error}
-**Want to start working right now with GALAH DR3?**<br/><br/>
+**Want to start working right now with GALAH DR3?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
 We recommend the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3) with the name `GALAH_DR3_main_allstar_v2.fits`.<br/><br/>
 Please read our [best practices for using GALAH DR3](dr3/using_the_data).
 
@@ -61,7 +61,7 @@ The two main data products of GALAH DR3 are the catalogue of stellar parameters 
 #### GALAH DR3 Catalogues
 
 {: .box-warning}
-For science cases involving stellar parameters, it is highly recommended that you use the `galah_dr3.main_star` table, and that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_c3_iraf > 30`. See the Using GALAH Data page for short guide to the tables and our recommendations.
+For science cases involving stellar parameters, it is highly recommended that you use the `galah_dr3.main_star` table, and that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_c3_iraf > 30`. See our [Best Practices](/dr3/using_the_data) for a short guide of our recommendations for using GALAH DR3.
 
 The GALAH DR3 catalogues can be accessed either by:
 * [Direct download from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) of the catalogues as FITS files
