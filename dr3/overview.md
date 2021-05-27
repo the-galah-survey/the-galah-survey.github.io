@@ -7,7 +7,7 @@ subtitle: Third Data Release
 {: .box-error}
 **Want to start working right now with GALAH DR3?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
 We recommend the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3).<br/><br/>
-Please read our [best practices for using GALAH DR3](dr3/using_the_data).
+Please read our [best practices for using GALAH DR3](/dr3/using_the_data).
 
 <h3> On this page</h3>
 * This text gets replaced.
