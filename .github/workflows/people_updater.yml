@@ -1,5 +1,5 @@
 # This will update the people.md page when the people.csv file updates
-# 
+#
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
@@ -8,7 +8,7 @@ name: people_updater
 on:
   push:
     paths:
-      - '/assets/data_tables/people.csv'
+      - 'assets/data_tables/people.csv'
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas
     - name: execute py script # run sj-gobierno.py to get the latest data
-      run: python /assets/data_tables/people_md_maker.py
+      run: python assets/data_tables/people_md_maker.py
 
     - name: commit files
       run: |
@@ -39,4 +39,4 @@ jobs:
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main  
+        branch: main
