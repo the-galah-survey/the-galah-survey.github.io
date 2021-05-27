@@ -10,6 +10,9 @@ Please address requests via email to Jeffrey Simpson ([jeffrey.simpson@unsw.edu.
 
 There are a number of main pages and subpages, all with the `.md` suffix. These can be safely edited, except for `people.md`, `publications.md` and `pubs_using_galah`, which are generated via scripts.
 
+### Editing the people page
+**Do not edit the people.md file directly**. Edit the `assets/data_tables/people.csv` file. There is a Github Action that will automatically run and update the people.md when this file changes.
+
 ## Editing the navigation menus and the footer section
 
 The links in the menu and in the footer are all configured in the main configuration file, [`_config.yml`](./_config.yml). Specifically, the parameter `navbar-links` inside the file is used to define the top navigation menu, and the `author` parameter just below it is used to define the information that should be shown in the footer.
