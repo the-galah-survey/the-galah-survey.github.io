@@ -40,7 +40,7 @@ def create_contact_icons(person):
 
 galah_people = pd.read_csv("assets/data_tables/people.csv", sep='\t')
 
-with open("/people.md", 'w') as people_md:
+with open("people.md", 'w') as people_md:
     people_md.write("""---
 title: People
 subtitle: The humans behind the GALAH Survey
