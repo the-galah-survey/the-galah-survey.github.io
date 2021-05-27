@@ -8,7 +8,7 @@ name: people_updater
 on:
   push:
     paths:
-      - 'assets/data_tables/people.csv'
+      - 'assets/people/people.csv'
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas
     - name: execute py script # run sj-gobierno.py to get the latest data
-      run: python assets/data_tables/people_md_maker.py
+      run: python assets/people/people_md_maker.py
 
     - name: commit files
       run: |
