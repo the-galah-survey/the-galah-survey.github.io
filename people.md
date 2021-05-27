@@ -2,7 +2,60 @@
 title: People
 subtitle: The humans behind the GALAH Survey
 smg:
+  - name: Joss Bland-Hawthorn
+    affiliation: University of Sydney / ASTRO 3D
+    img: /assets/img/people/joss-bland-hawthorn.jpg
+  - name: Sven Buder
+    affiliation: Australian National University / ASTRO 3D
+    img: /assets/img/people/sven-buder.jpg
+  - name: Ken Freeman
+    affiliation: Australian National University / ASTRO 3D
+    img: /assets/img/people/ken-freeman.jpg
+  - name: Michael Hayden
+    affiliation: University of Sydney / ASTRO 3D
+    img: /assets/img/people/michael-hayden.jpg
+  - name: Janez Kos
+    affiliation: University of Ljubljana
+    img: /assets/img/people/janez-kos.jpg
+  - name: Sarah Martell
+    affiliation: University of New South Wales / ASTRO 3D
+    twitter: https://twitter.com/_sarahmartell_
+    email: smartell@unsw.edu.au
+    img: /assets/img/people/sarah-martell.jpg
+  - name: Sanjib Sharma
+    affiliation: University of Sydney / ASTRO 3D
+    img: /assets/img/people/sanjib-sharma.jpg
+  - name: Jeffrey Simpson
+    affiliation: University of New South Wales / ASTRO 3D
+    twitter: https://twitter.com/fadastra
+    github: https://github.com/jeffreysimpson
+    email: jeffrey.simpson@unsw.edu.au
+    img: /assets/img/people/jeffrey-simpson.jpg
+  - name: Daniel Zucker
+    affiliation: Macquarie University / ASTRO 3D
+    img: /assets/img/people/daniel-zucker.jpg
+  - name: Tomaz Zwitter
+    affiliation: University of Ljubljana
+    img: /assets/img/people/tomaz-zwitter.jpg
 builders:
+  - name: Andy Casey
+    affiliation: Monash University
+    img: /assets/img/people/andy-casey.jpg
+  - name: Valentina D'Orazi
+    affiliation: INAF -Osservatorio Astronomico di Padova
+    img: /assets/img/people/valentina-d'orazi.jpg
+  - name: Gayandhi De Silva
+    affiliation: AAO-Macquarie
+    img: /assets/img/people/gayandhi-de-silva.jpg
+  - name: Geraint Lewis
+    affiliation: University of Sydney
+    img: /assets/img/people/geraint-lewis.jpg
+  - name: Jane Lin
+    affiliation: Australian National University
+    img: /assets/img/people/jane-lin.jpg
+  - name: Karin Lind
+    affiliation: Stockholm University
+    img: /assets/img/people/karin-lind.jpg
 ---
 
 
@@ -88,9 +141,9 @@ All the members of the GALAH Survey
 | Jonty Marshall |  |  | 
 | Sarah Martell | University of New South Wales / ASTRO 3D | <a class="item-link" href="mailto:smartell@unsw.edu.au" title="Email Sarah Martell"><span class="fas fa-envelope"></span></a> <a class="item-link" href="https://twitter.com/_sarahmartell_" title="Tweet Sarah Martell"><span class="fab fa-twitter"></span></a> | 
 | Tadafumi Matsuno |  |  | 
-| Madeleine McKenzie |  |  | 
+| Madeleine McKenzie | University of New South Wales |  | 
 | Benjamin Montet | University of New South Wales / ASTRO 3D |  | 
-| Ryan Morris |  |  | 
+| Ryan Morris | University of New South Wales |  | 
 | Ulisse Munari | INAF National Institute of Astrophysics |  | 
 | Simon Murphy | UNSW Canberra |  | 
 | Govind Nandakumar |  |  | 
