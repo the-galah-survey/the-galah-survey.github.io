@@ -19,13 +19,13 @@ This page relays a list of known issues in the GALAH DR3. Please also see the GA
 Note that our tables contain a mixture of Gaia DR2 and Gaia eDR3 values. The former are indicated by having column names including `dr2`.
 
 The results from the Gaia mission are integral to GALAH DR3. Our analysis makes use of Gaia DR2 results, in particular using a parallax-derived distance estimate for each star to provide a first estimate of its surface gravity. The release of Gaia eDR3 occurred after the main analysis for GALAH DR3 was finished, and we have not re-run the analysis pipeline using the new parallaxes from Gaia eDR3. As a consequence:
-* We have flagged stars (through the `flag_sp` in `galah_dr3.main_star` and `galah_dr3.main_spec)` that have less reliable astrometry in Gaia DR2 based upon their RUWE, as we used the parallax-derived distance for the stars as part of the first estimate of the surface gravity. A high RUWE in Gaia DR2 may not be indicative of a star having less reliable astrometry in Gaia eDR3 and beyond.
+* We have flagged stars (through the `flag_sp` in `GALAH_DR3_main_allstar_v2.fits` and `galah_dr3.main_spec)` that have less reliable astrometry in Gaia DR2 based upon their RUWE, as we used the parallax-derived distance for the stars as part of the first estimate of the surface gravity. A high RUWE in Gaia DR2 may not be indicative of a star having less reliable astrometry in Gaia eDR3 and beyond.
 * The distance to star reported in the `galah_dr3.vac_dynamics` table may differ from the distance used in the stellar parameter and abundance determination.
 
 Some further notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
 * This cross-match used the previously identified Gaia DR2 `source_id` for each GALAH DR3 star, and the `gaiaedr3.dr2_neighbourhood` table created by the Gaia team. The Gaia DR2 `source_id` had been found using the `gaiadr2.tmass_best_neighbour` table and the 2MASS ID of each GALAH star. In the future, we suggest to perform this crossmatch via GALAH's 2MASS ID and the yet-to-come match of Gaia EDR3 and 2MASS identifiers.
 * All `galah_dr3.vac_gaiaedr3` entries have an angular distance between their Gaia DR2 and eDR3 sources smaller than 160 mas, and 99.9 per cent are within 20 mas.
-* There is a Gaia eDR3 source for every entry in the `galah_dr3.main_star` table.
+* There is a Gaia eDR3 source for every entry in the `GALAH_DR3_main_allstar_v2.fits` table.
     - There are 111 entries in the `galah_dr3.main_spec` table that lack a Gaia `source_id` as we have not attempted to find them in Gaia eDR3 and they never had a Gaia DR2 `source_id`. Of these 38 are bright stars and do have a parallax from Hipparcos.
 * 17654 stars had more than one Gaia eDR3 match (98 per cent two matches and the remainder with 3 or 4 matches). For simplicity we have chosen the match with the smallest angular distances between the Gaia DR2 and Gaia eDR3 position as reported by the `gaiaedr3.dr2_neighbourhood`.
     - For over 99 per cent of stars the closest match had an angular distance <10 mas, and second closest match was >600 mas.

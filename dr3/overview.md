@@ -6,7 +6,7 @@ subtitle: Third Data Release
 
 {: .box-error}
 **Want to start working right now with GALAH DR3?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
-We recommend the `galah_dr3.main_star` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3) with the name `GALAH_DR3_main_allstar_v2.fits`.<br/><br/>
+We recommend the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3).<br/><br/>
 Please read our [best practices for using GALAH DR3](dr3/using_the_data).
 
 <h3> On this page</h3>
@@ -61,37 +61,36 @@ The two main data products of GALAH DR3 are the catalogue of stellar parameters 
 #### GALAH DR3 Catalogues
 
 {: .box-warning}
-For science cases involving stellar parameters, it is highly recommended that you use the `galah_dr3.main_star` table, and that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_c3_iraf > 30`. See our [Best Practices](/dr3/using_the_data) for a short guide of our recommendations for using GALAH DR3.
+For science cases involving stellar parameters, it is highly recommended that you use the `GALAH_DR3_main_allstar_v2.fits` table, and that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_c3_iraf > 30`. See our [Best Practices](/dr3/using_the_data) for a short guide of our recommendations for using GALAH DR3.
 
 The GALAH DR3 catalogues can be accessed either by:
 * [Direct download from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) of the catalogues as FITS files
 * The query services on the Data Central webpage (note that these are currently out of date).
 
-We provide two versions of the GALAH DR3 catalogue (`galah_dr3.main_xx`):
+We provide two versions of the GALAH DR3 catalogue:
 
-* `galah_dr3.main_star`
-    - GALAH_DR3_main_allstar_v2.fits (833 MB)
+* `GALAH_DR3_main_allstar_v2.fits` (833 MB)
     - **Strongly recommend the use of this table**. One entry per star observed. Radial velocity, stellar parameters and abundance data. Important data from Gaia, 2MASS, and WISE.
-* `galah_dr3.main_spec`
-    - GALAH_DR3_main_allspec_v2.fits (2.1 GB)
+    - Known as `galah_dr3.main_star` table in the database.
+* `GALAH_DR3_main_allspec_v2.fits` (2.1 GB)
     - **This table is for expert use only**. One entry per observation. Radial velocity, stellar parameters for each observation. Also contains abundances derived for each individual line. Important data from Gaia, 2MASS, and WISE.
+    - Known as `galah_dr3.main_spec` table in the database.
 
-There are also several value-added catalogues (`galah_dr3.vac_xx`):
+There are also several value-added catalogues:
 
-* `galah_dr3.vac_gaiaedr3`
-    - GALAH_DR3_VAC_GaiaEDR3_v2.fits (338 MB)
+* `GALAH_DR3_VAC_GaiaEDR3_v2.fits` (338 MB)
     - *Gaia* eDR3 data for all stars in GALAH DR3
-* `galah_dr3.vac_ages`
-    - GALAH_DR3_VAC_ages_v2.fits (362 MB)
+    - `galah_dr3.vac_gaiaedr3`
+* `GALAH_DR3_VAC_ages_v2.fits` (362 MB)
     - Stellar ages, masses, distances and other parameters estimated using isochrones
-* `galah_dr3.vac_dynamics`
-    - GALAH_DR3_VAC_dynamics_v2.fits (554 MB)
+    - `galah_dr3.vac_ages`
+* `GALAH_DR3_VAC_dynamics_v2.fits` (554 MB)
     - Galactic kinematic and dynamic parameters
-* `galah_dr3.vac_rv`
-    - GALAH_DR3_VAC_rv_v2.fits (67 MB)
+    - `galah_dr3.vac_dynamics`
+* `GALAH_DR3_VAC_rv_v2.fits` (67 MB)
     - Collated radial velocity measurements
-* `galah_dr3.vac_galahfco`
-    - target/galahfco_3_public.txt (957kB)
+    - `galah_dr3.vac_rv`
+* `target/galahfco_3_public.txt` (957kB)
     - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id.
 * FGK binary stars
     - Identification of likely for double-lined spectroscopic binaries.
