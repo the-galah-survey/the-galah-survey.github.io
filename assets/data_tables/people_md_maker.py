@@ -38,7 +38,7 @@ def create_contact_icons(person):
     return " ".join(contact_string)
 
 
-galah_people = pd.read_csv("/assets/data_tables/people.csv", sep='\t')
+galah_people = pd.read_csv("assets/data_tables/people.csv", sep='\t')
 
 with open("/people.md", 'w') as people_md:
     people_md.write("""---
