@@ -48,12 +48,12 @@ subtitle: The humans behind the GALAH Survey
 
     ## Add the SMG
     people_md.write("smg:\n")
-    for *_, person in galah_people[galah_people['tag'] == 'SMG'].sort_values('last_name').iterrows():
+    for *_, person in galah_people[galah_people['tag'] == 'smg'].sort_values('last_name').iterrows():
         person_entry = create_picture_entries(person)
         people_md.write(("\n".join(person_entry))[:-1])
     ## Add the builders
     people_md.write("builders:\n")
-    for *_, person in galah_people[galah_people['tag'] == 'Builders'].sort_values('last_name').iterrows():
+    for *_, person in galah_people[galah_people['tag'] == 'builder'].sort_values('last_name').iterrows():
         person_entry = create_picture_entries(person)
         people_md.write(("\n".join(person_entry))[:-1])
 
