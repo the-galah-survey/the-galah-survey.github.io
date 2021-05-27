@@ -14,11 +14,11 @@ def get_config():
     Load ADS developer key from file
     :return: str
     """
-#     global token
-#     if token is None:
     try:
-        with open(os.path.expanduser('~/.ads/dev_key')) as f:
-            token = f.read().strip()
+        token = os.getenv('ADS_TOKEN')
+    # try:
+    #     with open(os.path.expanduser('~/.ads/dev_key')) as f:
+    #         token = f.read().strip()
     except IOError:
         print('The script assumes you have your ADS developer token in the'
               'folder: {}'.format())
