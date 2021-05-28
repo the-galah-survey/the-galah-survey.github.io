@@ -102,6 +102,8 @@ subtitle: {subtitle}
             pub = pub.replace(r"$\sim$", "~")
             pub = pub.replace(r"$R$", "*R*")
             pub = pub.replace(r"[$\alpha/\rm Fe]$", "[α/Fe]")
+            pub = pub.replace(r"$\alpha$", "α")
+            pub = pub.replace(r"∼", "~")
             pub = pub.replace(r"$< -0.75$", "< −0.75")
             if (year is None) | (year != pub_year):
                 year = pub_year
