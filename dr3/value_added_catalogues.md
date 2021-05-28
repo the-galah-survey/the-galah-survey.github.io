@@ -4,7 +4,9 @@ title: Value-added catalogues
 subtitle: Third Data Release
 ---
 
-<h3> On this page</h3>
+
+
+<h3> GALAH DR3 includes several value-added catalogues:</h3>
 * This text gets replaced.
 {:toc}
 
@@ -22,12 +24,13 @@ subtitle: Third Data Release
 * [`galah_dr3.vac_galahfco`](#galah_dr3vac_galahfco)
     - List of fields and field configurations. Each field has a unique ra, dec coordinates and field_id. Multiple configurtations can have same field_id. -->
 
-### `galah_dr3.vac_gaiaedr3`
-#### Gaia eDR3 data for all stars in GALAH DR3
-This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an entry for every star in GALAH DR3 that we identified a match in Gaia eDR3. The `vac_gaiaedr3` catalogue consists of:
+### Gaia eDR3 data for all stars in GALAH DR3
+#### `GALAH_DR3_VAC_GaiaEDR3_v2.fits` (338 MB)
+ {:.no_toc}
+This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an entry for every star in GALAH DR3 that we identified a match in Gaia eDR3. The `GALAH_DR3_VAC_GaiaEDR3_v2` catalogue consists of:
 * GALAH DR3 `sobject_id` and `star_id`
-* All columns from `gaiaedr3.gaia_source` (with `source_id` renamed `dr3_source_id`)
-* All columns from `gaiaedr3.dr2_neighbourhood`:
+* All columns from [`gaiaedr3.gaia_source`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_gaia_source.html) (with `source_id` renamed `dr3_source_id`)
+* All columns from [`gaiaedr3.dr2_neighbourhood`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html):
     - e.g., `angular_distance`, `magnitude_difference`, `proper_motion_propagation`
 * Photogeometric and Geometric Distances from [Bailer-Jones et al. (2020)](https://arxiv.org/abs/2012.05220)
 * Zeropoints from [Lindegren et al. (2020)](https://arxiv.org/abs/2012.01742)
