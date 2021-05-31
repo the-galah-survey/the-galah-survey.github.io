@@ -38,7 +38,7 @@ def create_contact_icons(person):
     return " ".join(contact_string)
 
 if __name__ == '__main__':
-    galah_people = pd.read_csv("survey/people.csv", sep='\t')
+    galah_people = pd.read_csv("survey/people.csv")
 
     with open("survey/people.md", 'w') as people_md:
         people_md.write("""---
