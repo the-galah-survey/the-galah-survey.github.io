@@ -18,20 +18,33 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install requests
-    - name: execute py script
+        
+    - name: execute pub_maker.py
       env:
         ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
       run: python survey/pub_maker.py
+      
+    - name: check for changes
+      run: |
+        if git diff --exit-code; then
+          echo "::set-env name=changes_exist::false"
+        else
+          echo "::set-env name=changes_exist::true"
+        fi
     - name: commit files
+      if: env.changes_exist == 'true'
       run: |
         git config --local user.email "robot@galahsurvey.org"
         git config --local user.name "Robot GALAH"
-        git diff-index --quiet HEAD || (git commit -a -m "Automatically updating the publication files" && git push -f)
+        git add -A
+        git commit -m "Automatically updating the publication files"
     - name: push changes
+      if: env.changes_exist == 'true'
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
