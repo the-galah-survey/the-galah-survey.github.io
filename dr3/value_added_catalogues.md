@@ -28,9 +28,9 @@ Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
 * All `GALAH_DR3_VAC_GaiaEDR3_v2` entries have an angular distance between their Gaia DR2 and eDR3 sources smaller than 160 mas, and 99.9 per cent are within 20 mas.
 * There is a Gaia eDR3 source for every entry in the `GALAH_DR3_main_allstar_v2` table.
     - There are 111 entries in the `GALAH_DR3_main_allspec_v2` table that lack a Gaia `source_id` as we have not attempted to find them in Gaia eDR3 and they never had a Gaia DR2 `source_id`. Of these 38 are bright stars and do have a parallax from Hipparcos.
-* 17654 stars had more than one Gaia eDR3 match (98 per cent two matches and the remainder with 3 or 4 matches). For simplicity we have chosen the match with the smallest angular distances between the Gaia DR2 and Gaia eDR3 position as reported by the `gaiaedr3.dr2_neighbourhood`.
-    - For over 99 per cent of stars the closest match had an angular distance <10 mas, and second closest match was >600 mas.
-    - There is likely source confusion for <100 stars. For instance, for 57 of the 17000 stars with multiple matches in the `gaiaedr3.dr2_neighbourhood` table, the second closest match in angular distance has a smaller magnitude difference between Gaia DR2 and eDR3.
+* 17654 stars had more than one Gaia eDR3 match (98 per cent of these had only two matches, and the remainder with 3 or 4 matches). For simplicity we have chosen the closest match in angular distance between the Gaia DR2 and Gaia eDR3 position as reported by the `gaiaedr3.dr2_neighbourhood`.
+    - For over 99 per cent of ~18000 stars, the closest match had an angular distance <10 mas, and second closest match was >600 mas.
+    - There is likely source confusion for <100 stars. For instance, for 57 of the ~18000 stars with multiple matches in the `gaiaedr3.dr2_neighbourhood` table, the second closest match in angular distance has a smaller magnitude difference between Gaia DR2 and eDR3.
 
 ---
 
@@ -89,7 +89,7 @@ The input values for each star were:
 This catalogue collates several radial velocities measurements for each star:
 
 * `rv_obst` and `rv_nogr_obst` (and their error columns)
-    - [Zwitter et al (2020)](https://arxiv.org/abs/2012.12201) created essentially noiseless observed spectra for stars are created by creating median spectra for all GALAH DR3 stars belonging to the same bin with a width of 50 K in temperature, 0.2 dex in gravity, and 0.1 dex in metallicity. The observed spectra are then cross-correlated with these noiseless spectra to measure radial velocities with a typical accuracy of 0.1 km/s. The `rv_nogr_obst` reports the value without the gravitational redshift correction.
+    - [Zwitter et al (2020)](https://arxiv.org/abs/2012.12201) created essentially noiseless observed spectra from the median spectra for all GALAH DR3 stars belonging to the same bin with a width of 50 K in temperature, 0.2 dex in gravity, and 0.1 dex in metallicity. The observed spectra are then cross-correlated with these noiseless spectra to measure radial velocities with a typical accuracy of 0.1 km/s. The `rv_nogr_obst` reports the value without the gravitational redshift correction.
 * `rv_sme_v2` (and its error columns)
     - The radial velocity calculated by SME as part of the stellar parameter and abundance determination.
     - There is also a `rv_sme_v1` column which was the value found in the original GALAH DR3 release which had an incorrect barycentric correction.
