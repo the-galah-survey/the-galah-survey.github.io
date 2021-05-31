@@ -114,11 +114,11 @@ subtitle: {subtitle}
 
 if __name__ == '__main__':
     create_webpage(library_name='h8cKhLXSTaSOuZAy7phffg',
-                   page_name="external_publications.md",
+                   page_name="survey/external_publications.md",
                    title="Publications using GALAH",
                    subtitle="This page lists publications using GALAH data.")
 
     create_webpage(library_name='clbnJI34RXa4uEEqFC8I9g',
-                   page_name="galah_publications.md",
+                   page_name="survey/galah_publications.md",
                    title="GALAH Survey publications",
                    subtitle="This page lists publications from the GALAH Survey team.")
