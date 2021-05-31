@@ -14,16 +14,6 @@ author: GALAH Survey
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  The Science:
-    - Galactic Archaeology Basics: "about/galactic_archaeology"
-    - Workflow from stellar light to abundances: "about/workflow"
-    - Technical Details: "about/technical_details"
-  The Survey:
-    - People: "people"
-    - Survey Managements: "about/survey_management"
-    - Survey Guidelines: "about/survey_guidelines"
-    - GALAH Publications: "publications/galah_publications"
-    - External publications: "publications/external_publications"
   Data Release 3:
     - Overview: "dr3/overview"
     - Get the DR3 catalogues: "dr3/get_the_catalogues"
@@ -34,6 +24,16 @@ navbar-links:
     - Flags in GALAH DR3: "dr3/flags"
     - Table schema: "dr3/table_schema"
     - Cite us: "dr3/cite_us"
+  The Science:
+    - Galactic Archaeology Basics: "science/galactic_archaeology"
+    - Workflow from stellar light to abundances: "science/workflow"
+    - Technical Details: "science/technical_details"
+  The Survey:
+    - People: "survey/people"
+    - Survey Management: "survey/survey_management"
+    - Survey Guidelines: "survey/survey_guidelines"
+    - GALAH publications: "survey/galah_publications"
+    - External publications: "survey/external_publications"
   Contact Us:
     - Join GALAH: "contact/join_us"
     - Questions and help: "contact/questions"

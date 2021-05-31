@@ -13,7 +13,7 @@ The GALAH Survey primarily uses the [Anglo-Australian Telescope (AAT)](https://a
 ### 2dF and HERMES
 
 {: style="text-align:center"}
-![Light path of HERMES](/about/images/HERMES.png "Light path of HERMES")
+![Light path of HERMES](/science/images/HERMES.png "Light path of HERMES")
 
 GALAH observes using the HERMES spectrograph ([Sheinis et al. 2015](http://doi.org/10.1117/1.JATIS.1.3.035002)) at the Anglo-Australian Telescope. We were the primary science driver for the spectrograph. HERMES is a four-channel, multiobject, R~28,000 spectrograph fed by the 2dF fibre positioner ([Lewis et al. 2002](http://doi.org/10.1046/j.1365-8711.2002.05333.x)), which sits at prime focus. 2dF has two field plates, each of which has 392 science fibres and 8 guide bundles that can be allocated across a circular field with a two-degree diameter. One field plate can be set up by the fibre positioning robot while the other plate is being used for observation. Fibres subtend 2.1 arcseconds on the sky, with a positioning accuracy of 0.3 arcseconds, and have a minimum separation of about 30 arcseconds.
 
@@ -31,7 +31,7 @@ The spectra are dispersed in the horizontal direction in the raw data, with one 
 The light path of HERMES:
 
 {: style="text-align:center"}
-![Light path of HERMES](/about/images/HERMES_light_path.png "Light path of HERMES")
+![Light path of HERMES](/science/images/HERMES_light_path.png "Light path of HERMES")
 
 HERMES spectra have a signal-to-noise ratio of 100 per resolution element in one hour of exposure time for stars with an apparent magnitude of 14 in the relevant Johnson/Cousins filter (B for the blue camera, V for the green camera, R for the red camera and I for the IR camera). The blue and green cameras use 16 micron, standard silicon detectors; the red camera has a 40 micron, deep depletion device with fringe suppression and an ER1 coating; and the IR camera has a 100-micron bulk silicon device with fringe suppression and a "Multi-9" coating. Further details on 2dF and HERMES can be found in the user manual.
 

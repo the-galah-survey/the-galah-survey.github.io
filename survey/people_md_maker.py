@@ -37,27 +37,27 @@ def create_contact_icons(person):
 #         person_entry.append(f"    github: https://github.com/{person['github']}")
     return " ".join(contact_string)
 
+if __name__ == '__main__':
+    galah_people = pd.read_csv("people.csv", sep='\t')
 
-galah_people = pd.read_csv("assets/data_tables/people.csv", sep='\t')
-
-with open("people.md", 'w') as people_md:
-    people_md.write("""---
+    with open("people.md", 'w') as people_md:
+        people_md.write("""---
 title: People
 subtitle: The humans behind the GALAH Survey
 """)
 
-    ## Add the SMG
-    people_md.write("smg:\n")
-    for *_, person in galah_people[galah_people['tag'] == 'smg'].sort_values('last_name').iterrows():
-        person_entry = create_picture_entries(person)
-        people_md.write(("\n".join(person_entry))[:-1])
-    ## Add the builders
-    people_md.write("builders:\n")
-    for *_, person in galah_people[galah_people['tag'] == 'builder'].sort_values('last_name').iterrows():
-        person_entry = create_picture_entries(person)
-        people_md.write(("\n".join(person_entry))[:-1])
+        ## Add the SMG
+        people_md.write("smg:\n")
+        for *_, person in galah_people[galah_people['tag'] == 'smg'].sort_values('last_name').iterrows():
+            person_entry = create_picture_entries(person)
+            people_md.write(("\n".join(person_entry))[:-1])
+        ## Add the builders
+        people_md.write("builders:\n")
+        for *_, person in galah_people[galah_people['tag'] == 'builder'].sort_values('last_name').iterrows():
+            person_entry = create_picture_entries(person)
+            people_md.write(("\n".join(person_entry))[:-1])
 
-    people_md.write("""---
+        people_md.write("""---
 
 
 ### Survey Management Group
@@ -74,7 +74,7 @@ These people are GALAH Survey builders
 
 {% include list-circles.html items=page.builders %}
 """)
-    people_md.write("""
+        people_md.write("""
 ### The entire team
 
 All the members of the GALAH Survey
@@ -82,13 +82,13 @@ All the members of the GALAH Survey
 | Name | Affiliation | Contact |
 | :------ |:--- | :--- |
 """)
-    for *_, person in galah_people.sort_values('last_name').iterrows():
-        person_entry = []
-        person_entry.append(" ".join(["|", person['first_name'], person['last_name']]))
-        if not person[['affiliation']].isna()[0]:
-            person_entry.append(f"{person['affiliation']}")
-        else:
-            person_entry.append("")
-        person_entry.append(create_contact_icons(person))
-        person_entry.append("\n")
-        people_md.write((" | ".join(person_entry)))
+        for *_, person in galah_people.sort_values('last_name').iterrows():
+            person_entry = []
+            person_entry.append(" ".join(["|", person['first_name'], person['last_name']]))
+            if not person[['affiliation']].isna()[0]:
+                person_entry.append(f"{person['affiliation']}")
+            else:
+                person_entry.append("")
+            person_entry.append(create_contact_icons(person))
+            person_entry.append("\n")
+            people_md.write((" | ".join(person_entry)))
