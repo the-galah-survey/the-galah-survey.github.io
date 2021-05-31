@@ -1,7 +1,6 @@
-# This will update the people.md page when the people.csv file updates
+# Updating the publication lists
 #
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+# This workflow will install Python dependencies, execute survey/pub_maker.py, and commit any changes
 
 name: Update Publications
 
@@ -29,13 +28,11 @@ jobs:
       run: python survey/pub_maker.py
     - name: commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git diff-index --quiet HEAD || (git commit -a -m "Automatically updating the publication files" --allow-empty && git push -f)
-#        git add -A
-#        git commit -m "Automatically updating the publication files" -a
-#     - name: push changes
-#       uses: ad-m/github-push-action@v0.6.0
-#       with:
-#         github_token: ${{ secrets.GITHUB_TOKEN }}
-#         branch: galah_production
+        git config --local user.email "robot@galahsurvey.org"
+        git config --local user.name "Robot GALAH"
+        git diff-index --quiet HEAD || (git commit -a -m "Automatically updating the publication files" && git push -f)
+    - name: push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: galah_production
