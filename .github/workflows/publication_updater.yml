@@ -27,15 +27,15 @@ jobs:
       env:
         ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
       run: python survey/pub_maker.py
-
     - name: commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add -A
-        git commit -m "Automatically updating the publication files" -a
-    - name: push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: galah_production
+        git diff-index --quiet HEAD || (git commit -a -m "Automatically updating the publication files" --allow-empty && git push -f)
+#        git add -A
+#        git commit -m "Automatically updating the publication files" -a
+#     - name: push changes
+#       uses: ad-m/github-push-action@v0.6.0
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
+#         branch: galah_production
