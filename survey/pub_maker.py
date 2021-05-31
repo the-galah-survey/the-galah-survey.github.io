@@ -51,6 +51,8 @@ def get_bibcodes(library_id):
         bibcodes = r.json()['documents']
     except ValueError:
         raise ValueError(r.text)
+    except KeyError:
+        raise KeyError(r.text)
     return bibcodes
 
 
@@ -71,7 +73,6 @@ def get_pub_markdown(bibcodes):
         data = r.json()['export']
     except ValueError:
         raise ValueError(r.text)
-
     return data
 
 
