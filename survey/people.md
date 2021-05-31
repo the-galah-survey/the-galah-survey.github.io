@@ -3,10 +3,12 @@ title: People
 subtitle: The humans behind the GALAH Survey
 smg:
   - name: Joss Bland-Hawthorn
-    affiliation: University of Sydney / ASTRO 3D jonathan.bland-hawthorn@sydney.edu.au
+    affiliation: University of Sydney / ASTRO 3D
+    email: jonathan.bland-hawthorn@sydney.edu.au
     img: /assets/img/people/joss-bland-hawthorn.jpg
   - name: Sven Buder
-    affiliation: Australian National University / ASTRO 3D  sven.buder@anu.edu.au
+    affiliation: Australian National University / ASTRO 3D
+    email: sven.buder@anu.edu.au
     img: /assets/img/people/sven-buder.jpg
   - name: Ken Freeman
     affiliation: Australian National University / ASTRO 3D
@@ -32,7 +34,8 @@ smg:
     email: jeffrey.simpson@unsw.edu.au
     img: /assets/img/people/jeffrey-simpson.jpg
   - name: Daniel Zucker
-    affiliation: Macquarie University / ASTRO 3D  daniel.zucker@mq.edu.au
+    affiliation: Macquarie University / ASTRO 3D
+    email: daniel.zucker@mq.edu.au
     img: /assets/img/people/daniel-zucker.jpg
   - name: Tomaz Zwitter
     affiliation: University of Ljubljana
@@ -42,7 +45,7 @@ builders:
     affiliation: Monash University
     img: /assets/img/people/andy-casey.jpg
   - name: Valentina D'Orazi
-    affiliation: INAF -Osservatorio Astronomico di Padova
+    affiliation: INAF-Osservatorio Astronomico di Padova
     img: /assets/img/people/valentina-d'orazi.jpg
   - name: Gayandhi De Silva
     affiliation: AAO-Macquarie
@@ -87,10 +90,10 @@ All the members of the GALAH Survey
 | Mark Beavis | University of Southern Queensland |  | 
 | Tim Bedding |  |  | 
 | Kevin Beeson |  |  | 
-| Maria Bergemann | Max-Planck Institute for Astronomy, Heidelberg |  | 
-| Joss Bland-Hawthorn | University of Sydney / ASTRO 3D jonathan.bland-hawthorn@sydney.edu.au |  | 
+| Maria Bergemann | Max-Planck Institute for Astronomy |  | 
+| Joss Bland-Hawthorn | University of Sydney / ASTRO 3D | <a class="item-link" href="mailto:jonathan.bland-hawthorn@sydney.edu.au" title="Email Joss Bland-Hawthorn"><span class="fas fa-envelope"></span></a> | 
 | Tobias Buck |  |  | 
-| Sven Buder | Australian National University / ASTRO 3D  sven.buder@anu.edu.au |  | 
+| Sven Buder | Australian National University / ASTRO 3D | <a class="item-link" href="mailto:sven.buder@anu.edu.au" title="Email Sven Buder"><span class="fas fa-envelope"></span></a> | 
 | Donna Burton | University of Southern Queensland |  | 
 | Simon Campbell | Monash University |  | 
 | Russell Cannon | Australian Astronomical Observatory |  | 
@@ -104,7 +107,7 @@ All the members of the GALAH Survey
 | Klemen Cotar | University of Ljubljana |  | 
 | Peter Cottrell | University of Canterbury |  | 
 | Emily Cunningham |  |  | 
-| Valentina D'Orazi | INAF -Osservatorio Astronomico di Padova |  | 
+| Valentina D'Orazi | INAF-Osservatorio Astronomico di Padova |  | 
 | Gary Da Costa | Australian National University |  | 
 | Payel Das |  |  | 
 | Gayandhi De Silva | AAO-Macquarie |  | 
@@ -120,7 +123,7 @@ All the members of the GALAH Survey
 | Arv Hughes | Macquarie University |  | 
 | Mike Ireland | Australian National University |  | 
 | Meridith Joyce |  |  | 
-| Prajwal Kafle | ICRAR, University of Western Australia |  | 
+| Prajwal Kafle | ICRAR | <a class="item-link" href="mailto: University of Western Australia" title="Email Prajwal Kafle"><span class="fas fa-envelope"></span></a> | 
 | Devika Kamath |  |  | 
 | Amanda Karakas | Monash University |  | 
 | Shourya Khanna | Sydney Institute for Astronomy |  | 
@@ -128,14 +131,14 @@ All the members of the GALAH Survey
 | Angela Kochoska | University of Ljubljana |  | 
 | Janez Kos | University of Ljubljana |  | 
 | John Lattanzio | Monash Centre for Astrophysics |  | 
-| Sergio Leon-Saval | SAIL, The University of Sydney |  | 
+| Sergio Leon-Saval | The University of Sydney |  | 
 | Geraint Lewis | University of Sydney |  | 
 | Chengyuan Li | Sun Yat-sen University |  | 
 | Tanda Li |  |  | 
 | Jane Lin | Australian National University |  | 
 | Karin Lind | Stockholm University |  | 
 | Fan Liu | Swinburne University of Technology |  | 
-| Maria Lugaro | Konkoly Observatory, Hungarian Academy of Sciences |  | 
+| Maria Lugaro | Konkoly Observatory |  | 
 | Chloe Mackallah | Monash University |  | 
 | Liz Mannering |  |  | 
 | Jonty Marshall |  |  | 
@@ -154,10 +157,10 @@ All the members of the GALAH Survey
 | Will Oliver |  |  | 
 | Alice Quillen | University of Rochester |  | 
 | Ashley Ruiter | UNSW Canberra |  | 
-| Mohd Hafiz Mohd Saadon | School of Physics, The University of New South Wales |  | 
+| Mohd Hafiz Mohd Saadon | The University of New South Wales |  | 
 | Sanjib Sharma | University of Sydney / ASTRO 3D |  | 
 | Jeffrey Simpson | University of New South Wales / ASTRO 3D | <a class="item-link" href="mailto:jeffrey.simpson@unsw.edu.au" title="Email Jeffrey Simpson"><span class="fas fa-envelope"></span></a> <a class="item-link" href="https://twitter.com/fadastra" title="Tweet Jeffrey Simpson"><span class="fab fa-twitter"></span></a> | 
-| Lorenzo Spina | Istituto Nazionale di Astrofisica, Osservatorio Astronomico di Padova |  | 
+| Lorenzo Spina | Istituto Nazionale di Astrofisica | <a class="item-link" href="mailto: Osservatorio Astronomico di Padova" title="Email Lorenzo Spina"><span class="fas fa-envelope"></span></a> | 
 | Dennis Stello | University of New South Wales / ASTRO 3D |  | 
 | Thor Tepper-Garcia | University of Sydney |  | 
 | Yuan-Sen Ting | Australian National University |  | 
@@ -175,7 +178,7 @@ All the members of the GALAH Survey
 | David Yong |  |  | 
 | Tayyaba Zafar | Australian Astronomical Observatory |  | 
 | Marusa Zerjal | Australian National University |  | 
-| Xu Zhang | National Astronomical Observatories, CAS |  | 
+| Xu Zhang | National Astronomical Observatories | <a class="item-link" href="mailto: CAS" title="Email Xu Zhang"><span class="fas fa-envelope"></span></a> | 
 | Joel Zinn |  |  | 
-| Daniel Zucker | Macquarie University / ASTRO 3D  daniel.zucker@mq.edu.au |  | 
+| Daniel Zucker | Macquarie University / ASTRO 3D | <a class="item-link" href="mailto:daniel.zucker@mq.edu.au" title="Email Daniel Zucker"><span class="fas fa-envelope"></span></a> | 
 | Tomaz Zwitter | University of Ljubljana |  | 
