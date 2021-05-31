@@ -32,6 +32,8 @@ jobs:
     - name: check for changes
       run: |
         if git diff --exit-code; then
+          echo "No changes"
+        else
           git config --local user.email "robot@galahsurvey.org"
           git config --local user.name "Robot GALAH"
           git add -A
