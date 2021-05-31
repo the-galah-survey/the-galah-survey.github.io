@@ -8,7 +8,7 @@ name: Update Publications
 on:
   push:
     paths:
-      - 'people.csv'
+      - 'survey/people.csv'
 
 jobs:
   build:
