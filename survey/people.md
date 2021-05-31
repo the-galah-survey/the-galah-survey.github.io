@@ -3,10 +3,10 @@ title: People
 subtitle: The humans behind the GALAH Survey
 smg:
   - name: Joss Bland-Hawthorn
-    affiliation: University of Sydney / ASTRO 3D
+    affiliation: University of Sydney / ASTRO 3D jonathan.bland-hawthorn@sydney.edu.au
     img: /assets/img/people/joss-bland-hawthorn.jpg
   - name: Sven Buder
-    affiliation: Australian National University / ASTRO 3D
+    affiliation: Australian National University / ASTRO 3D  sven.buder@anu.edu.au
     img: /assets/img/people/sven-buder.jpg
   - name: Ken Freeman
     affiliation: Australian National University / ASTRO 3D
@@ -32,7 +32,7 @@ smg:
     email: jeffrey.simpson@unsw.edu.au
     img: /assets/img/people/jeffrey-simpson.jpg
   - name: Daniel Zucker
-    affiliation: Macquarie University / ASTRO 3D
+    affiliation: Macquarie University / ASTRO 3D  daniel.zucker@mq.edu.au
     img: /assets/img/people/daniel-zucker.jpg
   - name: Tomaz Zwitter
     affiliation: University of Ljubljana
@@ -88,9 +88,9 @@ All the members of the GALAH Survey
 | Tim Bedding |  |  | 
 | Kevin Beeson |  |  | 
 | Maria Bergemann | Max-Planck Institute for Astronomy, Heidelberg |  | 
-| Joss Bland-Hawthorn | University of Sydney / ASTRO 3D |  | 
+| Joss Bland-Hawthorn | University of Sydney / ASTRO 3D jonathan.bland-hawthorn@sydney.edu.au |  | 
 | Tobias Buck |  |  | 
-| Sven Buder | Australian National University / ASTRO 3D |  | 
+| Sven Buder | Australian National University / ASTRO 3D  sven.buder@anu.edu.au |  | 
 | Donna Burton | University of Southern Queensland |  | 
 | Simon Campbell | Monash University |  | 
 | Russell Cannon | Australian Astronomical Observatory |  | 
@@ -147,7 +147,7 @@ All the members of the GALAH Survey
 | Ulisse Munari | INAF National Institute of Astrophysics |  | 
 | Simon Murphy | UNSW Canberra |  | 
 | Govind Nandakumar |  |  | 
-| David Nataf | Johns Hopkins University |  | 
+| David Nataf | Johns Hopkins University dnataf1@jhu.edu |  | 
 | Melissa Ness |  |  | 
 | Belinda Nicholson | University of Southern Queensland |  | 
 | Thomas Nordlander | Australian National University |  | 
@@ -177,5 +177,5 @@ All the members of the GALAH Survey
 | Marusa Zerjal | Australian National University |  | 
 | Xu Zhang | National Astronomical Observatories, CAS |  | 
 | Joel Zinn |  |  | 
-| Daniel Zucker | Macquarie University / ASTRO 3D |  | 
+| Daniel Zucker | Macquarie University / ASTRO 3D  daniel.zucker@mq.edu.au |  | 
 | Tomaz Zwitter | University of Ljubljana |  | 
