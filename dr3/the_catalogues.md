@@ -1,19 +1,125 @@
 ---
 layout: page
-title: Value-added catalogues
+title: GALAH DR3 catalogues
 subtitle: Third Data Release
 ---
 
-
-
-<h3> GALAH DR3 includes several value-added catalogues:</h3>
+<h4> This page describes the catalogues of GALAH DR3 and how to get them.</h4>
 * This text gets replaced.
 {:toc}
 
 ---
 
-### Gaia eDR3 data for all stars in GALAH DR3
-#### `GALAH_DR3_VAC_GaiaEDR3_v2.fits` (338 MB)
+### Getting the catalogues
+
+{: .box-warning}
+We recommend you use the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. Please also read our [GALAH DR3 Best Practices page](/dr3/using_the_data) for recommendations on flags.
+
+<!-- {: .box-warning}
+For science cases involving stellar parameters, it is highly recommended that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element x, it is highly recommended that you only consider `X_fe` where `flag_X_fe == 0` and `snr_c3_iraf > 30`. -->
+
+There are two methods for accessing these catalogues depending on your requirements
+
+#### Downloading the FITS files
+
+The catalogues can be [downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) as FITS files, or using the following command (removing the `--spider` flag and replacing with the appropriate file name as listed below):
+
+```bash
+  # Download the galah_dr3.main_star catalogue
+  wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
+```
+
+#### ADQL query
+
+{: .box-error}
+The versions served by Data Central are currently our initial DR3 release and contain some minor errors.
+
+The catalogues can be accessed using the [query services provided by Data Central](https://datacentral.org.au/services/query/). For example, if you are interested in all of the entries for stars likely to be members of the globular cluster ω&nbsp;Centauri, these could be found using a query like:
+
+```sql
+SELECT
+   TOP 100
+   *
+   FROM galah_dr3.main_star -- GALAH_DR3_main_allstar_v2
+   WHERE
+      1=CONTAINS(POINT('ICRS', ra, dec),
+                 CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
+   AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
+   AND rv_galah > 170
+```
+
+---
+
+### GALAH DR3 Main Catalogues
+
+We provide two versions of the GALAH DR3 catalogue (`GALAH_DR3_main_xx.fits`)
+
+#### Recommended catalogue of stellar parameters and abundances
+##### [Download `GALAH_DR3_main_allstar_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (833 MB)
+ {:.no_toc}
+
+{: .box-warning}
+Strongly recommend the use of this table for most science cases interested in stellar parameters and abundances.
+
+The `GALAH_DR3_main_allstar_v2` is our main results catalogue. It contains results for 588,571 stars observed as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between November 2013 and February 2019. For all targets we provide stellar parameters, radial velocities, and elemental abundances.
+
+We recommend this catalogue for most science cases as it contains only one entry per star (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`GALAH_DR3_main_allspec_v2` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). For the full list of columns, see the [Table Schema page](/dr3/table_schema). For each star we provide:
+* Star identifers:
+    - the GALAH observation ID (`sobject_id`)
+    - 2MASS identifier (`star_id`)
+    - Gaia DR2 and eDR3 `source_id` (`dr2_source_id` and `dr3_source_id` respectively)
+* Stellar parameters (and their errors):
+    - Effective temperature (`teff`, `irfm_teff`), surface gravity (`logg`), iron abundance (`fe_h`), overall α-abundance (`alpha_fe`)
+    - Microturbulence (`vmic`) and broadening velocities (`vbroad`)
+* Barycentric radial velocity of the star (`rv_galah`)
+* Elemental abundances (and their errors) for:
+    - These all take the form `X_fe`, where `X` is the element's chemical symbol
+    - light elements: Li, C, O
+    - odd-Z elements: Na, Al, K
+    - α-elements: Mg, Si, Ca, Ti (and TiII)
+    - iron-peak elements: Sc, V, Cr, Mn, Co, Ni, Cu, Zn
+    - light and heavy slow neutron capture elements: Y, Ba, La, Rb, Mo, Ru, Nd, Sm
+    - rapid neutron capture element: Eu
+* Flagging information:
+    - Please read our [GALAH DR3 Best Practices page](/dr3/using_the_data) for recommendations on flags.
+    - `red_flag`: reduction pipeline quality flag
+    - `flag_repeat`: Repeat observation flag, indicating if used for clean catalog
+    - `flag_guess`: GUESS reduction pipeline quality flag
+    - `flag_sp`: Stellar parameter quality flag
+    - `flag_fe_h` and `flag_alpha_fe`: Quality flags for `fe_h` and `alpha_fe` respectively
+    - `flag_X_fe`: Quality flag of `X_fe`
+* Other useful information:
+    - The internal survey name (`survey_name`), observation field identifer (`field_id`)
+    - Signal-to-noise for the spectrum from each camera (`snr_c1_iraf`, `snr_c2_iraf`, `snr_c3_iraf`, `snr_c3_iraf`)
+* Photometry:
+    - V magnitude estimated from 2MASS *J* and *K*<sub>s</sub> mag (`v_jk`)
+    - 2MASS (`j_m`, `h_m`, `ks_m`)
+    - WISE (`w2mpro`)
+* Gaia DR2 data:
+    - `ra_dr2`, `dec_dr2`, `parallax_dr2`, `rv_gaia_dr2`, `ruwe_dr2`
+
+#### Extended catalogue of stellar parameters and abundances
+##### [Download `GALAH_DR3_main_allspec_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (2.1 GB)
+ {:.no_toc}
+
+{: .box-warning}
+This catalogue is not recommended for most science cases.
+
+This is an extended version of the [`GALAH_DR3_main_allstar_v2`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results for 678,423 observed spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between November 2013 and February 2019. As with the `GALAH_DR3_main_allstar_v2`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr3/table_schema).
+
+As well as the information included in `GALAH_DR3_main_allstar_v2`, the `GALAH_DR3_main_allspec_v2` catalogue has:
+* Elemental abundances (and their errors) for individual spectral lines
+    - These all take the form `ind_X1234_fe`, where `X1234` is the element's chemical symbol and the wavelength
+* Diagnostic information from the analysis pipeline
+    - Results from our initial GUESS pipeline (`rv_guess`, `teff_guess`, `logg_guess`, `feh_guess`)
+    - Radial velocities of individual spectral lines (`rv_5854`, `rv_6708`, `rv_6722`)
+
+---
+
+### GALAH DR3 Value-Added Catalogues
+
+#### Gaia eDR3 data for all stars in GALAH DR3
+##### [Download `GALAH_DR3_VAC_GaiaEDR3_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (338 MB)
  {:.no_toc}
 This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an entry for every star in GALAH DR3 that we identified a match in Gaia eDR3. The `GALAH_DR3_VAC_GaiaEDR3_v2` catalogue consists of:
 * GALAH DR3 `sobject_id` and `star_id`
@@ -34,8 +140,8 @@ Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
 
 ---
 
-### Ages, masses, distances and other parameters estimated by BSTEP
-#### `GALAH_DR3_VAC_ages_v2.fits` (362 MB)
+#### Ages, masses, distances and other parameters estimated by BSTEP
+##### [Download `GALAH_DR3_VAC_ages_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (362 MB)
  {:.no_toc}
 This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma et al. (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
 
@@ -48,8 +154,8 @@ For details of the adopted priors see [Sharma et al. (2018)](https://doi.org/10.
 
 ---
 
-### Galactic kinematic and dynamic information
-#### `GALAH_DR3_VAC_dynamics_v2.fits` (554 MB)
+#### Galactic kinematic and dynamic information
+##### [Download `GALAH_DR3_VAC_dynamics_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (554 MB)
 {:.no_toc}
 
 We provide a value-added-catalog with kinematic and dynamic information, that builds upon the 5D astrometric information by Gaia eDR3, and primarily radial velocities determined from GALAH spectra. This catalogue provides:
@@ -82,8 +188,8 @@ The input values for each star were:
 
 ---
 
-### Collated radial velocity measurements
-#### `GALAH_DR3_VAC_rv_v2.fits` (67 MB)
+#### Collated radial velocity measurements
+##### [Download `GALAH_DR3_VAC_rv_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (67 MB)
 {:.no_toc}
 
 This catalogue collates several radial velocities measurements for each star:
@@ -101,15 +207,15 @@ The `rv_galah` in `GALAH_DR3_main_allstar_v2`, `GALAH_DR3_main_allspec_v2`, and 
 
 ----
 
-### FGK binary stars
+#### FGK binary stars
 Binary stellar systems represent a significant fraction of stars in our Galaxy. Therefore, their effect on observations, as well as their impact on the Galactic environment, have to be properly taken into account when studying Galactic structure and evolution. To this end, we present a sample of 12760 binary systems for which the properties of their stellar components were derived in a separate analysis from the main DR3 analysis.
 
 The details of the analysis are described in [Traven et al. (2020)](https://doi.org/10.1051/0004-6361/202037484), and the catalogue of derived parameters is [available at CDS](http://cdsarc.u-strasbg.fr/viz-bin/cat/J/A+A/638/A145).
 
 ---
 
-### `galah_dr3.vac_galahfco`
 #### List of all possible GALAH fields and field configurations
+##### [Download `target/galahfco_3_public.txt`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (934 KB)
 
 Each field is specified by its location (`ra`, `dec`) and has a unique identifier `field_id`. Each row describes a field configuration. There can be multiple rows with same `field_id` indicating different configurations that the field can be observed in, e.g., fields observed with different magnitude ranges specified by (`vmin` , `vmax`). Description of the available columns is given below.
 

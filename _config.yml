@@ -16,11 +16,11 @@ author: GALAH Survey
 navbar-links:
   Data Release 3:
     - Overview: "dr3/overview"
-    - Get the DR3 catalogues: "dr3/get_the_catalogues"
-    - Get the DR3 spectra: "dr3/get_the_spectra"
+    - The DR3 catalogues: "dr3/the_catalogues"
+    - The DR3 spectra: "dr3/the_spectra"
     - Best practices: "dr3/using_the_data"
     - Caveats of DR3: "dr3/caveats"
-    - Value-added catalogues: "dr3/value_added_catalogues"
+    # - Value-added catalogues: "dr3/value_added_catalogues"
     - Flags in GALAH DR3: "dr3/flags"
     - Table schema: "dr3/table_schema"
     - Cite us: "dr3/cite_us"

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Get the GALAH DR3 spectra
+title: GALAH DR3 spectra
 subtitle: Third Data Release
 ---
 
