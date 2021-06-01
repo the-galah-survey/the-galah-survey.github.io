@@ -35,8 +35,8 @@ navbar-links:
     - GALAH publications: "survey/galah_publications"
     - External publications: "survey/external_publications"
   Contact Us:
-    - Join GALAH: "contact/join_us"
-    - Questions and help: "contact/questions"
+    - Join GALAH: "contact/join_galah"
+    - Questions and help: "contact/help"
   # Publications:
 
   # Resources:
