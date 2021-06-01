@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Workflow: From Stellar Light to Abundances
+title: Workflow&#58; From Stellar Light to Abundances
 ---
 
 How do we estimate stellar elemental abundances from stellar light? Let's explore our workflow with images:
