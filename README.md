@@ -1,6 +1,6 @@
 ## Welcome to the development page of the GALAH Survey website
 
-For the website itself, go to: http://www.galah-survey.org
+For the website itself, go to: http://dev.galah-survey.org
 
 Please address requests via email to Jeffrey Simpson ([jeffrey.simpson@unsw.edu.au](jeffrey.simpson@unsw.edu.au)).
 
