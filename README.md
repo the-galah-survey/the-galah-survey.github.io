@@ -1,3 +1,5 @@
+[![Publication list updates](https://github.com/the-galah-survey/the-galah-survey.github.io/actions/workflows/publication_updater.yml/badge.svg)](https://github.com/the-galah-survey/the-galah-survey.github.io/actions/workflows/publication_updater.yml)
+
 ## Welcome to the development page of the GALAH Survey website
 
 For the website itself, go to: http://dev.galah-survey.org
