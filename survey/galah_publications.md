@@ -1,11 +1,11 @@
 ---
 layout: page
-title: GALAH Survey publications
+title: GALAH Survey team publications
 subtitle: This page lists publications from the GALAH Survey team.
 ---
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
-![Number of publications using GALAH](/survey/img/survey_number_papers.png)
+![Number of publications using GALAH](/survey/img/galah_publications_number_papers.png)
 #### 2021
 * [**The GALAH Survey: using galactic archaeology to refine our knowledge of TESS target stars**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.4968C)<br/>Clark *et al.* (2021) MNRAS **504** 4968 <small>([doi:10.1093/mnras/stab1052](https://doi.org/10.1093/mnras/stab1052), [arXiv:2008.05372](https://arxiv.org/abs/['arXiv:2008.05372']))</small>
 * [**The GALAH Survey: No Chemical Evidence of an Extragalactic Origin for the Nyx Stream**](https://ui.adsabs.harvard.edu/abs/2021ApJ...912L..30Z)<br/>Zucker *et al.* (2021) ApJL **912** L30 <small>([doi:10.3847/2041-8213/abf7cd](https://doi.org/10.3847/2041-8213/abf7cd), [arXiv:2104.08684](https://arxiv.org/abs/['arXiv:2104.08684']))</small>

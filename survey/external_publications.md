@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Publications using GALAH
+title: Publications using GALAH data
 subtitle: This page lists publications using GALAH data.
 ---
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
-![Number of publications using GALAH](/survey/img/survey_number_papers.png)
+![Number of publications using GALAH](/survey/img/external_publications_number_papers.png)
 #### 2021
 * [**The behaviour of lithium at high metallicity in the Milky Way. Selection effects in the samples and the possible role of atomic diffusion**](https://ui.adsabs.harvard.edu/abs/2021A%26A...649L..10C)<br/>Charbonnel *et al.* (2021) A&A **649** L10 <small>([doi:10.1051/0004-6361/202140873](https://doi.org/10.1051/0004-6361/202140873), [arXiv:2104.14311](https://arxiv.org/abs/['arXiv:2104.14311']))</small>
 * [**Disentangled Representation Learning for Astronomical Chemical Tagging**](https://ui.adsabs.harvard.edu/abs/2021ApJ...913...12D)<br/>de Mijolla *et al.* (2021) ApJ **913** 12 <small>([doi:10.3847/1538-4357/abece1](https://doi.org/10.3847/1538-4357/abece1), [arXiv:2103.06377](https://arxiv.org/abs/['arXiv:2103.06377']))</small>
