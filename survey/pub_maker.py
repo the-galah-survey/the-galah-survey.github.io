@@ -5,20 +5,20 @@ Convert your ADS Libraries into the markdown publication pages.
 
 import os
 import requests
-import json
-import re
-
+import pandas as pd
+from urllib.parse import quote
+import matplotlib.pyplot as plt
 
 def get_config():
     """
     Load ADS developer key from file
     :return: str
     """
+#     try:
+#         token = os.getenv('ADS_TOKEN')
     try:
-        token = os.getenv('ADS_TOKEN')
-    # try:
-    #     with open(os.path.expanduser('~/.ads/dev_key')) as f:
-    #         token = f.read().strip()
+        with open(os.path.expanduser('~/.ads/dev_key')) as f:
+            token = f.read().strip()
     except IOError:
         print('The script assumes you have your ADS developer token in the'
               'folder: {}'.format())
@@ -51,36 +51,70 @@ def get_bibcodes(library_id):
         bibcodes = r.json()['documents']
     except ValueError:
         raise ValueError(r.text)
-    except KeyError:
-        raise KeyError(r.text)
     return bibcodes
 
+def get_title_str(pub):
+    # This fixes up a bunch of minor formatting issues
+    title_str = pub['title'][0]
+    title_str = title_str.replace(r"$\sim$", "~").replace(r"$R$", "*R*").replace(r"[$\alpha/\rm Fe]$", "[α/Fe]").replace(r"$\alpha$", "α").replace(r"∼", "~").replace(r"$< -0.75$", "< −0.75")
+    return title_str
 
-def get_pub_markdown(bibcodes):
-    """
-    """
+def get_author_str(pub):
+    # Different author formats depending on the number of authors
+    if pub['author_count'] == 1:
+        return f"{pub['author'][0].split(',')[0]}"
+    if pub['author_count'] == 2:
+        return f"{pub['author'][0].split(',')[0]} and {pub['author'][1].split(',')[0]}"
+    if pub['author_count'] > 2:
+        return f"{pub['author'][0].split(',')[0]} *et al.*"
 
+def get_pub_vol_pp_str(pub):
+    publication_str = pub['bibstem'][0]
+    vol_str = ""
+    pp_str = ""
+    # Fixes for when there is no volume or page number
+    if pub['bibstem'][0] != 'arXiv':
+        vol_str = f"**{pub['volume']}**".replace("** **", "")
+        pp_str = f"{pub['page'][0]}".replace(" ", "")
+    return f"{publication_str} {vol_str} {pp_str}"
+
+def get_doi_str(pub):
+    if pub['doi'][0] == " ":
+        return None
+    return f"[doi:{pub['doi'][0]}](https://doi.org/{pub['doi'][0]})"
+
+def get_arxiv_str(pub):
+    arXiv_id = [i for i in pub['identifier'] if i.startswith("arXiv:")]
+    if len(arXiv_id) == 0:
+        return None
+    return f"[{arXiv_id[0]}](https://arxiv.org/abs/{arXiv_id})"
+
+def link_str(doi_str, arxiv_str):
+    if (doi_str is None) and (arxiv_str is None):
+        return ""
+    if (doi_str is None):
+        return f"<small>({arxiv_str})</small>"
+    if (arxiv_str is None):
+        return f"<small>({doi_str})</small>"
+    return f"<small>({doi_str}, {arxiv_str})</small>"
+
+def create_webpage(library_id, md_pub_file, title, subtitle):
     config = get_config()
+    bibcodes = get_bibcodes(library_id)
 
-    payload = {"bibcode": bibcodes,
-               "sort": "date desc",
-               "format": "* **[%T](%u)**<br/>%2M (%Y) %q **%V** %pp <small>([%X](https://arxiv.org/abs/%X); [doi:%d](https://doi.org/%d))</small>"}
-    r = requests.post("https://api.adsabs.harvard.edu/v1/export/custom",
-                      headers=config['headers'],
-                      data=json.dumps(payload))
-    # Get all the documents that are inside the library
-    try:
-        data = r.json()['export']
-    except ValueError:
-        raise ValueError(r.text)
-    return data
+    r = requests.post("https://api.adsabs.harvard.edu/v1/search/bigquery",
+                     params={"q":"*:*",
+                             "fl": "bibcode,title,year,bibstem,author_count,volume,pub,page,issue,identifier,author,doi,date,doctype",
+                             "rows":2000},
+                     headers={'Authorization': config['headers']['Authorization'],
+                              'Content-Type': 'big-query/csv'},
+                     data="bibcode\n" + "\n".join(bibcodes))
+    doc_dict = r.json()['response']['docs']
 
+    pub_df = pd.DataFrame(doc_dict)
+    pub_df.fillna(value=" ", inplace=True)
 
-def create_webpage(library_name, page_name, title, subtitle):
-    bibcodes = get_bibcodes(library_name)
-    markdown_list = get_pub_markdown(bibcodes)
-
-    with open(page_name, 'w') as pub_md:
+    with open(md_pub_file, 'w') as pub_md:
         pub_md.write(f"""---
 layout: page
 title: {title}
@@ -89,36 +123,57 @@ subtitle: {subtitle}
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
 """)
-        year = None
-        for pub in markdown_list.split('\n')[:-1]:
-            pub_year = pub.split("/abs/")[1][:4]
+        # pub_md.write(f"This page collates the over {int(len(bibcodes)/10)*10} papers that have used GALAH Survey data.\n")
+        pub_md.write(f"![Number of publications using GALAH](/survey/img/{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png)\n")
 
-            # These are a bunch of needed fix for minor issues with formatting.
-            pub = pub.replace(r"; [doi:](https://doi.org/)", "")
-            pub = pub.replace(r"(https://arxiv.org/abs/); ", "")
-            pub = pub.replace(r"MNRAS.tmp ****", "MNRAS")
+        year_list = []
+        article_list = []
+        eprint_list = []
+        for year, year_df in pub_df.sort_values('year', ascending=False).groupby("year", sort=False):
+            year_list.append(int(year))
+            year_counts = year_df['doctype'].value_counts()
+            if 'article' in year_counts:
+                article_list.append(year_counts['article'])
+            else:
+                article_list.append(0)
+            if 'eprint' in year_counts:
+                eprint_list.append(year_counts['eprint'])
+            else:
+                eprint_list.append(0)
+            pub_md.write(f"#### {year}\n")
+            for *_, pub in year_df.sort_values(['date','bibcode'],ascending=[False,True]).iterrows():
+                markdown_str = "* "
+                title_str = f"[**{get_title_str(pub)}**](https://ui.adsabs.harvard.edu/abs/{quote(pub['bibcode'])})"
+                author_str = get_author_str(pub)
+                year_str = f"({pub['year']})"
+                publication_str = get_pub_vol_pp_str(pub)
 
-            pub = re.sub(r" arXiv [*]{4} arXiv:[0-9]+.[0-9]+ ",
-                         ' arXiv e-print ', pub)
-            pub = pub.replace(r"$\sim$", "~")
-            pub = pub.replace(r"$R$", "*R*")
-            pub = pub.replace(r"[$\alpha/\rm Fe]$", "[α/Fe]")
-            pub = pub.replace(r"$\alpha$", "α")
-            pub = pub.replace(r"∼", "~")
-            pub = pub.replace(r"$< -0.75$", "< −0.75")
-            if (year is None) | (year != pub_year):
-                year = pub_year
-                pub_md.write(f"\n#### {year}\n")
-            pub_md.write(pub + '\n')
+                markdown_str = f"* {title_str}<br/>{author_str} {year_str} {publication_str} {link_str(get_doi_str(pub), get_arxiv_str(pub))}\n"
+
+                pub_md.write(markdown_str)
+
+
+
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(8,4))
+    ax.bar(year_list, article_list, tick_label=year_list, label='Refereed', color='pink')
+    ax.bar(year_list, eprint_list, bottom=article_list, label='Non-refereed', color='C4')
+    ax.set_xlabel("Year")
+    ax.set_title("")
+    ax.legend()
+
+    fig.savefig(f"survey/img/{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png", bbox_inches='tight',
+                dpi=400, transparent=False)
+    # plt.show()
 
 
 if __name__ == '__main__':
-    create_webpage(library_name='h8cKhLXSTaSOuZAy7phffg',
-                   page_name="survey/external_publications.md",
+    create_webpage(library_id='h8cKhLXSTaSOuZAy7phffg',
+                   md_pub_file="survey/external_publications.md",
                    title="Publications using GALAH",
                    subtitle="This page lists publications using GALAH data.")
 
-    create_webpage(library_name='clbnJI34RXa4uEEqFC8I9g',
-                   page_name="survey/galah_publications.md",
+    create_webpage(library_id='clbnJI34RXa4uEEqFC8I9g',
+                   md_pub_file="survey/galah_publications.md",
                    title="GALAH Survey publications",
                    subtitle="This page lists publications from the GALAH Survey team.")
