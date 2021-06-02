@@ -17,7 +17,10 @@ On this page we provide advice and instructions for using the GALAH DR3 catalogu
 {: .box-success}
 We highly recommend using the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want to work with the GALAH DR3 stellar parameters and elemental abundances.
 
-The `GALAH_DR3_main_allstar_v2.fits` catalogue contains one entry per star and is a cleaned version of the extended `GALAH_DR3_main_allspec_v2.fits`. All the details on acquiring this catalogue can be [found here ](/dr3/get_the_catalogues). If you just want the entire table, it can be directly [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3), or by using `wget` (removing the `--spider` flag):
+{: .box-warning}
+For more information, see our [Catalogue documentation](/dr3/the_catalogues).
+
+The `GALAH_DR3_main_allstar_v2.fits` catalogue contains one entry per star and is a cleaned version of the extended `GALAH_DR3_main_allspec_v2.fits`. All the details on acquiring this catalogue can be [found here ](/dr3/the_catalogues). If you just want the entire table, it can be directly [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3), or by using `wget` (removing the `--spider` flag):
 
 ```bash
 wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
@@ -30,6 +33,9 @@ wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/G
 {: .box-success}
 Overall, we make three recommendations: (1) `snr_c3_iraf > 30`; (2) only stellar parameters for stars with `flag_sp == 0`, `flag_fe_h == 0`; (3) only elemental abundances with `flag_X_fe == 0`.
 
+{: .box-warning}
+For more information, see our [Flag bitmask documentation](/dr3/flags).
+
 **We would recommend considering only stars with a signal to noise `snr_c3_iraf > 30`.**
 
 Every star in the `GALAH_DR3_main_allstar_v2.fits` catalogue has two main flags:
@@ -40,7 +46,7 @@ Every star in the `GALAH_DR3_main_allstar_v2.fits` catalogue has two main flags:
 
 **By default, we recommend that users only consider stellar parameters (T<sub>eff</sub>, log *g*, [Fe/H], broadening velocity, radial velocity) for stars with `flag_sp == 0` and `flag_fe_h == 0`.**
 
-Every every elemental abundance `X_fe` for each star in `GALAH_DR3_main_allstar_v2.fits` catalogue there is one flag:
+For every elemental abundance `X_fe` for each star in `GALAH_DR3_main_allstar_v2.fits` catalogue there is one flag:
 * `flag_X_fe`
     - Indicates problems with the elemental abundance determination.
 
@@ -51,27 +57,26 @@ Every every elemental abundance `X_fe` for each star in `GALAH_DR3_main_allstar_
 ### Recommended columns
 
 {: .box-success}
-For stellar parameters and elemental abundances, use the values found in `GALAH_DR3_main_allstar_v2.fits` catalogue.
+For stellar parameters and elemental abundances, use the values found in `GALAH_DR3_main_allstar_v2` catalogue. We do **not** recommend values found only in the `GALAH_DR3_main_allspec_v2` catalogue as these are only for expert use and are typically for diagnostic purposes.
 
-In the catalogues that constitute GALAH DR3, for many parameters we provide only one value, e.g., for the α-element abundance, we provide one value: `alpha_fe`. However, some parameters have multiple values calculated by different methods. Here we tabulate and discuss these parameters and in most cases make a recommendation on the value to use. Generally we do **not** recommend values found only in the `GALAH_DR3_main_allspec_v2.fits` catalogue as these are only for expert use and are typically for diagnostic purposes.
+{: .box-warning}
+For more information, see our [Table scheme documentation](/dr3/table_schema).
 
-<!--
-As well as the `main_star` catalogue, there are a number of value-added catalogues. Details on accessing the data can be found on the Catalogue Data Access page. The value-added catalogues are fully described on the Value-Added Catalogues page. Full details of all the columns and their descriptions is found on the Table Schema page. Briefly the catalogues of GALAH DR3 are:
-* `main_star`: The main result catalogue. Our recommended table about stellar parameters and elemental abundance. One entry per star observed. Radial velocity, stellar parameters and abundance data.
-* `main_spec`: One entry per observation (about 50000 stars have been observed at least twice). Radial velocity, stellar parameters for each observation. Also contains abundances derived for each individual line.
-* `vac_ages`: Ages, distances, luminosities, masses, metallicities, radii and other parameters calculated from isochrones by the Bayesian Stellar Parameter Estimation code (BSTEP) from Sharma et al. (2018).
-* `vac_rv`: Collated radial velocity measurements
-* `vac_gaiaedr3`: *Gaia* eDR3 data for all stars in GALAH DR3
-* `vac_dynamics`: Galactic kinematic and dynamic parameters
- -->
+In the catalogues that constitute GALAH DR3, for many parameters we provide only one value (e.g., for the α-element abundance, `alpha_fe`). However, some parameters have multiple values calculated by different methods. In this section, we discuss these parameters and in most cases make a recommendation on the value to use.
 
-
-* **For radial velocity, we strongly recommend the `rv_galah`**. The source of this value differs for each star. For 83 per cent of stars `rv_galah == rv_obst` (found in the `vac_rv` table), the radial velocity measured by Zwitter et al (2020) from our observed spectra. The remaining stars will have `rv_galah == rv_sme_v2`, the value measured by SME during the analysis process. The `rv_obst` value has errors typically five times smaller than the SME-measured value. Consult the `use_rv_flag` for each star to identify the source of the radial velocity for `rv_galah`. The other radial velocity values available are either from *Gaia* DR2, or are diagnostic values measured during the analysis (e.g., `rv_6708` is the RV measured from just the Li6708 line). See the section of the Value-added catalogues documentation page on the `GALAH_DR3_VAC_rv_v2` table for more details.
-* **For effective temperature, surface gravity, iron abundance ([Fe/H]), broadening velocity, we strongly recommend `teff`, `logg`, `fe_h`, `vbroad` respectively from the `GALAH_DR3_main_allstar_v2` catalogue**. These are inferred as part of the spectrum fitting and abundance determination. The other provided values of these are either calculated during an intermediary analysis step (e.g., `teff_guess`), or as part of a value-added catalogues (e.g., `teff_bstep`).
-* **For stellar mass and age, we recommend `mass_bstep` and `age_bstep` from the `GALAH_DR3_VAC_ages_v2` table**, rather than the `mass` and `age` found in the main_spec table.
-* **For heliocentric distance, we recommend `distance_bstep` value from the `GALAH_DR3_VAC_ages_v2` table**. It was calculated as part of the estimation of age, mass, radius etc found in the `GALAH_DR3_VAC_ages_v2` catalogue.
+* **For radial velocity, we strongly recommend the `rv_galah`**.
+    - The source of this value differs for each star. For 83 per cent of stars `rv_galah == rv_obst` (found in the `vac_rv` table), the radial velocity measured by Zwitter et al (2020) from our observed spectra. The remaining stars will have `rv_galah == rv_sme_v2`, the value measured by SME during the analysis process. The `rv_obst` value has errors typically five times smaller than the SME-measured value. Consult the `use_rv_flag` for each star to identify the source of the radial velocity for `rv_galah`.
+    - The other radial velocity values available are either from *Gaia* DR2, or are diagnostic values measured during the analysis (e.g., `rv_6708` is the RV measured from just the Li6708 line). See the section of the Value-added catalogues documentation page on the `GALAH_DR3_VAC_rv_v2` table for more details.
+* **For effective temperature, surface gravity, iron abundance ([Fe/H]), broadening velocity, we strongly recommend `teff`, `logg`, `fe_h`, `vbroad` respectively from the `GALAH_DR3_main_allstar_v2` catalogue**.
+    - These are inferred as part of the spectrum fitting and abundance determination.
+    - The other provided values of these are either calculated during an intermediary analysis step (e.g., `teff_guess`), or as part of a value-added catalogues (e.g., `teff_bstep`).
+* **For stellar mass and age, we recommend `mass_bstep` and `age_bstep` from the `GALAH_DR3_VAC_ages_v2` table**.
+    - Do not use the `mass` and `age` found in the main_spec table.
+* **For heliocentric distance, we recommend `distance_bstep` value from the `GALAH_DR3_VAC_ages_v2` table**.
+    - `distance_bstep` was calculated as part of the estimation of age, mass, radius etc found in the `GALAH_DR3_VAC_ages_v2` catalogue.
     - `distance_bstep` was used for the vast majority of stars (96 per cent) in the calculation of Galactic kinematic and dynamic parameters in `GALAH_DR3_VAC_dynamics_v2`. For the other 4 per cent of the stars we mostly use the photogeometric distances `r_med_photogeo` in the `GALAH_DR3_VAC_GaiaEDR3_v2` table as calculated by [Bailer-Jones et al. (2020)](https://doi.org/10.3847/1538-3881/abd806). The distance used for a given spectrum is provided by the `use_dist_flag` in the `GALAH_DR3_VAC_dynamics_v2` table.
-* **For reddening, we recommend the `ebv` value from the `GALAH_DR3_main_allstar_v2` table**. This is from Schlegel et al (1998) and was used as part of the estimation of the bolometric corrections.
+* **For reddening, we recommend the `ebv` value from the `GALAH_DR3_main_allstar_v2` table**.
+    - This is from Schlegel et al (1998) and was used as part of the estimation of the bolometric corrections.
 * For parallax, the GALAH DR3 catalogues has the parallax values from both the *Gaia* DR2 and eDR3 values (the former being called `parallax_dr2` in our catalogues). We have also calculated the eDR3 parallax corrected for the zeropoint offset as prescribed in [Lindegren et al (2020)](https://doi.org/10.1051/0004-6361/202039653 ), called `parallax_corr` in our tables. We do not have any strong recommendation on the best parallax value to use.
 * Distinct from the iron abundance ([Fe/H]) calculated from the spectra, the `GALAH_DR3_VAC_ages_v2` table includes the initial and current metallicity of the star (`meh_ini_bstep` and `meh_act_bstep`) as calculated by BSTEP. These values were not used as part of the abundance analysis.
 
@@ -94,7 +99,7 @@ This table summarizies the parameters in GALAH DR3 for which there are multiple 
 
 ---
 
-### How to join tables in GALAH DR3
+### Joining GALAH DR3 catalogues
 
 {: .box-success}
 Join GALAH DR3 tables using the `sobject_id`.

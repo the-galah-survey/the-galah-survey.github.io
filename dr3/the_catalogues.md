@@ -13,7 +13,8 @@ subtitle: Third Data Release
 ### Getting the catalogues
 
 {: .box-warning}
-We recommend you use the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. Please also read our [GALAH DR3 Best Practices page](/dr3/using_the_data) for recommendations on flags.
+We recommend the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3).<br/><br/>
+Please read our [best practices for using GALAH DR3](/dr3/using_the_data).
 
 <!-- {: .box-warning}
 For science cases involving stellar parameters, it is highly recommended that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element x, it is highly recommended that you only consider `X_fe` where `flag_X_fe == 0` and `snr_c3_iraf > 30`. -->
