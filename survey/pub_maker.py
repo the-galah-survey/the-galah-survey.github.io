@@ -95,7 +95,7 @@ def get_arxiv_str(pub):
     arXiv_id = [i for i in pub['identifier'] if i.startswith("arXiv:")]
     if len(arXiv_id) == 0:
         return None
-    return f"[{arXiv_id[0]}](https://arxiv.org/abs/{arXiv_id})"
+    return f"[{arXiv_id[0]}](https://arxiv.org/abs/{arXiv_id[0]})"
 
 
 def link_str(doi_str, arxiv_str):

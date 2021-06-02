@@ -96,12 +96,12 @@ See our [Catalogue documentation](/dr3/the_catalogues) for more details on the c
 
 GALAH DR3 provides the reduced one-dimensional spectrum for each star in the main catalogue. These can be downloaded either individually or in bulk. Instructions on how to retrieve GALAH DR3 spectra can be found on the Spectra data access documentation page.
 
-For each star there are four files, one for each of the four HERMES cameras, with each spectrum file containing:
-* The reduced spectrum
-* The variance of the reduced spectrum
-* The pseudo-continuum normalized spectrum
-* The variance of the pseudo-continuum normalized spectrum
-* The sky spectrum used for sky subtraction
+For each star there are four files, one for each of the four HERMES cameras, with each spectrum file containing the:
+* reduced spectrum
+* relative error of spectrum with sky subtraction.
+* pseudo-continuum normalized spectrum
+* variance of the pseudo-continuum normalized spectrum
+* sky spectrum used for sky subtraction
 
 See our [Spectra documentation](/dr3/the_spectra) for more details on the spectra and how to acquire them.
 
