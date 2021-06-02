@@ -154,7 +154,9 @@ subtitle: {subtitle}
                 eprint_list.append(year_counts['eprint'])
             else:
                 eprint_list.append(0)
+            pub_md.write("\n")
             pub_md.write(f"#### {year}\n")
+            pub_md.write("\n")
             for *_, pub in year_df.sort_values(['date', 'bibcode'], ascending=[False, True]).iterrows():
                 markdown_str = "* "
                 title_str = f"[**{get_title_str(pub)}**](https://ui.adsabs.harvard.edu/abs/{quote(pub['bibcode'])})"
