@@ -125,6 +125,7 @@ def create_webpage(library_id, md_pub_file, title, subtitle):
     pub_df.fillna(value=" ", inplace=True)
 
     cwd = Path(__file__).parent
+    img_name = f"{md_pub_file.split('.')[0].split('/')[1]}_number_papers.png"
 
     with open(md_pub_file, 'w') as pub_md:
         pub_md.write(f"""---
@@ -137,7 +138,7 @@ subtitle: {subtitle}
 """)
         # pub_md.write(f"This page collates the over {int(len(bibcodes)/10)*10} papers that have used GALAH Survey data.\n")
         pub_md.write(
-            f"![Number of publications using GALAH](/survey/img/{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png)\n")
+            f"![Number of publications using GALAH](/survey/img/{img_name})\n")
 
         year_list = []
         article_list = []
@@ -172,7 +173,7 @@ subtitle: {subtitle}
     ax.bar(year_list, eprint_list, bottom=article_list,
            label='Non-refereed', color='C4')
     ax.set_xlabel("Year")
-    ax.set_ylabel("Number of publication")
+    ax.set_ylabel("Number of publications")
     ax.set_title("Increasing use of the GALAH survey")
     ax.legend()
 
@@ -182,8 +183,7 @@ subtitle: {subtitle}
     if not img_dir.exists():
         img_dir.mkdir(parents=True, exist_ok=True)
 
-    img_location = Path.joinpath(img_dir,
-                                 f"{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png")
+    img_location = Path.joinpath(img_dir,img_name")
     fig.savefig(img_location, bbox_inches='tight',
                 dpi=400, transparent=False)
     # plt.show()
@@ -192,10 +192,10 @@ subtitle: {subtitle}
 if __name__ == '__main__':
     create_webpage(library_id='h8cKhLXSTaSOuZAy7phffg',
                    md_pub_file="survey/external_publications.md",
-                   title="Publications using GALAH",
+                   title="Publications using GALAH data",
                    subtitle="This page lists publications using GALAH data.")
 
     create_webpage(library_id='clbnJI34RXa4uEEqFC8I9g',
                    md_pub_file="survey/galah_publications.md",
-                   title="GALAH Survey publications",
+                   title="GALAH Survey team publications",
                    subtitle="This page lists publications from the GALAH Survey team.")
