@@ -30,7 +30,7 @@ There are 12181 stars which are missing the spectra for some of their cameras. W
 
 * On the night of 27 August 2015 two fields (`field_id` 64 and 287) had data reduction problems that resulted in their spectra not being properly ingested into the Data Central system. This means that for `sobject_id` starting with 1508270040 or 1508270052, there are 243 and 111 stars respectively missing spectra for the blue and sometimes green camera.
 * For the nights of 21--26 December 2018 (i.e., all `sobject_id` starting with 181221, 181222, 181223, 181224, 181225, 181226) there was a fault with the infrared camera of HERMES. This means that all stars observed on those nights lack a spectral file ending with 4.
-    - For 227 stars of the stars observed on these nights, their spectrum files do not have the fifth extension described above – the normalized spectrum. We provide a file at [GALAH_DR3_list_missing_normalized_spectra_v2.csv](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_normalized_spectra_v2.csv) that lists the `sobject_id` of these files.
+    - For 227 stars of the stars observed on these nights, their spectrum files do not have the fifth extension described above – the normalized spectrum. We provide [list of these by `sobject_id` here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_normalized_spectra_v2.csv).
 
 ---
 
