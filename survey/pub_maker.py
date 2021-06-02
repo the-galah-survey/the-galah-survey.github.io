@@ -8,6 +8,8 @@ import requests
 import pandas as pd
 from urllib.parse import quote
 import matplotlib.pyplot as plt
+from pathlib import Path
+
 
 def get_config():
     """
@@ -53,11 +55,14 @@ def get_bibcodes(library_id):
         raise ValueError(r.text)
     return bibcodes
 
+
 def get_title_str(pub):
     # This fixes up a bunch of minor formatting issues
     title_str = pub['title'][0]
-    title_str = title_str.replace(r"$\sim$", "~").replace(r"$R$", "*R*").replace(r"[$\alpha/\rm Fe]$", "[α/Fe]").replace(r"$\alpha$", "α").replace(r"∼", "~").replace(r"$< -0.75$", "< −0.75")
+    title_str = title_str.replace(r"$\sim$", "~").replace(r"$R$", "*R*").replace(
+        r"[$\alpha/\rm Fe]$", "[α/Fe]").replace(r"$\alpha$", "α").replace(r"∼", "~").replace(r"$< -0.75$", "< −0.75")
     return title_str
+
 
 def get_author_str(pub):
     # Different author formats depending on the number of authors
@@ -67,6 +72,7 @@ def get_author_str(pub):
         return f"{pub['author'][0].split(',')[0]} and {pub['author'][1].split(',')[0]}"
     if pub['author_count'] > 2:
         return f"{pub['author'][0].split(',')[0]} *et al.*"
+
 
 def get_pub_vol_pp_str(pub):
     publication_str = pub['bibstem'][0]
@@ -78,16 +84,19 @@ def get_pub_vol_pp_str(pub):
         pp_str = f"{pub['page'][0]}".replace(" ", "")
     return f"{publication_str} {vol_str} {pp_str}"
 
+
 def get_doi_str(pub):
     if pub['doi'][0] == " ":
         return None
     return f"[doi:{pub['doi'][0]}](https://doi.org/{pub['doi'][0]})"
+
 
 def get_arxiv_str(pub):
     arXiv_id = [i for i in pub['identifier'] if i.startswith("arXiv:")]
     if len(arXiv_id) == 0:
         return None
     return f"[{arXiv_id[0]}](https://arxiv.org/abs/{arXiv_id})"
+
 
 def link_str(doi_str, arxiv_str):
     if (doi_str is None) and (arxiv_str is None):
@@ -98,21 +107,24 @@ def link_str(doi_str, arxiv_str):
         return f"<small>({doi_str})</small>"
     return f"<small>({doi_str}, {arxiv_str})</small>"
 
+
 def create_webpage(library_id, md_pub_file, title, subtitle):
     config = get_config()
     bibcodes = get_bibcodes(library_id)
 
     r = requests.post("https://api.adsabs.harvard.edu/v1/search/bigquery",
-                     params={"q":"*:*",
-                             "fl": "bibcode,title,year,bibstem,author_count,volume,pub,page,issue,identifier,author,doi,date,doctype",
-                             "rows":2000},
-                     headers={'Authorization': config['headers']['Authorization'],
-                              'Content-Type': 'big-query/csv'},
-                     data="bibcode\n" + "\n".join(bibcodes))
+                      params={"q": "*:*",
+                              "fl": "bibcode,title,year,bibstem,author_count,volume,pub,page,issue,identifier,author,doi,date,doctype",
+                              "rows": 2000},
+                      headers={'Authorization': config['headers']['Authorization'],
+                               'Content-Type': 'big-query/csv'},
+                      data="bibcode\n" + "\n".join(bibcodes))
     doc_dict = r.json()['response']['docs']
 
     pub_df = pd.DataFrame(doc_dict)
     pub_df.fillna(value=" ", inplace=True)
+
+    cwd = Path(__file__).parent
 
     with open(md_pub_file, 'w') as pub_md:
         pub_md.write(f"""---
@@ -124,7 +136,8 @@ subtitle: {subtitle}
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
 """)
         # pub_md.write(f"This page collates the over {int(len(bibcodes)/10)*10} papers that have used GALAH Survey data.\n")
-        pub_md.write(f"![Number of publications using GALAH](/survey/img/{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png)\n")
+        pub_md.write(
+            f"![Number of publications using GALAH](/survey/img/{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png)\n")
 
         year_list = []
         article_list = []
@@ -141,7 +154,7 @@ subtitle: {subtitle}
             else:
                 eprint_list.append(0)
             pub_md.write(f"#### {year}\n")
-            for *_, pub in year_df.sort_values(['date','bibcode'],ascending=[False,True]).iterrows():
+            for *_, pub in year_df.sort_values(['date', 'bibcode'], ascending=[False, True]).iterrows():
                 markdown_str = "* "
                 title_str = f"[**{get_title_str(pub)}**](https://ui.adsabs.harvard.edu/abs/{quote(pub['bibcode'])})"
                 author_str = get_author_str(pub)
@@ -152,17 +165,26 @@ subtitle: {subtitle}
 
                 pub_md.write(markdown_str)
 
-
-
     plt.style.use("dark_background")
-    fig, ax = plt.subplots(figsize=(8,4))
-    ax.bar(year_list, article_list, tick_label=year_list, label='Refereed', color='pink')
-    ax.bar(year_list, eprint_list, bottom=article_list, label='Non-refereed', color='C4')
+    fig, ax = plt.subplots(figsize=(8, 4))
+    ax.bar(year_list, article_list, tick_label=year_list,
+           label='Refereed', color='pink')
+    ax.bar(year_list, eprint_list, bottom=article_list,
+           label='Non-refereed', color='C4')
     ax.set_xlabel("Year")
-    ax.set_title("")
+    ax.set_ylabel("Number of publication")
+    ax.set_title("Increasing use of the GALAH survey")
     ax.legend()
 
-    fig.savefig(f"survey/img/{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png", bbox_inches='tight',
+    # Get the Path object to save the image
+
+    img_dir = Path.joinpath(cwd, "img")
+    if not img_dir.exists():
+        img_dir.mkdir(parents=True, exist_ok=True)
+
+    img_location = Path.joinpath(img_dir,
+                                 f"{md_pub_file.split('.')[0].split('/')[0]}_number_papers.png")
+    fig.savefig(img_location, bbox_inches='tight',
                 dpi=400, transparent=False)
     # plt.show()
 
