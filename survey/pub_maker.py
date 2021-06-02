@@ -183,7 +183,7 @@ subtitle: {subtitle}
     if not img_dir.exists():
         img_dir.mkdir(parents=True, exist_ok=True)
 
-    img_location = Path.joinpath(img_dir,img_name")
+    img_location = Path.joinpath(img_dir, img_name)
     fig.savefig(img_location, bbox_inches='tight',
                 dpi=400, transparent=False)
     # plt.show()
