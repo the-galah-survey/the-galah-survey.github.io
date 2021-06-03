@@ -6,7 +6,9 @@ subtitle: This page lists publications using GALAH data.
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
 ![Number of publications using GALAH](/survey/img/external_publications_number_papers.png)
+
 #### 2021
+
 * [**The behaviour of lithium at high metallicity in the Milky Way. Selection effects in the samples and the possible role of atomic diffusion**](https://ui.adsabs.harvard.edu/abs/2021A%26A...649L..10C)<br/>Charbonnel *et al.* (2021) A&A **649** L10 <small>([doi:10.1051/0004-6361/202140873](https://doi.org/10.1051/0004-6361/202140873), [arXiv:2104.14311](https://arxiv.org/abs/arXiv:2104.14311))</small>
 * [**Disentangled Representation Learning for Astronomical Chemical Tagging**](https://ui.adsabs.harvard.edu/abs/2021ApJ...913...12D)<br/>de Mijolla *et al.* (2021) ApJ **913** 12 <small>([doi:10.3847/1538-4357/abece1](https://doi.org/10.3847/1538-4357/abece1), [arXiv:2103.06377](https://arxiv.org/abs/arXiv:2103.06377))</small>
 * [**Searching for Extragalactic Exoplanetary Systems: The Curious Case of BD+20 2457**](https://ui.adsabs.harvard.edu/abs/2021ApJ...913L...3P)<br/>Perottoni *et al.* (2021) ApJL **913** L3 <small>([doi:10.3847/2041-8213/abfb06](https://doi.org/10.3847/2041-8213/abfb06), [arXiv:2104.08306](https://arxiv.org/abs/arXiv:2104.08306))</small>
@@ -46,11 +48,11 @@ subtitle: This page lists publications using GALAH data.
 * [**A theoretical scenario for Galactic RR Lyrae in the Gaia data base: constraints on the parallax offset**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.5009M)<br/>Marconi *et al.* (2021) MNRAS **500** 5009 <small>([doi:10.1093/mnras/staa3558](https://doi.org/10.1093/mnras/staa3558), [arXiv:2011.06675](https://arxiv.org/abs/arXiv:2011.06675))</small>
 * [***R*-process enhancements of Gaia-Enceladus in GALAH DR3**](https://ui.adsabs.harvard.edu/abs/2021arXiv210107791M)<br/>Matsuno *et al.* (2021) arXiv   <small>([arXiv:2101.07791](https://arxiv.org/abs/arXiv:2101.07791))</small>
 * [**Evidence for Radial Expansion at the Core of the Orion Complex with Gaia EDR3**](https://ui.adsabs.harvard.edu/abs/2021arXiv210110380S)<br/>Swiggum *et al.* (2021) arXiv   <small>([arXiv:2101.10380](https://arxiv.org/abs/arXiv:2101.10380))</small>
+
 #### 2020
+
 * [**Evolution of lithium in low-mass giants: an observational perspective**](https://ui.adsabs.harvard.edu/abs/2020JApA...41...49K)<br/>Kumar and Reddy (2020) JApA **41** 49 <small>([doi:10.1007/s12036-020-09660-9](https://doi.org/10.1007/s12036-020-09660-9))</small>
-* [**Chemo-kinematic analysis of metal-poor stars with unsupervised machine learning**](https://ui.adsabs.harvard.edu/abs/2020arXiv201203949D)<br/>da Silva *et al.* (2020) arXiv   <small>([arXiv:2012.03949](https://arxiv.org/abs/arXiv:2012.03949))</small>
 * [**Charting the Galactic acceleration field I. A search for stellar streams with Gaia DR2 and EDR3 with follow-up from ESPaDOnS and UVES**](https://ui.adsabs.harvard.edu/abs/2020arXiv201205245I)<br/>Ibata *et al.* (2020) arXiv   <small>([arXiv:2012.05245](https://arxiv.org/abs/arXiv:2012.05245))</small>
-* [**Isochrone fitting in the Gaia era. III. Distances, ages and masses from UniDAM using Gaia eDR3 data**](https://ui.adsabs.harvard.edu/abs/2020arXiv201209690M)<br/>Mints (2020) arXiv   <small>([arXiv:2012.09690](https://arxiv.org/abs/arXiv:2012.09690))</small>
 * [**The chemodynamics of prograde and retrograde Milky Way stars**](https://ui.adsabs.harvard.edu/abs/2020A%26A...643A..69K)<br/>Kordopatis *et al.* (2020) A&A **643** A69 <small>([doi:10.1051/0004-6361/202038686](https://doi.org/10.1051/0004-6361/202038686), [arXiv:2009.07192](https://arxiv.org/abs/arXiv:2009.07192))</small>
 * [**Chasing Accreted Structures within Gaia DR2 Using Deep Learning**](https://ui.adsabs.harvard.edu/abs/2020ApJ...903...25N)<br/>Necib *et al.* (2020) ApJ **903** 25 <small>([doi:10.3847/1538-4357/abb814](https://doi.org/10.3847/1538-4357/abb814), [arXiv:1907.07681](https://arxiv.org/abs/arXiv:1907.07681))</small>
 * [**Stellar Spins in the Open Cluster NGC 2516**](https://ui.adsabs.harvard.edu/abs/2020ApJ...903...99H)<br/>Healy and McCullough (2020) ApJ **903** 99 <small>([doi:10.3847/1538-4357/abbc03](https://doi.org/10.3847/1538-4357/abbc03), [arXiv:2009.14202](https://arxiv.org/abs/arXiv:2009.14202))</small>
@@ -92,7 +94,9 @@ subtitle: This page lists publications using GALAH data.
 * [**Lithium in red giant stars: Constraining non-standard mixing with large surveys in the Gaia era**](https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..34C)<br/>Charbonnel *et al.* (2020) A&A **633** A34 <small>([doi:10.1051/0004-6361/201936360](https://doi.org/10.1051/0004-6361/201936360), [arXiv:1910.12732](https://arxiv.org/abs/arXiv:1910.12732))</small>
 * [**Concerning the Li-rich status of KIC 9821622: a Kepler field RGB star reported as a Li-rich giant**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.3838S)<br/>Singh *et al.* (2020) MNRAS **491** 3838 <small>([doi:10.1093/mnras/stz3222](https://doi.org/10.1093/mnras/stz3222), [arXiv:1911.05243](https://arxiv.org/abs/arXiv:1911.05243))</small>
 * [**Know thy star, know thy planet: chemo-kinematically characterizing TESS targets**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.4365C)<br/>Carrillo *et al.* (2020) MNRAS **491** 4365 <small>([doi:10.1093/mnras/stz3255](https://doi.org/10.1093/mnras/stz3255), [arXiv:1911.07825](https://arxiv.org/abs/arXiv:1911.07825))</small>
+
 #### 2019
+
 * [**Abundance Ratios in GALAH DR2 and Their Implications for Nucleosynthesis**](https://ui.adsabs.harvard.edu/abs/2019ApJ...886...84G)<br/>Griffith *et al.* (2019) ApJ **886** 84 <small>([doi:10.3847/1538-4357/ab4b5d](https://doi.org/10.3847/1538-4357/ab4b5d), [arXiv:1908.06113](https://arxiv.org/abs/arXiv:1908.06113))</small>
 * [**A Data-driven Model of Nucleosynthesis with Chemical Tagging in a Lower-dimensional Latent Space**](https://ui.adsabs.harvard.edu/abs/2019ApJ...887...73C)<br/>Casey *et al.* (2019) ApJ **887** 73 <small>([doi:10.3847/1538-4357/ab4fea](https://doi.org/10.3847/1538-4357/ab4fea), [arXiv:1910.09811](https://arxiv.org/abs/arXiv:1910.09811))</small>
 * [**Abundance Estimates for 16 Elements in 6 Million Stars from LAMOST DR5 Low-Resolution Spectra**](https://ui.adsabs.harvard.edu/abs/2019ApJS..245...34X)<br/>Xiang *et al.* (2019) ApJS **245** 34 <small>([doi:10.3847/1538-4365/ab5364](https://doi.org/10.3847/1538-4365/ab5364), [arXiv:1908.09727](https://arxiv.org/abs/arXiv:1908.09727))</small>
@@ -119,7 +123,9 @@ subtitle: This page lists publications using GALAH data.
 * [**Vertical waves in the solar neighbourhood in Gaia DR2**](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.1417B)<br/>Bennett and Bovy (2019) MNRAS **482** 1417 <small>([doi:10.1093/mnras/sty2813](https://doi.org/10.1093/mnras/sty2813), [arXiv:1809.03507](https://arxiv.org/abs/arXiv:1809.03507))</small>
 * [**SkyMapper stellar parameters for Galactic Archaeology on a grand-scale**](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.2770C)<br/>Casagrande *et al.* (2019) MNRAS **482** 2770 <small>([doi:10.1093/mnras/sty2878](https://doi.org/10.1093/mnras/sty2878), [arXiv:1810.09581](https://arxiv.org/abs/arXiv:1810.09581))</small>
 * [**The wide binary fraction of solar-type stars: emergence of metallicity dependence at a &lt; 200 au**](https://ui.adsabs.harvard.edu/abs/2019MNRAS.482L.139E)<br/>El-Badry and Rix (2019) MNRAS **482** L139 <small>([doi:10.1093/mnrasl/sly206](https://doi.org/10.1093/mnrasl/sly206), [arXiv:1809.06860](https://arxiv.org/abs/arXiv:1809.06860))</small>
+
 #### 2018
+
 * [**Isochrone ages for ~3 million stars with the second Gaia data release**](https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.4093S)<br/>Sanders and Das (2018) MNRAS **481** 4093 <small>([doi:10.1093/mnras/sty2490](https://doi.org/10.1093/mnras/sty2490), [arXiv:1806.02324](https://arxiv.org/abs/arXiv:1806.02324))</small>
 * [**Imprints of white dwarf recoil in the separation distribution of Gaia wide binaries**](https://ui.adsabs.harvard.edu/abs/2018MNRAS.480.4884E)<br/>El-Badry and Rix (2018) MNRAS **480** 4884 <small>([doi:10.1093/mnras/sty2186](https://doi.org/10.1093/mnras/sty2186), [arXiv:1807.06011](https://arxiv.org/abs/arXiv:1807.06011))</small>
 * [**Isochrone fitting in the Gaia era**](https://ui.adsabs.harvard.edu/abs/2018A%26A...618A..54M)<br/>Mints and Hekker (2018) A&A **618** A54 <small>([doi:10.1051/0004-6361/201832739](https://doi.org/10.1051/0004-6361/201832739), [arXiv:1804.06578](https://arxiv.org/abs/arXiv:1804.06578))</small>
@@ -136,7 +142,9 @@ subtitle: This page lists publications using GALAH data.
 * [**The completeness-corrected rate of stellar encounters with the Sun from the first Gaia data release**](https://ui.adsabs.harvard.edu/abs/2018A%26A...609A...8B)<br/>Bailer-Jones (2018) A&A **609** A8 <small>([doi:10.1051/0004-6361/201731453](https://doi.org/10.1051/0004-6361/201731453), [arXiv:1708.08595](https://arxiv.org/abs/arXiv:1708.08595))</small>
 * [**Empirical photometric calibration of the Gaia red clump: Colours, effective temperature, and absolute magnitude**](https://ui.adsabs.harvard.edu/abs/2018A%26A...609A.116R)<br/>Ruiz-Dern *et al.* (2018) A&A **609** A116 <small>([doi:10.1051/0004-6361/201731572](https://doi.org/10.1051/0004-6361/201731572), [arXiv:1710.05803](https://arxiv.org/abs/arXiv:1710.05803))</small>
 * [**The Data-Driven Approach to Spectroscopic Analyses**](https://ui.adsabs.harvard.edu/abs/2018PASA...35....3N)<br/>Ness (2018) PASA **35** e003 <small>([doi:10.1017/pasa.2017.53](https://doi.org/10.1017/pasa.2017.53))</small>
+
 #### 2017
+
 * [**A Unified tool to estimate Distances, Ages, and Masses (UniDAM) from spectrophotometric data**](https://ui.adsabs.harvard.edu/abs/2017A%26A...604A.108M)<br/>Mints and Hekker (2017) A&A **604** A108 <small>([doi:10.1051/0004-6361/201630090](https://doi.org/10.1051/0004-6361/201630090), [arXiv:1705.00963](https://arxiv.org/abs/arXiv:1705.00963))</small>
 * [**Abundances of Na, Mg, and K in the atmospheres of red giant branch stars of Galactic globular cluster 47 Tucanae**](https://ui.adsabs.harvard.edu/abs/2017A%26A...604A..35C)<br/>Černiauskas *et al.* (2017) A&A **604** A35 <small>([doi:10.1051/0004-6361/201630305](https://doi.org/10.1051/0004-6361/201630305), [arXiv:1704.02751](https://arxiv.org/abs/arXiv:1704.02751))</small>
 * [**The Radial Velocity Experiment (RAVE): Fifth Data Release**](https://ui.adsabs.harvard.edu/abs/2017AJ....153...75K)<br/>Kunder *et al.* (2017) AJ **153** 75 <small>([doi:10.3847/1538-3881/153/2/75](https://doi.org/10.3847/1538-3881/153/2/75), [arXiv:1609.03210](https://arxiv.org/abs/arXiv:1609.03210))</small>
