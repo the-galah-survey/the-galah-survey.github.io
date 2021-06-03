@@ -1,11 +1,11 @@
 ---
 layout: page
-title: GALAH Survey team publications
+title: GALAH Survey publications
 subtitle: This page lists publications from the GALAH Survey team.
 ---
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
-![Number of publications using GALAH](/survey/img/galah_publications_number_papers.png)
+![Number of publications using GALAH](/science/img/galah_publications_number_papers.svg){: .mx-auto.d-block :}
 
 #### 2021
 

@@ -91,4 +91,4 @@ wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/s
 On decompression, you will require about 385 GB of free space. The decompressed files are located in a single directory, so please be aware of any file management limitations you might have dealing with 2 million files in a single directory.
 
 {: .box-warning}
-As [discussed above](#missing-spectral-data), 12181 stars are missing spectra for one or two of their cameras due to reduction or instrumentation problems. A list of these missing spectra can be found in [GALAH_DR3_missing_reduced_spectra_v2.csv](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_reduced_spectra_v2.csv).
+As [discussed above](#missing-spectral-data), 12181 stars are missing spectra for one or two of their cameras due to reduction or instrumentation problems. A list of these [missing spectra can be found here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_reduced_spectra_v2.csv).

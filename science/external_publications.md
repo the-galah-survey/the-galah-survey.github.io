@@ -5,7 +5,7 @@ subtitle: This page lists publications using GALAH data.
 ---
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
-![Number of publications using GALAH](/survey/img/external_publications_number_papers.png)
+![Number of publications using GALAH](/science/img/external_publications_number_papers.svg){: .mx-auto.d-block :}
 
 #### 2021
 

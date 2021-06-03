@@ -125,7 +125,7 @@ def create_webpage(library_id, md_pub_file, title, subtitle):
     pub_df.fillna(value=" ", inplace=True)
 
     cwd = Path(__file__).parent
-    img_name = f"{md_pub_file.split('.')[0].split('/')[1]}_number_papers.png"
+    img_name = f"{md_pub_file.split('.')[0].split('/')[1]}_number_papers.svg"
 
     with open(md_pub_file, 'w') as pub_md:
         pub_md.write(f"""---
@@ -138,7 +138,7 @@ subtitle: {subtitle}
 """)
         # pub_md.write(f"This page collates the over {int(len(bibcodes)/10)*10} papers that have used GALAH Survey data.\n")
         pub_md.write(
-            f"![Number of publications using GALAH](/survey/img/{img_name})\n")
+            f"![Number of publications using GALAH](/science/img/{img_name}){{: .mx-auto.d-block :}}\n")
 
         year_list = []
         article_list = []
@@ -176,7 +176,6 @@ subtitle: {subtitle}
            label='Non-refereed', color='C4')
     ax.set_xlabel("Year")
     ax.set_ylabel("Number of publications")
-    ax.set_title("Increasing use of the GALAH survey")
     ax.legend()
 
     # Get the Path object to save the image
@@ -193,11 +192,11 @@ subtitle: {subtitle}
 
 if __name__ == '__main__':
     create_webpage(library_id='h8cKhLXSTaSOuZAy7phffg',
-                   md_pub_file="survey/external_publications.md",
+                   md_pub_file="science/external_publications.md",
                    title="Publications using GALAH data",
                    subtitle="This page lists publications using GALAH data.")
 
     create_webpage(library_id='clbnJI34RXa4uEEqFC8I9g',
-                   md_pub_file="survey/galah_publications.md",
-                   title="GALAH Survey team publications",
+                   md_pub_file="science/galah_publications.md",
+                   title="GALAH Survey publications",
                    subtitle="This page lists publications from the GALAH Survey team.")

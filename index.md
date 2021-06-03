@@ -1,10 +1,9 @@
 ---
 layout: home
 title: GALAH Survey
-subtitle: GALactic Archeology with HERMES
+subtitle: GALactic Archaeology with HERMES
 cover-img: assets/img/pic01.png
 ---
-
 {: .main_blockquote}
 The formation and evolution of galaxies is one of the great outstanding problems of modern astrophysics. The goal of galactic archaeology is to uncover the history of the Milky Way and how it formed and evolved. The GALactic Archaeology with HERMES (GALAH) survey is a Large Observing Program using the HERMES instrument with the Anglo-Australian Telescope of the Australian Astronomical Observatory. HERMES provides simultaneous spectra for 400 stars at a time. We are using this to obtain the highest spectral resolution multi-dimensional datasets for over a million stars of all ages and locations in the Milky Way to trace the full history of the Galaxy.
 
