@@ -32,7 +32,7 @@ jobs:
 
     - name: check for changes
       run: |
-        if git diff --exit-code; then
+        if git diff --exit-code science/galah_publications.md science/external_publications.md; then
           echo "No changes"
         else
           git config --local user.email "robot@galahsurvey.org"
