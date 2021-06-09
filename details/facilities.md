@@ -16,8 +16,7 @@ Explore below to learn more about the Anglo-Australian Telescope and the HERMES 
 
 The GALAH Survey primarily uses the [Anglo-Australian Telescope](https://aat.anu.edu.au), a 4-metre equatorially-mounted telescope. It is located at Siding Spring Observatory in New South Wales, Australia, and is operated by the Australian National University on behalf of a consortium of 13 Australian Universities. Its function is to provide world-class observing facilities for Australian optical astronomers.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qOtkI4HYzTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{: .mx-auto.d-block :}
-*A 2dF night at the Anglo-Australian Telescope. Credit: Ángel R. López-Sánchez (Australian Astronomical Observatory / Macquarie University)*
+{% include youtube.html id="qOtkI4HYzTk" %}
 
 ---
 
