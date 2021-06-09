@@ -62,7 +62,7 @@ In Phase 1, we primarily observed a magnitude-limited survey with an easily repr
 
 ### All possible fields
 
-![Number of publications using GALAH](/survey/img/all_fields_on_sky.png){:width="60%"}
+![Number of publications using GALAH](/survey/img/all_fields_on_sky.png){:width="100%"}
 
 The list of fields is [available here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt) and is also discussed in the [DR3 Catalogue](/dr3/the_catalogues) documenation. This lists all 7993 possible fields in the current target selection catalogue of the GALAH survey. For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifer (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifer of `fco_id`.
 
