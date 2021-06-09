@@ -217,22 +217,20 @@ The details of the analysis are described in [Traven et al. (2020)](https://doi.
 
 #### List of all possible GALAH fields and field configurations
 ##### [Download `target/galahfco_3_public.txt`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (934 KB)
+ {:.no_toc}
 
-Each field is specified by its location (`ra`, `dec`) and has a unique identifier `field_id`. Each row describes a field configuration. There can be multiple rows with same `field_id` indicating different configurations that the field can be observed in, e.g., fields observed with different magnitude ranges specified by (`vmin` , `vmax`). Description of the available columns is given below.
+<!-- The list of fields is [available here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt). -->
 
-* `field_id`: (int) Unique field identifier
-* `ra`: (deg)
-* `dec`: (deg)
-* `radius`: (deg) Ranging from 0 to 1.0
-* `selfunc`: (int) Selection function
-* `vmin`: Minimum V(J,K) magnitude
-* `vmax`: Maximum V(J,K) magnitude
-* `vsplit`: V(J,K) mag used for complicated selection functions
-* `vexp`: V(J,K) magnitude used to set exposure time.
-* `progname`: (str) one of the following:
-    - `bright`, `galah`, `galah_faint`, `galah_ufaint`, `k2`, `ocluster`, `repeat0`, `tess`
-    -
-* `fco_id`: field configuration identifier, row number in the table
-* `priority`: (int) 0 or 1 (for internal use)
-* `active`: (int) 0 or 1 (for internal use)
-* `special`: (int) 0 or 1 (for internal use)
+This lists all 7993 possible fields in the current target selection catalogue of the GALAH survey. For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifer (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifer of `fco_id`.
+
+* Field configuration identifier: `fco_id`
+* Unique field identifier: `field_id` (and `parent` for legacy reasons)
+* Field centre location (`ra`, `dec`)
+* Field radius in degrees (`radius`)
+* The subsurvey name (`progname`)
+    - Possible values: `bright`, `galah`, `galah_faint`, `galah_ufaint`, `k2`, `ocluster`, `repeat0`, `tess`
+* Magnitude range of the field (`vmin` and `vmax`)
+* Magnitude used to set exposure time (`vexp`)
+* The selection function (`selfunc`)
+* Magnitude used for complicated selection functions (`vsplit`)
+* Internal use only values (`active`, `name`, `priority`, `special`, `max_observed`)
