@@ -38,7 +38,7 @@ navbar-links:
     - Analysis: "details/analysis"
   The&nbsp;Results:
     - Key results: "science/results"
-    - News: "science/news"
+    # - News: "science/news"
     - GALAH publications: "science/galah_publications"
     - External publications: "science/external_publications"
 
