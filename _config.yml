@@ -25,6 +25,7 @@ navbar-links:
     - Cite us: "dr3/cite_us"
   Galactic&nbsp;archaeology: "science/galactic_archaeology"
   The&nbsp;Survey:
+    - Progress: "survey/progress"
     - Goals: "survey/goals"
     - People: "survey/people"
     - Structure: "survey/structure"
