@@ -78,5 +78,5 @@ The standard observing procedure for regular GALAH survey fields is to take thre
 
 ### Signal-to-noise
 
-![Number of publications using GALAH](/survey/img/snr_per_camera.png){:width="100%"}
+![Number of publications using GALAH](/survey/img/snr_per_camera.svg){:width="100%"}
 Distribution of signal-to-noise ratio in each camera. For each camera, the filled histogram are for unflagged reductions, and the white histogram are flagged reductions.
