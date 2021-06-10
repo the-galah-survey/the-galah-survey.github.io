@@ -14,25 +14,17 @@ subtitle: Choosing which stars to look at
 The GALAH survey uses the [Two-Degree Field (2dF) fibre positioner with the HERMES spectrograph at the Anglo-Australian Telescope](/details/facilities). This instrumentation introduces requirements on our observing strategy and target selection:
 * With 2dF we can observe about 350 stars per field (with another 25 fibres for the sky);
 * We need to expose for about an hour per field as this is how long it takes the 2dF robot to reconfigure a field;
-* We can only go about as faint as 14th magnitude before we do not acquire enough signal in a reasonable amount of time.
-
-
+* There is a faint limit imposed by the size of the telescope and a reasonable rate of observing stars.
 
 ---
 
 ### Target Selection
 
-![Number of publications using GALAH](/survey/img/mag_dist_function.svg){:width="70%"}
-
-Overall magnitude distribution function for all stars observed by the GALAH survey.
-
----
-
 The GALAH survey target selection and observing strategy consists of two generations, with a shift in focus driven by data from Gaia:
 * [Phase 1](#phase-1-up-to-2020): Primarily a magnitude-limited survey
 * [Phase 2](#phase-2-2020-onwards): Primarily focused on main sequence turn-off stars for age estimation.
 
-#### Phase 1 (up to 2020)
+#### Phase 1 (up to late 2020)
 
 **A simple selection function**
 
@@ -42,11 +34,17 @@ The four main projects included in the GALAH DR3 catalogue are GALAH-main, GALAH
 
 * Main GALAH survey (`galah_main`): Potential targets are all stars with 12 < V < 14, δ < +10° and \|b\| > 10° in regions of the sky that had at least 400 targets in π² degrees (the 2dF field of view).
 * GALAH-faint survey (`galah_faint`): Aimed at extending survey observations to regions with low target density. Given the lower density of stars the target selection was shifted to 12 < V < 14.3 as a way to maintain at least 400 stars per field.
-* K2-HERMES (`k2_hermes`): Both "bright" (10 < V < 13) and "faint" (13 < V < 15, J − KS > 0.5) target cohorts, to complement the asteroseismic targets that are the focus of the K2 Galactic Archaeology Program (Stello et al. 2017)
+* K2-HERMES (`k2_hermes`): Both "bright" (10 < V < 13) and "faint" (13 < V < 15, J − KS > 0.5) target cohorts, to complement the asteroseismic targets that are the focus of the K2 Galactic Archaeology Program ([Stello et al. 2017](https://doi.org/10.3847/1538-4357/835/1/83))
 * TESS-HERMES (`tess_hermes`): Stars in the range 10.0 < V < 13.1 in the TESS Southern Continuous Viewing Zone ([Sharma et al 2018](https://doi.org/10.1093/mnras/stx2582))
-* Other programs (`other`): Targeted observations in open clusters, the GALAH Pilot Survey (Martell et al. 2017), or targets from other HERMES observing that were not part of any of these surveys.
+* Other programs (`other`): Targeted observations in open clusters, the GALAH Pilot Survey ([Martell et al. 2017](https://doi.org/10.1093/mnras/stw2835)), or targets from other HERMES observing that were not part of any of these surveys.
 
-#### Phase 2 (2020 onwards)
+![Number of publications using GALAH](/survey/img/mag_dist_function.svg){:width="100%"}
+
+The imprints of these various magnitude limits from each sub-survey can be seen above in the overall magnitude distribution function for stars observed by the GALAH survey (except for the `other` programs) as of March 2021.
+
+---
+
+#### Phase 2 (late 2020 onwards)
 
 **A new focus for better ages**
 
@@ -60,23 +58,31 @@ In Phase 1, we primarily observed a magnitude-limited survey with an easily repr
 
 ---
 
-### All possible fields
+### Tiling strategy
 
-![Number of publications using GALAH](/survey/img/all_fields_on_sky.png){:width="100%"}
+![Number of publications using GALAH](/survey/img/all_fields_on_sky.png)
+<!-- {:width="100%"} -->
 
-The list of fields is [available here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt) and is also discussed in the [DR3 Catalogue](/dr3/the_catalogues) documenation. This lists all 7993 possible fields in the current target selection catalogue of the GALAH survey. For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifer (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifer of `fco_id`.
+The GALAH survey tiles the sky into nearly 8000 possible field configurations covering about 7200 possible field centres. These are shown above in equatorial and galactic coordinates, GALAH fields in pink, K2-HERMES fields in gold, TESS-HERMES fields in silver, and open cluster fields in bronze. The [observing progress page](/survey/progress) shows which of these field centres have been observed.
+
+The list of fields is [available here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt) and is also discussed in the [DR3 Catalogue](/dr3/the_catalogues) documenation. For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifer (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifer of `fco_id`.
 
 ---
 
 ### Observing procedure
 
-The observer at the telescope selects a field to observe from a list of possible fields identified by GALAH's `obsmanager` software. The coordinates and proper motions for the targets in each configuration are input into the `configure` program, along with a set of 20 candidate fiducial stars for guiding. The fiducial stars are taken from the GALAH target catalogue in the same field of view, with magnitudes in the range 11 < V < 12. `configure` finds an optimal arrangement for the science targets and fiducial stars using a simulated annealing algorithm and outputs a file that is passed to the fibre positioning robot to set up the field. Further details on `configure` can be found in [Miszalski et al. 2006](https://doi.org/10.1111/j.1365-2966.2006.10777.x).
+The observer at the telescope selects a field to observe from a list of possible fields identified by GALAH's `obsmanager` software. This identifies fields that will be about 45 minutes from transiting the meridian at the planned start of observing that field, i.e., they will highest in the sky. The coordinates and proper motions for the targets in each configuration are input into the [AAT's `configure`](https://aat.anu.edu.au/science/software/configure) software, along with a set of 20 candidate fiducial stars for guiding, and 50 possible "sky" positions. The fiducial stars are taken from the GALAH target catalogue in the same field of view, with magnitudes in the range 11 < V < 12. `configure` finds an optimal arrangement for the science targets, sky positions, and fiducial stars using a simulated annealing algorithm and outputs a file that is passed to the fibre positioning robot to set up the field. Further details on `configure` can be found in [Miszalski et al. 2006](https://doi.org/10.1111/j.1365-2966.2006.10777.x).
 
-The standard observing procedure for regular GALAH survey fields is to take three equal-length exposures (3×1200s in GALAH Phase 1; 3×1800s in GALAH Phase 2), which is extended to four science exposures if the seeing is between 2 and 2.5 arcseconds, and to six exposures if the seeing is between 2.5 and 3 arcseconds. Flat-field and arc exposures are taken directly before or after each science configuration, since moving between the two pseudoslits of HERMES moves the position of the spectrum traces on the detector slightly. Bright-star fields are observed in evening and morning twilight, and in case of seeing too poor for the regular survey fields.
+The standard observing procedure for regular GALAH survey fields is to take three equal-length exposures (3×1200s in GALAH Phase 1; up to 3×1800s in GALAH Phase 2), which is extended to four science exposures if the seeing is between 2 and 2.5 arcseconds, and to six exposures if the seeing is between 2.5 and 3 arcseconds. Flat-field and arc exposures are taken directly before or after each science configuration, since moving between the two pseudoslits of HERMES moves the position of the spectrum traces on the detector slightly. Bright-star fields are observed in evening and morning twilight, and in case of seeing too poor for the regular survey fields.
 
 ---
 
-### Signal-to-noise
+#### Acheived Signal-to-noise
+
+The stated aim of GALAH is to get a signal-to-noise per resolution element 
 
 ![Number of publications using GALAH](/survey/img/snr_per_camera.svg){:width="100%"}
 Distribution of signal-to-noise ratio in each camera. For each camera, the filled histogram are for unflagged reductions, and the white histogram are flagged reductions.
+
+![Number of publications using GALAH](/survey/img/survey_progress_signal_to_noise.svg){:width="100%"}
+The median signal-to-noise per pixel (in CCD3) across the survey. The vertical dashed line indicates the change to Phase 2 observing, which included a 50% increase in exposure time per star. This has resulted in a modest increase in the signal-to-noise.

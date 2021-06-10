@@ -4,7 +4,8 @@ title: Facilities
 subtitle: The telescope and the spectrograph
 ---
 
-Explore below to learn more about the Anglo-Australian Telescope and the HERMES spectrograph.
+{: .main_blockquote}
+The GALAH survey uses the Two-Degree Field (2dF) fibre positioner with the HERMES spectrograph at the Anglo-Australian Telescope. Explore below to learn more about the Anglo-Australian Telescope and the HERMES spectrograph.
 
 <!-- <h3> On this page</h3> -->
 * This text gets replaced.
@@ -13,6 +14,10 @@ Explore below to learn more about the Anglo-Australian Telescope and the HERMES 
 ---
 
 ### The Anglo-Australian Telescope
+
+{: style="text-align:center"}
+![The HERMES Spectrograph installed at the AAT](/details/img/aat_hermes.png)
+*The Two-Degree Field fibre positioner installed at the top-end of the Anglo-Australian Telescope.*
 
 The GALAH Survey primarily uses the [Anglo-Australian Telescope](https://aat.anu.edu.au), a 4-metre equatorially-mounted telescope. It is located at Siding Spring Observatory in New South Wales, Australia, and is operated by the Australian National University on behalf of a consortium of 13 Australian Universities. Its function is to provide world-class observing facilities for Australian optical astronomers.
 
@@ -44,7 +49,7 @@ The spectra are dispersed in the horizontal direction in the raw data, with one 
 ![Light path of HERMES](/details/img/HERMES_light_path.png "Light path of HERMES")
 *The light path of HERMES.*{: .mx-auto.d-block :}
 
-HERMES spectra have a signal-to-noise ratio of 100 per resolution element in one hour of exposure time for stars with an apparent magnitude of 14 in the relevant Johnson/Cousins filter (B for the blue camera, V for the green camera, R for the red camera and I for the IR camera). The blue and green cameras use 16 micron, standard silicon detectors; the red camera has a 40 micron, deep depletion device with fringe suppression and an ER1 coating; and the IR camera has a 100-micron bulk silicon device with fringe suppression and a "Multi-9" coating. Further details on 2dF and HERMES can be found in the user manual.
+HERMES spectra have a signal-to-noise ratio of 100 per resolution element in one hour of exposure time for stars with an apparent magnitude of 14 in the relevant Johnson/Cousins filter (B for the blue camera, V for the green camera, R for the red camera and I for the IR camera). The blue and green cameras use 16 micron, standard silicon detectors; the red camera has a 40 micron, deep depletion device with fringe suppression and an ER1 coating; and the IR camera has a 100-micron bulk silicon device with fringe suppression and a "Multi-9" coating. Further details on 2dF and HERMES can be found at the [Anglo-Australian Telescope website](https://aat.anu.edu.au/science/instruments/current/HERMES).
 
 #### 2018 Field Flattening Lens Replacement
 In the first half of 2018, the original field flattening lenses of HERMES were replaced ([Edgar et al 2018](http://dx.doi.org/10.1117/12.2307305)). The original glass contained uranium that emitted α particles, which caused the saturated points and vertical readout streaks when they were captured by the HERMES CCDs. The point spread function in the HERMES cameras changed as a result of changing the field flattening lenses, and is now larger and less symmetric in the corners of the detectors. As part of HERMES recommissioning, the GALAH team fed light from a Fabry-Perot interferometer into HERMES to characterise the new PSF across each detector, and this information has been incorporated into the data reduction procedure.
