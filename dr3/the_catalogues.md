@@ -146,7 +146,20 @@ Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
  {:.no_toc}
 This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma et al. (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
 
-For each star, we give the following parameters found by BSTEP: distance (`distance_bstep`); age (`age_bstep`); initial and current mass (`m_ini_bstep` and `m_act_bstep`); stellar radius (`radius_bstep`); stellar luminosity (`log_lum_bstep`); a probability of whether this is a red clump star (`is_redclump_bstep`); the reddening (`ebv_bstep`); absolute *J* and *K<sub>S</sub>* magnitudes (`abs_j_bstep` and `abs_ks_bstep`); effective temperature (`teff_bstep`); surface gravity (`logg_bstep`); and initial and current metallicity (`meh_ini_bstep` and `meh_act_bstep`). For each estimated parameter we also report the 1-sigma uncertainty (prefix `e_`), and the 16th (`e16_`), 50th (`e50_`), and 84th (`e84_`) percentiles.
+For each star, we give the following parameters found by BSTEP: 
+* distance (`distance_bstep`)
+* age (`age_bstep`)
+* initial and current mass (`m_ini_bstep` and `m_act_bstep`)
+* stellar radius (`radius_bstep`)
+* stellar luminosity (`log_lum_bstep`)
+* a probability of whether this is a red clump star (`is_redclump_bstep`)
+* the reddening (`ebv_bstep`)
+* absolute *J* and *K<sub>S</sub>* magnitudes (`abs_j_bstep` and `abs_ks_bstep`)
+* effective temperature (`teff_bstep`)
+* surface gravity (`logg_bstep`)
+* initial and current metallicity (`meh_ini_bstep` and `meh_act_bstep`)
+
+For each estimated parameter we also report the 1-sigma uncertainty (prefix `e_`), and the 16th (`e16_`), 50th (`e50_`), and 84th (`e84_`) percentiles.
 
 {: .box-warning}
 As discussed on our [Best Practices page](/dr3/using_the_data), we recommend the ages, masses, and distances from BSTEP as our best values for these parameters.  We do not recommend using BSTEP values for stellar parameters like effective temperature and surface gravity.
@@ -170,6 +183,7 @@ We provide a value-added-catalog with kinematic and dynamic information, that bu
 * eccentricity (`ecc`)
 * Maximum Galactocentric orbit height (`zmax`), pericenter and apocenter radii (`R_peri`, `R_ap`)
 * Orbit energies (`Energy`)
+
 For each estimated parameter we also report a mean value and the 5th, 50th, and 95th percentiles (these have the suffixes `_5`, `_50`, `_95`).
 
 For the calculation of orbit information we use version 1.6 of the Python package `galpy` ([Bovy 2015](http://doi.org/10.1088/0067-0049/216/2/29)). To estimate actions, eccentricity, maximum orbit Galactocentric height, and apocenter/pericenter radii, we use the Staeckel fudge via the galpy module `actionAngleStaeckel` with a focus of 0.45. We use the following potentials and observed properties of the Galaxy:
