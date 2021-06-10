@@ -57,7 +57,8 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/new_galah_logo.png"
+title-img: "/assets/img/logo_desktop.png"
+title-img-mobile: "/assets/img/logo_mobile.png"
 
 
 # --- Footer social media links --- #

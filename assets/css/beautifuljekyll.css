@@ -152,6 +152,11 @@ img {
   font-size: 1.125rem;
 }
 
+/* hide desktop version by default */
+.navbar-custom .navbar-brand-logo .desktop {
+  display: none;
+}
+
 .navbar-custom .navbar-brand-logo {
   -webkit-transition: padding .5s ease-in-out;
   -moz-transition: padding .5s ease-in-out;
@@ -218,6 +223,16 @@ img {
   .navbar-custom {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  /* hide mobile version on desktop */
+  .navbar-custom .navbar-brand-logo .mobile {
+    display: none;
+  }
+
+  /* show desktop version */
+  .navbar-custom .navbar-brand-logo .desktop {
+    display: block;
   }
 
   .navbar-custom .navbar-brand-logo {
