@@ -25,14 +25,14 @@ The value of `flag_sp` are found via the summation of the individual flags as ta
 | Value | Description |
 | :------ |:--- |
 | 0 | No identified problems with stellar parameter determination |
-| 1 | Gaia DR2 `RUWE > 1.4` (unreliable astrometric solution, see Lindegren 2018) |
+| 1 | Gaia DR2 `ruwe_dr2 > 1.4` (unreliable astrometric solution, see Lindegren 2018) |
 | 2 | Unreliable broadening |
-| 4 | Low S/N (below 10 for CCD 2) |
+| 4 | Low S/N (`snr_c2_iraf<10`) |
 | 8 | Reduction issues: (a) Wavelength solution (propagating of `red_flag`); (b) t-SNE projected reduction issues; (c) Negative/positive fluxes, spikes, etc. |
 | 16 | t-SNE projected emission features |
 | 32 | t-SNE projected binaries |
 | 64 | Binary sequence/pre-main sequence flag |
-| 128 | SNR-dependent high sme chi2 (bad fit) 512 |
+| 128 | SNR-dependent high SME 𝜒<sup>2</sup> (bad fit) 512 |
 | 256 | Problems with Fe lines, where line flux is not between 0.03 and 1.00, [Fe/H] not reliable, or blending suspected |
 | 512 | SME did not finish: (a) No convergence == non-finite stellar parameters; (b) Gaussian RV fit failed |
 | 1024 | MARCS grid limit reached or outside of reasonable parameter range |
