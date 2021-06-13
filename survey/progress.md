@@ -15,21 +15,22 @@ This page presents the observing progress of the GALAH survey.
 
 ### Fields observed
 
-![Number of publications using GALAH](/survey/img/survey_progress_on_sky.svg){:width="100%"}
+![Location on the sky of all the fields observed as part of the GALAH Survey.](/survey/img/survey_progress_on_sky.svg "Location on the sky of all the fields observed as part of the GALAH Survey."){:width="100%"}
+*Location on the sky of all the fields observed as part of the GALAH Survey.*
 
 ### Number of stars observed
-![Number of publications using GALAH](/survey/img/survey_progress_number_of_stars.svg){:width="100%"}
-GALAH has acquired 754470 spectra from 693878 stars. Above is the cumulative sum with time for the number of spectra and the number of stars. Unflagged refers to those targets where there is no problem noted with the reduction. The vertical grey stripes indicate observing nights.
+![Cumulative sum with time for the number of spectra and the number of stars.](/survey/img/survey_progress_number_of_stars.svg "Cumulative sum with time for the number of spectra and the number of stars"){:width="100%"}
+GALAH has acquired 754470 spectra from 693878 stars. The cumulative sum with time for the number of spectra and the number of stars. Unflagged refers to those targets where there is no problem noted with the reduction. The vertical grey stripes indicate observing nights.
 
 ---
 
-![Number of publications using GALAH](/survey/img/survey_progress_number_of_stars_per_subsurvey.svg){:width="100%"}
-The GALAH survey consists of three main surveys: GALAH, K2-HERMES, and TESS-HERMES. There was also a smaller program dedicated to open clusters. Below is the cumulative sum of spectra acquired for each sub-survey.
+![The cumulative sum of spectra acquired for each sub-survey.](/survey/img/survey_progress_number_of_stars_per_subsurvey.svg "The cumulative sum of spectra acquired for each sub-survey."){:width="100%"}
+The GALAH survey consists of three main surveys: GALAH, K2-HERMES, and TESS-HERMES. There was also a smaller program dedicated to open clusters. The cumulative sum of spectra acquired for each sub-survey.
 
 ---
 ### Observing time
 
-![Number of publications using GALAH](/survey/img/survey_progress_time.svg){:width="100%"}
+![The cumulative sum of total shutter-open time used by the GALAH Survey.](/survey/img/survey_progress_time.svg "The cumulative sum of total shutter-open time used by the GALAH Survey."){:width="100%"}
 The cumulative sum of total shutter-open time used by the GALAH Survey. The vertical grey stripes indicate observing nights.
 
 ---

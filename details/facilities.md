@@ -15,8 +15,7 @@ The GALAH survey uses the Two-Degree Field (2dF) fibre positioner with the HERME
 
 ### The Anglo-Australian Telescope
 
-{: style="text-align:center"}
-![The HERMES Spectrograph installed at the AAT](/details/img/aat_hermes.png)
+![The Two-Degree Field fibre positioner installed at the top-end of the Anglo-Australian Telescope.](/details/img/aat_hermes.png "The Two-Degree Field fibre positioner installed at the top-end of the Anglo-Australian Telescope.")
 *The Two-Degree Field fibre positioner installed at the top-end of the Anglo-Australian Telescope.*
 
 The GALAH Survey primarily uses the [Anglo-Australian Telescope](https://aat.anu.edu.au), a 4-metre equatorially-mounted telescope. It is located at Siding Spring Observatory in New South Wales, Australia, and is operated by the Australian National University on behalf of a consortium of 13 Australian Universities. Its function is to provide world-class observing facilities for Australian optical astronomers.
@@ -27,8 +26,7 @@ The GALAH Survey primarily uses the [Anglo-Australian Telescope](https://aat.anu
 
 ### 2dF and HERMES
 
-{: style="text-align:center"}
-![The HERMES Spectrograph installed at the AAT](/details/img/HERMES_photo.png "The HERMES Spectrograph installed at the AAT")
+![The HERMES Spectrograph installed at the AAT](/details/img/HERMES_photo.png "The HERMES Spectrograph installed at the AAT"){:width="100%"}
 *The HERMES Spectrograph installed at the AAT.*
 
 GALAH observes using the HERMES spectrograph ([Sheinis et al. 2015](http://doi.org/10.1117/1.JATIS.1.3.035002)) at the Anglo-Australian Telescope. GALAH was the primary science driver for the HERMES, a high resolution (R~28,000 or 50,000) fibre-fed multi-object spectrometer. It has four non-contiguous spectral bands, covering a total of approximately 100 nm between about 470 nm and 790 nm. These bands were selected to permit the measurement of the abundances of as many elements as possible from the major nucleosynthetic processes.
@@ -57,22 +55,22 @@ In the first half of 2018, the original field flattening lenses of HERMES were r
 #### Technical papers describing HERMES
 These technical papers describe various aspects of the design, construction, and first light performance of HERMES.
 
-##### 2018
+#### 2018
 {:.no_toc}
 
 * [**Radioactive emission from high-index,optical glasses and atypical effects on CCDs**](https://ui.adsabs.harvard.edu/abs/2018SPIE10706E..33E)<br/>Edgar *et al.* (2018) SPIE **10706** 1070633 <small>([doi:10.1117/12.2307305](https://doi.org/10.1117/12.2307305))</small>
 
-##### 2016
+#### 2016
 {:.no_toc}
 
 * [**First light results from the HERMES spectrograph at the AAT**](https://ui.adsabs.harvard.edu/abs/2016SPIE.9908E..1CS)<br/>Sheinis (2016) SPIE **9908** 99081C <small>([doi:10.1117/12.2234334](https://doi.org/10.1117/12.2234334), [arXiv:1509.00129](https://arxiv.org/abs/arXiv:1509.00129))</small>
 
-##### 2015
+#### 2015
 {:.no_toc}
 
 * [**First light results from the High Efficiency and Resolution Multi-Element Spectrograph at the Anglo-Australian Telescope**](https://ui.adsabs.harvard.edu/abs/2015JATIS...1c5002S)<br/>Sheinis *et al.* (2015) JATIS **1** 035002 <small>([doi:10.1117/1.JATIS.1.3.035002](https://doi.org/10.1117/1.JATIS.1.3.035002))</small>
 
-##### 2014
+#### 2014
 {:.no_toc}
 
 * [**First light results from the Hermes spectrograph at the AAT**](https://ui.adsabs.harvard.edu/abs/2014SPIE.9147E..0YS)<br/>Sheinis *et al.* (2014) SPIE **9147** 91470Y <small>([doi:10.1117/12.2055595](https://doi.org/10.1117/12.2055595))</small>
@@ -80,26 +78,31 @@ These technical papers describe various aspects of the design, construction, and
 * [**The software for the AAT's HERMES instrument**](https://ui.adsabs.harvard.edu/abs/2014SPIE.9152E..23F)<br/>Farrell *et al.* (2014) SPIE **9152** 915223 <small>([doi:10.1117/12.2054805](https://doi.org/10.1117/12.2054805))</small>
 * [**HERMES travels by CAN bus**](https://ui.adsabs.harvard.edu/abs/2014SPIE.9152E..2AW)<br/>Waller *et al.* (2014) SPIE **9152** 91522A <small>([doi:10.1117/12.2055022](https://doi.org/10.1117/12.2055022))</small>
 
-##### 2013
+#### 2013
 {:.no_toc}
 
 * [**Metrology measurements for large-aperture VPH gratings**](https://ui.adsabs.harvard.edu/abs/2013SPIE.8838E..0GZ)<br/>Zheng *et al.* (2013) SPIE **8838** 88380G <small>([doi:10.1117/12.2024493](https://doi.org/10.1117/12.2024493))</small>
 
-##### 2012
+#### 2012
 {:.no_toc}
 
 * [**Integrating the HERMES spectrograph for the AAT**](https://ui.adsabs.harvard.edu/abs/2012SPIE.8446E..0WH)<br/>Heijmans *et al.* (2012) SPIE **8446** 84460W <small>([doi:10.1117/12.925806](https://doi.org/10.1117/12.925806))</small>
 * [**The AAO fiber instrument data simulator**](https://ui.adsabs.harvard.edu/abs/2012SPIE.8446E..2DG)<br/>Goodwin *et al.* (2012) SPIE **8446** 84462D <small>([doi:10.1117/12.924990](https://doi.org/10.1117/12.924990))</small>
 * [**Hermes: the engineering challenges**](https://ui.adsabs.harvard.edu/abs/2012SPIE.8446E..4NB)<br/>Brzeski *et al.* (2012) SPIE **8446** 84464N <small>([doi:10.1117/12.924635](https://doi.org/10.1117/12.924635))</small>
 
-##### 2011
+#### 2011
 {:.no_toc}
 
 * [**Design and development of the high-resolution spectrograph HERMES and the unique volume phase holographic gratings**](https://ui.adsabs.harvard.edu/abs/2011SPIE.8167E..1AH)<br/>Heijmans *et al.* (2011) SPIE **8167** 81671A <small>([doi:10.1117/12.897273](https://doi.org/10.1117/12.897273))</small>
 * [**Design and development of the fibre cable and fore optics of the HERMES Spectrograph for the Anglo-Australian Telescope (AAT)**](https://ui.adsabs.harvard.edu/abs/2011SPIE.8125E..04B)<br/>Brzeski *et al.* (2011) SPIE **8125** 812504 <small>([doi:10.1117/12.896389](https://doi.org/10.1117/12.896389))</small>
 
-##### 2010
+#### 2010
 {:.no_toc}
 
 * [**HERMES: revisions in the design for a high-resolution multi-element spectrograph for the AAT**](https://ui.adsabs.harvard.edu/abs/2010SPIE.7735E..09B)<br/>Barden *et al.* (2010) SPIE **7735** 773509 <small>([doi:10.1117/12.856103](https://doi.org/10.1117/12.856103))</small>
 * [**Data simulator for the HERMES instrument**](https://ui.adsabs.harvard.edu/abs/2010SPIE.7735E..7UG)<br/>Goodwin *et al.* (2010) SPIE **7735** 77357U <small>([doi:10.1117/12.856773](https://doi.org/10.1117/12.856773))</small>
+
+#### 2008
+{:.no_toc}
+
+* [**Concepts for a high-resolution multi-object spectrograph for galactic archeology on the Anglo-Australian Telescope**](https://ui.adsabs.harvard.edu/abs/2008SPIE.7014E..4JB)<br/>Barden *et al.* (2008) SPIE **7014** 70144J <small>([doi:10.1117/12.788549](https://doi.org/10.1117/12.788549))</small>

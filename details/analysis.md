@@ -48,4 +48,4 @@ There are two main changes to the analysis methods for DR3 compared to DR2.
 
 Below is a comparison of GALAH DR2 (upper panels) and GALAH DR3 (lower panels, this release). The smooth light blue background indicates all measurements, whereas the colormap shows the number of unflagged measurements at each point. The stellar parameters and abundances from GALAH DR2 appear more tightly constrained, but we note that this is an artefact of the data-driven approach, which tends to find solutions closer to the mean parameter/abundance patterns.
 
-![Light path of HERMES](/details/img/galah_dr3_comparison_dr2.png)
+![Comparison of GALAH DR2 and GALAH DR3](/details/img/galah_dr3_comparison_dr2.png "Comparison of GALAH DR2 and GALAH DR3")

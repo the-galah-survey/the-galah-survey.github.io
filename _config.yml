@@ -31,8 +31,8 @@ navbar-links:
     - Structure: "survey/structure"
     - Funding: "survey/funding"
   The&nbsp;Details:
-    - Facilities: "details/facilities"
     - Workflow: "details/workflow"
+    - Facilities: "details/facilities"
     - Observing: "details/observing"
     - Data reduction: "details/reduction"
     - Analysis: "details/analysis"

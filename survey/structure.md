@@ -5,7 +5,7 @@ title: Survey Management
 
 The GALAH Survey is an Australian-led project of [over 50 scientists at dozens of institutions](/survey/people). The scientific achievements of the GALAH have been enabled by the technical and financial contributions, and the collective scientific expertise, of this vibrant collaboration.
 
-The GALAH Survey is led by a Survey Managment Group (SMG) and an Executive group. Below this is a Working Group structure,
+The GALAH Survey is led by a Survey Managment Group (SMG) and an Executive group. Below this is a Working Group structure.
 
 ### Executive group
 
@@ -41,5 +41,5 @@ This working group coordinates the internal communications (e.g., weekly telecon
 
 #### Additional Survey Management Group members
 * Gaia: Tomaz Zwitter (University of Ljubljana) is the contact person to the Gaia DPAC
-* HERMES Instrument scientist: Jeffrey Simpson (University of New South Wales)
+* HERMES Instrument scientist and website management: Jeffrey Simpson (University of New South Wales)
 * Support for WG2 and WG5: Dan Zucker (Macquarie University)

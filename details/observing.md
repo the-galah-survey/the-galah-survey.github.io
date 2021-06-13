@@ -65,7 +65,7 @@ In Phase 1, we primarily observed a magnitude-limited survey with an easily repr
 
 The GALAH survey tiles the sky into nearly 8000 possible field configurations covering about 7200 possible field centres. These are shown above in equatorial and galactic coordinates, GALAH fields in pink, K2-HERMES fields in gold, TESS-HERMES fields in silver, and open cluster fields in bronze. The [observing progress page](/survey/progress) shows which of these field centres have been observed.
 
-The list of fields is [available here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt) and is also discussed in the [DR3 Catalogue](/dr3/the_catalogues) documenation. For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifer (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifer of `fco_id`.
+The [list of fields](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt) is also discussed in the [DR3 Catalogue documenation](/dr3/the_catalogues). For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifier (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifier of `fco_id`.
 
 ---
 
@@ -79,10 +79,10 @@ The standard observing procedure for regular GALAH survey fields is to take thre
 
 #### Acheived Signal-to-noise
 
-The stated aim of GALAH is to get a signal-to-noise per resolution element 
+The stated aim of GALAH is to get a signal-to-noise per resolution pixel.
 
 ![Number of publications using GALAH](/survey/img/snr_per_camera.svg){:width="100%"}
 Distribution of signal-to-noise ratio in each camera. For each camera, the filled histogram are for unflagged reductions, and the white histogram are flagged reductions.
 
-![Number of publications using GALAH](/survey/img/survey_progress_signal_to_noise.svg){:width="100%"}
-The median signal-to-noise per pixel (in CCD3) across the survey. The vertical dashed line indicates the change to Phase 2 observing, which included a 50% increase in exposure time per star. This has resulted in a modest increase in the signal-to-noise.
+![Number of publications using GALAH](/survey/img/survey_progress_signal_to_noise_per_mag.svg){:width="100%"}
+Distribution of average achieved S/N per pixel for the green band (CCD 2) as a function of V<sub>JK</sub>. The dashed white line is our S/N=50 aim, and the red curve is the median S/N achieved as a function of magnitude.

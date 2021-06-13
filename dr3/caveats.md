@@ -4,12 +4,12 @@ title: Known caveats for GALAH DR3
 subtitle: Third Data Release
 ---
 
+{: .main_blockquote}
+This page relays a list of known issues in the GALAH DR3. Please also see the GALAH Survey Third Data Release paper ([Buder et al 2021](https://doi.org/10.1093/mnras/stab1242)).
+
 {: .box-error}
 We caution that it is not possible to inspect all of the more than 30 million measurements that make up GALAH DR3. So, there are likely to be some unexpected correlations and problems with the data.
 
-This page relays a list of known issues in the GALAH DR3. Please also see the GALAH Survey Third Data Release paper (Buder et al 2021).
-
-<h3> On this page</h3>
 * This text gets replaced.
 {:toc}
 

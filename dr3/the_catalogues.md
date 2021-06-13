@@ -4,50 +4,11 @@ title: GALAH DR3 catalogues
 subtitle: Third Data Release
 ---
 
-<h4> This page describes the catalogues of GALAH DR3 and how to get them.</h4>
+{: .main_blockquote}
+This page describes the catalogues of GALAH DR3 and how to get them.
+
 * This text gets replaced.
 {:toc}
-
----
-
-### Getting the catalogues
-
-{: .box-warning}
-We recommend the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3).<br/><br/>
-Please read our [best practices for using GALAH DR3](/dr3/using_the_data).
-
-<!-- {: .box-warning}
-For science cases involving stellar parameters, it is highly recommended that you only consider stars where `flag_sp == 0` and `flag_fe_h == 0`. For science cases involving the abundance of element x, it is highly recommended that you only consider `X_fe` where `flag_X_fe == 0` and `snr_c3_iraf > 30`. -->
-
-There are two methods for accessing these catalogues depending on your requirements
-
-#### Downloading the FITS files
-
-The catalogues can be [downloaded from here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) as FITS files, or using the following command (removing the `--spider` flag and replacing with the appropriate file name as listed below):
-
-```bash
-  # Download the galah_dr3.main_star catalogue
-  wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
-```
-
-#### ADQL query
-
-{: .box-error}
-The versions served by Data Central are currently our initial DR3 release and contain some minor errors.
-
-The catalogues can be accessed using the [query services provided by Data Central](https://datacentral.org.au/services/query/). For example, if you are interested in all of the entries for stars likely to be members of the globular cluster ω&nbsp;Centauri, these could be found using a query like:
-
-```sql
-SELECT
-   TOP 100
-   *
-   FROM galah_dr3.main_star -- GALAH_DR3_main_allstar_v2
-   WHERE
-      1=CONTAINS(POINT('ICRS', ra, dec),
-                 CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
-   AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
-   AND rv_galah > 170
-```
 
 ---
 
@@ -64,7 +25,7 @@ Strongly recommend the use of this table for most science cases interested in st
 
 The `GALAH_DR3_main_allstar_v2` is our main results catalogue. It contains results for 588,571 stars observed as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between November 2013 and February 2019. For all targets we provide stellar parameters, radial velocities, and elemental abundances.
 
-We recommend this catalogue for most science cases as it contains only one entry per star (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`GALAH_DR3_main_allspec_v2` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). For the full list of columns, see the [Table Schema page](/dr3/table_schema). For each star we provide:
+We recommend this catalogue for most science cases as it contains only one entry per star (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`GALAH_DR3_main_allspec_v2` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). The full list of columns is on the [Table Schema page](/dr3/table_schema). For each star we provide:
 * Star identifers:
     - the GALAH observation ID (`sobject_id`)
     - 2MASS identifier (`star_id`)
@@ -83,12 +44,10 @@ We recommend this catalogue for most science cases as it contains only one entry
     - rapid neutron capture element: Eu
 * Flagging information:
     - Please read our [GALAH DR3 Best Practices page](/dr3/using_the_data) for recommendations on flags.
-    - `red_flag`: reduction pipeline quality flag
-    - `flag_repeat`: Repeat observation flag, indicating if used for clean catalog
-    - `flag_guess`: GUESS reduction pipeline quality flag
-    - `flag_sp`: Stellar parameter quality flag
-    - `flag_fe_h` and `flag_alpha_fe`: Quality flags for `fe_h` and `alpha_fe` respectively
-    - `flag_X_fe`: Quality flag of `X_fe`
+    - Two overall flags: a stellar parameter quality flag (`flag_sp`) and a iron abundance quality flag (`flag_fe_h`)
+    - Quality flags for `alpha_fe` (`flag_alpha_fe`)
+    - Intermediary analysis flags: reduction pipeline quality flag (`red_flag`); GUESS reduction pipeline quality flag (`flag_guess`)
+    - Repeat observation flag, indicating if used for clean catalog (`flag_repeat`)
 * Other useful information:
     - The internal survey name (`survey_name`), observation field identifer (`field_id`)
     - Signal-to-noise for the spectrum from each camera (`snr_c1_iraf`, `snr_c2_iraf`, `snr_c3_iraf`, `snr_c3_iraf`)
@@ -127,7 +86,7 @@ This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an 
 * All columns from [`gaiaedr3.gaia_source`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_gaia_source.html) (with `source_id` renamed `dr3_source_id`)
 * All columns from [`gaiaedr3.dr2_neighbourhood`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html):
     - e.g., `angular_distance`, `magnitude_difference`, `proper_motion_propagation`
-* Photogeometric and Geometric Distances from [Bailer-Jones et al. (2020)](https://arxiv.org/abs/2012.05220)
+* Photogeometric and Geometric Distances from [Bailer-Jones et al. (2020)](https://www2.mpia-hd.mpg.de/homes/calj/gedr3_distances/main.html)
 * Zeropoints from [Lindegren et al. (2020)](https://arxiv.org/abs/2012.01742)
 
 Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
@@ -146,7 +105,7 @@ Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
  {:.no_toc}
 This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma et al. (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
 
-For each star, we give the following parameters found by BSTEP: 
+For each star, we give the following parameters found by BSTEP:
 * distance (`distance_bstep`)
 * age (`age_bstep`)
 * initial and current mass (`m_ini_bstep` and `m_act_bstep`)
@@ -233,8 +192,6 @@ The details of the analysis are described in [Traven et al. (2020)](https://doi.
 ##### [Download `target/galahfco_3_public.txt`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (934 KB)
  {:.no_toc}
 
-<!-- The list of fields is [available here](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/target/galahfco_3_public.txt). -->
-
 This lists all 7993 possible fields in the current target selection catalogue of the GALAH survey. For a given field centre (i.e., a given `ra`, `dec`) there is an associated unique identifer (`field_id`). For a given `field_id`, there can be one or more possible observable fields --- for instance if the target density is high enough, or there are bright and faint fields. Each possible configuration has a unique identifer of `fco_id`.
 
 * Field configuration identifier: `fco_id`
@@ -248,3 +205,43 @@ This lists all 7993 possible fields in the current target selection catalogue of
 * The selection function (`selfunc`)
 * Magnitude used for complicated selection functions (`vsplit`)
 * Internal use only values (`active`, `name`, `priority`, `special`, `max_observed`)
+
+---
+
+### Getting the catalogues
+
+{: .box-warning}
+We recommend the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3).<br/><br/>
+Please read our [best practices for using GALAH DR3](/dr3/using_the_data).
+
+There are two methods for accessing these catalogues depending on your requirements
+
+#### Downloading the FITS files
+
+The catalogues can be [downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) as FITS files, or using the following command (removing the `--spider` flag and replacing with the appropriate file name as listed below):
+
+```bash
+# Download the galah_dr3.main_star catalogue
+wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/GALAH_DR3_main_allstar_v2.fits
+```
+
+#### ADQL query
+
+{: .box-error}
+The versions served by Data Central are currently our initial DR3 release and contain some minor errors.
+
+The catalogues can be accessed using the [query services provided by Data Central](https://datacentral.org.au/services/query/). For example, if you are interested in all of the entries for stars likely to be members of the globular cluster ω&nbsp;Centauri, these could be found using a query like:
+
+```sql
+SELECT
+   TOP 100
+   *
+   FROM galah_dr3.main_star -- GALAH_DR3_main_allstar_v2
+   WHERE
+      1=CONTAINS(POINT('ICRS', ra, dec),
+                 CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
+   AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
+   AND rv_galah > 170
+```
+
+---
