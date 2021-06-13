@@ -18,8 +18,6 @@ For science cases involving stellar parameters, it is highly recommended that yo
 
 This flag is found in the `GALAH_DR3_main_allstar_v2` (and `GALAH_DR3_main_allspec_v2`) catalogues and is the final bit-flag for the stellar parameter quality flag. Its value is found via the summation of the individual flags as tabulated below.
 
-The first estimate of the surface gravity of each star was found from the Gaia DR2 parallax, so the first bit of `flag_sp` indicates stars with likely unreliable astrometry in Gaia DR2 (defined as `ruwe_dr2>1.4`). Note that a high RUWE in Gaia DR2 may not be indicative of a star having less reliable astrometry in Gaia eDR3 (and future releases).
-
 The value of `flag_sp` are found via the summation of the individual flags as tabulated below:
 
 | Value | Description |
@@ -37,6 +35,9 @@ The value of `flag_sp` are found via the summation of the individual flags as ta
 | 512 | SME did not finish: (a) No convergence == non-finite stellar parameters; (b) Gaussian RV fit failed |
 | 1024 | MARCS grid limit reached or outside of reasonable parameter range |
 
+{: .box-warning}
+The first estimate of the surface gravity of each star was found from the Gaia DR2 parallax, so the first bit of `flag_sp` indicates stars with likely unreliable astrometry in Gaia DR2 (defined as `ruwe_dr2>1.4`). Note that a high RUWE in Gaia DR2 may not be indicative of a star having less reliable astrometry in Gaia eDR3 (and future releases).
+
 ---
 
 ### `flag_fe_h`
@@ -47,6 +48,8 @@ This flag is found in `GALAH_DR3_main_allstar_v2` and `GALAH_DR3_main_allstar_v2
 | 0 | No identified problems with abundance determination of element `fe_h` |
 | 1 | Upper limit |
 | 16 | No reliable measurement reported |
+
+---
 
 ### `flag_X_fe`
 These flag are found in `GALAH_DR3_main_allstar_v2` and are the final bit-flag for the elemental abundance quality flag for the elemental abundance `x_fe`. Their values are found via the summation of the individual flags as tabulated below.  
@@ -82,7 +85,7 @@ There are a number of other flags found in the GALAH catalogues. Most are only o
 The spectrum reduction pipeline quality flag. It can be ignored except for expert use, as its value is folded into `flag_sp`.
 
 #### `flag_guess`
-The GUESS reduction pipeline finds a first estimate of the stellar parameters for a given spectrum. `flag_guess` is found in the `GALAH_DR3_main_allstar_v2` and `GALAH_DR3_main_allspec_v2` catalogues and is the GUESS quality flag. It can be ignored except for expert use. There are only about 2000 stars in GALAH DR3 for which `flag_guess>0` while `flag_sp==0`.
+The GUESS reduction pipeline finds a first estimate of the stellar parameters for a given spectrum. `flag_guess` is found in the `GALAH_DR3_main_allstar_v2` and `GALAH_DR3_main_allspec_v2` catalogues and is the GUESS quality flag. This flag can be ignored except for expert use. There are only about 2000 stars in GALAH DR3 for which `flag_guess>0` while `flag_sp==0`.
 
 #### `flag_repeat`
 This flag is set to `0` to indicate if a given `sobject_id` entry in the `GALAH_DR3_main_allspec_v2` is found in `GALAH_DR3_main_allstar_v2`.
@@ -96,4 +99,4 @@ This flag informs which radial velocity value has been used for `rv_galah` for a
 * 0: `rv_obst`; 1: `rv_sme_v2`; 2: `dr2_radial_velocity`; 4: No radial velocity.
 
 #### Flags from Gaia catalogues
-`flag_edr3dist`, `proper_motion_propagation`, `astrometric_primary_flag` are flags propogated from the original Gaia catalogues.
+`flag_edr3dist`, `proper_motion_propagation`, `astrometric_primary_flag` are flags propogated from the Gaia catalogues.

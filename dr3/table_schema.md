@@ -85,8 +85,8 @@ We have shortened the catalogue filenames to save space (i.e., removed the `GALA
 | `r_lo_dr2` | `main_allspec` `main_allstar` | propagated from 2018AJ....156...58B | pc | float |
 | `r_hi_dr2` | `main_allspec` `main_allstar` | propagated from 2018AJ....156...58B | pc | float |
 | `r_len_dr2` | `main_allspec` `main_allstar` | propagated from 2018AJ....156...58B | pc | float |
-| `rv_galah` | `main_allspec` `VAC_rv` `main_allstar` | Best-method radial velocity from GALAH spectra |  | float |
-| `e_rv_galah` | `main_allspec` `VAC_rv` `main_allstar` | Uncertainty of `rv_galah` |  | float |
+| `rv_galah` | `main_allspec` `VAC_rv` `main_allstar` | Best-method radial velocity from GALAH spectra | km&#8239;s<sup>-1</sup> | float |
+| `e_rv_galah` | `main_allspec` `VAC_rv` `main_allstar` | Uncertainty of `rv_galah` | km&#8239;s<sup>-1</sup> | float |
 | `rv_gaia_dr2` | `main_allspec` `main_allstar` | propagated from Gaia DR2; identical to `dr2_radial_velocity` | km&#8239;s<sup>-1</sup> | float |
 | `e_rv_gaia_dr2` | `main_allspec` `main_allstar` | propagated from Gaia DR2; identical to `dr2_radial_velocity_error` | km&#8239;s<sup>-1</sup> | float |
 | `red_flag` | `main_allspec` `main_allstar` | reduction pipeline quality flag |  | integer |
@@ -104,66 +104,66 @@ We have shortened the catalogue filenames to save space (i.e., removed the `GALA
 | `rv_5854` | `main_allspec` | Local best fit to RV when fitting A(Ba5854) | km&#8239;s<sup>-1</sup> | float |
 | `rv_6708` | `main_allspec` | Local best fit to RV when fitting A(Li6708) | km&#8239;s<sup>-1</sup> | float |
 | `rv_6722` | `main_allspec` | Local best fit to RV when fitting A(Si6722) | km&#8239;s<sup>-1</sup> | float |
-| `v_jk` | `main_allspec` `main_allstar` | V magnitude estimated from 2MASS J and Ks mag | mag | float |
+| `v_jk` | `main_allspec` `main_allstar` | V magnitude estimated from 2MASS J and K<sub>s</sub> mag | mag | float |
 | `j_m` | `main_allspec` `main_allstar` | propagated from 2MASS | mag | float |
 | `j_msigcom` | `main_allspec` `main_allstar` | propagated from 2MASS | mag | float |
 | `h_m` | `main_allspec` `main_allstar` | propagated from 2MASS | mag | float |
 | `h_msigcom` | `main_allspec` `main_allstar` | propagated from 2MASS | mag | float |
 | `ks_m` | `main_allspec` `main_allstar` | propagated from 2MASS | mag | float |
 | `ks_msigcom` | `main_allspec` `main_allstar` | propagated from 2MASS | mag | float |
-| `ph_qual_tmass` | `main_allspec` `main_allstar` | propagated from 2MASS `ph_qual` |  | string |
+| `ph_qual_tmass` | `main_allspec` `main_allstar` | propagated from 2MASS. Renamed from `ph_qual` in original catalogue. |  | string |
 | `w2mpro` | `main_allspec` `main_allstar` | propagated from AllWISE | mag | float |
 | `w2mpro_error` | `main_allspec` `main_allstar` | propagated from AllWISE | mag | float |
-| `ph_qual_wise` | `main_allspec` `main_allstar` | propagated from AllWISE `ph_qual` |  | string |
-| `a_ks` | `main_allspec` `main_allstar` | Used Ks band extinction | mag | float |
+| `ph_qual_wise` | `main_allspec` `main_allstar` | propagated from AllWISE. Renamed from `ph_qual` in original catalogue. |  | string |
+| `a_ks` | `main_allspec` `main_allstar` | Used K<sub>s</sub> band extinction | mag | float |
 | `e_a_ks` | `main_allspec` `main_allstar` | Uncertainty of `a_ks` | mag | float |
-| `bc_ks` | `main_allspec` `main_allstar` | Used Bolometric Correction for Ks band | mag | float |
+| `bc_ks` | `main_allspec` `main_allstar` | Used Bolometric Correction for K<sub>s</sub> band | mag | float |
 | `ruwe_dr2` | `main_allspec` `main_allstar` | propagated from Gaia DR2 |  | float |
-| `age_bstep` | `VAC_ages` | Age estimate BSTEP-Mod. |  | float |
-| `e_age_bstep` | `VAC_ages` | 1-sigma uncertainty of `age_bstep` |  | float |
-| `e16_age_bstep` | `VAC_ages` | 16 percentile value for `age_bstep` |  | float |
-| `e50_age_bstep` | `VAC_ages` | 50 percentile value for `age_bstep` |  | float |
-| `e84_age_bstep` | `VAC_ages` | 84 percentile value for `age_bstep` |  | float |
-| `m_act_bstep` | `VAC_ages` | Actual stellar mass after mass loss BSTEP-Mod. |  | float |
-| `e_m_act_bstep` | `VAC_ages` | 1-sigma uncertainty of `m_act_bstep` |  | float |
-| `e16_m_act_bstep` | `VAC_ages` | 16 percentile value for `m_act_bstep` |  | float |
-| `e50_m_act_bstep` | `VAC_ages` | 50 percentile value for `m_act_bstep` |  | float |
-| `e84_m_act_bstep` | `VAC_ages` | 84 percentile value for `m_act_bstep` |  | float |
-| `m_ini_bstep` | `VAC_ages` | Initial stellar mass BSTEP-Mod. |  | float |
-| `e_m_ini_bstep` | `VAC_ages` | 1-sigma uncertainty of `m_ini_bstep` |  | float |
-| `e16_m_ini_bstep` | `VAC_ages` | 16 percentile value for `m_ini_bstep` |  | float |
-| `e50_m_ini_bstep` | `VAC_ages` | 50 percentile value for `m_ini_bstep` |  | float |
-| `e84_m_ini_bstep` | `VAC_ages` | 84 percentile value for `m_ini_bstep` |  | float |
-| `radius_bstep` | `VAC_ages` | Stellar Radius BSTEP-Mod. |  | float |
-| `e_radius_bstep` | `VAC_ages` | 1-sigma uncertainty of `radius_bstep` |  | float |
-| `e16_radius_bstep` | `VAC_ages` | 16 percentile value for `radius_bstep` |  | float |
-| `e50_radius_bstep` | `VAC_ages` | 50 percentile value for `radius_bstep` |  | float |
-| `e84_radius_bstep` | `VAC_ages` | 84 percentile value for `radius_bstep` |  | float |
+| `age_bstep` | `VAC_ages` | Age estimate BSTEP-Mod. | Gyr | float |
+| `e_age_bstep` | `VAC_ages` | 1-sigma uncertainty of `age_bstep` | Gyr | float |
+| `e16_age_bstep` | `VAC_ages` | 16 percentile value for `age_bstep` | Gyr | float |
+| `e50_age_bstep` | `VAC_ages` | 50 percentile value for `age_bstep` | Gyr | float |
+| `e84_age_bstep` | `VAC_ages` | 84 percentile value for `age_bstep` | Gyr | float |
+| `m_act_bstep` | `VAC_ages` | Actual stellar mass after mass loss BSTEP-Mod. | M<sub>&#9737;</sub> | float |
+| `e_m_act_bstep` | `VAC_ages` | 1-sigma uncertainty of `m_act_bstep` | M<sub>&#9737;</sub> | float |
+| `e16_m_act_bstep` | `VAC_ages` | 16 percentile value for `m_act_bstep` | M<sub>&#9737;</sub> | float |
+| `e50_m_act_bstep` | `VAC_ages` | 50 percentile value for `m_act_bstep` | M<sub>&#9737;</sub> | float |
+| `e84_m_act_bstep` | `VAC_ages` | 84 percentile value for `m_act_bstep` | M<sub>&#9737;</sub> | float |
+| `m_ini_bstep` | `VAC_ages` | Initial stellar mass BSTEP-Mod. | M<sub>&#9737;</sub> | float |
+| `e_m_ini_bstep` | `VAC_ages` | 1-sigma uncertainty of `m_ini_bstep` | M<sub>&#9737;</sub> | float |
+| `e16_m_ini_bstep` | `VAC_ages` | 16 percentile value for `m_ini_bstep` | M<sub>&#9737;</sub> | float |
+| `e50_m_ini_bstep` | `VAC_ages` | 50 percentile value for `m_ini_bstep` | M<sub>&#9737;</sub> | float |
+| `e84_m_ini_bstep` | `VAC_ages` | 84 percentile value for `m_ini_bstep` | M<sub>&#9737;</sub> | float |
+| `radius_bstep` | `VAC_ages` | Stellar Radius BSTEP-Mod. | R<sub>&#9737;</sub> | float |
+| `e_radius_bstep` | `VAC_ages` | 1-sigma uncertainty of `radius_bstep` | R<sub>&#9737;</sub> | float |
+| `e16_radius_bstep` | `VAC_ages` | 16 percentile value for `radius_bstep` | R<sub>&#9737;</sub> | float |
+| `e50_radius_bstep` | `VAC_ages` | 50 percentile value for `radius_bstep` | R<sub>&#9737;</sub> | float |
+| `e84_radius_bstep` | `VAC_ages` | 84 percentile value for `radius_bstep` | R<sub>&#9737;</sub> | float |
 | `is_redclump_bstep` | `VAC_ages` | Probability to be a red clump star (1.0) or not (0.0) BSTEP-Mod. |  | float |
 | `e_is_redclump_bstep` | `VAC_ages` | 1-sigma uncertainty of `is_redclump_bstep` |  | float |
 | `e16_is_redclump_bstep` | `VAC_ages` | 16 percentile value for `is_redclump_bstep` |  | float |
 | `e50_is_redclump_bstep` | `VAC_ages` | 50 percentile value for `is_redclump_bstep` |  | float |
 | `e84_is_redclump_bstep` | `VAC_ages` | 84 percentile value for `is_redclump_bstep` |  | float |
-| `distance_bstep` | `VAC_ages` | Distance BSTEP-Mod. |  | float |
-| `e_distance_bstep` | `VAC_ages` | 1-sigma uncertainty of `distance_bstep` |  | float |
-| `e16_distance_bstep` | `VAC_ages` | 16 percentile value for `distance_bstep` |  | float |
-| `e50_distance_bstep` | `VAC_ages` | 50 percentile value for `distance_bstep` |  | float |
-| `e84_distance_bstep` | `VAC_ages` | 84 percentile value for `distance_bstep` |  | float |
-| `ebv_bstep` | `VAC_ages` | Extinction E(B-V) BSTEP-Mod. |  | float |
-| `e_ebv_bstep` | `VAC_ages` | 1-sigma uncertainty of `ebv_bstep` |  | float |
-| `e16_ebv_bstep` | `VAC_ages` | 16 percentile value for `ebv_bstep` |  | float |
-| `e50_ebv_bstep` | `VAC_ages` | 50 percentile value for `ebv_bstep` |  | float |
-| `e84_ebv_bstep` | `VAC_ages` | 84 percentile value for `ebv_bstep` |  | float |
-| `teff_bstep` | `VAC_ages` | Effective Temperature BSTEP-Mod. |  | float |
-| `e_teff_bstep` | `VAC_ages` | 1-sigma uncertainty of `teff_bstep` |  | float |
-| `e16_teff_bstep` | `VAC_ages` | 16 percentile value for `teff_bstep` |  | float |
-| `e50_teff_bstep` | `VAC_ages` | 50 percentile value for `teff_bstep` |  | float |
-| `e84_teff_bstep` | `VAC_ages` | 84 percentile value for `teff_bstep` |  | float |
-| `logg_bstep` | `VAC_ages` | Surface gravity BSTEP-Mod. |  | float |
-| `e_logg_bstep` | `VAC_ages` | 1-sigma uncertainty of `logg_bstep` |  | float |
-| `e16_logg_bstep` | `VAC_ages` | 16 percentile value for `logg_bstep` |  | float |
-| `e50_logg_bstep` | `VAC_ages` | 50 percentile value for `logg_bstep` |  | float |
-| `e84_logg_bstep` | `VAC_ages` | 84 percentile value for `logg_bstep` |  | float |
+| `distance_bstep` | `VAC_ages` | Distance BSTEP-Mod. | kpc | float |
+| `e_distance_bstep` | `VAC_ages` | 1-sigma uncertainty of `distance_bstep` | kpc | float |
+| `e16_distance_bstep` | `VAC_ages` | 16 percentile value for `distance_bstep` | kpc | float |
+| `e50_distance_bstep` | `VAC_ages` | 50 percentile value for `distance_bstep` | kpc | float |
+| `e84_distance_bstep` | `VAC_ages` | 84 percentile value for `distance_bstep` | kpc | float |
+| `ebv_bstep` | `VAC_ages` | Extinction E(B-V) BSTEP-Mod. | mag | float |
+| `e_ebv_bstep` | `VAC_ages` | 1-sigma uncertainty of `ebv_bstep` | mag | float |
+| `e16_ebv_bstep` | `VAC_ages` | 16 percentile value for `ebv_bstep` | mag | float |
+| `e50_ebv_bstep` | `VAC_ages` | 50 percentile value for `ebv_bstep` | mag | float |
+| `e84_ebv_bstep` | `VAC_ages` | 84 percentile value for `ebv_bstep` | mag | float |
+| `teff_bstep` | `VAC_ages` | Effective Temperature BSTEP-Mod. | K | float |
+| `e_teff_bstep` | `VAC_ages` | 1-sigma uncertainty of `teff_bstep` | K | float |
+| `e16_teff_bstep` | `VAC_ages` | 16 percentile value for `teff_bstep` | K | float |
+| `e50_teff_bstep` | `VAC_ages` | 50 percentile value for `teff_bstep` | K | float |
+| `e84_teff_bstep` | `VAC_ages` | 84 percentile value for `teff_bstep` | K | float |
+| `logg_bstep` | `VAC_ages` | Surface gravity BSTEP-Mod. | log(cm&#8239;s<sup>-2</sup>) | float |
+| `e_logg_bstep` | `VAC_ages` | 1-sigma uncertainty of `logg_bstep` | log(cm&#8239;s<sup>-2</sup>) | float |
+| `e16_logg_bstep` | `VAC_ages` | 16 percentile value for `logg_bstep` | log(cm&#8239;s<sup>-2</sup>) | float |
+| `e50_logg_bstep` | `VAC_ages` | 50 percentile value for `logg_bstep` | log(cm&#8239;s<sup>-2</sup>) | float |
+| `e84_logg_bstep` | `VAC_ages` | 84 percentile value for `logg_bstep` | log(cm&#8239;s<sup>-2</sup>) | float |
 | `meh_act_bstep` | `VAC_ages` | Surface effective [M/H] BSTEP-Mod. |  | float |
 | `e_meh_act_bstep` | `VAC_ages` | 1-sigma uncertainty of `meh_act_bstep` |  | float |
 | `e16_meh_act_bstep` | `VAC_ages` | 16 percentile value for `meh_act_bstep` |  | float |
@@ -174,22 +174,22 @@ We have shortened the catalogue filenames to save space (i.e., removed the `GALA
 | `e16_meh_ini_bstep` | `VAC_ages` | 16 percentile value for `meh_ini_bstep` |  | float |
 | `e50_meh_ini_bstep` | `VAC_ages` | 50 percentile value for `meh_ini_bstep` |  | float |
 | `e84_meh_ini_bstep` | `VAC_ages` | 84 percentile value for `meh_ini_bstep` |  | float |
-| `log_lum_bstep` | `VAC_ages` | log(Luminosity L/`L_sun`) |  | float |
+| `log_lum_bstep` | `VAC_ages` | log(Luminosity L/L<sub>Sun</sub>) |  | float |
 | `e_log_lum_bstep` | `VAC_ages` | 1-sigma uncertainty of `log_lum_bstep` |  | float |
 | `e16_log_lum_bstep` | `VAC_ages` | 16 percentile value for `log_lum_bstep` |  | float |
 | `e50_log_lum_bstep` | `VAC_ages` | 50 percentile value for `log_lum_bstep` |  | float |
 | `e84_log_lum_bstep` | `VAC_ages` | 84 percentile value for `log_lum_bstep` |  | float |
-| `abs_j_bstep` | `VAC_ages` | Absolute Magnitude 2MASS J |  | float |
-| `e_abs_j_bstep` | `VAC_ages` | 1-sigma uncertainty of `abs_j_bstep` |  | float |
-| `e16_abs_j_bstep` | `VAC_ages` | 16 percentile value for `abs_j_bstep` |  | float |
-| `e50_abs_j_bstep` | `VAC_ages` | 50 percentile value for `abs_j_bstep` |  | float |
-| `e84_abs_j_bstep` | `VAC_ages` | 84 percentile value for `abs_j_bstep` |  | float |
-| `abs_ks_bstep` | `VAC_ages` | Absolute Magnitude 2MASS Ks |  | float |
-| `e_abs_ks_bstep` | `VAC_ages` | 1-sigma uncertainty of `abs_ks_bstep` |  | float |
-| `e16_abs_ks_bstep` | `VAC_ages` | 16 percentile value for `abs_ks_bstep` |  | float |
-| `e50_abs_ks_bstep` | `VAC_ages` | 50 percentile value for `abs_ks_bstep` |  | float |
-| `e84_abs_ks_bstep` | `VAC_ages` | 84 percentile value for `abs_ks_bstep` |  | float |
-| `use_dist_flag` | `VAC_dynamics` | Dist. Used: BSTEP(0), Photogeom.(1), Geom.(2), Plx(4), n.a.(8) |  | integer |
+| `abs_j_bstep` | `VAC_ages` | Absolute Magnitude 2MASS J | mag | float |
+| `e_abs_j_bstep` | `VAC_ages` | 1-sigma uncertainty of `abs_j_bstep` | mag | float |
+| `e16_abs_j_bstep` | `VAC_ages` | 16 percentile value for `abs_j_bstep` | mag | float |
+| `e50_abs_j_bstep` | `VAC_ages` | 50 percentile value for `abs_j_bstep` | mag | float |
+| `e84_abs_j_bstep` | `VAC_ages` | 84 percentile value for `abs_j_bstep` | mag | float |
+| `abs_ks_bstep` | `VAC_ages` | Absolute Magnitude 2MASS K<sub>s</sub> | mag | float |
+| `e_abs_ks_bstep` | `VAC_ages` | 1-sigma uncertainty of `abs_ks_bstep` | mag | float |
+| `e16_abs_ks_bstep` | `VAC_ages` | 16 percentile value for `abs_ks_bstep` | mag | float |
+| `e50_abs_ks_bstep` | `VAC_ages` | 50 percentile value for `abs_ks_bstep` | mag | float |
+| `e84_abs_ks_bstep` | `VAC_ages` | 84 percentile value for `abs_ks_bstep` | mag | float |
+| `use_dist_flag` | `VAC_dynamics` | Distance used: BSTEP(0), Photogeom.(1), Geom.(2), Plx(4), n.a.(8) |  | integer |
 | `use_rv_flag` | `VAC_dynamics` `VAC_rv` | RV flag: `rv_obst` (0), `rv_sme_v2` (1), Gaia DR2 (2) or n.a. (4) |  | integer |
 | `X_XYZ` | `VAC_dynamics` | Best-value heliocentric Galactic rectangular x-coordinate | kpc | float |
 | `Y_XYZ` | `VAC_dynamics` | Best-value heliocentric Galactic rectangular y-coordinate | kpc | float |
@@ -295,13 +295,13 @@ We have shortened the catalogue filenames to save space (i.e., removed the `GALA
 | `Energy_5` | `VAC_dynamics` | 5th Percentile MC orbit energy | km<sup>-2</sup>&#8239;s<sup>-2</sup> | float |
 | `Energy_50` | `VAC_dynamics` | 50th Percentile MC orbit energy | km<sup>-2</sup>&#8239;s<sup>-2</sup> | float |
 | `Energy_95` | `VAC_dynamics` | 95th Percentile MC orbit energy | km<sup>-2</sup>&#8239;s<sup>-2</sup> | float |
-| `rv_sme_v2` | `VAC_rv` | SME fitted radial velocity from GALAH spectra with correct vbary correction (`vbary_v2`) |  | float |
-| `rv_sme_v1` | `VAC_rv` | SME fitted radial velocity from GALAH spectra with wrong vbary correction (`vbary_v1`) |  | float |
-| `e_rv_sme` | `VAC_rv` | Uncertainty of `rv_sme_v2` |  | float |
+| `rv_sme_v2` | `VAC_rv` | SME fitted radial velocity from GALAH spectra with correct vbary correction (`vbary_v2`) | km&#8239;s<sup>-1</sup> | float |
+| `rv_sme_v1` | `VAC_rv` | SME fitted radial velocity from GALAH spectra with wrong vbary correction (`vbary_v1`) | km&#8239;s<sup>-1</sup> | float |
+| `e_rv_sme` | `VAC_rv` | Uncertainty of `rv_sme_v2` | km&#8239;s<sup>-1</sup> | float |
 | `cov_e_rv_sme` | `VAC_rv` | SME covariance fitting uncertainty sme.vrad | km&#8239;s<sup>-1</sup> | float |
 | `heliocentricJD` | `VAC_rv` | Heliocentric Julian Date |  | float |
-| `vbary_v1` | `VAC_rv` | Wrong barycentric correction used for v1 |  | float |
-| `vbary_v2` | `VAC_rv` | Correct barycentric correction used for v2 |  | float |
+| `vbary_v1` | `VAC_rv` | Wrong barycentric correction used for v1 | km&#8239;s<sup>-1</sup> | float |
+| `vbary_v2` | `VAC_rv` | Correct barycentric correction used for v2 | km&#8239;s<sup>-1</sup> | float |
 | `rv_obst` | `VAC_rv` | Radial Velocity with grav. redshift correction | km&#8239;s<sup>-1</sup> | float |
 | `e_rv_obst` | `VAC_rv` | Uncertainty of `rv_obst` | km&#8239;s<sup>-1</sup> | float |
 | `rv_nogr_obst` | `VAC_rv` | Radial Velocity without grav. redshift correction | km&#8239;s<sup>-1</sup> | float |
@@ -348,9 +348,9 @@ We have shortened the catalogue filenames to save space (i.e., removed the `GALA
 | <small>`astrometric_excess_noise_sig`</small> | `VAC_GaiaEDR3` | Significance of excess noise |  | float |
 | <small>`astrometric_params_solved`</small> | `VAC_GaiaEDR3` | Which parameters have been solved for? |  | integer |
 | <small>`astrometric_primary_flag`</small> | `VAC_GaiaEDR3` | Primary or seconday |  | boolean |
-| <small>`nu_eff_used_in_astrometry`</small> | `VAC_GaiaEDR3` | Effective wavenumber of the source used in the astrometric solution | um-1 | float |
-| `pseudocolour` | `VAC_GaiaEDR3` | Astrometrically estimated pseudocolour of the source | um-1 | float |
-| `pseudocolour_error` | `VAC_GaiaEDR3` | Standard error of the pseudocolour of the source | um-1 | float |
+| <small>`nu_eff_used_in_astrometry`</small> | `VAC_GaiaEDR3` | Effective wavenumber of the source used in the astrometric solution | um&#8239;s<sup>-1</sup> | float |
+| `pseudocolour` | `VAC_GaiaEDR3` | Astrometrically estimated pseudocolour of the source | um&#8239;s<sup>-1</sup> | float |
+| `pseudocolour_error` | `VAC_GaiaEDR3` | Standard error of the pseudocolour of the source | um&#8239;s<sup>-1</sup> | float |
 | `ra_pseudocolour_corr` | `VAC_GaiaEDR3` | Correlation between right ascension and pseudocolour |  | float |
 | `dec_pseudocolour_corr` | `VAC_GaiaEDR3` | Correlation between declination and pseudocolour |  | float |
 | <small>`parallax_pseudocolour_corr`</small> | `VAC_GaiaEDR3` | Correlation between parallax and pseudocolour |  | float |
