@@ -1,12 +1,17 @@
 # Updating the publication lists
 #
-# This workflow will install Python dependencies, execute survey/pub_maker.py, and commit any changes
+# This workflow runs a Python script that creates two pages on the website:
+# science/galah_publications.md and science/external_publications.md
+#
+# This workflow will install Python dependencies, execute survey/pub_maker.py.
+# It will then check if the publication pages have changed, and if so
+# commit any changes.
 
 name: Update Publications
 
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron:  '0 0 * * *' # Runs at 10 am AEST
 
 jobs:
   build:
@@ -31,6 +36,9 @@ jobs:
       run: python science/pub_maker.py
 
     - name: check for changes
+    # The reason for this git diff check is that the SVG images created by
+    # pub_maker.py change every run because matplotlib creates ID tags inside
+    # the files with random values.
       run: |
         if git diff --exit-code science/galah_publications.md science/external_publications.md; then
           echo "No changes"
