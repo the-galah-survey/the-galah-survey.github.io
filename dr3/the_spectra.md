@@ -38,11 +38,21 @@ There are 12181 stars which are missing the spectra for some of their cameras. W
 
 ### Acquiring the spectral data
 
-There are three methods for acquiring the spectra depending on your requirements:
+There are four methods for acquiring the spectra depending on your requirements:
 
+1. [Simple Spectral Access Service](#simple-spectral-access-service)
 1. [A few stars](#downloading-the-spectra-for-a-few-stars)
 2. [A larger number of stars](#downloading-the-spectra-for-a-larger-number-of-stars)
 3. [The entire GALAH spectral catalogue.](#downloading-the-entire-galah-spectral-catalogue)
+
+#### Simple Spectral Access Service
+The Simple Spectral Access (SSA) service provides a Virtual Observatory (VO) compliant standard interface to query and [access spectroscopic data hosted at Data Central](https://docs.datacentral.org.au/reference/services/simple-spectral-access-ssa-service/). Queries may be submitted through an HTTP GET request to the service. Results of the query are returned in VOTABLE format that includes spectra metadata and links to spectra. A default limit of 1000 results is in place to ensure results are returned in a timely manner. Data Central provides an example written in Python of a [GALAH DR3 Interactive Spectra Explorer enhanced by the Data Central API](https://docs.datacentral.org.au/help-center/virtual-observatory-examples/ssa-galah-dr3-interactive-spectra-explorer-enhanced-data-central-api/).
+
+Effectively, you need to construct a URL of the form:
+```bash
+https://datacentral.org.au/vo/slink/links?ID=sobject_id&DR=galah_dr3&IDX=0&FILT=x&RESPONSEFORMAT=fits
+```
+changing the `sobject_id` to a valid value from the GALAH catalogue, and the `x` in `FILT=x` to `B`, `G`, `R`, `I` (respectively Blue/CCD1, Green/CCD2, Red/CCD3, Infrared/CCD4) for the particular camera of interest.
 
 #### Downloading the spectra for a few stars
 
@@ -52,7 +62,7 @@ The spectrum of an individual star can be accessed via the [Data Central Single 
 
 #### Downloading the spectra for a larger number of stars
 
-If you would like the spectra for a large number of stars, this can be achieved using the [Data Central Bulk Download](https://datacentral.org.au/services/download/). **A rule-of-thumb is that the query to create the packaged tar.gz file of spectra will take about 10 minutes per 10000 `sobject_id` requested**.
+As well as the [Simple Spectral Access Service](#simple-spectral-access-service), if you would like the spectra for a large number of stars, this can be achieved using the [Data Central Bulk Download](https://datacentral.org.au/services/download/). **A rule-of-thumb is that the query to create the packaged tar.gz file of spectra will take about 10 minutes per 10000 `sobject_id` requested**.
 
 1. You will require the list of `sobject_id` you are interested in formatted as a comma-separated list. Copy the list of `sobject_id` in to *Source List* box, and select the following options:
 * *GALAH Data Release 3* as the *Data Release*

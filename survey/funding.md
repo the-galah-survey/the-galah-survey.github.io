@@ -5,7 +5,11 @@ title: Funding
 
 ### ASTRO 3D
 
-The GALAH Survey is one of the key projects of the ARC Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D). ASTRO 3D is a seven-year $40 million Centre of Excellence project funded by the Australian Government through the Australian Research Council (ARC). It is producing a comprehensive picture of the evolution of matter, the chemical elements, and energy in the Universe from shortly after the Big Bang to the present day. The Centre began in June 2017 and will end in June 2024. ASTRO 3D provides funding to employ postdoctoral researchers and support doctoral students.
+The GALAH Survey is one of the key projects of the ARC Centre of Excellence for All Sky Astrophysics in 3 Dimensions (ASTRO 3D). ASTRO 3D is a seven-year $40 million Centre of Excellence project funded by the Australian Government through the Australian Research Council (ARC). It is producing a comprehensive picture of the evolution of matter, the chemical elements, and energy in the Universe from shortly after the Big Bang to the present day. The Centre began in June 2017 and will end in June 2024.
+
+GALAH receives funding from ASTRO 3D to employ postdoctoral researchers, and support the activities of researchers at all levels.
+
+---
 
 ### Australian Government
 
