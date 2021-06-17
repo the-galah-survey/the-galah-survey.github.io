@@ -5,16 +5,13 @@ subtitle: Third Data Release
 ---
 
 {: .main_blockquote}
-This page gives a schema of the GALAH DR3 catalogues. For GALAH DR3, we have provided two versions of the [GALAH DR3 catalogue, and several value-added catalogues](/dr3/the_catalogues).
+This page gives the schema (or data model) for the [GALAH DR3 main and value-added catalogues](/dr3/the_catalogues).
 
 {: .box-warning}
-We strongly recommend also reading the [Recommended columns section of our Best Practices page](/dr3/using_the_data/#recommended-columns). This discusses how some parameters have different values in GALAH DR3 from different methods (e.g., for effective temperature there is `teff`, `irfm_teff`, `init_teff`, `teff_guess`; in this case we recommend `teff`.).
+We strongly recommend reading the [recommended columns section of our Best Practices page](/dr3/using_the_data/#recommended-columns). This discusses how some parameters have different values in GALAH DR3 from different methods (e.g., for effective temperature there is `teff`, `irfm_teff`, `init_teff`, `teff_guess`; in this case we recommend `teff`.).
 
-<!-- Some notes about the Table Schema of GALAH DR3:
-* The `sobject_id` column is the only one found across all the tables, and should be used for joining the catalogues.
-* For columns that are listed as being found in multiple catalogues, the same value will be found across all catalogues for a given `sobject_id` (e.g., for a given `sobject_id`, the same `teff` is found in `main_allstar` and `main_allspec`).
-* `rv_gaia_dr2` and `dr2_radial_velocity` both refer to the Gaia DR2 radial velocity and are identical for a given `dr3_source_id`.
-* Generally we do not recommend values found only in the `main_allspec` catalogue as these are only for expert and diagnostic purposes. -->
+{: .box-warning}
+The `sobject_id` column should be used for joining the catalogues.
 
 * This text gets replaced.
 {:toc}
@@ -37,7 +34,7 @@ Unless otherwise noted, all columns are found in both `GALAH_DR3_main_allstar_v2
 | `flag_repeat` | [Repeat observation flag](/dr3/flags/#red_flag), indicating if used for clean catalog |  | integer |
 | `wg4_field` | GALAH WG4 field |  | string |
 | `wg4_pipeline` | SME pipeline version `free`/`lbol`/`seis` |  | string |
-| `flag_sp` | Stellar parameter quality flag |  | integer |
+| `flag_sp` | [Stellar parameter quality flag](/dr3/flags/#flag_sp) |  | integer |
 | `teff` | Spectroscopic effective temperature (used for fitting) | K | float |
 | `e_teff` | Uncertainty `teff` | K | float |
 | `irfm_teff` | IRFM temperature (not used for synthesis) | K | float |
@@ -52,7 +49,7 @@ Unless otherwise noted, all columns are found in both `GALAH_DR3_main_allstar_v2
 | `fe_h` | Fe atomic abundance from Fe lines (final, 1D-NLTE) |  | float |
 | `e_fe_h` | Uncertainty `fe_h` |  | float |
 | `cov_e_fe_h` | SME covariance fitting uncertainty `fe_h`. Only in `main_allspec`. |  | float |
-| `flag_fe_h` | Quality flag `fe_h` |  | integer |
+| `flag_fe_h` | [Quality flag `fe_h`](/dr3/flags/#flag_fe_h) |  | integer |
 | `fe_h_atmo` | sme.feh from stellar parameter run, fitted from H, Ti, Sc, Fe |  | float |
 | `e_fe_h_atmo` | Uncertainty `fe_h_atmo`. Only in `main_allspec`. |  | float |
 | `cov_e_fe_h_atmo` | SME covariance fitting uncertainty sme.feh. Only in `main_allspec`. |  | float |
@@ -69,16 +66,16 @@ Unless otherwise noted, all columns are found in both `GALAH_DR3_main_allstar_v2
 | `alpha_fe` | Combined, weighted α-process element abundance |  | float |
 | `e_alpha_fe` | Uncertainty of `alpha_fe` |  | float |
 | `nr_alpha_fe` | Bitmask of used measurements for `alpha_fe` |  | float |
-| `flag_alpha_fe` | Quality flag of measurements for `alpha_fe` |  | integer |
+| `flag_alpha_fe` | [Quality flag of measurements for `alpha_fe`](/dr3/flags/#flag_x_fe) |  | integer |
 | `flux_A_Fe` | Normalised maximum absorption strength of in iron lines |  | float |
 | `chi_A_Fe` | χ² value of iron abundance fitting |  | float |
 | `ind_X1234_fe` | Individual uncalibrated measurmenet of line/combo X1234. Only in `main_allspec`. |  | float |
 | `ind_cov_e_X1234` | SME covariance fitting uncertainty `ind_X1234_fe`. Only in `main_allspec`. |  | float |
-| `ind_flag_X1234` | Quality flag fit for `ind_X1234_fe`. Only in `main_allspec`. |  | integer |
+| `ind_flag_X1234` | [Quality flag fit for `ind_X1234_fe`](/dr3/flags/#ind_flag_x1234). Only in `main_allspec`. |  | integer |
 | `X_fe` | Neutral/ionised X atomic abundance (final, 1D-LTE or NLTE) |  | float |
 | `e_X_fe` | Uncertainty `X_fe` |  | float |
 | `nr_X_fe` | Bitmask of used X ind lines |  | integer |
-| `flag_X_fe` | Quality flag of `X_fe` |  | integer |
+| `flag_X_fe` | [Quality flag of `X_fe`](/dr3/flags/#flag_x_fe) |  | integer |
 | `ra_dr2` | Right Ascension propagated from Gaia DR2. Original name `ra`. | deg | float |
 | `dec_dr2` | Declination propagated from Gaia DR2. Original name `dec`. | deg | float |
 | `parallax_dr2` | Parallax propagated from Gaia DR2. Original name `parallax`. | mas | float |
@@ -131,10 +128,10 @@ To save space in the [table above](#galah_dr3_main_allstar_v2-and-galah_dr3_main
 | `X_fe`<br/><br/>Neutral/ionised X atomic abundance (final, 1D-LTE or NLTE) | `Li_fe` `C_fe` `O_fe` `Na_fe` `Mg_fe` `Al_fe` `Si_fe` `K_fe` `Ca_fe` `Sc_fe` `Sc2_fe` `Ti_fe` `Ti2_fe` `V_fe` `Cr_fe` `Cr2_fe` `Mn_fe` `Co_fe` `Ni_fe` `Cu_fe` `Zn_fe` `Rb_fe` `Sr_fe` `Y_fe` `Zr_fe` `Mo_fe` `Ru_fe` `Ba_fe` `La_fe` `Ce_fe` `Nd_fe` `Sm_fe` `Eu_fe` `Li_fe` `C_fe` `O_fe` `Na_fe` `Mg_fe` `Al_fe` `Si_fe` `K_fe` `Ca_fe` `Sc_fe` `Sc2_fe` `Ti_fe` `Ti2_fe` `V_fe` `Cr_fe` `Cr2_fe` `Mn_fe` `Co_fe` `Ni_fe` `Cu_fe` `Zn_fe` `Rb_fe` `Sr_fe` `Y_fe` `Zr_fe` `Mo_fe` `Ru_fe` `Ba_fe` `La_fe` `Ce_fe` `Nd_fe` `Sm_fe` `Eu_fe` |
 | `e_X_fe`<br/><br/>Uncertainty `X_fe` | `e_Li_fe` `e_C_fe` `e_O_fe` `e_Na_fe` `e_Mg_fe` `e_Al_fe` `e_Si_fe` `e_K_fe` `e_Ca_fe` `e_Sc_fe` `e_Sc2_fe` `e_Ti_fe` `e_Ti2_fe` `e_V_fe` `e_Cr_fe` `e_Cr2_fe` `e_Mn_fe` `e_Co_fe` `e_Ni_fe` `e_Cu_fe` `e_Zn_fe` `e_Rb_fe` `e_Sr_fe` `e_Y_fe` `e_Zr_fe` `e_Mo_fe` `e_Ru_fe` `e_Ba_fe` `e_La_fe` `e_Ce_fe` `e_Nd_fe` `e_Sm_fe` `e_Eu_fe` `e_Li_fe` `e_C_fe` `e_O_fe` `e_Na_fe` `e_Mg_fe` `e_Al_fe` `e_Si_fe` `e_K_fe` `e_Ca_fe` `e_Sc_fe` `e_Sc2_fe` `e_Ti_fe` `e_Ti2_fe` `e_V_fe` `e_Cr_fe` `e_Cr2_fe` `e_Mn_fe` `e_Co_fe` `e_Ni_fe` `e_Cu_fe` `e_Zn_fe` `e_Rb_fe` `e_Sr_fe` `e_Y_fe` `e_Zr_fe` `e_Mo_fe` `e_Ru_fe` `e_Ba_fe` `e_La_fe` `e_Ce_fe` `e_Nd_fe` `e_Sm_fe` `e_Eu_fe` |
 | `nr_X_fe`<br/><br/>Bitmask of used X ind lines | `nr_Li_fe` `nr_C_fe` `nr_O_fe` `nr_Na_fe` `nr_Mg_fe` `nr_Al_fe` `nr_Si_fe` `nr_K_fe` `nr_Ca_fe` `nr_Sc_fe` `nr_Sc2_fe` `nr_Ti_fe` `nr_Ti2_fe` `nr_V_fe` `nr_Cr_fe` `nr_Cr2_fe` `nr_Mn_fe` `nr_Co_fe` `nr_Ni_fe` `nr_Cu_fe` `nr_Zn_fe` `nr_Rb_fe` `nr_Sr_fe` `nr_Y_fe` `nr_Zr_fe` `nr_Mo_fe` `nr_Ru_fe` `nr_Ba_fe` `nr_La_fe` `nr_Ce_fe` `nr_Nd_fe` `nr_Sm_fe` `nr_Eu_fe` `nr_Li_fe` `nr_C_fe` `nr_O_fe` `nr_Na_fe` `nr_Mg_fe` `nr_Al_fe` `nr_Si_fe` `nr_K_fe` `nr_Ca_fe` `nr_Sc_fe` `nr_Sc2_fe` `nr_Ti_fe` `nr_Ti2_fe` `nr_V_fe` `nr_Cr_fe` `nr_Cr2_fe` `nr_Mn_fe` `nr_Co_fe` `nr_Ni_fe` `nr_Cu_fe` `nr_Zn_fe` `nr_Rb_fe` `nr_Sr_fe` `nr_Y_fe` `nr_Zr_fe` `nr_Mo_fe` `nr_Ru_fe` `nr_Ba_fe` `nr_La_fe` `nr_Ce_fe` `nr_Nd_fe` `nr_Sm_fe` `nr_Eu_fe` |
-| `flag_X_fe`<br/><br/>Quality flag of `X_fe` | `flag_Li_fe` `flag_C_fe` `flag_O_fe` `flag_Na_fe` `flag_Mg_fe` `flag_Al_fe` `flag_Si_fe` `flag_K_fe` `flag_Ca_fe` `flag_Sc_fe` `flag_Sc2_fe` `flag_Ti_fe` `flag_Ti2_fe` `flag_V_fe` `flag_Cr_fe` `flag_Cr2_fe` `flag_Mn_fe` `flag_Co_fe` `flag_Ni_fe` `flag_Cu_fe` `flag_Zn_fe` `flag_Rb_fe` `flag_Sr_fe` `flag_Y_fe` `flag_Zr_fe` `flag_Mo_fe` `flag_Ru_fe` `flag_Ba_fe` `flag_La_fe` `flag_Ce_fe` `flag_Nd_fe` `flag_Sm_fe` `flag_Eu_fe` `flag_Li_fe` `flag_C_fe` `flag_O_fe` `flag_Na_fe` `flag_Mg_fe` `flag_Al_fe` `flag_Si_fe` `flag_K_fe` `flag_Ca_fe` `flag_Sc_fe` `flag_Sc2_fe` `flag_Ti_fe` `flag_Ti2_fe` `flag_V_fe` `flag_Cr_fe` `flag_Cr2_fe` `flag_Mn_fe` `flag_Co_fe` `flag_Ni_fe` `flag_Cu_fe` `flag_Zn_fe` `flag_Rb_fe` `flag_Sr_fe` `flag_Y_fe` `flag_Zr_fe` `flag_Mo_fe` `flag_Ru_fe` `flag_Ba_fe` `flag_La_fe` `flag_Ce_fe` `flag_Nd_fe` `flag_Sm_fe` `flag_Eu_fe` |
+| `flag_X_fe`<br/><br/>[Quality flag of `X_fe`](/dr3/flags/#flag_x_fe) | `flag_Li_fe` `flag_C_fe` `flag_O_fe` `flag_Na_fe` `flag_Mg_fe` `flag_Al_fe` `flag_Si_fe` `flag_K_fe` `flag_Ca_fe` `flag_Sc_fe` `flag_Sc2_fe` `flag_Ti_fe` `flag_Ti2_fe` `flag_V_fe` `flag_Cr_fe` `flag_Cr2_fe` `flag_Mn_fe` `flag_Co_fe` `flag_Ni_fe` `flag_Cu_fe` `flag_Zn_fe` `flag_Rb_fe` `flag_Sr_fe` `flag_Y_fe` `flag_Zr_fe` `flag_Mo_fe` `flag_Ru_fe` `flag_Ba_fe` `flag_La_fe` `flag_Ce_fe` `flag_Nd_fe` `flag_Sm_fe` `flag_Eu_fe` `flag_Li_fe` `flag_C_fe` `flag_O_fe` `flag_Na_fe` `flag_Mg_fe` `flag_Al_fe` `flag_Si_fe` `flag_K_fe` `flag_Ca_fe` `flag_Sc_fe` `flag_Sc2_fe` `flag_Ti_fe` `flag_Ti2_fe` `flag_V_fe` `flag_Cr_fe` `flag_Cr2_fe` `flag_Mn_fe` `flag_Co_fe` `flag_Ni_fe` `flag_Cu_fe` `flag_Zn_fe` `flag_Rb_fe` `flag_Sr_fe` `flag_Y_fe` `flag_Zr_fe` `flag_Mo_fe` `flag_Ru_fe` `flag_Ba_fe` `flag_La_fe` `flag_Ce_fe` `flag_Nd_fe` `flag_Sm_fe` `flag_Eu_fe` |
 | `ind_X1234_fe`<br/><br/>Individual uncalibrated measurmenet of line/combo X1234 | `ind_Li6708_fe` `ind_Li6708_NoRV_fe` `ind_C6588_fe` `ind_O_fe` `ind_Na_fe` `ind_Mg5711_fe` `ind_Al_fe` `ind_Si_fe` `ind_K7699_fe` `ind_Ca_fe` `ind_Sc_fe` `ind_Ti4758_fe` `ind_Ti4759_fe` `ind_Ti4778_fe` `ind_Ti4782_fe` `ind_Ti4798_fe` `ind_Ti4802_fe` `ind_Ti4820_fe` `ind_Ti5689_fe` `ind_Ti5716_fe` `ind_Ti5720_fe` `ind_Ti5739_fe` `ind_Ti5866_fe` `ind_Ti6599_fe` `ind_Ti6717_fe` `ind_Ti7853_fe` `ind_Ti4720_fe` `ind_Ti4765_fe` `ind_Ti4799_fe` `ind_Ti4849_fe` `ind_Ti4866_fe` `ind_Ti4874_fe` `ind_V4832_fe` `ind_V4784_fe` `ind_V4797_fe` `ind_Cr_fe` `ind_Mn_fe` `ind_Co4781_fe` `ind_Co4900_fe` `ind_Co5647_fe` `ind_Co6490_fe` `ind_Co6551_fe` `ind_Co6632_fe` `ind_Co6679_fe` `ind_Co7713_fe` `ind_Co7838_fe` `ind_Ni5847_fe` `ind_Ni6586_fe` `ind_Cu5700_fe` `ind_Cu5782_fe` `ind_Zn4722_fe` `ind_Zn4811_fe` `ind_Rb7800_fe` `ind_Sr6550_fe` `ind_Y_fe` `ind_Y4820_fe` `ind_Y4855_fe` `ind_Y4884_fe` `ind_Y5663_fe` `ind_Y5729_fe` `ind_Zr4739_fe` `ind_Zr4772_fe` `ind_Zr4806_fe` `ind_Zr4828_fe` `ind_Zr5681_fe` `ind_Mo5689_fe` `ind_Mo5751_fe` `ind_Mo5858_fe` `ind_Mo6619_fe` `ind_Ru4758_fe` `ind_Ru4869_fe` `ind_Ru5699_fe` `ind_Ba_fe` `ind_La4716_fe` `ind_La4749_fe` `ind_La4804_fe` `ind_La5806_fe` `ind_Ce4774_fe` `ind_Nd4811_fe` `ind_Nd5741_fe` `ind_Nd5770_fe` `ind_Nd5812_fe` `ind_Nd5842_fe` `ind_Sm4720_fe` `ind_Sm4792_fe` `ind_Sm4837_fe` `ind_Sm4848_fe` `ind_Sm4854_fe` `ind_Eu5819_fe` `ind_Eu6645_fe` |
 | `ind_cov_e_X1234`<br/><br/>SME covariance fitting uncertainty of `ind_X1234_fe` | `ind_cov_e_Li6708` `ind_cov_e_Li6708_NoRV` `ind_cov_e_C6588` `ind_cov_e_O` `ind_cov_e_Na` `ind_cov_e_Mg5711` `ind_cov_e_Al` `ind_cov_e_Si` `ind_cov_e_K7699` `ind_cov_e_Ca` `ind_cov_e_Sc` `ind_cov_e_Ti4758` `ind_cov_e_Ti4759` `ind_cov_e_Ti4778` `ind_cov_e_Ti4782` `ind_cov_e_Ti4798` `ind_cov_e_Ti4802` `ind_cov_e_Ti4820` `ind_cov_e_Ti5689` `ind_cov_e_Ti5716` `ind_cov_e_Ti5720` `ind_cov_e_Ti5739` `ind_cov_e_Ti5866` `ind_cov_e_Ti6599` `ind_cov_e_Ti6717` `ind_cov_e_Ti7853` `ind_cov_e_Ti4720` `ind_cov_e_Ti4765` `ind_cov_e_Ti4799` `ind_cov_e_Ti4849` `ind_cov_e_Ti4866` `ind_cov_e_Ti4874` `ind_cov_e_V4832` `ind_cov_e_V4784` `ind_cov_e_V4797` `ind_cov_e_Cr` `ind_cov_e_Mn` `ind_cov_e_Co4781` `ind_cov_e_Co4900` `ind_cov_e_Co5647` `ind_cov_e_Co6490` `ind_cov_e_Co6551` `ind_cov_e_Co6632` `ind_cov_e_Co6679` `ind_cov_e_Co7713` `ind_cov_e_Co7838` `ind_cov_e_Ni5847` `ind_cov_e_Ni6586` `ind_cov_e_Cu5700` `ind_cov_e_Cu5782` `ind_cov_e_Zn4722` `ind_cov_e_Zn4811` `ind_cov_e_Rb7800` `ind_cov_e_Sr6550` `ind_cov_e_Y` `ind_cov_e_Y4820` `ind_cov_e_Y4855` `ind_cov_e_Y4884` `ind_cov_e_Y5663` `ind_cov_e_Y5729` `ind_cov_e_Zr4739` `ind_cov_e_Zr4772` `ind_cov_e_Zr4806` `ind_cov_e_Zr4828` `ind_cov_e_Zr5681` `ind_cov_e_Mo5689` `ind_cov_e_Mo5751` `ind_cov_e_Mo5858` `ind_cov_e_Mo6619` `ind_cov_e_Ru4758` `ind_cov_e_Ru4869` `ind_cov_e_Ru5699` `ind_cov_e_Ba` `ind_cov_e_La4716` `ind_cov_e_La4749` `ind_cov_e_La4804` `ind_cov_e_La5806` `ind_cov_e_Ce4774` `ind_cov_e_Nd4811` `ind_cov_e_Nd5741` `ind_cov_e_Nd5770` `ind_cov_e_Nd5812` `ind_cov_e_Nd5842` `ind_cov_e_Sm4720` `ind_cov_e_Sm4792` `ind_cov_e_Sm4837` `ind_cov_e_Sm4848` `ind_cov_e_Sm4854` `ind_cov_e_Eu5819` `ind_cov_e_Eu6645` |
-| `ind_flag_X1234`<br/><br/>Quality flag fit for `ind_X1234_fe` | `ind_flag_Li6708` `ind_flag_Li6708_NoRV` `ind_flag_C6588` `ind_flag_O` `ind_flag_Na` `ind_flag_Mg5711` `ind_flag_Al` `ind_flag_Si` `ind_flag_K7699` `ind_flag_Ca` `ind_flag_Sc` `ind_flag_Ti4758` `ind_flag_Ti4759` `ind_flag_Ti4778` `ind_flag_Ti4782` `ind_flag_Ti4798` `ind_flag_Ti4802` `ind_flag_Ti4820` `ind_flag_Ti5689` `ind_flag_Ti5716` `ind_flag_Ti5720` `ind_flag_Ti5739` `ind_flag_Ti5866` `ind_flag_Ti6599` `ind_flag_Ti6717` `ind_flag_Ti7853` `ind_flag_Ti4720` `ind_flag_Ti4765` `ind_flag_Ti4799` `ind_flag_Ti4849` `ind_flag_Ti4866` `ind_flag_Ti4874` `ind_flag_V4832` `ind_flag_V4784` `ind_flag_V4797` `ind_flag_Cr` `ind_flag_Mn` `ind_flag_Co4781` `ind_flag_Co4900` `ind_flag_Co5647` `ind_flag_Co6490` `ind_flag_Co6551` `ind_flag_Co6632` `ind_flag_Co6679` `ind_flag_Co7713` `ind_flag_Co7838` `ind_flag_Ni5847` `ind_flag_Ni6586` `ind_flag_Cu5700` `ind_flag_Cu5782` `ind_flag_Zn4722` `ind_flag_Zn4811` `ind_flag_Rb7800` `ind_flag_Sr6550` `ind_flag_Y` `ind_flag_Y4820` `ind_flag_Y4855` `ind_flag_Y4884` `ind_flag_Y5663` `ind_flag_Y5729` `ind_flag_Zr4739` `ind_flag_Zr4772` `ind_flag_Zr4806` `ind_flag_Zr4828` `ind_flag_Zr5681` `ind_flag_Mo5689` `ind_flag_Mo5751` `ind_flag_Mo5858` `ind_flag_Mo6619` `ind_flag_Ru4758` `ind_flag_Ru4869` `ind_flag_Ru5699` `ind_flag_Ba` `ind_flag_La4716` `ind_flag_La4749` `ind_flag_La4804` `ind_flag_La5806` `ind_flag_Ce4774` `ind_flag_Nd4811` `ind_flag_Nd5741` `ind_flag_Nd5770` `ind_flag_Nd5812` `ind_flag_Nd5842` `ind_flag_Sm4720` `ind_flag_Sm4792` `ind_flag_Sm4837` `ind_flag_Sm4848` `ind_flag_Sm4854` `ind_flag_Eu5819` `ind_flag_Eu6645` |
+| `ind_flag_X1234`<br/><br/>[Quality flag fit for `ind_X1234_fe`](/dr3/flags/#ind_flag_x1234) | `ind_flag_Li6708` `ind_flag_Li6708_NoRV` `ind_flag_C6588` `ind_flag_O` `ind_flag_Na` `ind_flag_Mg5711` `ind_flag_Al` `ind_flag_Si` `ind_flag_K7699` `ind_flag_Ca` `ind_flag_Sc` `ind_flag_Ti4758` `ind_flag_Ti4759` `ind_flag_Ti4778` `ind_flag_Ti4782` `ind_flag_Ti4798` `ind_flag_Ti4802` `ind_flag_Ti4820` `ind_flag_Ti5689` `ind_flag_Ti5716` `ind_flag_Ti5720` `ind_flag_Ti5739` `ind_flag_Ti5866` `ind_flag_Ti6599` `ind_flag_Ti6717` `ind_flag_Ti7853` `ind_flag_Ti4720` `ind_flag_Ti4765` `ind_flag_Ti4799` `ind_flag_Ti4849` `ind_flag_Ti4866` `ind_flag_Ti4874` `ind_flag_V4832` `ind_flag_V4784` `ind_flag_V4797` `ind_flag_Cr` `ind_flag_Mn` `ind_flag_Co4781` `ind_flag_Co4900` `ind_flag_Co5647` `ind_flag_Co6490` `ind_flag_Co6551` `ind_flag_Co6632` `ind_flag_Co6679` `ind_flag_Co7713` `ind_flag_Co7838` `ind_flag_Ni5847` `ind_flag_Ni6586` `ind_flag_Cu5700` `ind_flag_Cu5782` `ind_flag_Zn4722` `ind_flag_Zn4811` `ind_flag_Rb7800` `ind_flag_Sr6550` `ind_flag_Y` `ind_flag_Y4820` `ind_flag_Y4855` `ind_flag_Y4884` `ind_flag_Y5663` `ind_flag_Y5729` `ind_flag_Zr4739` `ind_flag_Zr4772` `ind_flag_Zr4806` `ind_flag_Zr4828` `ind_flag_Zr5681` `ind_flag_Mo5689` `ind_flag_Mo5751` `ind_flag_Mo5858` `ind_flag_Mo6619` `ind_flag_Ru4758` `ind_flag_Ru4869` `ind_flag_Ru5699` `ind_flag_Ba` `ind_flag_La4716` `ind_flag_La4749` `ind_flag_La4804` `ind_flag_La5806` `ind_flag_Ce4774` `ind_flag_Nd4811` `ind_flag_Nd5741` `ind_flag_Nd5770` `ind_flag_Nd5812` `ind_flag_Nd5842` `ind_flag_Sm4720` `ind_flag_Sm4792` `ind_flag_Sm4837` `ind_flag_Sm4848` `ind_flag_Sm4854` `ind_flag_Eu5819` `ind_flag_Eu6645` |
 
 ---
 
@@ -361,9 +358,9 @@ Unless otherwise stated, all values are from [gaiaedr3.gaia_source](https://gea.
 | `sobject_id` | GALAH identifier |  | integer |
 | `dr2_source_id` | Gaia DR2 `source_id` |  | integer |
 | `dr3_source_id` | Gaia DR3 `source_id` |  | integer |
-| `angular_distance` | Angular distance between the two sources propagated from [edr3.dr2_neighbourhood](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html) | mas | float |
-| `magnitude_difference` | G band magnitude difference between the sources propagated from [edr3.dr2_neighbourhood](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html) | mag | float |
-| `proper_motion_propagation` | Flag indicating whether E/DR3 coordinates were proper motion corrected propagated from [edr3.dr2_neighbourhood](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html) |  | boolean |
+| `angular_distance` | Angular distance between the two sources. Propagated from [edr3.dr2_neighbourhood](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html) | mas | float |
+| `magnitude_difference` | G band magnitude difference between the sources. Propagated from [edr3.dr2_neighbourhood](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html) | mag | float |
+| `proper_motion_propagation` | [Flag indicating whether E/DR3 coordinates were proper motion corrected](/dr3/flags/#flags-from-gaia-catalogues). Propagated from [edr3.dr2_neighbourhood](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html) |  | boolean |
 | `solution_id` | Solution Identifier |  | integer |
 | `designation` | Unique source designation (unique across all Data Releases) |  | string |
 | `random_index` | Random index used to select subsets |  | integer |
@@ -457,7 +454,7 @@ Unless otherwise stated, all values are from [gaiaedr3.gaia_source](https://gea.
 | `dr2_rv_nb_transits` | Number of transits used to compute radial velocity in Gaia DR2 |  | integer |
 | `dr2_rv_template_teff` | T<sub>eff</sub> of the template used to compute radial velocity in Gaia DR2 | K | float |
 | `dr2_rv_template_logg` | log*g* of the template used to compute radial velocity in Gaia DR2 | log(cm&#8239;s<sup>-2</sup>) | float |
-| `dr2_rv_template_fe_h` | Fe/H of the template used to compute radial velocity in Gaia DR2 | dex | float |
+| `dr2_rv_template_fe_h` | [Fe/H] of the template used to compute radial velocity in Gaia DR2 | dex | float |
 | `l` | Galactic longitude | deg | float |
 | `b` | Galactic latitude | deg | float |
 | `ecl_lon` | Ecliptic longitude | deg | float |

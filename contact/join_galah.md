@@ -8,4 +8,4 @@ Members of GALAH enjoy access to all survey data products prior to public releas
 
 The ExT may also approve participation in specific GALAH projects of persons outside the GALAH team, on request from a team member. External collaborators may be granted access to the database for the duration of the specific project, and can become first-tier authors on a GALAH paper resulting from such a joint project. Finally, the ExT reserves the right to invite individual experts with particular skills from outside Australia to join membership.
 
-Do you want to join GALAH? If so, contact the Executive Team at [galah-ext@aao.gov.au](galah-ext@aao.gov.au). Please include your affiliation and current position, in addition to a short description of your interest in and possible contributions to the survey.
+Do you want to join GALAH? If so, contact the Executive Team at [galah-ext@datacentral.org.au](mailto:galah-ext@datacentral.org.au). Please include your affiliation and current position, in addition to a short description of your interest in and possible contributions to the survey.
