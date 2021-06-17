@@ -38,7 +38,7 @@ There are 12181 stars which are missing the spectra for some of their cameras. W
 
 ### Acquiring the spectral data
 
-There are four methods for acquiring the spectra depending on your requirements:
+The GALAH DR3 spectral library is served by [Data Central](https://datacentral.org.au). There are four methods for acquiring the spectra depending on your requirements:
 
 1. [Simple Spectral Access Service](#simple-spectral-access-service)
 1. [A few stars](#downloading-the-spectra-for-a-few-stars)
@@ -75,6 +75,9 @@ As well as the [Simple Spectral Access Service](#simple-spectral-access-service)
 {: .box-error}
 It is possible to get the entire spectral catalogue with the [bulk download option described above](#downloading-the-spectra-for-a-larger-number-of-stars), but the query takes about 20 hours to complete.
 
+{: .box-warning}
+On decompression, you will require about 385 GB of free space. The decompressed files are located in a single directory, so please be aware of any file management limitations you might have dealing with 2 million files in a single directory.
+
 The entire GALAH DR3 spectral library is found in two files:
 
 * `GALAH_DR3_all_spectra_with_normalisation_v2.tar.gz` (compressed 228 GB file)
@@ -95,9 +98,3 @@ wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/s
 # Download the spectra for 227 stars that were not normalised
 wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_all_spectra_missing_normalisation_v2.tar.gz
 ```
-
-{: .box-warning}
-On decompression, you will require about 385 GB of free space. The decompressed files are located in a single directory, so please be aware of any file management limitations you might have dealing with 2 million files in a single directory.
-
-{: .box-warning}
-As [discussed above](#missing-spectral-data), 12181 stars are missing spectra for one or two of their cameras due to reduction or instrumentation problems. There is a [list of these missing spectra](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/spectra/GALAH_DR3_list_missing_reduced_spectra_v2.csv).

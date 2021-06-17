@@ -20,7 +20,7 @@ We do not currently understand how these different Milky Way structures formed a
 ### Element Origins
 
 ![The Periodic Table, showing naturally occurring elements up to uranium. Shading indicates stellar origin.](/science/img/Origin-of-elements-periodic-table-Kobayashi-et-al-Sahm-Keily-V2-27082020-4.jpg "The Periodic Table, showing naturally occurring elements up to uranium. Shading indicates stellar origin."){: .mx-auto.d-block :}
-*The Periodic Table, showing naturally occurring elements up to uranium. Shading indicates stellar origin. (Content: [Chiaki Kobayashi et al](https://doi.org/10.3847/1538-4357/abae65); Artwork: Sahm Keily)*
+*The Periodic Table, showing naturally occurring elements up to uranium. Shading indicates stellar origin. (Content: [Chiaki Kobayashi *et al.*](https://doi.org/10.3847/1538-4357/abae65); Artwork: Sahm Keily)*
 
 After the Big Bang, the ordinary matter in the Universe was composed primarily of just two elements: hydrogen and helium. Currently, there are a wide range of elements, from argon to zirconium. These more complex elements were nearly all produced via stellar evolution processes. The formation of new elements is called nucleosynthesis. Below, we describe the basics of the chemistry of the Universe and how it has changed over time.
 

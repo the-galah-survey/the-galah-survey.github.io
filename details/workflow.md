@@ -12,7 +12,7 @@ How do we estimate stellar elemental abundances from stellar light? Let's explor
 ### Target Selection
 
 ![This picture shows spatial coverage of stars observed with HERMES](/details/img/lb_overview_colored.png "AAT with 2dF topend"){:width="100%"}
-*This picture shows spatial coverage of stars observed with HERMES Image credit: [Buder et al., 2021](https://doi.org/10.1093/mnras/stab1242)*
+*This picture shows spatial coverage of stars observed with HERMES Image credit: [Buder *et al.*, 2021](https://doi.org/10.1093/mnras/stab1242)*
 
 With our survey, we aim to observe up to 1 million stars. The Milky Way has an estimated amount of 100 billion stars. So which stars should we observe? There are several things to consider:
 * How much light can our telescope --- in our case the 3.9 metre diameter Anglo-Australian Telescope --- capture?
@@ -40,7 +40,7 @@ GALAH data are acquired with the 3.9-metre Anglo-Australian Telescope at Siding 
 ![This picture shows a part of the CCD Camera image of the 3rd HERMES detector. Spectra per star go horizontally with a greyscale indicating the number of photons/electrons counted. Absorption lines, like the strong Halpha line in the left third of each spectrum are dark black lines and are wiggling from star to star due to their motion away from us or towards us.](/details/img/ccd3.png "Part of a raw image of CCD3 with spectra going horizontally"){:width="100%"}
 *This picture shows a part of the CCD Camera image of the 3rd HERMES detector. Spectra per star go horizontally with a greyscale indicating the number of photons/electrons counted. Absorption lines, like the strong Halpha line in the left third of each spectrum are dark black lines and are wiggling from star to star due to their motion away from us or towards us. Image Credit: The GALAH Survey*
 
-For more information read our [reduction pipeline paper (Kos et al 2017)](http://adsabs.harvard.edu/abs/2017MNRAS.464.1259K) and our [reduction page](/details/reduction).
+For more information read our [reduction pipeline paper (Kos *et al.* 2017)](http://adsabs.harvard.edu/abs/2017MNRAS.464.1259K) and our [reduction page](/details/reduction).
 
 ---
 

@@ -27,7 +27,7 @@ This working group coordinates the observations of the survey. WG2 is in charge 
 #### WG3: Reduction
 ##### **Lead: Janez Kos (University of Ljubljana)**
 
-This working group reduces the raw data of the observations, including velocity corrections, normalisation, and a preliminary estimate of T<sub>eff</sub>, log*g*, and [Fe/H] via the GUESS template matching code. Much of their work can be found described in [Kos *et al* (2018)](https://doi.org/10.1093/mnras/stw2064).
+This working group reduces the raw data of the observations, including velocity corrections, normalisation, and a preliminary estimate of T<sub>eff</sub>, log*g*, and [Fe/H] via the GUESS template matching code. Much of their work can be found described in [Kos *et al.* (2018)](https://doi.org/10.1093/mnras/stw2064).
 
 #### WG4: Analysis
 ##### **Lead: Sven Buder (Australian National University)**

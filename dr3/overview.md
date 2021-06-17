@@ -4,7 +4,7 @@ title: GALAH DR3
 subtitle: Third Data Release
 ---
 {: .main_blockquote}
-The Third Data Release of the Galactic Archaeology with HERMES (GALAH) survey provides one-dimensional spectra, stellar atmospheric parameters and individual elemental abundances for 678,423 spectra of 588,571 mostly nearby stars. They were observed with the HERMES spectrograph at the Anglo-Australian Telescope between November 2013 and February 2019. The release is fully described in [Buder et al. (2021)](https://arxiv.org/abs/2011.02505)
+The Third Data Release of the Galactic Archaeology with HERMES (GALAH) survey provides one-dimensional spectra, stellar atmospheric parameters and individual elemental abundances for 678,423 spectra of 588,571 mostly nearby stars. They were observed with the HERMES spectrograph at the Anglo-Australian Telescope between November 2013 and February 2019. The release is fully described in [Buder *et al.* (2021)](https://arxiv.org/abs/2011.02505)
 
 {: .box-error}
 **Want to start working right now with GALAH DR3?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>

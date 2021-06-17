@@ -86,8 +86,8 @@ This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an 
 * All columns from [`gaiaedr3.gaia_source`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_gaia_source.html) (with `source_id` renamed `dr3_source_id`)
 * All columns from [`gaiaedr3.dr2_neighbourhood`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html):
     - e.g., `angular_distance`, `magnitude_difference`, `proper_motion_propagation`
-* Photogeometric and Geometric Distances from [Bailer-Jones et al. (2020)](https://www2.mpia-hd.mpg.de/homes/calj/gedr3_distances/main.html)
-* Zeropoints from [Lindegren et al. (2020)](https://arxiv.org/abs/2012.01742)
+* Photogeometric and Geometric Distances from [Bailer-Jones *et al.* (2020)](https://www2.mpia-hd.mpg.de/homes/calj/gedr3_distances/main.html)
+* Zeropoints from [Lindegren *et al.* (2020)](https://arxiv.org/abs/2012.01742)
 
 Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
 * This cross-match used the previously identified Gaia DR2 `source_id` for each GALAH DR3 star, and the `gaiaedr3.dr2_neighbourhood` table created by the Gaia team. The Gaia DR2 `source_id` had been found using the `gaiadr2.tmass_best_neighbour` table and the 2MASS ID of each GALAH star. In the future, we suggest to perform this crossmatch via GALAH's 2MASS ID and the yet-to-come match of Gaia EDR3 and 2MASS identifiers.
@@ -103,7 +103,7 @@ Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
 #### Ages, masses, distances and other parameters estimated by BSTEP
 ##### [Download `GALAH_DR3_VAC_ages_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (362 MB)
  {:.no_toc}
-This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma et al. (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
+This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma *et al.* (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
 
 For each star, we give the following parameters found by BSTEP:
 * distance (`distance_bstep`)
@@ -123,7 +123,7 @@ For each estimated parameter we also report the 1-sigma uncertainty (prefix `e_`
 {: .box-warning}
 As discussed on our [Best Practices page](/dr3/using_the_data), we recommend the ages, masses, and distances from BSTEP as our best values for these parameters.  We do not recommend using BSTEP values for stellar parameters like effective temperature and surface gravity.
 
-For details of the adopted priors see [Sharma et al. (2018)](https://doi.org/10.1093/mnras/stx2582). Briefly, a flat prior on age and metallicity was used and for density distribution of stars a combination of an exponential stellar disc and a diffuse stellar halo was used. For results presented in this paper, we use the PARSEC release v1.2S + COLIBRI stellar isochrone ([Marigo et al. 2017](https://doi.org/10.3847/1538-4357/835/1/77)). We use the following observables, T<sub>eff</sub> , log *g*, [Fe/H], [α/Fe] , 2MASS *J* and *K<sub>S</sub>* photometry, and parallax from Gaia. The effective observed metallicity, log(Z/Z<sub>⊙</sub>), was estimated from [Fe/H] and [α/Fe] using the formula by [Salaris (2006)](https://books.google.de/books?id=A5DvAAAAMAAJ). This was compared with the surface metallicity reported by the isochrones, which takes the evolutionary changes in surface metallicity Z into account.
+For details of the adopted priors see [Sharma *et al.* (2018)](https://doi.org/10.1093/mnras/stx2582). Briefly, a flat prior on age and metallicity was used and for density distribution of stars a combination of an exponential stellar disc and a diffuse stellar halo was used. For results presented in this paper, we use the PARSEC release v1.2S + COLIBRI stellar isochrone ([Marigo *et al.* 2017](https://doi.org/10.3847/1538-4357/835/1/77)). We use the following observables, T<sub>eff</sub> , log *g*, [Fe/H], [α/Fe] , 2MASS *J* and *K<sub>S</sub>* photometry, and parallax from Gaia. The effective observed metallicity, log(Z/Z<sub>⊙</sub>), was estimated from [Fe/H] and [α/Fe] using the formula by [Salaris (2006)](https://books.google.de/books?id=A5DvAAAAMAAJ). This was compared with the surface metallicity reported by the isochrones, which takes the evolutionary changes in surface metallicity Z into account.
 
 ---
 
@@ -147,11 +147,11 @@ For each estimated parameter we also report a mean value and the 5th, 50th, and 
 
 For the calculation of orbit information we use version 1.6 of the Python package `galpy` ([Bovy 2015](http://doi.org/10.1088/0067-0049/216/2/29)). To estimate actions, eccentricity, maximum orbit Galactocentric height, and apocenter/pericenter radii, we use the Staeckel fudge via the galpy module `actionAngleStaeckel` with a focus of 0.45. We use the following potentials and observed properties of the Galaxy:
 * The best fitting axisymmetric potential by McMillan (2017);
-* A solar radius of 8.21 kpc, consistent with the latest measurement by Gravity Collaboration et al. (2019) of 8.178 ± 0.013(stat.) ± 0.022(sys.) kpc;
+* A solar radius of 8.21 kpc, consistent with the latest measurement by Gravity Collaboration *et al.* (2019) of 8.178 ± 0.013(stat.) ± 0.022(sys.) kpc;
 * A circular velocity at this radius of 233.1 km/s;
 * The total motion of the Sun in the V-direction of 248.27 km/s by evaluation the proper motion measurements from Reid & Brunthaler (2004) at our chosen Solar radius;
-* The Sun placed 25 pc above the plane (Jurić et al. 2008);
-* The peculiar solar velocities U = 11.1 km/s and W=7.25 km/s by Schönrich et al (2020) but V=15.17 km/s.
+* The Sun placed 25 pc above the plane (Jurić *et al.* 2008);
+* The peculiar solar velocities U = 11.1 km/s and W=7.25 km/s by Schönrich *et al.* (2020) but V=15.17 km/s.
 
 The input values for each star were:
 * Sky positions (`ra`, `dec`) and proper motions (`pmra`, `pmdec`) from Gaia eDR3 (see the [`GALAH_DR3_VAC_GaiaEDR3_v2` catalogue above](#gaia-edr3-data-for-all-stars-in-galah-dr3).)
@@ -169,7 +169,7 @@ The input values for each star were:
 This catalogue collates several radial velocities measurements for each star:
 
 * `rv_obst` and `rv_nogr_obst` (and their error columns)
-    - [Zwitter et al (2020)](https://arxiv.org/abs/2012.12201) created essentially noiseless observed spectra from the median spectra for all GALAH DR3 stars belonging to the same bin with a width of 50 K in temperature, 0.2 dex in gravity, and 0.1 dex in metallicity. The observed spectra are then cross-correlated with these noiseless spectra to measure radial velocities with a typical accuracy of 0.1 km/s. The `rv_nogr_obst` reports the value without the gravitational redshift correction.
+    - [Zwitter *et al.* (2020)](https://arxiv.org/abs/2012.12201) created essentially noiseless observed spectra from the median spectra for all GALAH DR3 stars belonging to the same bin with a width of 50 K in temperature, 0.2 dex in gravity, and 0.1 dex in metallicity. The observed spectra are then cross-correlated with these noiseless spectra to measure radial velocities with a typical accuracy of 0.1 km/s. The `rv_nogr_obst` reports the value without the gravitational redshift correction.
 * `rv_sme_v2` (and its error columns)
     - The radial velocity calculated by SME as part of the stellar parameter and abundance determination.
     - There is also a `rv_sme_v1` column which was the value found in the original GALAH DR3 release which had an incorrect barycentric correction.
@@ -184,7 +184,7 @@ The `rv_galah` in `GALAH_DR3_main_allstar_v2`, `GALAH_DR3_main_allspec_v2`, and 
 #### FGK binary stars
 Binary stellar systems represent a significant fraction of stars in our Galaxy. Therefore, their effect on observations, as well as their impact on the Galactic environment, have to be properly taken into account when studying Galactic structure and evolution. To this end, we present a sample of 12760 binary systems for which the properties of their stellar components were derived in a separate analysis from the main DR3 analysis.
 
-The details of the analysis are described in [Traven et al. (2020)](https://doi.org/10.1051/0004-6361/202037484), and the catalogue of derived parameters is [available at CDS](http://cdsarc.u-strasbg.fr/viz-bin/cat/J/A+A/638/A145).
+The details of the analysis are described in [Traven *et al.* (2020)](https://doi.org/10.1051/0004-6361/202037484), and the catalogue of derived parameters is [available at CDS](http://cdsarc.u-strasbg.fr/viz-bin/cat/J/A+A/638/A145).
 
 ---
 

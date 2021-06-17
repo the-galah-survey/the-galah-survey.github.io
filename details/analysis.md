@@ -7,7 +7,7 @@ subtitle: From reduced spectra to abundances
 {: .main_blockquote}
 The main data product of the GALAH survey are stellar parameters and elemental abundances for the stars we observe. Over time, the methods by which we do this have changed and evolved. In particular, we made use of The Cannon for Data Release 1 and Data Release 2, and changed to Spectroscopy Made Easy for [Data Release 3](/dr3/overview). For a given data release, it is important to consult the accompanying paper for the description of the methods.
 
-On this page we give a overview of the method as used for [GALAH DR3](/dr3/overview). See [Buder et al (2021)](https://ui.adsabs.harvard.edu/abs/arXiv:2011.02505) for all the details of the data analysis.
+On this page we give a overview of the method as used for [GALAH DR3](/dr3/overview). See [Buder *et al.* (2021)](https://ui.adsabs.harvard.edu/abs/arXiv:2011.02505) for all the details of the data analysis.
 
 <!-- <h3> On this page</h3> -->
 * This text gets replaced.
