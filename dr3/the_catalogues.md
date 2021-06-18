@@ -25,7 +25,7 @@ Strongly recommend the use of this table for most science cases interested in st
 
 The `GALAH_DR3_main_allstar_v2` is our main results catalogue. It contains results for 588,571 stars observed as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between November 2013 and February 2019. For all targets we provide stellar parameters, radial velocities, and elemental abundances.
 
-We recommend this catalogue for most science cases as it contains only one entry per star (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`GALAH_DR3_main_allspec_v2` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). The full list of columns is on the [Table Schema page](/dr3/table_schema). For each star we provide:
+We recommend this catalogue for most science cases as it contains only one entry **per star** (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`GALAH_DR3_main_allspec_v2` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). The full list of columns is on the [Table Schema documentation](/dr3/table_schema). For each star we provide:
 * Star identifers:
     - the GALAH observation ID (`sobject_id`)
     - 2MASS identifier (`star_id`)
@@ -63,9 +63,9 @@ We recommend this catalogue for most science cases as it contains only one entry
  {:.no_toc}
 
 {: .box-warning}
-This catalogue is not recommended for most science cases.
+`GALAH_DR3_main_allspec_v2` is not recommended for most science cases. It is an extended version of the [`GALAH_DR3_main_allstar_v2`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results **per spectra** (rather than per star) and includes extra columns for individual spectra lines.
 
-This is an extended version of the [`GALAH_DR3_main_allstar_v2`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results for 678,423 observed spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between November 2013 and February 2019. As with the `GALAH_DR3_main_allstar_v2`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr3/table_schema).
+The `GALAH_DR3_main_allspec_v2` catalogue has results for 678,423 spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between November 2013 and February 2019. As with the `GALAH_DR3_main_allstar_v2`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr3/table_schema).
 
 As well as the information included in `GALAH_DR3_main_allstar_v2`, the `GALAH_DR3_main_allspec_v2` catalogue has:
 * Elemental abundances (and their errors) for individual spectral lines
@@ -81,7 +81,7 @@ As well as the information included in `GALAH_DR3_main_allstar_v2`, the `GALAH_D
 #### Gaia eDR3 data for all stars in GALAH DR3
 ##### [Download `GALAH_DR3_VAC_GaiaEDR3_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (338 MB)
  {:.no_toc}
-This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an entry for every star in GALAH DR3 that we identified a match in Gaia eDR3. The `GALAH_DR3_VAC_GaiaEDR3_v2` catalogue consists of:
+This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an entry for every star in GALAH DR3 that we identified a match in Gaia eDR3. The full list of columns is on the [Table Schema documentation](/dr3/table_schema). The `GALAH_DR3_VAC_GaiaEDR3_v2` catalogue consists of:
 * GALAH DR3 `sobject_id` and `star_id`
 * All columns from [`gaiaedr3.gaia_source`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_gaia_source.html) (with `source_id` renamed `dr3_source_id`)
 * All columns from [`gaiaedr3.dr2_neighbourhood`](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_auxiliary_tables/ssec_dm_dr2_neighbourhood.html):
@@ -103,7 +103,7 @@ Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
 #### Ages, masses, distances and other parameters estimated by BSTEP
 ##### [Download `GALAH_DR3_VAC_ages_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (362 MB)
  {:.no_toc}
-This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma *et al.* (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
+This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma *et al.* (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones. The full list of columns is on the [Table Schema documentation](/dr3/table_schema).
 
 For each star, we give the following parameters found by BSTEP:
 * distance (`distance_bstep`)
@@ -131,7 +131,7 @@ For details of the adopted priors see [Sharma *et al.* (2018)](https://doi.org/1
 ##### [Download `GALAH_DR3_VAC_dynamics_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (554 MB)
 {:.no_toc}
 
-We provide a value-added-catalog with kinematic and dynamic information, that builds upon the 5D astrometric information by Gaia eDR3, and primarily radial velocities determined from GALAH spectra. This catalogue provides:
+We provide a value-added-catalog with kinematic and dynamic information, that builds upon the 5D astrometric information by Gaia eDR3, and primarily radial velocities determined from GALAH spectra. The full list of columns is on the [Table Schema documentation](/dr3/table_schema). This catalogue provides:
 
 * Heliocentric cartesian coordinate (`X_XYZ`, `Y_XYZ`, `Z_XYZ`) and velocity frames (`U_UVW`, `V_UVW`, `W_UVW`)
 * Galactocentric cylindrical coordinate (`R_Rzphi`, `z_Rzphi`, `phi_Rzphi`) and velocity frames (`vR_Rzphi`, `vz_Rzphi`, `vT_Rzphi`)
@@ -166,7 +166,7 @@ The input values for each star were:
 ##### [Download `GALAH_DR3_VAC_rv_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (67 MB)
 {:.no_toc}
 
-This catalogue collates several radial velocities measurements for each star:
+This catalogue collates several radial velocities measurements for each star. The full list of columns is on the [Table Schema documentation](/dr3/table_schema).
 
 * `rv_obst` and `rv_nogr_obst` (and their error columns)
     - [Zwitter *et al.* (2020)](https://arxiv.org/abs/2012.12201) created essentially noiseless observed spectra from the median spectra for all GALAH DR3 stars belonging to the same bin with a width of 50 K in temperature, 0.2 dex in gravity, and 0.1 dex in metallicity. The observed spectra are then cross-correlated with these noiseless spectra to measure radial velocities with a typical accuracy of 0.1 km/s. The `rv_nogr_obst` reports the value without the gravitational redshift correction.
