@@ -69,7 +69,7 @@
       {% include ext-css.html css=css %}
     {% endfor %}
   {% endif %}
-  
+
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
@@ -146,7 +146,11 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
-  
-  <script defer data-domain="galah-survey.org" src="https://plausible.io/js/plausible.js"></script>
+
+  {% if site.url != "http://localhost:4000"%}
+    <script defer data-domain="galah-survey.org" src="https://plausible.io/js/plausible.js"></script>
+  {% endif %}
+
+  <!--  -->
 
 </head>
