@@ -9,6 +9,7 @@ subtitle: This page lists publications using GALAH data.
 
 #### 2021
 
+* [**R-process enhancements of Gaia-Enceladus in GALAH DR3**](https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.110M)<br/>Matsuno *et al.* (2021) A&A **650** A110 <small>([doi:10.1051/0004-6361/202040227](https://doi.org/10.1051/0004-6361/202040227), [arXiv:2101.07791](https://arxiv.org/abs/arXiv:2101.07791))</small>
 * [**Abundance Patterns of α and Neutron-capture Elements in the Helmi Stream**](https://ui.adsabs.harvard.edu/abs/2021ApJ...913L..28L)<br/>Limberg *et al.* (2021) ApJL **913** L28 <small>([doi:10.3847/2041-8213/ac0056](https://doi.org/10.3847/2041-8213/ac0056), [arXiv:2105.05958](https://arxiv.org/abs/arXiv:2105.05958))</small>
 * [**Stellar Metallicities from SkyMapper Photometry. II. Precise Photometric Metallicities of ~280,000 Giant Stars with [Fe/H] &lt; -0.75 in the Milky Way**](https://ui.adsabs.harvard.edu/abs/2021ApJS..254...31C)<br/>Chiti *et al.* (2021) ApJS **254** 31 <small>([doi:10.3847/1538-4365/abf73d](https://doi.org/10.3847/1538-4365/abf73d), [arXiv:2103.16660](https://arxiv.org/abs/arXiv:2103.16660))</small>
 * [**The Ultraviolet Extinction Map and Dust Properties at High Galactic Latitude**](https://ui.adsabs.harvard.edu/abs/2021ApJS..254...38S)<br/>Sun *et al.* (2021) ApJS **254** 38 <small>([doi:10.3847/1538-4365/abf929](https://doi.org/10.3847/1538-4365/abf929), [arXiv:2104.08505](https://arxiv.org/abs/arXiv:2104.08505))</small>
@@ -46,7 +47,6 @@ subtitle: This page lists publications using GALAH data.
 * [**Icarus: A Flat and Fast Prograde Stellar Stream in the Milky Way Disk**](https://ui.adsabs.harvard.edu/abs/2021ApJ...907L..16R)<br/>Re Fiorentin *et al.* (2021) ApJL **907** L16 <small>([doi:10.3847/2041-8213/abd53d](https://doi.org/10.3847/2041-8213/abd53d), [arXiv:2012.10957](https://arxiv.org/abs/arXiv:2012.10957))</small>
 * [**The S2 stream: the shreds of a primitive dwarf galaxy**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.500..889A)<br/>Aguado *et al.* (2021) MNRAS **500** 889 <small>([doi:10.1093/mnras/staa3250](https://doi.org/10.1093/mnras/staa3250), [arXiv:2007.11003](https://arxiv.org/abs/arXiv:2007.11003))</small>
 * [**A theoretical scenario for Galactic RR Lyrae in the Gaia data base: constraints on the parallax offset**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.5009M)<br/>Marconi *et al.* (2021) MNRAS **500** 5009 <small>([doi:10.1093/mnras/staa3558](https://doi.org/10.1093/mnras/staa3558), [arXiv:2011.06675](https://arxiv.org/abs/arXiv:2011.06675))</small>
-* [***R*-process enhancements of Gaia-Enceladus in GALAH DR3**](https://ui.adsabs.harvard.edu/abs/2021arXiv210107791M)<br/>Matsuno *et al.* (2021) arXiv   <small>([arXiv:2101.07791](https://arxiv.org/abs/arXiv:2101.07791))</small>
 * [**Evidence for Radial Expansion at the Core of the Orion Complex with Gaia EDR3**](https://ui.adsabs.harvard.edu/abs/2021arXiv210110380S)<br/>Swiggum *et al.* (2021) arXiv   <small>([arXiv:2101.10380](https://arxiv.org/abs/arXiv:2101.10380))</small>
 
 #### 2020
