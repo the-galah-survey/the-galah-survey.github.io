@@ -38,7 +38,7 @@ navbar-links:
     - Analysis: "details/analysis"
   The&nbsp;Results:
     - Key results: "science/results"
-    # - News: "science/news"
+    - 2021 Science Meeting: "science/2021-meeting"
     - GALAH publications: "science/galah_publications"
     - External publications: "science/external_publications"
 
