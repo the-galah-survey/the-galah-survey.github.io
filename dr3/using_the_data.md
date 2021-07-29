@@ -73,7 +73,7 @@ In the catalogues that constitute GALAH DR3, for many parameters we provide only
     - `distance_bstep` was used for the vast majority of stars (96 per cent) in the calculation of Galactic kinematic and dynamic parameters in `GALAH_DR3_VAC_dynamics_v2`. For the other 4 per cent of the stars we mostly use the photogeometric distances `r_med_photogeo` in the `GALAH_DR3_VAC_GaiaEDR3_v2` table as calculated by [Bailer-Jones *et al.* (2020)](https://doi.org/10.3847/1538-3881/abd806). The distance used for a given spectrum is provided by the `use_dist_flag` in the `GALAH_DR3_VAC_dynamics_v2` table.
 * **For reddening, we recommend the `ebv` value from the `GALAH_DR3_main_allstar_v2` table**.
     - This is from [Schlegel *et al.* (1998)](https://doi.org/10.1086/305772) and was used as part of the estimation of the bolometric corrections.
-* For parallax, the GALAH DR3 catalogues has the parallax values from both the *Gaia* DR2 and eDR3 values (the former being called `parallax_dr2` in our catalogues). We have also calculated the eDR3 parallax corrected for the zeropoint offset as prescribed in [Lindegren *et al.* (2020)](https://doi.org/10.1051/0004-6361/202039653 ), called `parallax_corr` in our tables. We do not have any strong recommendation on the best parallax value to use.
+* For parallax, the GALAH DR3 catalogues has the parallax values from both the *Gaia* DR2 and eDR3 values (the former being called `parallax_dr2` in our catalogues). We have also calculated the eDR3 parallax corrected for the zeropoint offset as prescribed in [Lindegren *et al.* (2020)](https://doi.org/10.1051/0004-6361/202039653 ), called `parallax_corr` in our tables.
 * Distinct from the iron abundance ([Fe/H]) calculated from the spectra, the `GALAH_DR3_VAC_ages_v2` table includes the initial and current metallicity of the star (`meh_ini_bstep` and `meh_act_bstep`) as calculated by BSTEP. These values were not used as part of the abundance analysis.
 
 This table summarizies the parameters in GALAH DR3 for which there are multiple values for a given star. We have bolded our recommended column.
@@ -101,7 +101,9 @@ This table summarizies the parameters in GALAH DR3 for which there are multiple 
 {: .box-success}
 Join GALAH DR3 tables using the `sobject_id`.
 
-The catalogues of GALAH DR3 must be joined or cross-matched using the `sobject_id`. Do not use the `star_id` or *Gaia* `source_id` joining catalogues. These value-added catalogues are based upon the extended catalogue which contains measurements per observed spectrum. About 50000 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum. For instance, to join the `GALAH_DR3_main_allstar_v2` and `GALAH_DR3_VAC_ages_v2` catalogues, [using the Data Central](https://datacentral.org.au/services/query/), the following ADQL query could be used:
+The catalogues of GALAH DR3 must be joined or cross-matched using the `sobject_id`. Do not use the `star_id` or *Gaia* `source_id` to join the catalogues. The value-added catalogues are based upon the extended catalogue which contains measurements per observed spectrum. About 50000 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum.
+
+For instance, to join the `GALAH_DR3_main_allstar_v2` and `GALAH_DR3_VAC_ages_v2` catalogues, [using the Data Central](https://datacentral.org.au/services/query/), the following ADQL query could be used:
 
 ```sql
 -- Join GALAH_DR3_main_allstar_v2 and GALAH_DR3_VAC_ages_v2
