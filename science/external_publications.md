@@ -7,6 +7,13 @@ subtitle: This page lists publications using GALAH data.
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
 ![Number of publications using GALAH](/science/img/external_publications_number_papers.svg){: .mx-auto.d-block :}
 
+This page is automatically generated from an [ADS Libary](https://ui.adsabs.harvard.edu/search/q=docs(library%2Fh8cKhLXSTaSOuZAy7phffg)&sort=date%20desc%2C%20bibcode%20desc&p_=0) maintained by the GALAH team.
+
+---
+Jump to a year:
+* This text gets replaced.
+{:toc}
+---
 #### 2021
 
 * [**Super-Earths and Sub-Neptunes Are Insensitive to Stellar Metallicity**](https://ui.adsabs.harvard.edu/abs/2021AJ....162...69K)<br/>Kutra *et al.* (2021) AJ **162** 69 <small>([doi:10.3847/1538-3881/ac0431](https://doi.org/10.3847/1538-3881/ac0431))</small>
