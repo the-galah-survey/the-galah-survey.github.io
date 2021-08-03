@@ -59,8 +59,16 @@ def get_bibcodes(library_id):
 def get_title_str(pub):
     # This fixes up a bunch of minor formatting issues
     title_str = pub['title'][0]
-    title_str = title_str.replace(r"$\sim$", "~").replace(r"$R$", "*R*").replace(
-        r"[$\alpha/\rm Fe]$", "[α/Fe]").replace(r"$\alpha$", "α").replace(r"∼", "~").replace(r"$< -0.75$", "< −0.75")
+
+    things_to_fix = [[r"$\sim$", "~"],
+                     [r"$R$", "*R*"],
+                     [r"[$\alpha/\rm Fe]$", "[α/Fe]"],
+                     [r"$\alpha$", "α"],
+                     [r"∼", "~"],
+                     [r"$< -0.75$", "< −0.75"]]
+    
+    for thing_to_fix in things_to_fix:
+        title_str = title_str.replace(thing_to_fix[0], thing_to_fix[1])
     return title_str
 
 
@@ -136,10 +144,16 @@ subtitle: {subtitle}
 
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
 """)
-        # pub_md.write(f"This page collates the over {int(len(bibcodes)/10)*10} papers that have used GALAH Survey data.\n")
         pub_md.write(
             f"![Number of publications using GALAH](/science/img/{img_name}){{: .mx-auto.d-block :}}\n")
-
+        pub_md.write("\n")
+        pub_md.write(f"This page is automatically generated from an [ADS Libary](https://ui.adsabs.harvard.edu/search/q=docs(library%2F{library_id})&sort=date%20desc%2C%20bibcode%20desc&p_=0) maintained by the GALAH team.\n")
+        pub_md.write("\n")
+        pub_md.write("""---
+Jump to a year:
+* This text gets replaced.
+{:toc}
+---""")
         year_list = []
         article_list = []
         eprint_list = []
