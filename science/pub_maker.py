@@ -16,11 +16,11 @@ def get_config():
     Load ADS developer key from file
     :return: str
     """
-    try:
-        token = os.getenv('ADS_TOKEN')
     # try:
-    #     with open(os.path.expanduser('~/.ads/dev_key')) as f:
-    #         token = f.read().strip()
+    #     token = os.getenv('ADS_TOKEN')
+    try:
+        with open(os.path.expanduser('~/.ads/dev_key')) as f:
+            token = f.read().strip()
     except IOError:
         print('The script assumes you have your ADS developer token in the'
               'folder: {}'.format())
@@ -66,8 +66,8 @@ def get_title_str(pub):
                      [r"$\alpha$", "α"],
                      [r"∼", "~"],
                      [r"$< -0.75$", "< −0.75"],
-                     [r"$\textit{TESS}$", "*TESS*"]
-    
+                     [r"$\textit{TESS}$", "*TESS*"]]
+
     for thing_to_fix in things_to_fix:
         title_str = title_str.replace(thing_to_fix[0], thing_to_fix[1])
     return title_str
