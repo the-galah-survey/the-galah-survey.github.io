@@ -65,7 +65,8 @@ def get_title_str(pub):
                      [r"[$\alpha/\rm Fe]$", "[α/Fe]"],
                      [r"$\alpha$", "α"],
                      [r"∼", "~"],
-                     [r"$< -0.75$", "< −0.75"]]
+                     [r"$< -0.75$", "< −0.75"],
+                     [r"$\textit{TESS}$", "*TESS*"]
     
     for thing_to_fix in things_to_fix:
         title_str = title_str.replace(thing_to_fix[0], thing_to_fix[1])
