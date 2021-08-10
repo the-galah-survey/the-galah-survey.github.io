@@ -16,14 +16,13 @@ def get_config():
     Load ADS developer key from file
     :return: str
     """
+    token = os.getenv('ADS_TOKEN')
     # try:
-    #     token = os.getenv('ADS_TOKEN')
-    try:
-        with open(os.path.expanduser('~/.ads/dev_key')) as f:
-            token = f.read().strip()
-    except IOError:
-        print('The script assumes you have your ADS developer token in the'
-              'folder: {}'.format())
+    #     with open(os.path.expanduser('~/.ads/dev_key')) as f:
+    #         token = f.read().strip()
+    # except IOError:
+    #     print('The script assumes you have your ADS developer token in the'
+    #           'folder: {}'.format())
 
     return {
         'url': 'https://api.adsabs.harvard.edu/v1/biblib',
