@@ -17,7 +17,7 @@ If you have used public GALAH data in your paper, please cite the following pape
 
 #### The GALAH DR3 overview
 
-* [**The GALAH+ survey: Third data release**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.tmp.1259B)<br/>Buder *et al.* (2021) MNRAS   <small>([doi:10.1093/mnras/stab1242](https://doi.org/10.1093/mnras/stab1242), [arXiv:2011.02505](https://arxiv.org/abs/arXiv:2011.02505))</small>
+* [**The GALAH+ survey: Third data release**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.506..150B)<br/>Buder *et al.* (2021) MNRAS **506** 150 <small>([doi:10.1093/mnras/stab1242](https://doi.org/10.1093/mnras/stab1242), [arXiv:2011.02505](https://arxiv.org/abs/arXiv:2011.02505))</small>
 
 #### The motivation and planned execution of the GALAH survey, and first-light performance of HERMES
 
