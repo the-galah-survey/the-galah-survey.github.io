@@ -6,7 +6,7 @@ subtitle: Third Data Release
 
 
 {: .main_blockquote}
-On this page we provide advice and instructions for using the GALAH DR3 catalogues. We would recommend taking the time to read [Buder *et al.* (2021)](https://arxiv.org/abs/2011.02505), which supplies even more information and quality assessment of GALAH DR3. Sven Buder has also [created iPython notebooks tutorials for GALAH DR3](https://github.com/svenbuder/GALAH_DR3/tree/master/tutorials).
+On this page we provide advice and instructions for using the GALAH DR3 catalogues. We would recommend taking the time to read [Buder *et al.* (2021)](https://doi.org/10.1093/mnras/stab1242), which supplies even more information and quality assessment of GALAH DR3. Sven Buder has also [created iPython notebooks tutorials for GALAH DR3](https://github.com/svenbuder/GALAH_DR3/tree/master/tutorials).
 
 * This text gets replaced.
 {:toc}
