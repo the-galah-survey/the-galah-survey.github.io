@@ -173,7 +173,7 @@ Jump to a year:
             pub_md.write("\n")
             pub_md.write(f"#### {year}\n")
             pub_md.write("\n")
-            for *_, pub in year_df.sort_values(['date', 'bibcode'], ascending=[False, True]).iterrows():
+            for *_, pub in year_df.sort_values(['date', 'bibcode'], ascending=[False, False]).iterrows():
                 markdown_str = "* "
                 title_str = f"[**{get_title_str(pub)}**](https://ui.adsabs.harvard.edu/abs/{quote(pub['bibcode'])})"
                 author_str = get_author_str(pub)
