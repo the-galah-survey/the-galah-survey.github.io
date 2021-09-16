@@ -132,7 +132,8 @@ def create_webpage(library_id, md_pub_file, title, subtitle):
 
     pub_df = pd.DataFrame(doc_dict)
     pub_df.fillna(value=" ", inplace=True)
-
+    ignore_doctype = ["catalog", "proposal", "inproceedings", "abstract"]
+    pub_df = pub_df[~pub_df.doctype.isin(ignore_doctype).values]
     cwd = Path(__file__).parent
     img_name = f"{md_pub_file.split('.')[0].split('/')[1]}_number_papers.svg"
 
