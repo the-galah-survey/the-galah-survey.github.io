@@ -214,7 +214,9 @@ This lists all 7993 possible fields in the current target selection catalogue of
 We recommend the `GALAH_DR3_main_allstar_v2.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3).<br/><br/>
 Please read our [best practices for using GALAH DR3](/dr3/using_the_data).
 
-There are two methods for accessing these catalogues depending on your requirements
+Our primary repository of GALAH DR3 is provided by [Data Central](https://datacentral.org.au) from the Optical Data Centre. From them you can [directly download](#downloading-the-fits-files) the catalogues as FITS files, or via an [ADQL query](#adql-query).
+
+Most of our catalogues are also found on [VizieR service](#vizier) of the Centre de Données astronomiques de Strasbourg (CDS).
 
 #### Downloading the FITS files
 
@@ -243,5 +245,12 @@ SELECT
    AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
    AND rv_galah > 170
 ```
+
+#### VizieR
+
+The GALAH DR3 catalogues can be accessed [through VizieR service](http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=J/MNRAS/506/150) of the Centre de Données astronomiques de Strasbourg (CDS). These provide the two main catalogies of stellar parameters and elemental abundances, and the value-added catalogues of ages, dynamics, and radial velocities.
+
+{: .box-warning}
+Note that the column names may be different on the VizieR versions due to CDS naming requirements. For instance all the abundance columns take the form `[X/Fe]` rather than `x_fe`.
 
 ---
