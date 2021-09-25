@@ -44,7 +44,7 @@ jobs:
         if git diff --exit-code science/galah_publications.md science/external_publications.md; then
           echo "No changes"
         else
-          git config --local user.email "robot@galahsurvey.org"
+          git config --local user.email "chow.meeker_0h@icloud.com"
           git config --local user.name "RobotGALAH"
           git add -A
           git commit -m "Automatically updating the publication files"
