@@ -10,6 +10,7 @@
 name: Update Publications
 
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 0 * * *' # Runs at 10 am AEST
 
@@ -44,7 +45,7 @@ jobs:
           echo "No changes"
         else
           git config --local user.email "robot@galahsurvey.org"
-          git config --local user.name "Robot GALAH"
+          git config --local user.name "RobotGALAH"
           git add -A
           git commit -m "Automatically updating the publication files"
         fi
