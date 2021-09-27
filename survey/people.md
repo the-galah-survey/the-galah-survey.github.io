@@ -20,7 +20,7 @@ smg:
     affiliation: University of Ljubljana
     img: /assets/img/people/janez-kos.jpg
   - name: Sarah Martell
-    affiliation: University of New South Wales
+    affiliation: UNSW Sydney
     twitter: https://twitter.com/_sarahmartell_
     email: smartell@unsw.edu.au
     img: /assets/img/people/sarah-martell.jpg
@@ -28,7 +28,7 @@ smg:
     affiliation: The University of Sydney
     img: /assets/img/people/sanjib-sharma.jpg
   - name: Jeffrey Simpson
-    affiliation: University of New South Wales
+    affiliation: UNSW Sydney
     desc: Website maintainer
     website: https://jeffreysimpson.github.io
     twitter: https://twitter.com/fadastra
@@ -64,7 +64,7 @@ builder:
     affiliation: Stockholm University
     img: /assets/img/people/karin-lind.jpg
   - name: Dennis Stello
-    affiliation: University of New South Wales
+    affiliation: UNSW Sydney
     website: http://www.physics.usyd.edu.au/~stello/
     img: /assets/img/people/dennis-stello.jpg
 ---
@@ -93,22 +93,22 @@ All the members of the GALAH Survey
 | Anish Amarsi | Uppsala University |  | 
 | Borja Anguiano | University of Virginia |  | 
 | Martin Asplund | Max Planck Institute for Astrophysics |  | 
-| Kirsten Banks | University of New South Wales | <a class="item-link" href="https://astrokirsten.com.au/" title="Personal website of Kirsten Banks"><span class="fas fa-home"></span></a> | 
+| Kirsten Banks | UNSW Sydney | <a class="item-link" href="https://astrokirsten.com.au/" title="Personal website of Kirsten Banks"><span class="fas fa-home"></span></a> | 
 | Martina Baratella |  |  | 
 | Mark Beavis | University of Southern Queensland |  | 
-| Tim Bedding |  |  | 
+| Tim Bedding | The University of Sydney |  | 
 | Kevin Beeson |  |  | 
-| Maria Bergemann | Max-Planck Institute for Astronomy |  | 
+| Maria Bergemann | Max-Planck Institute for Astronomy | <a class="item-link" href="mailto:bergemann@mpia.de" title="Email Maria Bergemann"><span class="fas fa-envelope"></span></a> | 
 | Joss Bland-Hawthorn<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | The University of Sydney | <a class="item-link" href="mailto:jonathan.bland-hawthorn@sydney.edu.au" title="Email Joss Bland-Hawthorn"><span class="fas fa-envelope"></span></a> | 
 | Tobias Buck |  |  | 
 | Sven Buder<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | Australian National University | <a class="item-link" href="mailto:sven.buder@anu.edu.au" title="Email Sven Buder"><span class="fas fa-envelope"></span></a> | 
 | Donna Burton | University of Southern Queensland |  | 
 | Simon Campbell | Monash University |  | 
-| Russell Cannon | Australian Astronomical Observatory |  | 
+| Russell Cannon |  |  | 
 | Daniela Carollo | University of Notre Dame |  | 
 | Luca Casagrande | Australian National University |  | 
 | Andy Casey<br/><small>(Survey&nbsp;Builder)</small> | Monash University |  | 
-| Boquan Chen |  |  | 
+| Boquan Chen | The University of Sydney |  | 
 | Sang-Hyun Chun | Australian National University |  | 
 | Ioana Ciucă | Australian National University |  | 
 | Jake Clark | University of Southern Queensland |  | 
@@ -132,7 +132,7 @@ All the members of the GALAH Survey
 | Mike Ireland | Australian National University |  | 
 | Meridith Joyce |  |  | 
 | Prajwal Kafle | ICRAR / University of Western Australia |  | 
-| Devika Kamath |  |  | 
+| Devika Kamath | Macquarie University |  | 
 | Amanda Karakas | Monash University |  | 
 | Shourya Khanna | Sydney Institute for Astronomy |  | 
 | Chiaki Kobayashi | University of Hertfordshire |  | 
@@ -150,11 +150,11 @@ All the members of the GALAH Survey
 | Chloe Mackallah | Monash University |  | 
 | Liz Mannering |  |  | 
 | Jonty Marshall |  |  | 
-| Sarah Martell<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | University of New South Wales | <a class="item-link" href="mailto:smartell@unsw.edu.au" title="Email Sarah Martell"><span class="fas fa-envelope"></span></a>&#8201;<a class="item-link" href="https://twitter.com/_sarahmartell_" title="Sarah Martell on Twitter"><span class="fab fa-twitter"></span></a> | 
+| Sarah Martell<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | UNSW Sydney | <a class="item-link" href="mailto:smartell@unsw.edu.au" title="Email Sarah Martell"><span class="fas fa-envelope"></span></a>&#8201;<a class="item-link" href="https://twitter.com/_sarahmartell_" title="Sarah Martell on Twitter"><span class="fab fa-twitter"></span></a> | 
 | Tadafumi Matsuno |  |  | 
-| Madeleine McKenzie | University of New South Wales |  | 
-| Benjamin Montet | University of New South Wales |  | 
-| Ryan Morris | University of New South Wales |  | 
+| Madeleine McKenzie | Australian National University |  | 
+| Benjamin Montet | UNSW Sydney |  | 
+| Ryan Morris | UNSW Sydney |  | 
 | Ulisse Munari | INAF National Institute of Astrophysics |  | 
 | Simon Murphy | UNSW Canberra |  | 
 | Govind Nandakumar |  |  | 
@@ -167,12 +167,12 @@ All the members of the GALAH Survey
 | Ashley Ruiter | UNSW Canberra | <a class="item-link" href="https://twitter.com/astronomash" title="Ashley Ruiter on Twitter"><span class="fab fa-twitter"></span></a>&#8201;<a class="item-link" href="https://ashleyruiterastro.wordpress.com/" title="Personal website of Ashley Ruiter"><span class="fas fa-home"></span></a> | 
 | Mohd Hafiz Mohd Saadon | University of Malaya | <a class="item-link" href="mailto:mhms@um.edu.my" title="Email Mohd Hafiz Mohd Saadon"><span class="fas fa-envelope"></span></a> | 
 | Sanjib Sharma<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | The University of Sydney |  | 
-| Jeffrey Simpson<br/><small>(Survey&nbsp;Management&nbsp;Group,<br/>Website maintainer)</small> | University of New South Wales | <a class="item-link" href="mailto:jeffrey.simpson@unsw.edu.au" title="Email Jeffrey Simpson"><span class="fas fa-envelope"></span></a>&#8201;<a class="item-link" href="https://twitter.com/fadastra" title="Jeffrey Simpson on Twitter"><span class="fab fa-twitter"></span></a>&#8201;<a class="item-link" href="https://jeffreysimpson.github.io" title="Personal website of Jeffrey Simpson"><span class="fas fa-home"></span></a>&#8201;<a class="item-link" href="https://github.com/jeffreysimpson" title="Jeffrey Simpson on GitHub"><span class="fab fa-github"></span></a> | 
+| Jeffrey Simpson<br/><small>(Survey&nbsp;Management&nbsp;Group,<br/>Website maintainer)</small> | UNSW Sydney | <a class="item-link" href="mailto:jeffrey.simpson@unsw.edu.au" title="Email Jeffrey Simpson"><span class="fas fa-envelope"></span></a>&#8201;<a class="item-link" href="https://twitter.com/fadastra" title="Jeffrey Simpson on Twitter"><span class="fab fa-twitter"></span></a>&#8201;<a class="item-link" href="https://jeffreysimpson.github.io" title="Personal website of Jeffrey Simpson"><span class="fas fa-home"></span></a>&#8201;<a class="item-link" href="https://github.com/jeffreysimpson" title="Jeffrey Simpson on GitHub"><span class="fab fa-github"></span></a> | 
 | Lorenzo Spina | Istituto Nazionale di Astrofisica / Osservatorio Astronomico di Padova |  | 
-| Dennis Stello<br/><small>(Survey&nbsp;Builder)</small> | University of New South Wales | <a class="item-link" href="http://www.physics.usyd.edu.au/~stello/" title="Personal website of Dennis Stello"><span class="fas fa-home"></span></a> | 
+| Dennis Stello<br/><small>(Survey&nbsp;Builder)</small> | UNSW Sydney | <a class="item-link" href="http://www.physics.usyd.edu.au/~stello/" title="Personal website of Dennis Stello"><span class="fas fa-home"></span></a> | 
 | Thor Tepper-Garcia | The University of Sydney | <a class="item-link" href="http://www.thorsten.mx" title="Personal website of Thor Tepper-Garcia"><span class="fas fa-home"></span></a> | 
 | Yuan-Sen Ting | Australian National University | <a class="item-link" href="https://www.ysting.space" title="Personal website of Yuan-Sen Ting"><span class="fas fa-home"></span></a> | 
-| Chris Tinney | University of New South Wales |  | 
+| Chris Tinney | UNSW Sydney |  | 
 | Gregor Traven | University of Ljubljana |  | 
 | Rok Vogrinčič | University of Ljubljana |  | 
 | Zhen Wan |  |  | 
@@ -183,8 +183,8 @@ All the members of the GALAH Survey
 | Clare Worley | University of Cambridge |  | 
 | Duncan Wright | University of Southern Queensland |  | 
 | Rosie Wyse | Johns Hopkins University |  | 
-| David Yong |  |  | 
-| Tayyaba Zafar | Australian Astronomical Observatory |  | 
+| David Yong | Australian National University |  | 
+| Tayyaba Zafar | AAO-Macquarie |  | 
 | Marusa Zerjal | Australian National University |  | 
 | Xu Zhang | National Astronomical Observatories CAS |  | 
 | Joel Zinn |  |  | 
