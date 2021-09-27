@@ -15,7 +15,7 @@ Please address requests via email to Jeffrey Simpson ([jeffrey.simpson@unsw.edu.
 There are a number of main pages and subpages, all with the `.md` suffix. These can be safely edited, except for [`survey/people.md`](./survey/people.md), [`science/galah_publications.md`](./science/galah_publications.md) and [`science/external_publications.md`](./science/external_publications.md), which are generated via scripts.
 
 ### Editing the people page
-**Do not edit the people.md file directly**. Edit the `assets/data_tables/people.csv` file. There is a Github Action that will automatically run and update the people.md when this file changes.
+**Do not edit the `people.md` file directly**. Edit the `assets/data_tables/people.json` file. There is a Github Action that can be run and update the `people.md`.
 
 ### Editing the publication pages
 **Do not edit `galah_publications.md` or `external_publications.md` directly**. Their content is generated via a script that pulls the listings from ADS libraries. There is a daily Github action that automatically checks for new or updated papers.
