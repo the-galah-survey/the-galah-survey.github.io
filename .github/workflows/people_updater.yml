@@ -6,9 +6,10 @@
 name: Updating people.md
 
 on:
-  push:
-    paths:
-      - 'survey/people.csv'
+  workflow_dispatch:
+  # push:
+  #   paths:
+  #     - 'survey/people.csv'
 
 jobs:
   build:
@@ -25,13 +26,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pandas
-    - name: execute py script # run sj-gobierno.py to get the latest data
+    - name: execute py script
       run: python survey/people_md_maker.py
 
     - name: commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "chow.meeker_0h@icloud.com"
+        git config --local user.name "RobotGALAH"
         git add -A
         git commit -m "Automatically updating people.md" -a
 
