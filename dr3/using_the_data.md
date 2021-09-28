@@ -101,21 +101,22 @@ This table summarizies the parameters in GALAH DR3 for which there are multiple 
 {: .box-success}
 Join GALAH DR3 tables using the `sobject_id`.
 
-The catalogues of GALAH DR3 must be joined or cross-matched using the `sobject_id`. Do not use the `star_id` or *Gaia* `source_id` to join the catalogues. The value-added catalogues are based upon the extended catalogue which contains measurements per observed spectrum. About 50000 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum.
+The catalogues of GALAH DR3 must be joined or cross-matched using the `sobject_id`. Do not use the `star_id` or *Gaia* `drX_source_id` to join the catalogues. The value-added catalogues are based upon the extended catalogue which contains measurements per observed spectrum. About 50000 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum.
 
 For instance, to join the `GALAH_DR3_main_allstar_v2` and `GALAH_DR3_VAC_ages_v2` catalogues, [using the Data Central](https://datacentral.org.au/services/query/), the following ADQL query could be used:
 
 ```sql
--- Join GALAH_DR3_main_allstar_v2 and GALAH_DR3_VAC_ages_v2
--- and get the effective temperature, surface gravity,
--- iron abundance, and age of each star.
 SELECT
   TOP 100
-  g_ms.source_id, g_ms.teff, g_ms.logg, g_ms.fe_h,
+  g_ms.dr3_source_id, g_ms.teff, g_ms.logg, g_ms.fe_h,
   g_ages.sobject_id, g_ages.age_bstep, g_ages.e_age_bstep
-  -- GALAH_DR3_main_allstar_v2 is galah_dr3.main_star
-  FROM galah_dr3.main_star AS g_ms
-  -- GALAH_DR3_VAC_ages_v2 is galah_dr3.vac_ages
-  JOIN galah_dr3.vac_ages AS g_ages
+  FROM galah_dr3p2.main_star AS g_ms
+  JOIN galah_dr3p2.vac_ages AS g_ages
   	ON g_ms.sobject_id = g_ages.sobject_id
 ```
+
+{: .box-warning}
+The Data Central catalogues cannot be accessed via external tools such as TOPCAT.
+
+{: .box-warning}
+Data Central's ADQL engine does not like column name clashes. So if you are merging tables, it is necessary to explicitly list the columns of interest.

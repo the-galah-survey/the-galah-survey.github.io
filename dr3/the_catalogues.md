@@ -90,10 +90,10 @@ This provides a cross-match GALAH DR3 and Gaia eDR3. This catalogue contains an 
 * Zeropoints from [Lindegren *et al.* (2020)](https://arxiv.org/abs/2012.01742)
 
 Some notes and caveats about the cross-match between GALAH DR3 and Gaia eDR3:
-* This cross-match used the previously identified Gaia DR2 `source_id` for each GALAH DR3 star, and the `gaiaedr3.dr2_neighbourhood` table created by the Gaia team. The Gaia DR2 `source_id` had been found using the `gaiadr2.tmass_best_neighbour` table and the 2MASS ID of each GALAH star. In the future, we suggest to perform this crossmatch via GALAH's 2MASS ID and the yet-to-come match of Gaia EDR3 and 2MASS identifiers.
+* This cross-match used the previously identified Gaia DR2 `dr2_source_id` for each GALAH DR3 star, and the `gaiaedr3.dr2_neighbourhood` table created by the Gaia team. The Gaia DR2 `dr2_source_id` had been found using the `gaiadr2.tmass_best_neighbour` table and the 2MASS ID of each GALAH star. In the future, we suggest to perform this crossmatch via GALAH's 2MASS ID and the yet-to-come match of Gaia EDR3 and 2MASS identifiers.
 * All `GALAH_DR3_VAC_GaiaEDR3_v2` entries have an angular distance between their Gaia DR2 and eDR3 sources smaller than 160 mas, and 99.9 per cent are within 20 mas.
 * There is a Gaia eDR3 source for every entry in the `GALAH_DR3_main_allstar_v2` table.
-    - There are 111 entries in the `GALAH_DR3_main_allspec_v2` table that lack a Gaia `source_id` as we have not attempted to find them in Gaia eDR3 and they never had a Gaia DR2 `source_id`. Of these 38 are bright stars and do have a parallax from Hipparcos.
+    - There are 111 entries in the `GALAH_DR3_main_allspec_v2` table that lack a Gaia `dr3_source_id` as we have not attempted to find them in Gaia eDR3 and they never had a Gaia DR2 `dr2_source_id`. Of these 38 are bright stars and do have a parallax from Hipparcos.
 * 17654 stars had more than one Gaia eDR3 match (98 per cent of these had only two matches, and the remainder with 3 or 4 matches). For simplicity we have chosen the closest match in angular distance between the Gaia DR2 and Gaia eDR3 position as reported by the `gaiaedr3.dr2_neighbourhood`.
     - For over 99 per cent of ~18000 stars, the closest match had an angular distance <10 mas, and second closest match was >600 mas.
     - There is likely source confusion for <100 stars. For instance, for 57 of the ~18000 stars with multiple matches in the `gaiaedr3.dr2_neighbourhood` table, the second closest match in angular distance has a smaller magnitude difference between Gaia DR2 and eDR3.
@@ -229,22 +229,29 @@ wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/G
 
 #### ADQL query
 
-{: .box-error}
-The versions served by Data Central are currently our initial DR3 release and contain some minor errors.
+{: .box-warning}
+The Data Central catalogues cannot be accessed via external tools such as TOPCAT.
 
-The catalogues can be accessed using the [query services provided by Data Central](https://datacentral.org.au/services/query/). For example, if you are interested in all of the entries for stars likely to be members of the globular cluster ω&nbsp;Centauri, these could be found using a query like:
+The catalogues can be accessed using the [query services provided by Data Central](https://datacentral.org.au/services/query/). The [Data Central schema browser](https://datacentral.org.au/services/schema/) contains the table and column names. The latest GALAH release is **Data Release 3.2**.
+
+As an example, here the ADQL query for Data Central that would retrieve the first 100 likely members of globular cluster ω&nbsp;Centauri found in GALAH DR3:
 
 ```sql
 SELECT
    TOP 100
-   *
-   FROM galah_dr3.main_star -- GALAH_DR3_main_allstar_v2
-   WHERE
-      1=CONTAINS(POINT('ICRS', ra, dec),
-                 CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
-   AND sqrt(power(pmra-(-3.2),2)+power(pmdec-(-6.9),2)) < 1.5
-   AND rv_galah > 170
+   galah_main.sobject_id, galah_main.rv_galah,
+   galah_main.fe_h, gaia_vac.dr3_source_id
+   FROM galah_dr3p2.main_star as galah_main
+   INNER JOIN galah_dr3p2.vac_gaia_edr3 as gaia_vac on galah_main.dr3_source_id = gaia_vac.dr3_source_id
+   WHERE galah_main.flag_sp = 0 AND galah_main.flag_fe_h = 0
+   AND sqrt(power(gaia_vac.pmra-(-3.2),2)+power(gaia_vac.pmdec-(-6.9),2)) < 1.5
+   AND galah_main.rv_galah > 170
+   AND 1=CONTAINS(POINT('ICRS', gaia_vac.ra, gaia_vac.dec),
+                  CIRCLE('ICRS', 201.6836, -47.5068, 1.0 ))
 ```
+
+{: .box-warning}
+Data Central's ADQL engine does not like column name clashes. So if you are merging tables, it is necessary to explicitly list the columns of interest.
 
 #### VizieR
 
