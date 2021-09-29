@@ -34,22 +34,20 @@ def get_config():
 
 
 def get_bibcodes(library_id):
+    """Get the bibcodes for all the papers in the library."""
     start = 0
     rows = 1000
     config = get_config()
 
-    r = requests.get(
-        '{}/libraries/{id}?start={start}&rows={rows}'.format(
-            config['url'],
-            id=library_id,
-            start=start,
-            rows=rows
-        ),
-        headers=config['headers']
+    url = f"{config['url']}/libraries/{library_id}"
+    r = requests.get(url,
+                     params={"start": start,
+                             "rows": rows},
+                     headers=config["headers"],
     )
     # Get all the documents that are inside the library
     try:
-        bibcodes = r.json()['documents']
+        bibcodes = r.json()["documents"]
     except ValueError:
         raise ValueError(r.text)
     return bibcodes
