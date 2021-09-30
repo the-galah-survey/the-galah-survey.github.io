@@ -26,6 +26,8 @@ smg:
     img: /assets/img/people/sarah-martell.jpg
   - name: Sanjib Sharma
     affiliation: The University of Sydney
+    twitter: https://twitter.com/sanjib_sharma1
+    github: https://github.com/sanjibs
     img: /assets/img/people/sanjib-sharma.jpg
   - name: Jeffrey Simpson
     affiliation: UNSW Sydney
@@ -110,7 +112,7 @@ All the members of the GALAH Survey
 | Andy Casey<br/><small>(Survey&nbsp;Builder)</small> | Monash University |  | 
 | Boquan Chen | The University of Sydney |  | 
 | Sang-Hyun Chun | Australian National University |  | 
-| Ioana Ciucă | Australian National University |  | 
+| Ioana Ciucă | Australian National University | <a class="item-link" href="mailto:ioana.ciuca034@gmail.com" title="Email Ioana Ciucă"><span class="fas fa-envelope"></span></a>&#8201;<a class="item-link" href="https://twitter.com/errai34" title="Ioana Ciucă on Twitter"><span class="fab fa-twitter"></span></a> | 
 | Jake Clark | University of Southern Queensland |  | 
 | Klemen Cotar | University of Ljubljana |  | 
 | Peter Cottrell | University of Canterbury |  | 
@@ -166,14 +168,14 @@ All the members of the GALAH Survey
 | Alice Quillen | University of Rochester |  | 
 | Ashley Ruiter | UNSW Canberra | <a class="item-link" href="https://twitter.com/astronomash" title="Ashley Ruiter on Twitter"><span class="fab fa-twitter"></span></a>&#8201;<a class="item-link" href="https://ashleyruiterastro.wordpress.com/" title="Personal website of Ashley Ruiter"><span class="fas fa-home"></span></a> | 
 | Mohd Hafiz Mohd Saadon | University of Malaya | <a class="item-link" href="mailto:mhms@um.edu.my" title="Email Mohd Hafiz Mohd Saadon"><span class="fas fa-envelope"></span></a> | 
-| Sanjib Sharma<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | The University of Sydney |  | 
+| Sanjib Sharma<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | The University of Sydney | <a class="item-link" href="https://twitter.com/sanjib_sharma1" title="Sanjib Sharma on Twitter"><span class="fab fa-twitter"></span></a>&#8201;<a class="item-link" href="https://github.com/sanjibs" title="Sanjib Sharma on GitHub"><span class="fab fa-github"></span></a> | 
 | Jeffrey Simpson<br/><small>(Survey&nbsp;Management&nbsp;Group,<br/>Website maintainer)</small> | UNSW Sydney | <a class="item-link" href="mailto:jeffrey.simpson@unsw.edu.au" title="Email Jeffrey Simpson"><span class="fas fa-envelope"></span></a>&#8201;<a class="item-link" href="https://twitter.com/fadastra" title="Jeffrey Simpson on Twitter"><span class="fab fa-twitter"></span></a>&#8201;<a class="item-link" href="https://jeffreysimpson.github.io" title="Personal website of Jeffrey Simpson"><span class="fas fa-home"></span></a>&#8201;<a class="item-link" href="https://github.com/jeffreysimpson" title="Jeffrey Simpson on GitHub"><span class="fab fa-github"></span></a> | 
 | Lorenzo Spina | Istituto Nazionale di Astrofisica / Osservatorio Astronomico di Padova |  | 
 | Dennis Stello<br/><small>(Survey&nbsp;Builder)</small> | UNSW Sydney | <a class="item-link" href="http://www.physics.usyd.edu.au/~stello/" title="Personal website of Dennis Stello"><span class="fas fa-home"></span></a> | 
 | Thor Tepper-Garcia | The University of Sydney | <a class="item-link" href="http://www.thorsten.mx" title="Personal website of Thor Tepper-Garcia"><span class="fas fa-home"></span></a> | 
 | Yuan-Sen Ting | Australian National University | <a class="item-link" href="https://www.ysting.space" title="Personal website of Yuan-Sen Ting"><span class="fas fa-home"></span></a> | 
 | Chris Tinney | UNSW Sydney |  | 
-| Gregor Traven | University of Ljubljana |  | 
+| Gregor Traven | University of Ljubljana | <a class="item-link" href="http://astro.traven.eu" title="Personal website of Gregor Traven"><span class="fas fa-home"></span></a> | 
 | Rok Vogrinčič | University of Ljubljana |  | 
 | Zhen Wan |  |  | 
 | Purmortal (Zixian) Wang | The University of Sydney |  | 
