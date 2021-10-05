@@ -97,7 +97,7 @@ All the members of the GALAH Survey
 | Martin Asplund | Max Planck Institute for Astrophysics |  | 
 | Kirsten Banks | UNSW Sydney | <a class="item-link" href="https://astrokirsten.com.au/" title="Personal website of Kirsten Banks"><span class="fas fa-home"></span></a> | 
 | Martina Baratella |  |  | 
-| Mark Beavis | University of Southern Queensland |  | 
+| Mark Beavis | University of Southern Queensland | <a class="item-link" href="mailto:mark.beavis@usq.edu.au" title="Email Mark Beavis"><span class="fas fa-envelope"></span></a> | 
 | Tim Bedding | The University of Sydney |  | 
 | Kevin Beeson |  |  | 
 | Maria Bergemann | Max-Planck Institute for Astronomy | <a class="item-link" href="mailto:bergemann@mpia.de" title="Email Maria Bergemann"><span class="fas fa-envelope"></span></a> | 
@@ -189,6 +189,6 @@ All the members of the GALAH Survey
 | Tayyaba Zafar | AAO-Macquarie |  | 
 | Marusa Zerjal | Australian National University |  | 
 | Xu Zhang | National Astronomical Observatories CAS |  | 
-| Joel Zinn |  |  | 
+| Joel Zinn | American Museum of Natural History |  | 
 | Daniel Zucker<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | Macquarie University | <a class="item-link" href="mailto:daniel.zucker@mq.edu.au" title="Email Daniel Zucker"><span class="fas fa-envelope"></span></a> | 
 | Tomaz Zwitter<br/><small>(Survey&nbsp;Management&nbsp;Group)</small> | University of Ljubljana |  | 
