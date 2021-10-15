@@ -17,6 +17,7 @@ Jump to a year:
 #### 2021
 
 * [**Chemical enrichment and radial migration in the Galactic disc - the origin of the [αFe] double sequence**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5882S)<br/>Sharma *et al.* (2021) MNRAS **507** 5882 <small>([doi:10.1093/mnras/stab2015](https://doi.org/10.1093/mnras/stab2015), [arXiv:2005.03646](https://arxiv.org/abs/arXiv:2005.03646))</small>
+* [**Residual Abundances in GALAH DR3: Implications for Nucleosyntheis and Identification of Unique Stellar Populations**](https://ui.adsabs.harvard.edu/abs/2021arXiv211006240G)<br/>Griffith *et al.* (2021) arXiv   <small>([arXiv:2110.06240](https://arxiv.org/abs/arXiv:2110.06240))</small>
 * [**OCCASO IV. Radial Velocities and Open Cluster Kinematics**](https://ui.adsabs.harvard.edu/abs/2021arXiv211002110C)<br/>Carrera *et al.* (2021) arXiv   <small>([arXiv:2110.02110](https://arxiv.org/abs/arXiv:2110.02110))</small>
 * [**SteParSyn: A Bayesian code to infer stellar atmospheric parameters using spectral synthesis**](https://ui.adsabs.harvard.edu/abs/2021arXiv211000444T)<br/>Tabernero *et al.* (2021) arXiv   <small>([arXiv:2110.00444](https://arxiv.org/abs/arXiv:2110.00444))</small>
 * [**Nucleosynthesis signatures of neutrino-driven winds from proto-neutron stars: a perspective from chemical evolution models**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.tmp.2582V)<br/>Vincenzo *et al.* (2021) MNRAS   <small>([doi:10.1093/mnras/stab2828](https://doi.org/10.1093/mnras/stab2828), [arXiv:2102.04920](https://arxiv.org/abs/arXiv:2102.04920))</small>
