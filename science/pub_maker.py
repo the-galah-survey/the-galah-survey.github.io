@@ -13,23 +13,20 @@ from pathlib import Path
 
 def get_config():
     """
-    Load ADS developer key from file
-    :return: str
+    Load ADS developer key from file and
+    and return the headers for the request
     """
-    token = os.getenv('ADS_TOKEN')
-    # try:
-    #     with open(os.path.expanduser('~/.ads/dev_key')) as f:
-    #         token = f.read().strip()
-    # except IOError:
-    #     print('The script assumes you have your ADS developer token in the'
-    #           'folder: {}'.format())
-
+    if os.getenv('ADS_TOKEN') is None:
+        with open(os.path.expanduser("~/.ads/dev_key")) as f:
+            token = f.read().strip() 
+    else:
+        token = os.getenv('ADS_TOKEN')
     return {
-        'url': 'https://api.adsabs.harvard.edu/v1/biblib',
-        'headers': {
-            'Authorization': 'Bearer:{}'.format(token),
-            'Content-Type': 'application/json',
-        }
+        "url": "https://api.adsabs.harvard.edu/v1/biblib",
+        "headers": {
+            "Authorization": "Bearer:{}".format(token),
+            "Content-Type": "application/json",
+        },
     }
 
 
