@@ -7,7 +7,7 @@ subtitle: Towards one million stars
 {: .main_blockquote}
 The nominal aim of the GALAH survey is a sample of one million stars.
 The main observing programme started on 7 February 2014, and up to the night of 27 September 2021
-we have acquired 825802 spectra from 743332 stars.
+we have acquired 829380 spectra from 746910 stars.
 This page presents the observing progress of the GALAH survey.
 
 
@@ -24,7 +24,7 @@ Location on the sky of all the fields observed as part of the GALAH Survey. Each
 ---
 ### Number of stars observed
 ![Cumulative sum with time for the number of spectra and the number of stars.](/survey/img/survey_progress_number_of_stars.svg "Cumulative sum with time for the number of spectra and the number of stars"){:width="100%"}
-GALAH has acquired 825802 spectra from 743332 stars. The cumulative sum with time for the number of spectra and the number of stars. Unflagged refers to those targets where there is no problem noted with the reduction. The vertical grey stripes indicate observing nights.
+GALAH has acquired 829380 spectra from 746910 stars. The cumulative sum with time for the number of spectra and the number of stars. Unflagged refers to those targets where there is no problem noted with the reduction. The vertical grey stripes indicate observing nights.
 
 ---
 ![The cumulative sum of spectra acquired for each sub-survey.](/survey/img/survey_progress_number_of_stars_per_subsurvey.svg "The cumulative sum of spectra acquired for each sub-survey."){:width="100%"}
