@@ -32,7 +32,6 @@ Jump to a year:
 
 #### 2020
 
-* [**The GALAH+ Survey: A New Library of Observed Stellar Spectra Improves Radial Velocities and Hints at Motions within M67**](https://ui.adsabs.harvard.edu/abs/2020arXiv201212201Z)<br/>Zwitter *et al.* (2020) arXiv   <small>([arXiv:2012.12201](https://arxiv.org/abs/arXiv:2012.12201))</small>
 * [**The GALAH Survey: Dependence of elemental abundances on age and metallicity for stars in the Galactic disc**](https://ui.adsabs.harvard.edu/abs/2020arXiv201113818S)<br/>Sharma *et al.* (2020) arXiv   <small>([arXiv:2011.13818](https://arxiv.org/abs/arXiv:2011.13818))</small>
 * [**The GALAH Survey: Chemical Clocks**](https://ui.adsabs.harvard.edu/abs/2020arXiv201113745H)<br/>Hayden *et al.* (2020) arXiv   <small>([arXiv:2011.13745](https://arxiv.org/abs/arXiv:2011.13745))</small>
 * [**The GALAH survey: Milky Way disc metallicity and alpha-abundance trends in combined APOGEE-GALAH catalogues**](https://ui.adsabs.harvard.edu/abs/2020arXiv201102783N)<br/>Nandakumar *et al.* (2020) arXiv   <small>([arXiv:2011.02783](https://arxiv.org/abs/arXiv:2011.02783))</small>
