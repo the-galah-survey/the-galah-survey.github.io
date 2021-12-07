@@ -18,6 +18,7 @@ Jump to a year:
 
 * [**The GALAH+ survey: a new library of observed stellar spectra improves radial velocities and hints at motions within M67**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.4202Z)<br/>Zwitter *et al.* (2021) MNRAS **508** 4202 <small>([doi:10.1093/mnras/stab2673](https://doi.org/10.1093/mnras/stab2673), [arXiv:2012.12201](https://arxiv.org/abs/arXiv:2012.12201))</small>
 * [**The GALAH Survey: Improving our understanding of confirmed and candidate planetary systems with large stellar surveys**](https://ui.adsabs.harvard.edu/abs/2021arXiv211114883C)<br/>Clark *et al.* (2021) arXiv   <small>([arXiv:2111.14883](https://arxiv.org/abs/arXiv:2111.14883))</small>
+* [**The GALAH Survey: Dependence of elemental abundances on age and metallicity for stars in the Galactic disc**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.tmp.3061S)<br/>Sharma *et al.* (2021) MNRAS   <small>([doi:10.1093/mnras/stab3341](https://doi.org/10.1093/mnras/stab3341), [arXiv:2011.13818](https://arxiv.org/abs/arXiv:2011.13818))</small>
 * [**The GALAH survey: effective temperature calibration from the InfraRed Flux Method in the Gaia system**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2684C)<br/>Casagrande *et al.* (2021) MNRAS **507** 2684 <small>([doi:10.1093/mnras/stab2304](https://doi.org/10.1093/mnras/stab2304), [arXiv:2011.02517](https://arxiv.org/abs/arXiv:2011.02517))</small>
 * [**The GALAH survey: accreted stars also inhabit the Spite plateau**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507...43S)<br/>Simpson *et al.* (2021) MNRAS **507** 43 <small>([doi:10.1093/mnras/stab2012](https://doi.org/10.1093/mnras/stab2012), [arXiv:2011.02659](https://arxiv.org/abs/arXiv:2011.02659))</small>
 * [**The GALAH Survey: Chemical tagging and chrono-chemodynamics of accreted halo stars with GALAH+ DR3 and *Gaia* eDR3**](https://ui.adsabs.harvard.edu/abs/2021arXiv210904059B)<br/>Buder *et al.* (2021) arXiv   <small>([arXiv:2109.04059](https://arxiv.org/abs/arXiv:2109.04059))</small>
@@ -33,7 +34,6 @@ Jump to a year:
 
 #### 2020
 
-* [**The GALAH Survey: Dependence of elemental abundances on age and metallicity for stars in the Galactic disc**](https://ui.adsabs.harvard.edu/abs/2020arXiv201113818S)<br/>Sharma *et al.* (2020) arXiv   <small>([arXiv:2011.13818](https://arxiv.org/abs/arXiv:2011.13818))</small>
 * [**The GALAH Survey: Chemical Clocks**](https://ui.adsabs.harvard.edu/abs/2020arXiv201113745H)<br/>Hayden *et al.* (2020) arXiv   <small>([arXiv:2011.13745](https://arxiv.org/abs/arXiv:2011.13745))</small>
 * [**The GALAH survey: Milky Way disc metallicity and alpha-abundance trends in combined APOGEE-GALAH catalogues**](https://ui.adsabs.harvard.edu/abs/2020arXiv201102783N)<br/>Nandakumar *et al.* (2020) arXiv   <small>([arXiv:2011.02783](https://arxiv.org/abs/arXiv:2011.02783))</small>
 * [**The GALAH Survey: non-LTE departure coefficients for large spectroscopic surveys**](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A..62A)<br/>Amarsi *et al.* (2020) A&A **642** A62 <small>([doi:10.1051/0004-6361/202038650](https://doi.org/10.1051/0004-6361/202038650), [arXiv:2008.09582](https://arxiv.org/abs/arXiv:2008.09582))</small>
