@@ -14,12 +14,21 @@ Jump to a year:
 * This text gets replaced.
 {:toc}
 ---
+#### 2022
+
+* [**J01020100-7122208: an accreted evolved blue straggler that was not ejected from a supermassive black hole**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4637D)<br/>De Brito Silva *et al.* (2022) MNRAS **509** 4637 <small>([doi:10.1093/mnras/stab3364](https://doi.org/10.1093/mnras/stab3364))</small>
+
 #### 2021
 
+* [**Characterizing epochs of star formation across the Milky Way disc using age-metallicity distributions of GALAH stars**](https://ui.adsabs.harvard.edu/abs/2021arXiv211208218S)<br/>Sahlholdt *et al.* (2021) arXiv   <small>([arXiv:2112.08218](https://arxiv.org/abs/arXiv:2112.08218))</small>
+* [**Assessment of [Fe/H] determinations for FGK stars in spectroscopic surveys**](https://ui.adsabs.harvard.edu/abs/2021arXiv211207545S)<br/>Soubiran *et al.* (2021) arXiv   <small>([arXiv:2112.07545](https://arxiv.org/abs/arXiv:2112.07545))</small>
+* [**Stars in the Local Galactic Thick Disk and Halo in Gaia EDR3: A catalogue of Half a Million Local Main-sequence Stars with Photometric Metallicities**](https://ui.adsabs.harvard.edu/abs/2021arXiv211207419K)<br/>Kim and Lépine (2021) arXiv   <small>([arXiv:2112.07419](https://arxiv.org/abs/arXiv:2112.07419))</small>
+* [**J-PLUS: Stellar Parameters, C, N, Mg, Ca and [{\alpha}/Fe] Abundances for Two Million Stars from DR1**](https://ui.adsabs.harvard.edu/abs/2021arXiv211207304Y)<br/>Yang *et al.* (2021) arXiv   <small>([arXiv:2112.07304](https://arxiv.org/abs/arXiv:2112.07304))</small>
 * [**Nucleosynthesis signatures of neutrino-driven winds from proto-neutron stars: a perspective from chemical evolution models**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.3499V)<br/>Vincenzo *et al.* (2021) MNRAS **508** 3499 <small>([doi:10.1093/mnras/stab2828](https://doi.org/10.1093/mnras/stab2828), [arXiv:2102.04920](https://arxiv.org/abs/arXiv:2102.04920))</small>
 * [**The challenge of simultaneously matching the observed diversity of chemical abundance patterns in cosmological hydrodynamical simulations**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.3365B)<br/>Buck *et al.* (2021) MNRAS **508** 3365 <small>([doi:10.1093/mnras/stab2736](https://doi.org/10.1093/mnras/stab2736), [arXiv:2103.03884](https://arxiv.org/abs/arXiv:2103.03884))</small>
 * [**Most "Young" α-rich Stars Have High Masses but are Actually Old**](https://ui.adsabs.harvard.edu/abs/2021ApJ...922..145Z)<br/>Zhang *et al.* (2021) ApJ **922** 145 <small>([doi:10.3847/1538-4357/ac22a5](https://doi.org/10.3847/1538-4357/ac22a5), [arXiv:2109.00746](https://arxiv.org/abs/arXiv:2109.00746))</small>
 * [**Lithium Enrichment Signatures of Planetary Engulfment Events in Evolved Stars**](https://ui.adsabs.harvard.edu/abs/2021AJ....162..273S)<br/>Soares-Furtado *et al.* (2021) AJ **162** 273 <small>([doi:10.3847/1538-3881/ac273c](https://doi.org/10.3847/1538-3881/ac273c), [arXiv:2002.05275](https://arxiv.org/abs/arXiv:2002.05275))</small>
+* [**Estimating [α/Fe] from Gaia low-resolution BP/RP spectra using the ExtraTrees algorithm**](https://ui.adsabs.harvard.edu/abs/2021A%26A...656A..93G)<br/>Gavel *et al.* (2021) A&A **656** A93 <small>([doi:10.1051/0004-6361/202141589](https://doi.org/10.1051/0004-6361/202141589))</small>
 * [**High-precision chemical abundances of Galactic building blocks. The distinct chemical abundance sequence of Sequoia**](https://ui.adsabs.harvard.edu/abs/2021arXiv211115423M)<br/>Matsuno *et al.* (2021) arXiv   <small>([arXiv:2111.15423](https://arxiv.org/abs/arXiv:2111.15423))</small>
 * [**Chemo-kinematics of the Milky Way spiral arms and bar resonances: connection to ridges and moving groups in the Solar vicinity**](https://ui.adsabs.harvard.edu/abs/2021arXiv211115211K)<br/>Khoperskov and Gerhard (2021) arXiv   <small>([arXiv:2111.15211](https://arxiv.org/abs/arXiv:2111.15211))</small>
 * [**A Census of the Stellar Populations in the Sco-Cen Complex**](https://ui.adsabs.harvard.edu/abs/2021arXiv211113946L)<br/>Luhman (2021) arXiv   <small>([arXiv:2111.13946](https://arxiv.org/abs/arXiv:2111.13946))</small>
