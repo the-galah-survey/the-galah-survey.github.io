@@ -14,12 +14,15 @@ Jump to a year:
 * This text gets replaced.
 {:toc}
 ---
+#### 2022
+
+* [**The GALAH Survey: dependence of elemental abundances on age and metallicity for stars in the Galactic disc**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.510..734S)<br/>Sharma *et al.* (2022) MNRAS **510** 734 <small>([doi:10.1093/mnras/stab3341](https://doi.org/10.1093/mnras/stab3341), [arXiv:2011.13818](https://arxiv.org/abs/arXiv:2011.13818))</small>
+
 #### 2021
 
 * [**The GALAH Survey: Chemical tagging and chrono-chemodynamics of accreted halo stars with GALAH+ DR3 and Gaia eDR3**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.tmp.3190B)<br/>Buder *et al.* (2021) MNRAS   <small>([doi:10.1093/mnras/stab3504](https://doi.org/10.1093/mnras/stab3504), [arXiv:2109.04059](https://arxiv.org/abs/arXiv:2109.04059))</small>
 * [**The GALAH Survey: Improving our understanding of confirmed and candidate planetary systems with large stellar surveys**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.tmp.3154C)<br/>Clark *et al.* (2021) MNRAS   <small>([doi:10.1093/mnras/stab3498](https://doi.org/10.1093/mnras/stab3498), [arXiv:2111.14883](https://arxiv.org/abs/arXiv:2111.14883))</small>
 * [**The GALAH+ survey: a new library of observed stellar spectra improves radial velocities and hints at motions within M67**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.4202Z)<br/>Zwitter *et al.* (2021) MNRAS **508** 4202 <small>([doi:10.1093/mnras/stab2673](https://doi.org/10.1093/mnras/stab2673), [arXiv:2012.12201](https://arxiv.org/abs/arXiv:2012.12201))</small>
-* [**The GALAH Survey: Dependence of elemental abundances on age and metallicity for stars in the Galactic disc**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.tmp.3061S)<br/>Sharma *et al.* (2021) MNRAS   <small>([doi:10.1093/mnras/stab3341](https://doi.org/10.1093/mnras/stab3341), [arXiv:2011.13818](https://arxiv.org/abs/arXiv:2011.13818))</small>
 * [**The GALAH survey: effective temperature calibration from the InfraRed Flux Method in the Gaia system**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2684C)<br/>Casagrande *et al.* (2021) MNRAS **507** 2684 <small>([doi:10.1093/mnras/stab2304](https://doi.org/10.1093/mnras/stab2304), [arXiv:2011.02517](https://arxiv.org/abs/arXiv:2011.02517))</small>
 * [**The GALAH survey: accreted stars also inhabit the Spite plateau**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.507...43S)<br/>Simpson *et al.* (2021) MNRAS **507** 43 <small>([doi:10.1093/mnras/stab2012](https://doi.org/10.1093/mnras/stab2012), [arXiv:2011.02659](https://arxiv.org/abs/arXiv:2011.02659))</small>
 * [**The GALAH survey: Chemical homogeneity of the Orion complex**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.4232K)<br/>Kos *et al.* (2021) MNRAS **506** 4232 <small>([doi:10.1093/mnras/stab1767](https://doi.org/10.1093/mnras/stab1767), [arXiv:2011.02485](https://arxiv.org/abs/arXiv:2011.02485))</small>
