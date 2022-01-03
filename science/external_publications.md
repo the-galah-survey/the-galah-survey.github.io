@@ -17,6 +17,7 @@ Jump to a year:
 #### 2022
 
 * [**J01020100-7122208: an accreted evolved blue straggler that was not ejected from a supermassive black hole**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4637D)<br/>De Brito Silva *et al.* (2022) MNRAS **509** 4637 <small>([doi:10.1093/mnras/stab3364](https://doi.org/10.1093/mnras/stab3364))</small>
+* [**First Results on RR Lyrae Stars with the TESS Space Telescope: Untangling the Connections between Mode Content, Colors, and Distances**](https://ui.adsabs.harvard.edu/abs/2022ApJS..258....8M)<br/>Molnár *et al.* (2022) ApJS **258** 8 <small>([doi:10.3847/1538-4365/ac2ee2](https://doi.org/10.3847/1538-4365/ac2ee2))</small>
 * [**A Census of the Stellar Populations in the Sco-Cen Complex**](https://ui.adsabs.harvard.edu/abs/2022AJ....163...24L)<br/>Luhman (2022) AJ **163** 24 <small>([doi:10.3847/1538-3881/ac35e2](https://doi.org/10.3847/1538-3881/ac35e2), [arXiv:2111.13946](https://arxiv.org/abs/arXiv:2111.13946))</small>
 
 #### 2021
