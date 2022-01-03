@@ -57,6 +57,7 @@ def get_title_str(pub):
     things_to_fix = [[r"$\sim$", "~"],
                      [r"$R$", "*R*"],
                      [r"[$\alpha/\rm Fe]$", "[α/Fe]"],
+                     [r"[{\alpha}/Fe]", "[α/Fe]"],
                      [r"$\alpha$", "α"],
                      [r"∼", "~"],
                      [r"$< -0.75$", "< −0.75"],
