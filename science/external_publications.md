@@ -16,6 +16,8 @@ Jump to a year:
 ---
 #### 2022
 
+* [**Substructure in the stellar halo near the Sun. II. Characterisation of independent structures**](https://ui.adsabs.harvard.edu/abs/2022arXiv220102405R)<br/>Ruiz-Lara *et al.* (2022) arXiv   <small>([arXiv:2201.02405](https://arxiv.org/abs/arXiv:2201.02405))</small>
+* [**Substructure in the stellar halo near the Sun. I. Data-driven clustering in Integrals of Motion space**](https://ui.adsabs.harvard.edu/abs/2022arXiv220102404S)<br/>Sofie Lövdal *et al.* (2022) arXiv   <small>([arXiv:2201.02404](https://arxiv.org/abs/arXiv:2201.02404))</small>
 * [**J01020100-7122208: an accreted evolved blue straggler that was not ejected from a supermassive black hole**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4637D)<br/>De Brito Silva *et al.* (2022) MNRAS **509** 4637 <small>([doi:10.1093/mnras/stab3364](https://doi.org/10.1093/mnras/stab3364))</small>
 * [**First Results on RR Lyrae Stars with the TESS Space Telescope: Untangling the Connections between Mode Content, Colors, and Distances**](https://ui.adsabs.harvard.edu/abs/2022ApJS..258....8M)<br/>Molnár *et al.* (2022) ApJS **258** 8 <small>([doi:10.3847/1538-4365/ac2ee2](https://doi.org/10.3847/1538-4365/ac2ee2), [arXiv:2109.07329](https://arxiv.org/abs/arXiv:2109.07329))</small>
 * [**A Census of the Stellar Populations in the Sco-Cen Complex**](https://ui.adsabs.harvard.edu/abs/2022AJ....163...24L)<br/>Luhman (2022) AJ **163** 24 <small>([doi:10.3847/1538-3881/ac35e2](https://doi.org/10.3847/1538-3881/ac35e2), [arXiv:2111.13946](https://arxiv.org/abs/arXiv:2111.13946))</small>
