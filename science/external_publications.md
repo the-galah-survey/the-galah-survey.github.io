@@ -16,6 +16,7 @@ Jump to a year:
 ---
 #### 2022
 
+* [**Astrophysical Parameters from Gaia DR2, 2MASS &amp; AllWISE**](https://ui.adsabs.harvard.edu/abs/2022arXiv220103252F)<br/>Fouesneau *et al.* (2022) arXiv   <small>([arXiv:2201.03252](https://arxiv.org/abs/arXiv:2201.03252))</small>
 * [**Substructure in the stellar halo near the Sun. II. Characterisation of independent structures**](https://ui.adsabs.harvard.edu/abs/2022arXiv220102405R)<br/>Ruiz-Lara *et al.* (2022) arXiv   <small>([arXiv:2201.02405](https://arxiv.org/abs/arXiv:2201.02405))</small>
 * [**Substructure in the stellar halo near the Sun. I. Data-driven clustering in Integrals of Motion space**](https://ui.adsabs.harvard.edu/abs/2022arXiv220102404S)<br/>Sofie Lövdal *et al.* (2022) arXiv   <small>([arXiv:2201.02404](https://arxiv.org/abs/arXiv:2201.02404))</small>
 * [**J01020100-7122208: an accreted evolved blue straggler that was not ejected from a supermassive black hole**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4637D)<br/>De Brito Silva *et al.* (2022) MNRAS **509** 4637 <small>([doi:10.1093/mnras/stab3364](https://doi.org/10.1093/mnras/stab3364))</small>
