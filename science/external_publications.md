@@ -17,6 +17,7 @@ Jump to a year:
 #### 2022
 
 * [**TESS Giants Transiting Giants. I.: A Noninflated Hot Jupiter Orbiting a Massive Subgiant**](https://ui.adsabs.harvard.edu/abs/2022AJ....163...53S)<br/>Saunders *et al.* (2022) AJ **163** 53 <small>([doi:10.3847/1538-3881/ac38a1](https://doi.org/10.3847/1538-3881/ac38a1), [arXiv:2108.02294](https://arxiv.org/abs/arXiv:2108.02294))</small>
+* [**A GALAH View of the Chemical Homogeneity and Ages of Stellar Strings Identified in Gaia**](https://ui.adsabs.harvard.edu/abs/2022arXiv220107809M)<br/>Manea *et al.* (2022) arXiv   <small>([arXiv:2201.07809](https://arxiv.org/abs/arXiv:2201.07809))</small>
 * [**Astrophysical Parameters from Gaia DR2, 2MASS &amp; AllWISE**](https://ui.adsabs.harvard.edu/abs/2022arXiv220103252F)<br/>Fouesneau *et al.* (2022) arXiv   <small>([arXiv:2201.03252](https://arxiv.org/abs/arXiv:2201.03252))</small>
 * [**Substructure in the stellar halo near the Sun. II. Characterisation of independent structures**](https://ui.adsabs.harvard.edu/abs/2022arXiv220102405R)<br/>Ruiz-Lara *et al.* (2022) arXiv   <small>([arXiv:2201.02405](https://arxiv.org/abs/arXiv:2201.02405))</small>
 * [**Substructure in the stellar halo near the Sun. I. Data-driven clustering in Integrals of Motion space**](https://ui.adsabs.harvard.edu/abs/2022arXiv220102404S)<br/>Sofie Lövdal *et al.* (2022) arXiv   <small>([arXiv:2201.02404](https://arxiv.org/abs/arXiv:2201.02404))</small>
