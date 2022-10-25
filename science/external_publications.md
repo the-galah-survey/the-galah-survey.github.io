@@ -16,6 +16,7 @@ Jump to a year:
 ---
 #### 2022
 
+* [**Gaia Spectroscopic orbits validated with LAMOST and GALAH radial velocities**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.tmp.2740B)<br/>Bashi *et al.* (2022) MNRAS   <small>([doi:10.1093/mnras/stac2928](https://doi.org/10.1093/mnras/stac2928), [arXiv:2207.08832](https://arxiv.org/abs/arXiv:2207.08832))</small>
 * [**Milky Way's Eccentric Constituents with Gaia, APOGEE, and GALAH**](https://ui.adsabs.harvard.edu/abs/2022ApJ...938...21M)<br/>Myeong *et al.* (2022) ApJ **938** 21 <small>([doi:10.3847/1538-4357/ac8d68](https://doi.org/10.3847/1538-4357/ac8d68), [arXiv:2206.07744](https://arxiv.org/abs/arXiv:2206.07744))</small>
 * [**Chemo-Dynamically Tagged Groups of CEMP Stars in the Halo of the Milky Way. I. Untangling the Origins of CEMP-$s$ and CEMP-no Stars**](https://ui.adsabs.harvard.edu/abs/2022arXiv220912224Z)<br/>Zepeda *et al.* (2022) arXiv   <small>([arXiv:2209.12224](https://arxiv.org/abs/arXiv:2209.12224))</small>
 * [**Lithium, masses, and kinematics of young Galactic dwarf and giant stars with extreme [α/Fe] ratios**](https://ui.adsabs.harvard.edu/abs/2022arXiv220911915B)<br/>Borisov *et al.* (2022) arXiv   <small>([arXiv:2209.11915](https://arxiv.org/abs/arXiv:2209.11915))</small>
@@ -32,7 +33,6 @@ Jump to a year:
 * [**A new resonance-like feature in the outer disc of the Milky Way**](https://ui.adsabs.harvard.edu/abs/2022arXiv220712977D)<br/>Drimmel *et al.* (2022) arXiv   <small>([arXiv:2207.12977](https://arxiv.org/abs/arXiv:2207.12977))</small>
 * [**LAMOST meets Gaia: The Galactic Open Clusters**](https://ui.adsabs.harvard.edu/abs/2022arXiv220709121F)<br/>Fu *et al.* (2022) arXiv   <small>([arXiv:2207.09121](https://arxiv.org/abs/arXiv:2207.09121))</small>
 * [**Evidence of extra-mixing in field giants as traced by lithium and carbon isotope ratio**](https://ui.adsabs.harvard.edu/abs/2022arXiv220708905A)<br/>Aguilera-Gómez *et al.* (2022) arXiv   <small>([arXiv:2207.08905](https://arxiv.org/abs/arXiv:2207.08905))</small>
-* [**Gaia Spectroscopic Orbits Validated with LAMOST and GALAH Radial Velocities**](https://ui.adsabs.harvard.edu/abs/2022arXiv220708832B)<br/>Bashi *et al.* (2022) arXiv   <small>([arXiv:2207.08832](https://arxiv.org/abs/arXiv:2207.08832))</small>
 * [**On the origins of Hypervelocity stars as revealed by large-scale Galactic surveys**](https://ui.adsabs.harvard.edu/abs/2022arXiv220704406L)<br/>Li *et al.* (2022) arXiv   <small>([arXiv:2207.04406](https://arxiv.org/abs/arXiv:2207.04406))</small>
 * [**Characterising the AGB bump and its potential to constrain mixing processes in stellar interiors**](https://ui.adsabs.harvard.edu/abs/2022arXiv220700571D)<br/>Dréau *et al.* (2022) arXiv   <small>([arXiv:2207.00571](https://arxiv.org/abs/arXiv:2207.00571))</small>
 * [**The stellar parameters and elemental abundances from low-resolution spectra I: 1.2 million giants from LAMOST DR8**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.tmp.1883L)<br/>Li *et al.* (2022) MNRAS   <small>([doi:10.1093/mnras/stac1959](https://doi.org/10.1093/mnras/stac1959), [arXiv:2207.05294](https://arxiv.org/abs/arXiv:2207.05294))</small>
