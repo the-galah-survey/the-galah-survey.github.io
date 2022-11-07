@@ -16,7 +16,7 @@ Jump to a year:
 ---
 #### 2022
 
-* [**Gaia Spectroscopic orbits validated with LAMOST and GALAH radial velocities**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.tmp.2740B)<br/>Bashi *et al.* (2022) MNRAS   <small>([doi:10.1093/mnras/stac2928](https://doi.org/10.1093/mnras/stac2928), [arXiv:2207.08832](https://arxiv.org/abs/arXiv:2207.08832))</small>
+* [**Gaia spectroscopic orbits validated with LAMOST and GALAH radial velocities**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.3888B)<br/>Bashi *et al.* (2022) MNRAS **517** 3888 <small>([doi:10.1093/mnras/stac2928](https://doi.org/10.1093/mnras/stac2928), [arXiv:2207.08832](https://arxiv.org/abs/arXiv:2207.08832))</small>
 * [**Milky Way's Eccentric Constituents with Gaia, APOGEE, and GALAH**](https://ui.adsabs.harvard.edu/abs/2022ApJ...938...21M)<br/>Myeong *et al.* (2022) ApJ **938** 21 <small>([doi:10.3847/1538-4357/ac8d68](https://doi.org/10.3847/1538-4357/ac8d68), [arXiv:2206.07744](https://arxiv.org/abs/arXiv:2206.07744))</small>
 * [**Chemo-Dynamically Tagged Groups of CEMP Stars in the Halo of the Milky Way. I. Untangling the Origins of CEMP-$s$ and CEMP-no Stars**](https://ui.adsabs.harvard.edu/abs/2022arXiv220912224Z)<br/>Zepeda *et al.* (2022) arXiv   <small>([arXiv:2209.12224](https://arxiv.org/abs/arXiv:2209.12224))</small>
 * [**Lithium, masses, and kinematics of young Galactic dwarf and giant stars with extreme [α/Fe] ratios**](https://ui.adsabs.harvard.edu/abs/2022arXiv220911915B)<br/>Borisov *et al.* (2022) arXiv   <small>([arXiv:2209.11915](https://arxiv.org/abs/arXiv:2209.11915))</small>
