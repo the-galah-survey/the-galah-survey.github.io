@@ -14,12 +14,18 @@ Jump to a year:
 * This text gets replaced.
 {:toc}
 ---
+#### 2023
+
+* [**TFAW survey II: six newly validated planets and 13 planet candidates from K2**](https://ui.adsabs.harvard.edu/abs/2023MNRAS.518..669D)<br/>del Ser *et al.* (2023) MNRAS **518** 669 <small>([doi:10.1093/mnras/stac3087](https://doi.org/10.1093/mnras/stac3087), [arXiv:2210.10805](https://arxiv.org/abs/arXiv:2210.10805))</small>
+
 #### 2022
 
 * [**Survey for distant solar twins (SDST) - II. Design, observations, and data**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5569L)<br/>Liu *et al.* (2022) MNRAS **517** 5569 <small>([doi:10.1093/mnras/stac3033](https://doi.org/10.1093/mnras/stac3033), [arXiv:2210.09776](https://arxiv.org/abs/arXiv:2210.09776))</small>
 * [**The stellar parameters and elemental abundances from low-resolution spectra - I. 1.2 million giants from LAMOST DR8**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.4875L)<br/>Li *et al.* (2022) MNRAS **517** 4875 <small>([doi:10.1093/mnras/stac1959](https://doi.org/10.1093/mnras/stac1959), [arXiv:2207.05294](https://arxiv.org/abs/arXiv:2207.05294))</small>
 * [**Gaia spectroscopic orbits validated with LAMOST and GALAH radial velocities**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.3888B)<br/>Bashi *et al.* (2022) MNRAS **517** 3888 <small>([doi:10.1093/mnras/stac2928](https://doi.org/10.1093/mnras/stac2928), [arXiv:2207.08832](https://arxiv.org/abs/arXiv:2207.08832))</small>
 * [**The evolution of CNO elements in galaxies**](https://ui.adsabs.harvard.edu/abs/2022A%26ARv..30....7R)<br/>Romano (2022) A&ARv **30** 7 <small>([doi:10.1007/s00159-022-00144-z](https://doi.org/10.1007/s00159-022-00144-z), [arXiv:2210.04350](https://arxiv.org/abs/arXiv:2210.04350))</small>
+* [**A Census of the Taurus Star-forming Region and Neighboring Associations with Gaia**](https://ui.adsabs.harvard.edu/abs/2022arXiv221109785L)<br/>Luhman (2022) arXiv   <small>([arXiv:2211.09785](https://arxiv.org/abs/arXiv:2211.09785))</small>
+* [**New Generation Stellar Spectral Libraries in the Optical and Near-Infrared I: The Recalibrated UVES-POP Library for Stellar Population Synthesis**](https://ui.adsabs.harvard.edu/abs/2022arXiv221109130B)<br/>Borisov *et al.* (2022) arXiv   <small>([arXiv:2211.09130](https://arxiv.org/abs/arXiv:2211.09130))</small>
 * [**Type II and anomalous Cepheids in the Kepler K2 mission**](https://ui.adsabs.harvard.edu/abs/2022arXiv221106461J)<br/>Jurkovic *et al.* (2022) arXiv   <small>([arXiv:2211.06461](https://arxiv.org/abs/arXiv:2211.06461))</small>
 * [**Comparative analysis of atmospheric parameters from high-resolution spectroscopic sky surveys: APOGEE, GALAH, Gaia-ESO**](https://ui.adsabs.harvard.edu/abs/2022arXiv221103416H)<br/>Hegedűs *et al.* (2022) arXiv   <small>([arXiv:2211.03416](https://arxiv.org/abs/arXiv:2211.03416))</small>
 * [**Two temperate super-Earths transiting a nearby late-type M dwarf**](https://ui.adsabs.harvard.edu/abs/2022A%26A...667A..59D)<br/>Delrez *et al.* (2022) A&A **667** A59 <small>([doi:10.1051/0004-6361/202244041](https://doi.org/10.1051/0004-6361/202244041), [arXiv:2209.02831](https://arxiv.org/abs/arXiv:2209.02831))</small>
