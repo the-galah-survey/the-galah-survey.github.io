@@ -16,7 +16,7 @@ Jump to a year:
 ---
 #### 2022
 
-* [**The GALAH survey: chemical clocks**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5325H)<br/>Hayden *et al.* (2022) MNRAS **517** 5325 <small>([doi:10.1093/mnras/stac2787](https://doi.org/10.1093/mnras/stac2787))</small>
+* [**The GALAH survey: chemical clocks**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5325H)<br/>Hayden *et al.* (2022) MNRAS **517** 5325 <small>([doi:10.1093/mnras/stac2787](https://doi.org/10.1093/mnras/stac2787), [arXiv:2011.13745](https://arxiv.org/abs/arXiv:2011.13745))</small>
 * [**Combined APOGEE-GALAH stellar catalogues using the Cannon**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.513..232N)<br/>Nandakumar *et al.* (2022) MNRAS **513** 232 <small>([doi:10.1093/mnras/stac873](https://doi.org/10.1093/mnras/stac873), [arXiv:2011.02783](https://arxiv.org/abs/arXiv:2011.02783))</small>
 * [**The GALAH Survey: A New Sample of Extremely Metal-poor Stars Using a Machine-learning Classification Algorithm**](https://ui.adsabs.harvard.edu/abs/2022ApJ...930...47H)<br/>Hughes *et al.* (2022) ApJ **930** 47 <small>([doi:10.3847/1538-4357/ac5fa7](https://doi.org/10.3847/1538-4357/ac5fa7), [arXiv:2203.10843](https://arxiv.org/abs/arXiv:2203.10843))</small>
 * [**The GALAH Survey: chemical tagging and chrono-chemodynamics of accreted halo stars with GALAH+ DR3 and Gaia eDR3**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.2407B)<br/>Buder *et al.* (2022) MNRAS **510** 2407 <small>([doi:10.1093/mnras/stab3504](https://doi.org/10.1093/mnras/stab3504), [arXiv:2109.04059](https://arxiv.org/abs/arXiv:2109.04059))</small>
@@ -40,7 +40,6 @@ Jump to a year:
 
 #### 2020
 
-* [**The GALAH Survey: Chemical Clocks**](https://ui.adsabs.harvard.edu/abs/2020arXiv201113745H)<br/>Hayden *et al.* (2020) arXiv   <small>([doi:10.48550/arXiv.2011.13745](https://doi.org/10.48550/arXiv.2011.13745), [arXiv:2011.13745](https://arxiv.org/abs/arXiv:2011.13745))</small>
 * [**The GALAH Survey: non-LTE departure coefficients for large spectroscopic surveys**](https://ui.adsabs.harvard.edu/abs/2020A%26A...642A..62A)<br/>Amarsi *et al.* (2020) A&A **642** A62 <small>([doi:10.1051/0004-6361/202038650](https://doi.org/10.1051/0004-6361/202038650), [arXiv:2008.09582](https://arxiv.org/abs/arXiv:2008.09582))</small>
 * [**The GALAH survey: a new constraint on cosmological lithium and Galactic lithium evolution from warm dwarf stars**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497L..30G)<br/>Gao *et al.* (2020) MNRAS **497** L30 <small>([doi:10.1093/mnrasl/slaa109](https://doi.org/10.1093/mnrasl/slaa109), [arXiv:2006.05173](https://arxiv.org/abs/arXiv:2006.05173))</small>
 * [**K2-HERMES II. Planet-candidate properties from K2 Campaigns 1-13**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.496..851W)<br/>Wittenmyer *et al.* (2020) MNRAS **496** 851 <small>([doi:10.1093/mnras/staa1528](https://doi.org/10.1093/mnras/staa1528), [arXiv:2005.10959](https://arxiv.org/abs/arXiv:2005.10959))</small>
