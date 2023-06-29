@@ -83,8 +83,8 @@ Jump to a year:
 
 #### 2016
 
-* [**The GALAH survey: relative throughputs of the 2dF fibre positioner and the HERMES spectrograph from stellar targets**](https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.1069S)<br/>Simpson *et al.* (2016) MNRAS **459** 1069 <small>([doi:10.1093/mnras/stw746](https://doi.org/10.1093/mnras/stw746))</small>
+* [**The GALAH survey: relative throughputs of the 2dF fibre positioner and the HERMES spectrograph from stellar targets**](https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.1069S)<br/>Simpson *et al.* (2016) MNRAS **459** 1069 <small>([doi:10.1093/mnras/stw746](https://doi.org/10.1093/mnras/stw746), [arXiv:1603.08991](https://arxiv.org/abs/arXiv:1603.08991))</small>
 
 #### 2015
 
-* [**The GALAH survey: scientific motivation**](https://ui.adsabs.harvard.edu/abs/2015MNRAS.449.2604D)<br/>De Silva *et al.* (2015) MNRAS **449** 2604 <small>([doi:10.1093/mnras/stv327](https://doi.org/10.1093/mnras/stv327))</small>
+* [**The GALAH survey: scientific motivation**](https://ui.adsabs.harvard.edu/abs/2015MNRAS.449.2604D)<br/>De Silva *et al.* (2015) MNRAS **449** 2604 <small>([doi:10.1093/mnras/stv327](https://doi.org/10.1093/mnras/stv327), [arXiv:1502.04767](https://arxiv.org/abs/arXiv:1502.04767))</small>
