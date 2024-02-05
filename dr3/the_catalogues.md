@@ -181,6 +181,40 @@ The `rv_galah` in `GALAH_DR3_main_allstar_v2`, `GALAH_DR3_main_allspec_v2`, and 
 
 ----
 
+#### 3D NLTE Li abundances
+
+We provide two versions of the GALAH 3D NLTE Li abundances catalogue. These catalogues contain Li abundances and equivalent widths per star (allstar) and per spectra (allspec). The full list of columns is on the [Table Schema documentation](/dr3/table_schema).
+
+##### [Download `GALAH_DR3_VAC_li_allstar_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (133 MB)
+{:.no_toc}
+
+We recommend using allstar for most science cases interested in stellar Li abundances.
+
+In general, this catalogue contains
+* Columns from DR3 all end with `_DR3`, with the exception of the target identification columns
+    - `sobject_id` and `star_id` for target identification
+    - We replicate measured stellar properties: `vbroad_DR3`, `rv_DR3`, `snr_DR3`, `teff_DR3`, `logg_DR3`, `fe_h_DR3`; and their associated errors: `e_teff_DR3`, `e_logg_DR3`, `e_fe_h_DR3` from GALAH DR3 for completeness
+    - We replicate the GALAH DR3 1D NLTE Li abundances `ALi_DR3` and its associated error value `e_ALi_DR3`
+    - In addition, we replicate the relevant flags for these paramters: `flag_sp_DR3`, `flag_fe_h_DR3`, `flag_ALi_DR3`
+* New columns not from DR3
+    - Our measured parameters with no reported errors include `fwhm_broad`, `fwhm_Li`, `delta_rv_6708`
+    - We measure `EW` and its associated error values `e_EW_low`, `e_EW_upp`, `e_EW_norris`
+    - We provide measured Li abundances, `ALi` and its associated error values: `e_ALi_low`, `e_ALi_upp`, and `e_ALi_teff`. In the case of non-dections, we instead provide an upper limit `ALi_upp_lim`
+    - We provide a new flag associated with the abundance and equivalent width columns, `flag_ALi`
+
+For the new flags as part of this catalogue, we recommend `flag_ALi < 2` when using Li abundances and `flag_ALi < 4` when using Li equivalent widths. For the flags replicated from DR3, we give the same recommendation as the main DR3 data release (see [using the data](https://www.galah-survey.org/dr3/using_the_data/) for more information). 
+
+##### [Download `GALAH_DR3_VAC_li_allspec_v2.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (153 MB)
+{:.no_toc}
+
+The allspec catalogue is not recommended for most science cases. Like the main DR3 catalogue, it contains results per spectra (rather than per star). 
+
+The columns in this catalogue are the exact same as allstar. 
+
+This table is part of the published journal article by Wang et al. (MNRAS, in press).
+
+----
+
 #### FGK binary stars
 Binary stellar systems represent a significant fraction of stars in our Galaxy. Therefore, their effect on observations, as well as their impact on the Galactic environment, have to be properly taken into account when studying Galactic structure and evolution. To this end, we present a sample of 12760 binary systems for which the properties of their stellar components were derived in a separate analysis from the main DR3 analysis.
 
