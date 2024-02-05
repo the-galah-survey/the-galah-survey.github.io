@@ -215,7 +215,7 @@ To save space in the [table above](#galah_dr3_main_allstar_v2-and-galah_dr3_main
 
 ### `VAC_dynamics`
 
-| Column name Description | units | type |
+| Column name | Description | units | type |
 | :------ |:--- | :--- | :--- |
 | `sobject_id` | GALAH identifier |  | integer |
 | `use_dist_flag` | [Distance value was used in the Galactic orbit calculations](/dr3/flags/#use_dist_flag): 0: `distance_bstep`; 1: `r_med_photogeo`; 2: `r_med_geo`; 4: `parallax`; 8: No distance. |  | integer |
@@ -329,6 +329,8 @@ To save space in the [table above](#galah_dr3_main_allstar_v2-and-galah_dr3_main
 
 ### `VAC_rv`
 
+| Column name | Description | units | type |
+| :------ |:--- | :--- | :--- |
 | `sobject_id` | GALAH identifier |  | integer |
 | `use_rv_flag` | [Radial velocity value has been used for `rv_galah`](/dr3/flags/#use_rv_flag): `rv_obst` (0), `rv_sme_v2` (1), Gaia DR2 (2) or n.a. (4) |  | integer |
 | `rv_galah` | Best-method radial velocity from GALAH spectra | km&#8239;s<sup>-1</sup> | float |
@@ -354,6 +356,8 @@ To save space in the [table above](#galah_dr3_main_allstar_v2-and-galah_dr3_main
 
 Unless otherwise stated, all values are from [gaiaedr3.gaia_source](https://gea.esac.esa.int/archive/documentation/GEDR3/Gaia_archive/chap_datamodel/sec_dm_main_tables/ssec_dm_gaia_source.html).
 
+| Column name | Description | units | type |
+| :------ |:--- | :--- | :--- |
 | `star_id` | 2MASS identifier |  | string |
 | `sobject_id` | GALAH identifier |  | integer |
 | `dr2_source_id` | Gaia DR2 `source_id` |  | integer |
@@ -467,4 +471,42 @@ Unless otherwise stated, all values are from [gaiaedr3.gaia_source](https://gea.
 | `r_med_photogeo` | The median of the photogeometric distance posterior. The photogeometric distance estimate. Propagated from [BJ+21](https://dc.zah.uni-heidelberg.de/tableinfo/gedr3dist.main). | pc | float |
 | `r_lo_photogeo` | The 16th percentile of the photogeometric distance posterior. The lower 1-sigma-like bound on the confidence interval. Propagated from [BJ+21](https://dc.zah.uni-heidelberg.de/tableinfo/gedr3dist.main). | pc | float |
 | `r_hi_photogeo` | The 84th percentile of the photogeometric distance posterior. The upper 1-sigma-like bound on the confidence interval. Propagated from [BJ+21](https://dc.zah.uni-heidelberg.de/tableinfo/gedr3dist.main). | pc | float |
-| `flag_edr3dist` | Additional information on the solution. Do not use for filtering. Propagated from [BJ+21](https://dc.zah.uni-heidelberg.de/tableinfo/gedr3dist.main); original name `flag`.  |  | string
+| `flag_edr3dist` | Additional information on the solution. Do not use for filtering. Propagated from [BJ+21](https://dc.zah.uni-heidelberg.de/tableinfo/gedr3dist.main); original name `flag`.  |  | string |
+
+
+### `GALAH_DR3_VAC_li_allstar_v2` and `GALAH_DR3_VAC_li_allspec_v2`
+
+Both `GALAH_DR3_VAC_li_allstar_v2` and `GALAH_DR3_VAC_li_allspec_v2` share the same columns. 
+
+
+| Column name | Description | units | type |
+| :------ |:--- | :--- | :--- |
+| `sobject_id` | Spectrum ID from GALAH DR3 |  | Integer |
+| `star_id` | Star ID from GALAH DR3 |  | String |
+| `fwhm_broad` | Width of the lines measured from broad region, NaN if poorly constrained | km&#8239;s<sup>-1</sup> | Float |
+| `sigma_Li` | WWidth of the breidablik Li line, NaN if outside grid | km&#8239;s<sup>-1</sup> | Float |
+| `vbroad_DR3` | Rotational broadening from GALAH DR3 (no instrumental profile) | km&#8239;s<sup>-1</sup> | Float |
+| `delta_rv_6708` | Relative vrad compared to GALAH DR3 measured from the broad region, measured from Li region if poorly constrained | km&#8239;s<sup>-1</sup> | Float |
+| `rv_DR3` | v$_{rad} from GALAH DR3 | km&#8239;s<sup>-1</sup> | Float |
+| `EW` | Measured Li EW | m&#8491; | Float | 
+| `e_EW_low` | Lower error in Li EW ($\sigma_{l}^{EW}$) | m&#8491; | Float | 
+| `e_EW_upp` | Upper error in Li EW ($\sigma_{u}^{EW}$) | m&#8491; | Float | 
+| `e_EW_norris` | Error using formula from Norris et al. (2001) | m&#8491; | Float | 
+| `ALi` | 3D NLTE A(Li) detections | dex | Float | 
+| `ALi_upp_lim` | 3D NLTE A(Li) upper limit corresponding to 2$\sigma_{l}^{EW}$ | dex | Float | 
+| `e_ALi_low` | Lower error in A(Li) associated with $\sigma_{l}^{EW}$ | dex | Float | 
+| `e_ALi_upp` | Upper error in A(Li) associated with $\sigma_{u}^{EW}$ | dex | Float | 
+| `e_ALi_teff` | Error in A(Li) associated with $\sigma_{T_{eff}}$ | dex | Float | 
+| `flag_ALi` | Bitmask flag for abundances and EW calculated in this catalogue |  | Integer | 
+| `ALi_DR3` | 1D NLTE A(Li) detections and upper limits from GALAH DR3 | dex | Float | 
+| `e_ALi_DR3` | $\sigma_{A(Li)}$ from GALAH DR3 | dex | Float | 
+| `flag_ALi_DR3` | Bitmask flag for A(Li) from GALAH DR3 | dex | Integer | 
+| `teff_DR3` | T$_{eff}$ from GALAH DR3 | K | Float |
+| `e_teff_DR3` | $\sigma_{T_{eff}}$ from GALAH DR3 | K | Float |
+| `logg_DR3` | log(g) from GALAH DR3 | log(cm&#8239;s<sup>-2</sup>) | Float |
+| `e_logg_DR3` | $\sigma_{log(g)}$ from GALAH DR3 | log(cm&#8239;s<sup>-2</sup>) | Float |
+| `flag_sp_DR3` | Bitmask flag for T$_{eff}$ and log(g) from GALAH DR3 |  | Int |
+| `fe_h_DR3` | [Fe/H] from GALAH DR3 | dex | Float |
+| `e_fe_h_DR3` | $\sigma_{[Fe/H]}$ from GALAH DR3 | dex | Float |
+| `flag_fe_h_DR3` | Bitmask flag for metallicity from GALAH DR3 |  | Integer |
+| `snr_DR3` | S/N of the spectra from GALAH DR3 |  | Float |
