@@ -19,7 +19,7 @@ GALAH DR3 provides reduced one-dimensional spectra for each star in the main cat
 For a given star on a given camera, each file contains five extensions:
 
 1. `PRIMARY`: Unnormalised spectrum with sky subtraction
-2. `input_sigma`: Relative error of spectrum with sky subtraction. To calculate absolute error multiply with first extension for unnormalised error (fits[0] * fits[1]), and with the fourth extension for pseudo-continuum normalised error (fits[4] * fits[1]).
+2. `input_sigma`: Relative error of spectrum with sky subtraction. To calculate absolute error multiply with first extension for unnormalised error (fits[0] * fits[1]), and with the fifth extension for pseudo-continuum normalised error (fits[4] * fits[1]).
 3. `no_sky_subspectrum`: Unnormalised spectrum with no sky subtraction
 4. `no_sky_sigma`: Variance of the unnormalised spectrum with no sky subtraction
 5. `normalised spectra`: Pseudo-continuum normalised spectrum with sky subtraction
