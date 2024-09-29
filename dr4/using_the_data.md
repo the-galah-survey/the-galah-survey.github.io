@@ -62,6 +62,7 @@ In the catalogues that constitute GALAH DR4, for many parameters we provide only
 * **For stellar luminosity, mass and age, we recommend `lbol`, `mass` and `age` in the `GALAH_DR4_main_allstar` catalogue.**
     - These are determined by Bayesian fitting to isochrones as described in [Lin et al. (2018)](https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2966L/abstract).
 * **For heliocentric distance, we recommend the `r_med` value, which is in the `GALAH_DR4_main_allspec`, `VAC_dynamics`, and `VAC_crossmatch` tables**.
+    - This matches the `r_med_photogeo` field from Gaia DR3 except for star clusters, where we replace it with the cluster mean distance from [Cantat-Gaudin & Anders (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..99C/abstract) (for open clusters) or [Baumgardt & Vasiliev (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract) (for globular clusters).
 <!---
     - `distance_bstep` was calculated as part of the estimation of age, mass, radius etc found in the `GALAH_DR3_VAC_ages_v2` catalogue.
     - `distance_bstep` was used for the vast majority of stars (96 per cent) in the calculation of Galactic kinematic and dynamic parameters in `GALAH_DR3_VAC_dynamics_v2`. For the other 4 per cent of the stars we mostly use the photogeometric distances `r_med_photogeo` in the `GALAH_DR3_VAC_GaiaEDR3_v2` table as calculated by [Bailer-Jones *et al.* (2020)](https://doi.org/10.3847/1538-3881/abd806). The distance used for a given spectrum is provided by the `use_dist_flag` in the `GALAH_DR3_VAC_dynamics_v2` table.
