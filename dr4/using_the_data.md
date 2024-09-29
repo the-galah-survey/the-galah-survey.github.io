@@ -43,7 +43,7 @@ For more information, see our [Flag bitmask documentation](/dr4/flags).
 
 The main recommended `GALAH_DR4_main_allstar` catalogue contains a number of flags. For most science cases, the most important to consider is the spectroscopic quality flag (`flag_sp`). `flag_sp` folds in many potential sources of errors in the input values (e.g., missing data, very low signal spectra, poor analysis results, possible binarity). **By default, we recommend that users only consider stellar parameters (T<sub>eff</sub>, log *g*, [Fe/H], broadening velocity, radial velocity) for stars with `flag_sp == 0`.**
 
-For the abundance information there are similar flags. For each indivudual elemental abundance `X_fe` there is a `flag_X_fe` that indicates problems with the elemental abundance determination. **We strongly recommend only considering the abundance of element `X` when `flag_X_fe == 0`**. As for all of our previous GALAH releases, we want to stress that we discourage the use of element abundances with `flag_X_fe > 0` without consideration of the possible systematics that these flagged measurements can introduce.
+Due to an error in calculating flag_fe_h for DR4, it is not meaningful as an indicator of the reliability of the derived metallicity, and should not be used. For the remaining elements, there are useful quality flags. For each indivudual elemental abundance `X_fe` there is a `flag_X_fe` that indicates problems with the elemental abundance determination. **We strongly recommend only considering the abundance of element `X` when `flag_X_fe == 0`**. As for all of our previous GALAH releases, we want to stress that we discourage the use of element abundances with `flag_X_fe > 0` without consideration of the possible systematics that these flagged measurements can introduce.
 
 **We would recommend considering only stars with a red camera signal to noise per pixel `snr_px_ccd3 > 30`.**
 
@@ -56,16 +56,19 @@ For stellar parameters and elemental abundances, use the values found in `GALAH_
 
 {: .box-warning}
 For more information, see our [Table schema documentation](/dr4/table_schema).
-
+<!---
 In the catalogues that constitute GALAH DR4, for many parameters we provide only one value, e.g., for the overall α-element abundance there is just `alpha_fe`. However, some parameters have multiple values calculated by different methods. In this section, we discuss these parameters and in most cases make a recommendation on the value to use.
-
-* **For stellar luminosity, mass and age, we recommend `log_lum_bstep`, `mass_bstep` and `age_bstep` respectively from the `GALAH_DR3_VAC_ages_v2` table**.
-    - Do not use the `lbol`, `mass` and `age` found in the `GALAH_DR3_main_allspec_v2` catalogue.
-* **For heliocentric distance, we recommend `distance_bstep` value from the `GALAH_DR3_VAC_ages_v2` table**.
+--->
+* **For stellar luminosity, mass and age, we recommend `lbol`, `mass` and `age` in the `GALAH_DR4_main_allstar` catalogue.**
+    - These are determined by Bayesian fitting to isochrones as described in [Lin et al. (2018)](https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2966L/abstract).
+* **For heliocentric distance, we recommend the `r_med` value, which is in the `GALAH_DR4_main_allspec`, `VAC_dynamics`, and `VAC_crossmatch` tables**.
+<!---
     - `distance_bstep` was calculated as part of the estimation of age, mass, radius etc found in the `GALAH_DR3_VAC_ages_v2` catalogue.
     - `distance_bstep` was used for the vast majority of stars (96 per cent) in the calculation of Galactic kinematic and dynamic parameters in `GALAH_DR3_VAC_dynamics_v2`. For the other 4 per cent of the stars we mostly use the photogeometric distances `r_med_photogeo` in the `GALAH_DR3_VAC_GaiaEDR3_v2` table as calculated by [Bailer-Jones *et al.* (2020)](https://doi.org/10.3847/1538-3881/abd806). The distance used for a given spectrum is provided by the `use_dist_flag` in the `GALAH_DR3_VAC_dynamics_v2` table.
-* **For reddening, we recommend the `ebv` value from the `GALAH_DR3_main_allstar_v2` table**.
+    --->
+* **For reddening, we recommend the `ebv` value from the `GALAH_DR4_main_allstar` table**.
     - This is from [Schlegel *et al.* (1998)](https://doi.org/10.1086/305772) and was used as part of the estimation of the bolometric corrections.
+<!---
 * Distinct from the iron abundance ([Fe/H]) calculated from the spectra, the `GALAH_DR3_VAC_ages_v2` table includes the initial and current metallicity of the star (`meh_ini_bstep` and `meh_act_bstep`) as calculated by BSTEP. These values were not used as part of the abundance analysis.
 
 This table summarizies the parameters in GALAH DR4 for which there are multiple values for a given star. We have bolded our recommended column.
@@ -84,7 +87,7 @@ This table summarizies the parameters in GALAH DR4 for which there are multiple 
 | E(B-V):<br/>**`ebv`** | **`ebv`**,<br/>`irfm_ebv` | **`ebv`**,<br/>`irfm_ebv` | `ebv_bstep` |  |  |
 | Parallax  | `parallax_dr2` | `parallax_dr2` |  |  | `parallax`,<br/>`parallax_corr` |
 | Metallicity |  |  | `meh_act_bstep`,<br/>`meh_ini_bstep` |  |  |
-
+--->
 
 ---
 
