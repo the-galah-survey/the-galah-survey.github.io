@@ -140,7 +140,7 @@ We provide a value-added catalogue of 3D NLTE Li abundances, calculated with the
 We recommend choosing only stars with `flag_ALi < 2` when using Li abundances and `flag_ALi < 4` when using Li equivalent widths (see [using the data](/dr4/using_the_data/) for more information). 
 
 ---
-
+<!---
 #### List of all possible GALAH fields and field configurations
 ##### [Download `target/galahfco_3_public.txt`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) (934 KB)
  {:.no_toc}
@@ -158,7 +158,7 @@ This lists all 7993 possible fields in the current target selection catalogue of
 * The selection function (`selfunc`)
 * Magnitude used for complicated selection functions (`vsplit`)
 * Internal use only values (`active`, `name`, `priority`, `special`, `max_observed`)
-
+--->
 ---
 
 ### Getting the catalogues

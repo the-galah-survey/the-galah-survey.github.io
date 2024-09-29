@@ -25,7 +25,7 @@ For a given star on a given camera, each file contains eight extensions:
 5. `teluric`: Telluric correction
 6. `scattered`: Scattered light
 7. `cross_talk`: Crosstalk
-8. `resolution_profile`: Resolution profile, given as the FWHM
+8. `resolution_profile`: Resolution profile, given as the FWHM of the LSF
 
 The naming convention of the spectra files is the `sobject_id` of a star followed by the camera number (i.e., 1=blue, 2=green, 3=red, 4=near-infrared). So, for example, for `sobject_id` 170418003701205, there are four files: 1704180037012051.fits, 1704180037012052.fits, 1704180037012053.fits, 1704180037012054.fits.
 
@@ -33,10 +33,9 @@ The naming convention of the spectra files is the `sobject_id` of a star followe
 
 A fraction of stars are missing the spectra from one or more cameras. Here are the specific nights and fields affected:
 
-1. 170904 doesn't have any files in Iraf_6.1/ How does it have stars in the allstar catalogue?
-2. For the nights of 20--26 December 2018 (i.e., all `sobject_id` starting with 181220, 181221, 181222, 181223, 181224, 181225, 181226) there was a fault with the infrared camera of HERMES. This means that all stars observed on those nights lack CCD4 data (i.e., a spectral file with a filename ending in 4).
+1. For the nights of 20--26 December 2018 (i.e., all `sobject_id` starting with 181220, 181221, 181222, 181223, 181224, 181225, 181226) there was a fault with the infrared camera of HERMES, and all stars observed on those nights lack CCD4 data (i.e., a spectral file with a filename ending in 4).
 3. On 8 February 2023, stars in `field_id` 7471 (`sobject_id` starting with 2302080028) and `field_id` 8123 (`sobject_id` starting with 2302080022) are missing CCD4 data. Stars in `field_id` 9726 (`sobject_id` starting with 2302080016) are missing CCD3 and CCD4 data.
-4. On 2, 3, 10 March 2023 (`sobject_id` starting with 230302, 230303, and 230310) there was a fault with the infrared camera of HERMES and no data were taken in that camera.
+4. On 2, 3, 10 March 2023 (`sobject_id` starting with 230302, 230303, and 230310) there was a fault with the infrared camera of HERMES and all stars observed on those nights lack CCD4 data.
 
 ---
 
@@ -59,11 +58,17 @@ https://datacentral.org.au/vo/slink/links?ID=sobject_id&DR=galah_dr3&IDX=0&FILT=
 ```
 changing the `sobject_id` to a valid value from the GALAH catalogue, and the `x` in `FILT=x` to `B`, `G`, `R`, `I` (respectively Blue/CCD1, Green/CCD2, Red/CCD3, Infrared/CCD4) for the particular camera of interest.
 
+<!---
 #### Downloading the spectra for a few stars
 
 The spectrum of an individual star can be accessed via the [Data Central Single Object Viewer](https://datacentral.org.au/services/sov/).
 1. Search for the `sobject_id` of a given star, e.g., 170418003701205, and click on the entry that appears in the drop-down menu.
 2. The results pages presents the normalized spectrum of the star. You can then either download all the available spectrum files for this `sobject_id` using the "Download all data products" button at the top-right of the page or download the spectrum from an individual camera.
+--->
+
+#### Viewing the spectra for a small number of stars
+
+Coming soon: access to the spectrum of an individual star via the [Data Central Spectrum Viewer](https://apps.datacentral.org.au/galah/spectra). You can choose to look at the normalised or non-normalised spectrum, from individual sobject_ids or combined, and you can overplot the best-fitting model and the locations of the spectral lines used for abundance determination. The current version of the page shows one star, 140116004301057, and Data Central are adding a search box so you can view any star from GALAH DR4.
 
 #### Downloading the spectra for a larger number of stars
 

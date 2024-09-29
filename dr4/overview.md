@@ -101,9 +101,9 @@ The [Spectra documentation](/dr4/the_spectra) provides details on the spectra an
 
 #### Data Reduction
 
-There has been one major improvement to the data reduction:
+There have been two major improvements to the data reduction:
 1. Improved wavelength calibration for the long-wavelength end of the red camera, recovering spectra for around 15% of stars that were excluded from DR3.
-2. Better identification and exclusion of bad or mislabeled data
+2. Better identification and exclusion of bad or mislabeled data.
 
 There are three main changes to the analysis methods for DR4 compared to DR3:
 1. Using a neural network for rapid interpolation of synthetic spectra to various combinations of stellar parameters and abundances, trained on synthetic spectra produced with SME.
