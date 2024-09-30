@@ -30,7 +30,7 @@ The GALAH survey target selection and observing strategy consists of two generat
 
 The initial GALAH input catalog was made by combining the 2MASS catalog of infrared photometry with the UCAC4 proper motion catalogue. We only included stars with reliable 2MASS data, as captured in their data quality flags (`Q="A"`,` B="1"`, `C="0"`, `X="0"`, `A="0"`, `prox>6"`). We also rejected any star that had a nearby bright neighbour, with a rejection radius dependent on the bright star’s V magnitude, such that the potential target is rejected if the bright star is closer than (`130 − [10 × V]`) arcseconds.
 
-The five main projects included in the GALAH DR4 catalogue are GALAH-main, GALAH-faint, K2-HERMES, and TESS-HERMES. The `survey_name` column of the [main catalogue](/dr4/the_catalogues) (`GALAH_DR4_main_allstar`) informs by which survey a given star was observed and its selection function:
+The five main projects included in the GALAH DR4 catalogue are GALAH-main, GALAH-faint, GALAH Phase 2, K2-HERMES, and TESS-HERMES. The `survey_name` column of the [main catalogue](/dr4/the_catalogues) (`GALAH_DR4_main_allstar`) informs by which survey a given star was observed and its selection function:
 
 * Main GALAH survey (`galah_main`): Potential targets are all stars with 12 < V < 14, δ < +10° and \|b\| > 10° in regions of the sky that had at least 400 targets in π² degrees (the 2dF field of view).
 * GALAH-faint survey (`galah_faint`): Aimed at extending survey observations to regions with low target density. Given the lower density of stars the target selection was shifted to 12 < V < 14.3 as a way to maintain at least 400 stars per field.
