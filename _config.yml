@@ -14,6 +14,15 @@ author: GALAH Survey
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  Data&nbsp;Release&nbsp;4:
+    - Overview: "dr4/overview"
+    - The catalogues: "dr4/the_catalogues"
+    - The spectra: "dr4/the_spectra"
+    - Best practices: "dr4/using_the_data"
+    - Caveats: "dr4/caveats"
+    - Flags: "dr4/flags"
+    - Table schema: "dr4/table_schema"
+    - Cite us: "dr4/cite_us"
   Data&nbsp;Release&nbsp;3:
     - Overview: "dr3/overview"
     - The catalogues: "dr3/the_catalogues"
@@ -66,10 +75,10 @@ title-img-mobile: "/assets/img/logo_mobile.png"
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "galah.helpdesk@gmail.com"
+  email: "galahsurvey@gmail.com"
   # facebook: deanattali
   # github: daattali
-  twitter: galahsurvey
+  # twitter: galahsurvey
   # patreon: DeanAttali
   # youtube: c/daattali
 #  medium: yourname
@@ -98,7 +107,7 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
+  # twitter: true
   # facebook: true
   # linkedin: true
   vk: false
