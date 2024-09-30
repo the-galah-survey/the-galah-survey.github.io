@@ -18,7 +18,7 @@ This page presents the observing progress of the GALAH survey.
 ### Fields observed
 
 ![Location on the sky of all the fields observed as part of the GALAH Survey.](/survey/img/survey_progress_on_sky.png) <!---{"Location on the sky of all the fields observed as part of GALAH DR4.")--->{:width="100%"}
-Location on the sky of all the fields observed as part of the GALAH Survey. Each small circle represents a possible field, with those highlighted having been observed. Fields from other programs are omitted for visual clarity.
+Location on the sky of all the fields observed as part of the GALAH Survey. Each small circle represents a possible field, with those highlighted having been observed. Fields from other programs are shown in purple.
 
 ---
 ### Number of stars observed
