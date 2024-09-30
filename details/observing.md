@@ -30,17 +30,18 @@ The GALAH survey target selection and observing strategy consists of two generat
 
 The initial GALAH input catalog was made by combining the 2MASS catalog of infrared photometry with the UCAC4 proper motion catalogue. We only included stars with reliable 2MASS data, as captured in their data quality flags (`Q="A"`,` B="1"`, `C="0"`, `X="0"`, `A="0"`, `prox>6"`). We also rejected any star that had a nearby bright neighbour, with a rejection radius dependent on the bright star’s V magnitude, such that the potential target is rejected if the bright star is closer than (`130 − [10 × V]`) arcseconds.
 
-The four main projects included in the GALAH DR3 catalogue are GALAH-main, GALAH-faint, K2-HERMES, and TESS- HERMES. The `survey_name` column of the [main catalogue](/dr3/the_catalogues) (`GALAH_DR3_main_allstar_v2`) informs by which survey a given star was observed and its selection function:
+The five main projects included in the GALAH DR4 catalogue are GALAH-main, GALAH-faint, K2-HERMES, and TESS-HERMES. The `survey_name` column of the [main catalogue](/dr4/the_catalogues) (`GALAH_DR4_main_allstar`) informs by which survey a given star was observed and its selection function:
 
 * Main GALAH survey (`galah_main`): Potential targets are all stars with 12 < V < 14, δ < +10° and \|b\| > 10° in regions of the sky that had at least 400 targets in π² degrees (the 2dF field of view).
 * GALAH-faint survey (`galah_faint`): Aimed at extending survey observations to regions with low target density. Given the lower density of stars the target selection was shifted to 12 < V < 14.3 as a way to maintain at least 400 stars per field.
+* GALAH Phase 2 (`galah_phase2`): Selections in colour and absolute magnitude were added to give top priority to stars near the main sequence turnoff. When there were fewer than 400 of these in a field of view, the remaining fibres were filled with the main GALAH survey selection function.
 * K2-HERMES (`k2_hermes`): Both "bright" (10 < V < 13) and "faint" (13 < V < 15, J − KS > 0.5) target cohorts, to complement the asteroseismic targets that are the focus of the K2 Galactic Archaeology Program ([Stello *et al.* 2017](https://doi.org/10.3847/1538-4357/835/1/83))
 * TESS-HERMES (`tess_hermes`): Stars in the range 10.0 < V < 13.1 in the TESS Southern Continuous Viewing Zone ([Sharma *et al.* 2018](https://doi.org/10.1093/mnras/stx2582))
-* Other programs (`other`): Targeted observations in open clusters, the GALAH Pilot Survey ([Martell *et al.* 2017](https://doi.org/10.1093/mnras/stw2835)), or targets from other HERMES observing that were not part of any of these surveys.
+* Other programs (`other`): Targeted observations in open and globular clusters, the GALAH Pilot Survey, or targets from other HERMES observing that were not part of any of these surveys.
 
-![Number of publications using GALAH](/survey/img/mag_dist_function.svg){:width="100%"}
+![Magnitude histograms for major subsurveys](/survey/img/mag_dist_function.svg){:width="100%"}
 
-The imprints of these various magnitude limits from each sub-survey can be seen above in the overall magnitude distribution function for stars observed by the GALAH survey (except for the `other` programs) as of March 2021.
+The imprints of these various magnitude limits from each sub-survey can be seen above in the overall apparent magnitude distribution function for stars observed by the GALAH survey (except for the `other` programs) as of August 2023.
 
 ---
 
@@ -77,10 +78,10 @@ The standard observing procedure for regular GALAH survey fields is to take thre
 
 ---
 
-#### Acheived Signal-to-noise
+#### Achieved Signal-to-noise
 
-![Number of publications using GALAH](/survey/img/snr_per_camera.svg){:width="100%"}
-Distribution of signal-to-noise ratio in each camera. For each camera, the filled histogram are for unflagged reductions, and the white histogram are flagged reductions.
+![SNR histogram for each camera](/survey/img/snr_per_camera.svg){:width="100%"}
+Distribution of signal-to-noise ratio in each camera. For each camera, the filled histogram represents stars with `flag_sp` < 512, which are likely to have reliable stellar parameters and abundances, and the black histogram represents stars with higher `flag_sp`, which may need to be excluded from some analyses.
 
-![Number of publications using GALAH](/survey/img/survey_progress_signal_to_noise_per_mag.svg){:width="100%"}
-Distribution of average achieved S/N per pixel for the green band (CCD 2) as a function of V<sub>JK</sub>. The dashed white line is our S/N=50 aim, and the red curve is the median S/N achieved as a function of magnitude.
+![SNR versus apparent magnitude](/survey/img/survey_progress_signal_to_noise_per_mag.svg){:width="100%"}
+Distribution of average achieved S/N per pixel for the green camera (CCD 2) as a function of apparent Gaia G magnitude. The dashed white line is our S/N=50 aim, and the red curve is the median S/N achieved as a function of magnitude.
