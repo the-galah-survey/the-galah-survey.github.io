@@ -63,9 +63,9 @@ We recommend this catalogue for most science cases as it contains only one entry
  {:.no_toc}
 
 {: .box-warning}
-`GALAH_DR4_main_allspec` is not recommended for most science cases. It is an extended version of the [`GALAH_DR4_main_allstar`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results **per spectrum** (rather than per star) and includes extra columns for individual spectral lines.
+`GALAH_DR4_main_allspec` is not recommended for most science cases. It is an extended version of the [`GALAH_DR4_main_allstar`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results **per spectrum** rather than per star.
 
-The `GALAH_DR4_main_allspec` catalogue has results for 1,085,520 spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between December 2013 and August 2023. As with the `GALAH_DR4_main_allstar`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr4/table_schema).
+The `GALAH_DR4_main_allspec` catalogue has results for 1,085,520 spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related observing programmes that used the HERMES spectrograph on the Anglo-Australian Telescope between December 2013 and August 2023. As with `GALAH_DR4_main_allstar`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr4/table_schema).
 
 As well as the information included in `GALAH_DR4_main_allstar`, the `GALAH_DR4_main_allspec` catalogue has:
 * Additional detail on candidate binaries
@@ -169,16 +169,22 @@ Please read our [best practices for using GALAH DR4](/dr4/using_the_data).
 
 Our primary repository of GALAH DR4 is provided by [Data Central](https://datacentral.org.au). From them you can [directly download](#downloading-the-fits-files) the catalogues as FITS files, or query via [TAP](#tap-query) or [ADQL](#adql-query).
 
+<!---
 Most of our catalogues are also found on [VizieR service](#vizier) of the Centre de Données astronomiques de Strasbourg (CDS).
+--->
 
 #### Downloading the FITS files
 
-The catalogues can be [downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR3/) as FITS files, or using the following command (removing the `--spider` flag and replacing with the appropriate file name as listed below):
+The catalogues can be [downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/) as FITS files, or using the following command (removing the `--spider` flag and replacing with the appropriate file name as listed below):
 
 ```bash
 # Download the galah_dr4.main_star catalogue
 wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/GALAH_DR4_main_allstar.fits
 ```
+
+<!---
+#### Jupyter notebook server access
+
 #### TAP query
 
 #### ADQL query
@@ -205,3 +211,4 @@ SELECT
 Data Central's ADQL engine does not like column name clashes. So if you are merging tables, it is necessary to explicitly list the columns of interest.
 
 ---
+--->

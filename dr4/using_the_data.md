@@ -99,6 +99,7 @@ Join GALAH DR4 tables using the `sobject_id`.
 
 The catalogues of GALAH DR4 must be joined or cross-matched using the `sobject_id`. The value-added catalogues are based on the extended catalogue which contains measurements per observed spectrum. 110,923 stars were observed multiple times, and therefore have multiple observed spectra. The `sobject_id` column is our internal ID for each observation and using this column for joining will ensure that you are matching information derived from the same spectrum.
 
+<!---
 For instance, to join the `GALAH_DR4_main_allstar` and `GALAH_DR4_VAC_dynamics` catalogues [using Data Central](https://datacentral.org.au/services/query/), the following ADQL query could be used:
 
 ```sql
@@ -113,3 +114,4 @@ SELECT
 
 {: .box-warning}
 Data Central's ADQL engine does not like column name clashes. So if you are merging tables, it is necessary to explicitly list the columns of interest.
+--->

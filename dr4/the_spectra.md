@@ -14,7 +14,7 @@ This page describes the spectral library of GALAH DR4 and how to get it.
 
 ### Introduction to GALAH DR4 Spectral Library
 
-GALAH DR4 provides reduced one-dimensional spectra for each star in the main catalogue. For each star there are (up to) four files, one for each HERMES camera. The entire GALAH DR4 spectral catalogue consists of *find this number* FITS files.
+GALAH DR4 provides reduced one-dimensional spectra for each star in the main catalogue. For each star there are (up to) four files, one for each HERMES camera. The entire GALAH DR4 spectral catalogue consists of over 3.5M FITS files.
 
 For a given star on a given camera, each file contains eight extensions:
 
