@@ -8,13 +8,13 @@ subtitle: Fourth Data Release
 This page relays a list of known issues in GALAH DR4. Please also see the GALAH Survey Fourth Data Release paper ([Buder *et al.* 2021](https://doi.org/10.1093/mnras/stab1242)).
 
 {: .box-error}
-We caution that it is not possible to inspect the millions of measurements that make up GALAH DR4. So, there are likely to be some unexpected correlations and problems with the data.
+We caution that it is not possible to inspect the millions of measurements that make up GALAH DR4. There are likely to be some unexpected correlations and problems with the data.
 
 * This text gets replaced.
 {:toc}
 
+<!---
 ---
-
 ### Gaia data included with GALAH DR4 catalogues
 
 {: .box-warning}
@@ -32,22 +32,48 @@ Some further notes and caveats about the cross-match between GALAH DR3 and Gaia 
 * 17654 stars had more than one Gaia eDR3 match (98 per cent two matches and the remainder with 3 or 4 matches). For simplicity we have chosen the match with the smallest angular distances between the Gaia DR2 and Gaia eDR3 position as reported by the `gaiaedr3.dr2_neighbourhood`.
     - For over 99 per cent of stars the closest match had an angular distance <10 mas, and second closest match was >600 mas.
     - There is likely source confusion for <100 stars. For instance, for 57 of the 17000 stars with multiple matches in the `gaiaedr3.dr2_neighbourhood` table, the second closest match in angular distance has a smaller magnitude difference between Gaia DR2 and eDR3.
-
+--->
 ---
 
 ### Flags
 
 {: .box-warning}
-We highly recommend only using stars with `flag_sp == 0`, `flag_sp_fit == 0`, `flag_fe_h == 0`, `flag_X_fe == 0`, and `snr_px_ccd3 > 30`.
+We recommend only using stars with `flag_sp == 0`, `flag_X_fe == 0`, and `snr_px_ccd3 > 30`.
 
 There are three types of flags for the data.
-* `flag_sp` and `flag_sp_fit`– reliability of the stellar parameters
-* `flag_fe_h` – reliability of the iron abundance
+* `flag_sp` – reliability of the stellar parameters
 * `flag_X_fe` – reliability of the abundance of [X/Fe]
-We leave it up to the user which flags they apply but stress that ignoring the given flags is strongly discouraged and only advisable if necessary for the science case.
+* `snr_px_ccdX` - median signal to noise per pixel in HERMES camera X
+We leave it up to the user which flags they apply but stress that ignoring the flags is only advisable when necessary for the science case.
+
+The bits in `flag_sp` do not all indicate fatal problems, and you should set your choice of flags to match your science case. For example, if the elemental abundances you need would not be affected by chromospheric emission or lack of data in CCD4, stars with a `flag_sp` value of 1, 2 or 3 should not present a problem. 
+
+Due to a bug in the code used to calculate `flag_fe_h`, it is not actually useful for indicating unreliable metallicity values. This flag should not be used.
 
 For more information, see the [Best Practices for using GALAH DR4](/dr4/using_the_data) and the [Flags in GALAH DR4](/dr4/flags) pages.
 
+---
+
+### Binarity
+
+    - Our method for identifying binary stars is not perfectly accurate, and particularly for young stars and other rapid rotators there may be misidentifications as binaries.
+    - A full analysis mathod for GALAH binary stars is still under development.
+
+---
+
+### Globular clusters
+
+    - Fixing the distances has removed the temperature trends seen in GALAH DR3, so the stellar parameters are improved.
+    - There continue to be issues with abundance zeropoints and scatter, such that the light-element abundance anomalies are not as clearly visible as they should be.
+
+---
+
+### Intrinsic correlations and the parameter space
+Quoting from the DR4 paper: 
+> One of the primary challenges in creating an optimal training set for spectrum interpolation lies in the choice of parameter sampling. A common caveat is the use of randomized, uncorrelated parameter sampling, which can lead to unrealistic combinations of elemental abundances. Elements that share a similar nucleosynthesis channel often exhibit correlated behavior, for instance, stars with high abundances of Mg are typically also enhanced in Si, Ca, and Ti, while Na and Al tend to be elevated together. Similarly, neutron-capture elements like Y and Ba often follow similar trends \citep[e.g.][]{Ting2012, Kobayashi2020, Buder2021}. To better capture this behavior in the training set, the use of scaled linear functions or normalizing flows could be advantageous. These approaches would help minimize the occurrence of unlikely parameter combinations and yield a more representative sample. 
+
+
+<!---
 ---
 
 ### Uncertainties
@@ -105,7 +131,7 @@ In this data release, we try to push the boundary of what can be extracted from 
 
 #### 1D-LTE/1D-NLTE and microturbulence
 
-Our spectrum synthesis is performed by assuming 1D-LTE and 1D-NLTE. However, modelling stellar atmospheres with a 1-dimensional description is neglecting 3-dimensional, time-dependent effects, which can only partially be mitigated by fudge factors, like vmic. While allowing this factor to be fitted as part of the analysis, our tests have shown that the abundance precision decreases. We have therefore implemented an empirical relation, estimated by Gao *et al.* (2020) for GALAH, over the whole parameter space, as shown in panel a) of the figure below.
+Our spectrum synthesis is performed by assuming 1D-LTE and 1D-NLTE. However, modelling stellar atmospheres with a 1-dimensional description is neglecting 3-dimensional, time-dependent effects, which can only partially be mitigated by fudge factors like vmic. While allowing this factor to be fitted as part of the analysis, our tests have shown that the abundance precision decreases. We have therefore implemented an empirical relation, estimated by Gao *et al.* (2020) for GALAH, over the whole parameter space, as shown in panel a) of the figure below.
 
 During the validation of element abundances, we have discovered several temperature-dependent trends. These occur in regions where our analysis approach is prone to systematic trends anyway, that is, the coolest/most line-rich (<4500 K) and hottest/most line-poor (>6500 K) regions. We cannot exclude that the found systematic trends can also be partially caused by over- or underestimated vmic (in addition to a systematically incorrect normalisation for the most line-righ spectra). Comparisons with other vmic-relations, see e.g. the relations by Dutra-Ferreira *et al.* (2016) based on 3D atmosphere calculations (see panel b) suggest large deviations for certain stars, leading to a difference of up to 2 km/s (see panel c). The tests by Jofre *et al.* (2017) also showed that different stellar types are affected differently by inaccurate vmic, with strongest implications for (more metal-rich) giant stars among the analysed sample of GBS.
 
@@ -155,3 +181,4 @@ Potassium is estimated from the KI 7699 resonance line. This line is also a good
 ### Scattering in Potassium
 
 Potassium is estimated from the KI 7699 resonance line. This line is also a good tracer of interstellar potassium which leads to contamination of the stellar line in highly extinct regions.
+--->
