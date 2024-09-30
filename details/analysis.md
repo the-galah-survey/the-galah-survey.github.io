@@ -16,7 +16,7 @@ On this page we give a overview of the method as used for [GALAH DR4](/dr4/overv
 ---
 
 ### Data Release 4 Analysis
-
+<!---
 #### Overview
 
 We first estimate stellar parameters and then keep them fixed while only fitting one abundance at a time for the different lines/elements in the GALAH wavelength range. For the stellar parameter estimation, we perform a first normalisation and a first rough stellar parameter fit with one iteration, followed by a final normalisation and finer parameter fit with more iterations. For the abundance analysis, we only perform one normalisation and iteratively optimise the abundance based on those data points of the lines/elements that we estimate to be unblended enough after comparing a synthesis with all lines and another one with only the lines of the element in question.
@@ -38,7 +38,7 @@ Below we describe this workflow in more detail, which mirror the challenges on t
 1. Collect stellar parameters and element abundances for validation and post-processing.
 1. Calculate upper limits for each element/line for non-detections by estimating lowest abundance would lead to a line flux depression of 0.03 below normalised continuum.
 1. Post-processing: apply flagging algorithms, calculate final uncertainties from accuracy and precision estimates, combine line-by-line measurements of element abundances weighted by their uncertainties.
-
+--->
 #### Change in data analysis from Data Release 3
 
 There are three main changes to the analysis methods for DR4 compared to DR3.
