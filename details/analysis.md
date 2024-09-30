@@ -49,4 +49,4 @@ There are three main changes to the analysis methods for DR4 compared to DR3.
 
 Below is a comparison of GALAH DR3 (upper panels) and GALAH DR4 (lower panels, this release). The smooth light blue background indicates all measurements, whereas the colormap shows the number of unflagged measurements at each point. 
 
-![Comparison of GALAH DR3 and GALAH DR4](/details/img/galah_dr4_comparison_dr3.png "Comparison of GALAH DR3 and GALAH DR4")
+![Comparison of GALAH DR3 and GALAH DR4](/dr4/img/galah_dr4_comparison_dr3.png "Comparison of GALAH DR3 and GALAH DR4")
