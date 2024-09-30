@@ -22,18 +22,18 @@ Location on the sky of all the fields observed as part of the GALAH Survey. Each
 
 ---
 ### Number of stars observed
-![Cumulative sum with time for the number of spectra and the number of stars.](/survey/img/survey_progress_number_of_stars.svg) {"Cumulative sum with time for the number of spectra and the number of stars"){:width="100%"}
+![Cumulative sum with time for the number of spectra and the number of stars.](/survey/img/survey_progress_number_of_stars.svg) <!---{"Cumulative sum with time for the number of spectra and the number of stars")--->{:width="100%"}
 GALAH DR4 contains 1,085,520 spectra of 917,588 stars. This histogram shows the cumulative sum with time for the number of unique spectra (flagged and unflagged) and the number of unique stars (flagged and unflagged). "Unflagged" refers to those targets for which there is no problem noted with the reduction. The vertical grey stripes indicate observing nights.
 
 ---
-![The cumulative number of spectra acquired for each sub-survey.](/survey/img/survey_progress_number_of_stars_per_subsurvey.svg) {"The cumulative number of spectra acquired for each sub-survey."){:width="100%"}
+![The cumulative number of spectra acquired for each sub-survey.](/survey/img/survey_progress_number_of_stars_per_subsurvey.svg) <!---{"The cumulative number of spectra acquired for each sub-survey.")--->{:width="100%"}
 This histogram shows the cumulative number of spectra acquired for each sub-survey within GALAH (Phase 1, bright targets, faint targets, Phase 2, K2-HERMES, TESS-HERMES, and other programmes). The colour coding is the same as in the all-sky map of observed targets.
 
 ---
 
 ### Observing time
 
-![The cumulative nights on sky used by the GALAH Survey.](/survey/img/survey_progress_time.svg) {"The cumulative sum of total observing nights from the GALAH Survey."){:width="100%"}
+![The cumulative nights on sky used by the GALAH Survey.](/survey/img/survey_progress_time.svg) <!---{"The cumulative sum of total observing nights from the GALAH Survey.")--->{:width="100%"}
 The cumulative sum of total observing nights used by the GALAH Survey. The vertical grey stripes indicate observing nights.
 
 ---
