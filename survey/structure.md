@@ -9,7 +9,7 @@ The GALAH Survey is led by a Survey Managment Group (SMG) and an Executive group
 
 ### Executive group
 
-##### **Joss Bland-Hawthorn (University of Sydney), Ken Freeman (Australian National University)**
+##### **Joss Bland-Hawthorn (University of Sydney), Ken Freeman (Australian National University), Sarah Martell (UNSW)**
 
 The executive group decides on membership and external collaborators, advises the survey management, and is responsible for conflict solution. Joss Bland-Hawthorn also acts as the project lead for GALAH within [ASTRO 3D](https://astro3d.org.au/galah-project/).
 
@@ -32,14 +32,14 @@ This working group reduces the raw data of the observations, including velocity 
 #### WG4: Analysis
 ##### **Lead: Sven Buder (Australian National University)**
 
-This working group uses the reduced data (both normalised and un-normalised) to estimate final stellar parameters and element abundances. For DR1 and DR2, we used a combination of the spectrum synthesis code Spectroscopy Made Easy (SME) and the data-driven tool The Cannon. For DR3, we only use (SME).
+This working group uses the reduced data (both normalised and un-normalised) to estimate final stellar parameters and element abundances. For DR1 and DR2, we used a combination of the spectrum synthesis code Spectroscopy Made Easy (SME) and the data-driven tool The Cannon. For DR3, we only use (SME). For DR4, we use a neural network to interpolate a basis set of SME spectra to solve for all stellar parameters and abundances simultaneously.
 
 #### WG5: Communication
-##### **Lead: Michael Hayden (University of Sydney)**
+##### **Lead: Michael Hayden (University of Oklahoma)**
 
 This working group coordinates the internal communications (e.g., weekly telecons) as well as the external communication (e.g., press releases, science meetings, Twitter).
 
 #### Additional Survey Management Group members
 * Gaia: Tomaz Zwitter (University of Ljubljana) is the contact person to the Gaia DPAC
-* HERMES Instrument scientist and website management: Jeffrey Simpson (University of New South Wales)
 * Support for WG2 and WG5: Dan Zucker (Macquarie University)
+* Science strategy: Clare Worley (University of Canterbury) and Melissa Ness (ANU)
