@@ -5,9 +5,9 @@ subtitle: From reduced spectra to abundances
 ---
 
 {: .main_blockquote}
-The main data product of the GALAH survey are stellar parameters and elemental abundances for the stars we observe. Over time, the methods by which we do this have changed and evolved. In particular, we made use of The Cannon for Data Release 1 and Data Release 2, and changed to Spectroscopy Made Easy for [Data Release 3](/dr3/overview). For a given data release, it is important to consult the accompanying paper for the description of the methods.
+The main data product of the GALAH survey are stellar parameters and elemental abundances for the stars we observe. Over time, the methods by which we do this have changed and evolved. In particular, we made use of The Cannon for Data Release 1 and Data Release 2, changed to Spectroscopy Made Easy for Data Release 3, and now we are using SME together with neural networks for [Data Release 4](/dr4/overview). For a given data release, it is important to consult the accompanying paper for the description of the methods.
 
-On this page we give a overview of the method as used for [GALAH DR3](/dr3/overview). See [Buder *et al.* (2021)](https://doi.org/10.1093/mnras/stab1242) for all the details of the data analysis.
+On this page we give a overview of the method as used for [GALAH DR4](/dr4/overview). See [Buder *et al.* (2021)](https://doi.org/10.1093/mnras/stab1242) for all the details of the data analysis.
 
 <!-- <h3> On this page</h3> -->
 * This text gets replaced.
@@ -15,7 +15,7 @@ On this page we give a overview of the method as used for [GALAH DR3](/dr3/overv
 
 ---
 
-### Data Release 3 Analysis
+### Data Release 4 Analysis
 
 #### Overview
 
@@ -39,13 +39,14 @@ Below we describe this workflow in more detail, which mirror the challenges on t
 1. Calculate upper limits for each element/line for non-detections by estimating lowest abundance would lead to a line flux depression of 0.03 below normalised continuum.
 1. Post-processing: apply flagging algorithms, calculate final uncertainties from accuracy and precision estimates, combine line-by-line measurements of element abundances weighted by their uncertainties.
 
-#### Change in data analysis from Data Release 2
+#### Change in data analysis from Data Release 3
 
-There are two main changes to the analysis methods for DR3 compared to DR2.
+There are three main changes to the analysis methods for DR4 compared to DR3.
 
-1. We are using astrometric information from the Gaia DR2 mission to break spectroscopic degeneracies.
-1. GALAH DR3 uses Spectroscopy Made Easy (`SME`) for all the stellar parameter and elemental abundance determination. For the second data release of the GALAH survey we made use of data-driven approaches to improve both speed and precision of the spectroscopic analysis. Although the data-driven approaches were successful for the majority of GALAH DR2 stars, we know that these approaches can suffer from signal aliasing, they can learn unphysical correlations between the input data and the output stellar labels, and the results are not necessarily valid outside the parameter space of the training set. We found in DR2 that the data-driven approaches meant that stars at the periphery in stellar label space, e.g. high temperature or low metallicity did not receive optimal labels from the data driven process.
+1. Using a neural network for rapid interpolation of synthetic spectra to various combinations of stellar parameters and abundances, trained on synthetic spectra produced with SME.
+2. Simultaneous fitting of all stellar parameters and elemental abundances.
+3. A three-phase process for the determination of stellar parameters and elemental abundances: first a pure spectroscopic analysis for individual observations of stars, then multiple observations are coadded and all spectra are reanalysed folding in photometric and astrometric information, then a post-analysis scan for signs of binarity, emission lines, and interstellar absorption.
 
-Below is a comparison of GALAH DR2 (upper panels) and GALAH DR3 (lower panels, this release). The smooth light blue background indicates all measurements, whereas the colormap shows the number of unflagged measurements at each point. The stellar parameters and abundances from GALAH DR2 appear more tightly constrained, but we note that this is an artefact of the data-driven approach, which tends to find solutions closer to the mean parameter/abundance patterns.
+Below is a comparison of GALAH DR3 (upper panels) and GALAH DR4 (lower panels, this release). The smooth light blue background indicates all measurements, whereas the colormap shows the number of unflagged measurements at each point. 
 
-![Comparison of GALAH DR2 and GALAH DR3](/details/img/galah_dr3_comparison_dr2.png "Comparison of GALAH DR2 and GALAH DR3")
+![Comparison of GALAH DR3 and GALAH DR4](/details/img/galah_dr4_comparison_dr3.png "Comparison of GALAH DR3 and GALAH DR4")
