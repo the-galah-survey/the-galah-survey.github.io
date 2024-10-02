@@ -10,7 +10,7 @@ The formation and evolution of galaxies is one of the great outstanding problems
 {: .box-error}
 **Want to start working right now with GALAH DR4?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
 The GALAH survey published our fourth data release on 1 October 2024. For 917,588 stars, we provide reduced spectra, stellar parameters and up to 31 elemental abundances.<br/><br/>
-If you want our best effort stellar parameters and elemental abundances, we recommend the `GALAH_DR4_main_allstar.fits` catalogue.
+If you want our best effort stellar parameters and elemental abundances, we recommend the `galah_dr4_allstar_240705.fits` catalogue.
 <br/><br/>
 <a class="btn btn-success btn-lg get-started-btn center" href="dr4/the_catalogues"><i class="fa fa-download"></i> Get GALAH DR4 catalogues</a><br/>
 <a class="btn btn-secondary btn-lg get-started-btn center" href="dr4/the_spectra"><i class="fa fa-download"></i> Get GALAH DR4 spectra</a><br/>
