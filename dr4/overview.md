@@ -8,7 +8,7 @@ The Fourth Data Release of the Galactic Archaeology with HERMES (GALAH) survey p
 
 {: .box-error}
 **Want to start working right now with GALAH DR4?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
-We recommend the `GALAH_DR4_main_allstar.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/).<br/><br/>
+We recommend the `galah_dr4_allstar_240705.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/).<br/><br/>
 
 Please read our [best practices for using GALAH DR4](/dr4/using_the_data).
 
@@ -67,11 +67,11 @@ The two main data products of GALAH DR4 are the catalogue of stellar parameters 
 #### GALAH DR4 Catalogues
 
 {: .box-warning}
-For science cases involving stellar parameters, it is highly recommended that you use the `GALAH_DR4_main_allstar.fits` table, and that you only consider stars where `flag_sp == 0` and `flag_sp_fit == 0` (indicating reliable spectroscopic analysis), `flag_red == 0` (indicating successful data reduction), and `flag_fe_h == 0` (indicating a reliable metallicity). For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_px_ccd3 > 30`. Our [Best Practices](/dr4/using_the_data) is a short guide of our recommendations for using GALAH DR4.
+For science cases involving stellar parameters, it is highly recommended that you use the `galah_dr4_allstar_240705.fits` table, and that you only consider stars where `flag_sp == 0` and `flag_sp_fit == 0` (indicating reliable spectroscopic analysis), `flag_red == 0` (indicating successful data reduction), and `flag_fe_h == 0` (indicating a reliable metallicity). For science cases involving the abundance of element `X`, it is highly recommended that you only consider `x_fe` where `flag_x_fe == 0` and `snr_px_ccd3 > 30`. Our [Best Practices](/dr4/using_the_data) is a short guide of our recommendations for using GALAH DR4.
 
 We provide two versions of the main GALAH DR4 catalogue:
-* `GALAH_DR4_main_allstar.fits` (723 MB). **Strongly recommend the use of this table for stellar parameters and abundances**. It contains one entry **per star**, and has radial velocity, stellar parameters and abundance data along with fundamental data from Gaia, 2MASS, and WISE.
-* `GALAH_DR4_main_allspec.fits` (833 MB). **This table is for expert use only**. It is the extended catalogue of stellar parameters and abundances, with one entry **per observation** and the same information as in the `allstar` file. 
+* `galah_dr4_allstar_240705.fits` (723 MB). **Strongly recommend the use of this table for stellar parameters and abundances**. It contains one entry **per star**, and has radial velocity, stellar parameters and abundance data along with fundamental data from Gaia, 2MASS, and WISE.
+* `galah_dr4_allspec_240705.fits` (833 MB). **This table is for expert use only**. It is the extended catalogue of stellar parameters and abundances, with one entry **per observation** and the same information as in the `allstar` file. 
 
 There are also three value-added catalogues:
 * Galactic orbital properties

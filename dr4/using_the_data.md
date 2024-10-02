@@ -16,19 +16,19 @@ On this page we provide advice and instructions for using the GALAH DR4 catalogu
 ### Recommended catalogue
 
 {: .box-success}
-We highly recommend using the `GALAH_DR4_main_allstar.fits` catalogue if you want to work with the GALAH DR4 stellar parameters and elemental abundances.
+We highly recommend using the `galah_dr4_allstar_240705.fits` catalogue if you want to work with the GALAH DR4 stellar parameters and elemental abundances.
 
 {: .box-warning}
 For more information, see our [Catalogue documentation](/dr4/the_catalogues).
 
-If your science case contains stellar parameters and elemental abundances, then we recommend the `GALAH_DR4_main_allstar.fits` catalogue. It contains one entry per star.
+If your science case contains stellar parameters and elemental abundances, then we recommend the `galah_dr4_allstar_240705.fits` catalogue. It contains one entry per star.
 
-There is an extended version called `GALAH_DR4_main_allspec.fits` that contains one entry per observation. This table is for expert use only.
+There is an extended version called `galah_dr4_allspec_240705.fits` that contains one entry per observation. This table is for expert use only.
 
-Consult the [catalogue documentation](/dr4/the_catalogues) for details on the catalogues and acquiring them. If you just want the entire `GALAH_DR4_main_allstar` catalogue, it can be directly [directly downloaded](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/), or with `wget` (removing the `--spider` flag):
+Consult the [catalogue documentation](/dr4/the_catalogues) for details on the catalogues and acquiring them. If you just want the entire `galah_dr4_allstar_240705` catalogue, it can be directly [directly downloaded](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/), or with `wget` (removing the `--spider` flag):
 
 ```bash
-wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/GALAH_DR4_main_allstar.fits
+wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/galah_dr4_allstar_240705.fits
 ```
 
 ---
@@ -41,7 +41,7 @@ Overall, we make three recommendations: (1) `snr_px_ccd3 > 30`; (2) only stellar
 {: .box-warning}
 For more information, see our [Flag bitmask documentation](/dr4/flags).
 
-The main recommended `GALAH_DR4_main_allstar` catalogue contains a number of flags. For most science cases, the most important to consider is the spectroscopic quality flag (`flag_sp`). `flag_sp` folds in many potential sources of errors in the input values (e.g., missing data, very low signal spectra, poor analysis results, possible binarity). **By default, we recommend that users only consider stellar parameters (T<sub>eff</sub>, log *g*, [Fe/H], broadening velocity, radial velocity) for stars with `flag_sp == 0`.**
+The main recommended `galah_dr4_allstar_240705` catalogue contains a number of flags. For most science cases, the most important to consider is the spectroscopic quality flag (`flag_sp`). `flag_sp` folds in many potential sources of errors in the input values (e.g., missing data, very low signal spectra, poor analysis results, possible binarity). **By default, we recommend that users only consider stellar parameters (T<sub>eff</sub>, log *g*, [Fe/H], broadening velocity, radial velocity) for stars with `flag_sp == 0`.**
 
 Due to an error in calculating flag_fe_h for DR4, it is not meaningful as an indicator of the reliability of the derived metallicity, and should not be used. For the remaining elements, there are useful quality flags. For each indivudual elemental abundance `X_fe` there is a `flag_X_fe` that indicates problems with the elemental abundance determination. **We strongly recommend only considering the abundance of element `X` when `flag_X_fe == 0`**. As for all of our previous GALAH releases, we want to stress that we discourage the use of element abundances with `flag_X_fe > 0` without consideration of the possible systematics that these flagged measurements can introduce.
 
@@ -52,22 +52,22 @@ Due to an error in calculating flag_fe_h for DR4, it is not meaningful as an ind
 ### Recommended columns
 
 {: .box-success}
-For stellar parameters and elemental abundances, use the values found in `GALAH_DR4_main_allstar` catalogue. We do **not** recommend values found only in the `GALAH_DR4_main_allspec` catalogue as these are meant for expert use and are typically for diagnostic purposes.
+For stellar parameters and elemental abundances, use the values found in `galah_dr4_allstar_240705` catalogue. We do **not** recommend values found only in the `galah_dr4_allspec_240705` catalogue as these are meant for expert use and are typically for diagnostic purposes.
 
 {: .box-warning}
 For more information, see our [Table schema documentation](/dr4/table_schema).
 <!---
 In the catalogues that constitute GALAH DR4, for many parameters we provide only one value, e.g., for the overall α-element abundance there is just `alpha_fe`. However, some parameters have multiple values calculated by different methods. In this section, we discuss these parameters and in most cases make a recommendation on the value to use.
 --->
-* **For stellar luminosity, mass and age, we recommend `lbol`, `mass` and `age` in the `GALAH_DR4_main_allstar` catalogue.**
+* **For stellar luminosity, mass and age, we recommend `lbol`, `mass` and `age` in the `galah_dr4_allstar_240705` catalogue.**
     - These are determined by Bayesian fitting to isochrones as described in [Lin et al. (2018)](https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2966L/abstract).
-* **For heliocentric distance, we recommend the `r_med` value, which is in the `GALAH_DR4_main_allspec`, `VAC_dynamics`, and `VAC_crossmatch` tables**.
+* **For heliocentric distance, we recommend the `r_med` value, which is in the `galah_dr4_allspec_240705`, `galah_dr4_vac_dynamics_240705`, and `galah_dr4_vac_wise_tmass_gaiadr3_240705` tables**.
     - This matches the `r_med_photogeo` field from Gaia DR3 except for star clusters, where we replace it with the cluster mean distance from [Cantat-Gaudin & Anders (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..99C/abstract) (for open clusters) or [Baumgardt & Vasiliev (2021)](https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.5957B/abstract) (for globular clusters).
 <!---
     - `distance_bstep` was calculated as part of the estimation of age, mass, radius etc found in the `GALAH_DR3_VAC_ages_v2` catalogue.
     - `distance_bstep` was used for the vast majority of stars (96 per cent) in the calculation of Galactic kinematic and dynamic parameters in `GALAH_DR3_VAC_dynamics_v2`. For the other 4 per cent of the stars we mostly use the photogeometric distances `r_med_photogeo` in the `GALAH_DR3_VAC_GaiaEDR3_v2` table as calculated by [Bailer-Jones *et al.* (2020)](https://doi.org/10.3847/1538-3881/abd806). The distance used for a given spectrum is provided by the `use_dist_flag` in the `GALAH_DR3_VAC_dynamics_v2` table.
     --->
-* **For reddening, we recommend the `ebv` value from the `GALAH_DR4_main_allstar` table**.
+* **For reddening, we recommend the `ebv` value from the `galah_dr4_allstar_240705` table**.
     - This is from [Schlegel *et al.* (1998)](https://doi.org/10.1086/305772) and was used as part of the estimation of the bolometric corrections.
 <!---
 * Distinct from the iron abundance ([Fe/H]) calculated from the spectra, the `GALAH_DR3_VAC_ages_v2` table includes the initial and current metallicity of the star (`meh_ini_bstep` and `meh_act_bstep`) as calculated by BSTEP. These values were not used as part of the abundance analysis.

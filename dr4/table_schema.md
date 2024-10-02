@@ -18,9 +18,9 @@ The `sobject_id` column should be used for joining the catalogues.
 
 ---
 
-### `GALAH_DR4_main_allstar` and `GALAH_DR4_main_allspec`
+### `galah_dr4_allstar_240705` and `galah_dr4_allspec_240705`
 
-Unless otherwise noted, all columns are found in both `GALAH_DR4_main_allstar` and `GALAH_DR4_main_allspec`. To save space in the table below, the columns related to abundances have been collapsed in single entries (e.g., `X_fe`), and they are all listed in a table at the bottom of this page.
+Unless otherwise noted, all columns are found in both `galah_dr4_allstar_240705` and `galah_dr4_allspec_240705`. To save space in the table below, the columns related to abundances have been collapsed in single entries (e.g., `X_fe`), and they are all listed in a table at the bottom of this page.
 
 
 | Column name | Description | units | type |
@@ -149,7 +149,7 @@ To save space in the [table above](#galah_dr4_main_allstar-and-galah_dr4_main_al
 
 ---
 
-### `VAC_crossmatch`
+### `galah_dr4_vac_wise_tmass_gaiadr3_240705`
 
 | Column name | Description | units | type |
 | :------ |:--- | :--- | :--- |
@@ -343,7 +343,7 @@ To save space in the [table above](#galah_dr4_main_allstar-and-galah_dr4_main_al
 
 ---
 
-### `VAC_dynamics`
+### `galah_dr4_vac_dynamics_240705`
 
 | Column name | Description | units | type |
 | `sobject_id` | GALAH identifier|meta.id | integer |
@@ -382,7 +382,7 @@ To save space in the [table above](#galah_dr4_main_allstar-and-galah_dr4_main_al
 | `R_ap` | Best-value Galactocentric apocenter radius|src.orbital | float |
 | `Energy` | Best-value orbit energy|src.orbital;phys.energy | float |
 
-### `galah_dr4_vac_3dnlte_a_li`
+### `galah_dr4_vac_3dnlte_a_li_240705`
 
 | Column name | Description | units | type |
 | :------ |:--- | :--- | :--- |

@@ -14,18 +14,18 @@ This page describes the catalogues of GALAH DR4 and how to get them.
 
 ### GALAH DR4 Main Catalogues
 
-We provide two versions of the GALAH DR4 catalogue (`GALAH_DR4_main_xx.fits`)
+We provide two versions of the GALAH DR4 catalogue (`galah_dr4_xx_240705.fits`)
 
 #### Recommended catalogue of stellar parameters and abundances
-##### [Download `GALAH_DR4_main_allstar.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (723 MB)
+##### [Download `galah_dr4_allstar_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (723 MB)
  {:.no_toc}
 
 {: .box-warning}
 Strongly recommend the use of this table for most science cases interested in stellar parameters and abundances.
 
-The `GALAH_DR4_main_allstar` is our main results catalogue. It contains results for 917,588 stars observed as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between December 2013 and August 2023. For all targets we provide stellar parameters, radial velocities, and elemental abundances.
+The `galah_dr4_allstar_240705` is our main results catalogue. It contains results for 917,588 stars observed as part of the GALAH, K2-HERMES, TESS-HERMES, and other related surveys that used the HERMES spectrograph on the Anglo-Australian Telescope between December 2013 and August 2023. For all targets we provide stellar parameters, radial velocities, and elemental abundances.
 
-We recommend this catalogue for most science cases as it contains only one entry **per star** (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`GALAH_DR4_main_allspec_v2` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). The full list of columns is on the [Table Schema documentation](/dr4/table_schema). For each star we provide:
+We recommend this catalogue for most science cases as it contains only one entry **per star** (about 50000 stars were observed multiple times; if you are interested in the per observation results, see the [`galah_dr4_allspec_240705` catalogue](#extended-catalogue-of-stellar-parameters-and-abundances)). The full list of columns is on the [Table Schema documentation](/dr4/table_schema). For each star we provide:
 * Star identifers:
     - the GALAH observation ID (`sobject_id`)
     - 2MASS identifier (`tmass_id`)
@@ -59,15 +59,15 @@ We recommend this catalogue for most science cases as it contains only one entry
     - `ra`, `dec`, `parallax`, `ruwe`, `rv_gaia_dr3`
 
 #### Extended catalogue of stellar parameters and abundances
-##### [Download `GALAH_DR4_main_allspec.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (833 MB)
+##### [Download `galah_dr4_allspec_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (833 MB)
  {:.no_toc}
 
 {: .box-warning}
-`GALAH_DR4_main_allspec` is not recommended for most science cases. It is an extended version of the [`GALAH_DR4_main_allstar`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results **per spectrum** rather than per star.
+`galah_dr4_allspec_240705` is not recommended for most science cases. It is an extended version of the [`galah_dr4_allstar_240705`](#recommended-catalogue-of-stellar-parameters-and-abundances). It contains results **per spectrum** rather than per star.
 
-The `GALAH_DR4_main_allspec` catalogue has results for 1,085,520 spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related observing programmes that used the HERMES spectrograph on the Anglo-Australian Telescope between December 2013 and August 2023. As with `GALAH_DR4_main_allstar`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr4/table_schema).
+The `galah_dr4_allspec_240705` catalogue has results for 1,085,520 spectra acquired as part of the GALAH, K2-HERMES, TESS-HERMES, and other related observing programmes that used the HERMES spectrograph on the Anglo-Australian Telescope between December 2013 and August 2023. As with `galah_dr4_allstar_240705`, for all spectra we provide stellar parameters, radial velocities, and elemental abundances. For the full list of columns, see the [Table Schema page](/dr4/table_schema).
 
-As well as the information included in `GALAH_DR4_main_allstar`, the `GALAH_DR4_main_allspec` catalogue has:
+As well as the information included in `galah_dr4_allstar_240705`, the `galah_dr4_allspec_240705` catalogue has:
 * Additional detail on candidate binaries
     - Prominence of both components in the cross-correlation function (`rv_comp_1_p` and `rv_comp2_p`) and height of the secondary component in the CCF (`rv_comp_2_h`)
 
@@ -78,7 +78,7 @@ As well as the information included in `GALAH_DR4_main_allstar`, the `GALAH_DR4_
 ---
 
 #### Crossmatch to Gaia DR3, 2MASS, and WISE
-##### [Download `GALAH_DR4_VAC_crossmatch.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (743 MB)
+##### [Download `galah_dr4_vac_wise_tmass_gaiadr3_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (743 MB)
 {:.no_toc}
 
 We provide a value-added catalog with information from the Gaia DR3 `gaia_source` catalogue, 2MASS photometry and quality flags, and WISE photometry and quality flags for each star in GALAH DR4. The full list of columns is on the [Table Schema documentation](/dr4/table_schema). This catalogue provides:
@@ -99,7 +99,7 @@ We provide a value-added catalog with information from the Gaia DR3 `gaia_source
 ---
 
 #### Galactic kinematic and dynamic information
-##### [Download `GALAH_DR4_VAC_dynamics.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (155 MB)
+##### [Download `galah_dr4_vac_dynamics_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (155 MB)
 {:.no_toc}
 
 We provide a value-added catalog with kinematic and dynamical information that builds upon the 5D astrometric information from Gaia DR3 and radial velocities determined from GALAH spectra. The full list of columns is on the [Table Schema documentation](/dr4/table_schema). This catalogue provides:
@@ -128,7 +128,7 @@ The input values for each star were:
 ----
 
 #### 3D NLTE Li abundances
-##### [Download `GALAH_DR4_VAC_li_allstar.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (174 MB)
+##### [Download `galah_dr4_vac_3dnlte_a_li_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (174 MB)
 {:.no_toc}
 
 We provide a value-added catalogue of 3D NLTE Li abundances, calculated with the same process as described in [Wang *et al.* (2024)](https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.5394W/abstract). The full list of columns is on the [Table Schema documentation](/dr4/table_schema). This catalogue provides:
@@ -164,7 +164,7 @@ This lists all 7993 possible fields in the current target selection catalogue of
 ### Getting the catalogues
 
 {: .box-warning}
-We recommend the `GALAH_DR4_main_allstar.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/).<br/><br/>
+We recommend the `galah_dr4_allstar_240705.fits` catalogue if you want our best effort stellar parameters and elemental abundances. This catalogue can be [directly downloaded from Data Central](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/).<br/><br/>
 Please read our [best practices for using GALAH DR4](/dr4/using_the_data).
 
 Our primary repository of GALAH DR4 is provided by [Data Central](https://datacentral.org.au). From them you can [directly download](#downloading-the-fits-files) the catalogues as FITS files, or query via [TAP](#tap-query) or [ADQL](#adql-query).
@@ -179,7 +179,7 @@ The catalogues can be [downloaded from Data Central](https://cloud.datacentral.o
 
 ```bash
 # Download the galah_dr4.main_star catalogue
-wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/GALAH_DR4_main_allstar.fits
+wget --spider https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/galah_dr4_allstar_240705.fits
 ```
 
 <!---

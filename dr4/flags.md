@@ -16,7 +16,7 @@ For science cases involving stellar parameters, it is highly recommended that yo
 ---
 ### `flag_sp`
 
-This flag is found in the `GALAH_DR4_main_allstar` (and `GALAH_DR4_main_allspec`) catalogues and is the final bit-flag for the stellar parameter quality flag. Its value is found via the summation of the individual flags as tabulated below.
+This flag is found in the `galah_dr4_allstar_240705` (and `galah_dr4_allspec_240705`) catalogues and is the final bit-flag for the stellar parameter quality flag. Its value is found via the summation of the individual flags as tabulated below.
 
 | Value | Description |
 | :------ |:--- |
@@ -41,7 +41,7 @@ This flag is found in the `GALAH_DR4_main_allstar` (and `GALAH_DR4_main_allspec`
 ---
 
 ### `flag_X_fe`
-These flags are found in `GALAH_DR4_main_allstar` and are the final bit-flag for the elemental abundance quality for the elemental abundance `X_fe`. Their values are found via the summation of the individual flags as tabulated below.  
+These flags are found in `GALAH_dr4_allstar_240705` and are the final bit-flag for the elemental abundance quality for the elemental abundance `X_fe`. Their values are found via the summation of the individual flags as tabulated below.  
 
 | Value | Meaning |
 | :------ |:--- |
