@@ -15,9 +15,9 @@ When using GALAH DR4 data, please acknowledge the work of the people involved an
 
 If you have used public GALAH data in your paper, please cite the following papers describing the instruments, survey, and data analysis as appropriate:
 
-#### The GALAH DR3 overview
+#### The GALAH DR4 overview
 
-* [**The GALAH+ survey: Third data release**](https://ui.adsabs.harvard.edu/abs/2021MNRAS.506..150B)<br/>Buder *et al.* (2021) MNRAS **506** 150 <small>([doi:10.1093/mnras/stab1242](https://doi.org/10.1093/mnras/stab1242), [arXiv:2011.02505](https://arxiv.org/abs/arXiv:2011.02505))</small>
+* [**The GALAH Survey: Data Release 4**](https://arxiv.org/abs/2409.19858v1)<br/>Buder *et al.* (2024) <small>([https://arxiv.org/abs/2409.19858v1](https://arxiv.org/abs/2409.19858v1)</small>
 
 #### The motivation and planned execution of the GALAH survey, and first-light performance of HERMES
 

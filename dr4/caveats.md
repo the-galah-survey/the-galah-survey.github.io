@@ -5,7 +5,7 @@ subtitle: Fourth Data Release
 ---
 
 {: .main_blockquote}
-This page relays a list of known issues in GALAH DR4. Please also see the GALAH Survey Fourth Data Release paper ([Buder *et al.* 2021](https://doi.org/10.1093/mnras/stab1242)).
+This page relays a list of known issues in GALAH DR4. Please also see the GALAH Survey Fourth Data Release paper ([Buder *et al.* 2024](https://arxiv.org/abs/2409.19858v1)).
 
 {: .box-error}
 We caution that it is not possible to inspect the millions of measurements that make up GALAH DR4. There are likely to be some unexpected correlations and problems with the data.
@@ -70,7 +70,7 @@ For more information, see the [Best Practices for using GALAH DR4](/dr4/using_th
 
 ### Intrinsic correlations and the parameter space
 Quoting from the DR4 paper: 
-> One of the primary challenges in creating an optimal training set for spectrum interpolation lies in the choice of parameter sampling. A common caveat is the use of randomized, uncorrelated parameter sampling, which can lead to unrealistic combinations of elemental abundances. Elements that share a similar nucleosynthesis channel often exhibit correlated behavior, for instance, stars with high abundances of Mg are typically also enhanced in Si, Ca, and Ti, while Na and Al tend to be elevated together. Similarly, neutron-capture elements like Y and Ba often follow similar trends \citep[e.g.][]{Ting2012, Kobayashi2020, Buder2021}. To better capture this behavior in the training set, the use of scaled linear functions or normalizing flows could be advantageous. These approaches would help minimize the occurrence of unlikely parameter combinations and yield a more representative sample. 
+> One of the primary challenges in creating an optimal training set for spectrum interpolation lies in the choice of parameter sampling. A common caveat is the use of randomized, uncorrelated parameter sampling, which can lead to unrealistic combinations of elemental abundances. Elements that share a similar nucleosynthesis channel often exhibit correlated behavior, for instance, stars with high abundances of Mg are typically also enhanced in Si, Ca, and Ti, while Na and Al tend to be elevated together. Similarly, neutron-capture elements like Y and Ba often follow similar trends (e.g. Ting et al. 2012; Kobayashi et al. 2020; Buder et al. 2021). To better capture this behavior in the training set, the use of scaled linear functions or normalizing flows could be advantageous. These approaches would help minimize the occurrence of unlikely parameter combinations and yield a more representative sample. 
 
 
 <!---

@@ -4,7 +4,7 @@ title: GALAH DR4
 subtitle: Fourth Data Release
 ---
 {: .main_blockquote}
-The Fourth Data Release of the Galactic Archaeology with HERMES (GALAH) survey provides one-dimensional spectra, stellar atmospheric parameters and individual elemental abundances for 1,085,520 spectra of 917,588 stars in the Milky Way. They were observed with the HERMES spectrograph at the Anglo-Australian Telescope between December 2013 and August 2023. The release will be fully described in the forthcoming Buder *et al.* (2024)
+The Fourth Data Release of the Galactic Archaeology with HERMES (GALAH) survey provides one-dimensional spectra, stellar atmospheric parameters and individual elemental abundances for 1,085,520 spectra of 917,588 stars in the Milky Way. They were observed with the HERMES spectrograph at the Anglo-Australian Telescope between December 2013 and August 2023. The release will be fully described in the forthcoming [Buder *et al.* (2024)](https://arxiv.org/abs/2409.19858v1)
 
 {: .box-error}
 **Want to start working right now with GALAH DR4?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
