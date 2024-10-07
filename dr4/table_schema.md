@@ -8,7 +8,7 @@ subtitle: Fourth Data Release
 This page gives the schema (or data model) for the [GALAH DR4 main and value-added catalogues](/dr4/the_catalogues).
 
 {: .box-warning}
-We strongly recommend reading the [recommended columns section of our Best Practices page](/dr4/using_the_data/#recommended-columns). T
+We strongly recommend reading the [recommended columns section of our Best Practices page](/dr4/using_the_data/#recommended-columns). 
 
 {: .box-warning}
 The `sobject_id` column should be used for joining the catalogues.
