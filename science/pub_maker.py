@@ -24,7 +24,7 @@ def get_config():
     return {
         "url": "https://api.adsabs.harvard.edu/v1/biblib",
         "headers": {
-            "Authorization": "Bearer:{}".format(token),
+            "Authorization": "Bearer {}".format(token),
             "Content-Type": "application/json",
         },
     }
