@@ -139,6 +139,27 @@ We provide a value-added catalogue of 3D NLTE Li abundances, calculated with the
 
 We recommend choosing only stars with `flag_ALi < 2` when using Li abundances and `flag_ALi < 4` when using Li equivalent widths (see [using the data](/dr4/using_the_data/) for more information). 
 
+----
+
+#### Recomputed Eu abundances
+##### [Download files from `galah_dr4_vac_europium/`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/galah_dr4_vac_europium/) (168 MB)
+{:.no_toc}
+
+We provide a value-added catalogue of europium abundances, derived as described in [Kane et al. (2026)](https://www.doi.org/10.48550/arXiv.2512.02125). The full list of columns is on the Table Schema documentation.
+
+The main catalogue (`cnn_predictions`) provides:
+
+* [Eu/H] abundances predicted with a convolutional neural network (`eu_h_pred`) and their uncertainties (`eu_h_pred_err`)
+* Eu line depths (`line_depth`)
+* Quality flags (`stellar_params_flag`, `continuum_flux_flag`, `line_depth_flag`, `eu_flag`)
+
+Additionally, for the metal-poor stars (`fe_h` < -1), we make available a secondary catalogue (`korg_secondary_catalogue`), which provides:
+
+* [Eu/H] abundances derived with Korg (`eu_h_korg`) and their uncertainties (`eu_h_korg_err`)
+* Quality flags (`stellar_params_flag`, `continuum_flux_flag`, `lower_limit_flag`, `eu_flag`)
+
+For convenience of the users, we determine a golden sample of stars passing strict quality and stellar parameter cuts (`golden_sample`).
+
 ---
 <!---
 #### List of all possible GALAH fields and field configurations
