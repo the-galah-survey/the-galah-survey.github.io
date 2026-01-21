@@ -7,13 +7,29 @@ subtitle: This page lists publications from the GALAH Survey team.
 <!-- Do not edit this page directly. Instead use /pub_lists/pub_maker.py. -->
 ![Number of publications using GALAH](/science/img/galah_publications_number_papers.svg){: .mx-auto.d-block :}
 
-This page is automatically generated from an [ADS Libary](https://ui.adsabs.harvard.edu/search/q=docs(library%2FclbnJI34RXa4uEEqFC8I9g)&sort=date%20desc%2C%20bibcode%20desc&p_=0) maintained by the GALAH team.
+This page is automatically generated from an [ADS Libary](https://ui.adsabs.harvard.edu/search/q=docs(library%2FHQBNky2MQwaB9QzdBkUssw)&sort=date%20desc%2C%20bibcode%20desc&p_=0) maintained by the GALAH team.
 
 ---
 Jump to a year:
 * This text gets replaced.
 {:toc}
 ---
+#### 2025
+
+* [**The GALAH survey: Improving chemical abundances using star clusters**](https://ui.adsabs.harvard.edu/abs/2025A%26A...703A.104K)<br/>Kos *et al.* (2025) A&A **703** A104 <small>([doi:10.1051/0004-6361/202554112](https://doi.org/10.1051/0004-6361/202554112), [arXiv:2501.06140](https://arxiv.org/abs/arXiv:2501.06140))</small>
+* [**Optical spectroscopic signatures of the red giant evolutionary state**](https://ui.adsabs.harvard.edu/abs/2025MNRAS.540.3919W)<br/>Wang *et al.* (2025) MNRAS **540** 3919 <small>([doi:10.1093/mnras/staf916](https://doi.org/10.1093/mnras/staf916), [arXiv:2506.02889](https://arxiv.org/abs/arXiv:2506.02889))</small>
+* [**The GALAH survey: Data release 4**](https://ui.adsabs.harvard.edu/abs/2025PASA...42...51B)<br/>Buder *et al.* (2025) PASA **42** e051 <small>([doi:10.1017/pasa.2025.26](https://doi.org/10.1017/pasa.2025.26), [arXiv:2409.19858](https://arxiv.org/abs/arXiv:2409.19858))</small>
+* [**The GALAH Survey: Stellar parameters and abundances for 800 000 Gaia RVS spectra using GALAH DR4 and The Cannon**](https://ui.adsabs.harvard.edu/abs/2025MNRAS.538..605D)<br/>Das *et al.* (2025) MNRAS **538** 605 <small>([doi:10.1093/mnras/staf169](https://doi.org/10.1093/mnras/staf169), [arXiv:2410.12272](https://arxiv.org/abs/arXiv:2410.12272))</small>
+
+#### 2024
+
+* [**The GALAH survey: tracing the Milky Way's formation and evolution through RR Lyrae stars**](https://ui.adsabs.harvard.edu/abs/2024MNRAS.531..137D)<br/>D'Orazi *et al.* (2024) MNRAS **531** 137 <small>([doi:10.1093/mnras/stae1149](https://doi.org/10.1093/mnras/stae1149), [arXiv:2405.04580](https://arxiv.org/abs/arXiv:2405.04580))</small>
+* [**The GALAH survey: elemental abundances in open clusters using joint effective temperature and surface gravity photometric priors**](https://ui.adsabs.harvard.edu/abs/2024MNRAS.529.2483B)<br/>Beeson *et al.* (2024) MNRAS **529** 2483 <small>([doi:10.1093/mnras/stae439](https://doi.org/10.1093/mnras/stae439), [arXiv:2402.07748](https://arxiv.org/abs/arXiv:2402.07748))</small>
+
+#### 2023
+
+* [**The GALAH survey: new diffuse interstellar bands found in residuals of 872 000 stellar spectra**](https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.3727V)<br/>Vogrinčič *et al.* (2023) MNRAS **521** 3727 <small>([doi:10.1093/mnras/stad678](https://doi.org/10.1093/mnras/stad678), [arXiv:2303.14016](https://arxiv.org/abs/arXiv:2303.14016))</small>
+
 #### 2022
 
 * [**The GALAH survey: chemical clocks**](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.5325H)<br/>Hayden *et al.* (2022) MNRAS **517** 5325 <small>([doi:10.1093/mnras/stac2787](https://doi.org/10.1093/mnras/stac2787), [arXiv:2011.13745](https://arxiv.org/abs/arXiv:2011.13745))</small>
@@ -44,6 +60,7 @@ Jump to a year:
 * [**The GALAH survey: a new constraint on cosmological lithium and Galactic lithium evolution from warm dwarf stars**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497L..30G)<br/>Gao *et al.* (2020) MNRAS **497** L30 <small>([doi:10.1093/mnrasl/slaa109](https://doi.org/10.1093/mnrasl/slaa109), [arXiv:2006.05173](https://arxiv.org/abs/arXiv:2006.05173))</small>
 * [**K2-HERMES II. Planet-candidate properties from K2 Campaigns 1-13**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.496..851W)<br/>Wittenmyer *et al.* (2020) MNRAS **496** 851 <small>([doi:10.1093/mnras/staa1528](https://doi.org/10.1093/mnras/staa1528), [arXiv:2005.10959](https://arxiv.org/abs/arXiv:2005.10959))</small>
 * [**The GALAH survey: multiple stars and our Galaxy. I. A comprehensive method for deriving properties of FGK binary stars**](https://ui.adsabs.harvard.edu/abs/2020A%26A...638A.145T)<br/>Traven *et al.* (2020) A&A **638** A145 <small>([doi:10.1051/0004-6361/202037484](https://doi.org/10.1051/0004-6361/202037484), [arXiv:2005.00014](https://arxiv.org/abs/arXiv:2005.00014))</small>
+* [**Abundance analyses of Li-enriched and normal giants in the GALAH survey**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.1348D)<br/>Deepak *et al.* (2020) MNRAS **494** 1348 <small>([doi:10.1093/mnras/staa729](https://doi.org/10.1093/mnras/staa729), [arXiv:2003.05381](https://arxiv.org/abs/arXiv:2003.05381))</small>
 * [**The GALAH survey: chemodynamics of the solar neighbourhood**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.2952H)<br/>Hayden *et al.* (2020) MNRAS **493** 2952 <small>([doi:10.1093/mnras/staa335](https://doi.org/10.1093/mnras/staa335), [arXiv:1901.07565](https://arxiv.org/abs/arXiv:1901.07565))</small>
 * [**The GALAH Survey: Chemically tagging the Fimbulthul stream to the globular cluster ω Centauri**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.3374S)<br/>Simpson *et al.* (2020) MNRAS **491** 3374 <small>([doi:10.1093/mnras/stz3105](https://doi.org/10.1093/mnras/stz3105), [arXiv:1911.01548](https://arxiv.org/abs/arXiv:1911.01548))</small>
 * [**The GALAH survey: temporal chemical enrichment of the galactic disc**](https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.2043L)<br/>Lin *et al.* (2020) MNRAS **491** 2043 <small>([doi:10.1093/mnras/stz3048](https://doi.org/10.1093/mnras/stz3048), [arXiv:1911.05221](https://arxiv.org/abs/arXiv:1911.05221))</small>
@@ -78,11 +95,11 @@ Jump to a year:
 #### 2017
 
 * [**The GALAH survey: observational overview and Gaia DR1 companion**](https://ui.adsabs.harvard.edu/abs/2017MNRAS.465.3203M)<br/>Martell *et al.* (2017) MNRAS **465** 3203 <small>([doi:10.1093/mnras/stw2835](https://doi.org/10.1093/mnras/stw2835), [arXiv:1609.02822](https://arxiv.org/abs/arXiv:1609.02822))</small>
-* [**The Galah Survey: Classification and Diagnostics with t-SNE Reduction of Spectral Information**](https://ui.adsabs.harvard.edu/abs/2017ApJS..228...24T)<br/>Traven *et al.* (2017) ApJS **228** 24 <small>([doi:10.3847/1538-4365/228/2/24](https://doi.org/10.3847/1538-4365/228/2/24), [arXiv:1612.02242](https://arxiv.org/abs/arXiv:1612.02242))</small>
 * [**The GALAH survey: the data reduction pipeline**](https://ui.adsabs.harvard.edu/abs/2017MNRAS.464.1259K)<br/>Kos *et al.* (2017) MNRAS **464** 1259 <small>([doi:10.1093/mnras/stw2064](https://doi.org/10.1093/mnras/stw2064), [arXiv:1608.04391](https://arxiv.org/abs/arXiv:1608.04391))</small>
 
 #### 2016
 
+* [**GALAH Survey: Chemical tagging and disk reconstruction**](https://ui.adsabs.harvard.edu/abs/2016AN....337..894B)<br/>Bland-Hawthorn and Sharma (2016) AN **337** 894 <small>([doi:10.1002/asna.201612393](https://doi.org/10.1002/asna.201612393))</small>
 * [**The GALAH survey: relative throughputs of the 2dF fibre positioner and the HERMES spectrograph from stellar targets**](https://ui.adsabs.harvard.edu/abs/2016MNRAS.459.1069S)<br/>Simpson *et al.* (2016) MNRAS **459** 1069 <small>([doi:10.1093/mnras/stw746](https://doi.org/10.1093/mnras/stw746), [arXiv:1603.08991](https://arxiv.org/abs/arXiv:1603.08991))</small>
 
 #### 2015
