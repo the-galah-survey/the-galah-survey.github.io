@@ -209,7 +209,9 @@ if __name__ == '__main__':
                    title="Publications using GALAH data",
                    subtitle="This page lists publications using GALAH data.")
 
-    create_webpage(library_id='clbnJI34RXa4uEEqFC8I9g',
+    # Library maintained by Jeffrey Simpson: clbnJI34RXa4uEEqFC8I9g
+    # Latest Library maintained by Sven Buder: HQBNky2MQwaB9QzdBkUssw
+    create_webpage(library_id='HQBNky2MQwaB9QzdBkUssw',
                    md_pub_file="science/galah_publications.md",
                    title="GALAH Survey publications",
                    subtitle="This page lists publications from the GALAH Survey team.")
