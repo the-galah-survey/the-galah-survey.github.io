@@ -204,7 +204,11 @@ Jump to a year:
 
 
 if __name__ == '__main__':
-    create_webpage(library_id='h8cKhLXSTaSOuZAy7phffg',
+
+    # Library maintained by Jeffrey Simpson: h8cKhLXSTaSOuZAy7phffg
+    # Latest library created with the following ADS query for refereed astronomy papers with citations to DR1-4
+    # property:refereed citations(     bibcode:2017MNRAS.465.3203M     OR bibcode:2018MNRAS.478.4513B     OR bibcode:2021MNRAS.506..150B     OR bibcode:2025PASA...42...51B   ) AND full:(GALAH OR "GALactic Archaeology with HERMES" OR "GALAH DR1" OR "GALAH DR2" OR "GALAH DR3" OR "GALAH DR4")
+    create_webpage(library_id='MVYsa68vTzmzhuTz4VPQJw',
                    md_pub_file="science/external_publications.md",
                    title="Publications using GALAH data",
                    subtitle="This page lists publications using GALAH data.")
