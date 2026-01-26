@@ -354,8 +354,8 @@ Jump to a year:
 
 #### 2023
 
-* [**Bir Samanyolu Tarifi**](https://ui.adsabs.harvard.edu/abs/2023TJAA....4S.225O)<br/>Plevne (2023) TJAA **4** 225 <small>([doi:10.55064/tjaa.1192324](https://doi.org/10.55064/tjaa.1192324))</small>
-* [**Çok Boyutlu Uzayda Galaktik Disk Popülasyonlarına Makine Öğrenmesi Yaklaşımı**](https://ui.adsabs.harvard.edu/abs/2023TJAA....4S.173B)<br/>COŞKUNOĞLU (2023) TJAA **4** 173 <small>([doi:10.55064/tjaa.1198826](https://doi.org/10.55064/tjaa.1198826))</small>
+* [**A Recipe for The Galaxy**](https://ui.adsabs.harvard.edu/abs/2023TJAA....4S.225P)<br/>Plevne (2023) TJAA **4** 225 <small>([doi:10.55064/tjaa.1192324](https://doi.org/10.55064/tjaa.1192324))</small>
+* [**A Machine Learning Approach to Galactic Disk Populations in Multidimensional Space**](https://ui.adsabs.harvard.edu/abs/2023TJAA....4S.173C)<br/>Coșkunoğlu (2023) TJAA **4** 173 <small>([doi:10.55064/tjaa.1198826](https://doi.org/10.55064/tjaa.1198826))</small>
 * [**An Updated Line List for Spectroscopic Investigation of G Stars- I: Redetermination of the Abundances in the Solar Photosphere**](https://ui.adsabs.harvard.edu/abs/2023PARep...1...54S)<br/>Sahin *et al.* (2023) PARep **1** 54 <small>([doi:10.26650/PAR.2023.00007](https://doi.org/10.26650/PAR.2023.00007), [arXiv:2310.04129](https://arxiv.org/abs/arXiv:2310.04129))</small>
 * [**Dwarf galaxy archaeology from chemical abundances and star-formation histories**](https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.5084J)<br/>Johnson *et al.* (2023) MNRAS **526** 5084 <small>([doi:10.1093/mnras/stad2985](https://doi.org/10.1093/mnras/stad2985), [arXiv:2210.01816](https://arxiv.org/abs/arXiv:2210.01816))</small>
 * [**The evolution of the Milky Way's thin disc radial metallicity gradient with K2 asteroseismic ages**](https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.2141W)<br/>Willett *et al.* (2023) MNRAS **526** 2141 <small>([doi:10.1093/mnras/stad2374](https://doi.org/10.1093/mnras/stad2374), [arXiv:2307.14422](https://arxiv.org/abs/arXiv:2307.14422))</small>
