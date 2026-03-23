@@ -22,7 +22,7 @@ GALAH: Mapping Elements → GALAH 2: Precision Galactic Archaeology
 </p>
 </div>
 
-**GALAH 2 now marks the next step: moving from mapping elements to precision Galactic Archaeology.**
+**GALAH 2 now marks the next step: from mapping elements to precision Galactic Archaeology.**
 
 Instead of surveying as many stars as possible, GALAH 2 focuses on extracting the *maximum physical information* from stellar spectra to enable measurements precise enough to trace elemental enrichment patterns, stellar birth environments, characterise merger events, and connect stellar physics to galaxy evolution across cosmic time.
 

@@ -4,7 +4,7 @@ title: GALAH 2 Overview
 ---
 
 <div style="text-align:center; margin-top:10px; margin-bottom:25px;">
-  <img src="galah_2/img/galah_2_logo.png" style="max-width:260px; height:auto;">
+  <img src="/galah_2/img/galah_2_logo.png" style="max-width:260px; height:auto;">
 </div>
 
 ## From mapping elements to precision Galactic Archaeology
@@ -18,8 +18,8 @@ Rather than increasing sample size alone, GALAH 2 focuses on extracting the full
 This marks a transition from mapping elemental abundance trends to reconstructing the formation history of the Milky Way with precision Galactic Archaeology.
 
 <div style="text-align: center;">
-<img src="galah_2/img/veloce_detectability_t5750_g+4.5_z-0.50-Veloce.png" width="50%" alt="Example spectra with isotope ratio measurements by McKenzie et al. (2024)." />
-<img src="galah_2/img/McKenzie_2024MNRAS.534L..35M_Fig1.png" width="36%" alt="Example spectra with isotope ratio measurements by McKenzie et al. (2024)." />
+<img src="/galah_2/img/veloce_detectability_t5750_g+4.5_z-0.50-Veloce.png" width="50%" alt="Example spectra with isotope ratio measurements by McKenzie et al. (2024)." />
+<img src="/galah_2/img/McKenzie_2024MNRAS.534L..35M_Fig1.png" width="36%" alt="Example spectra with isotope ratio measurements by McKenzie et al. (2024)." />
 <p><em>The significantly larger wavelength coverage and higher precision achieved with GALAH 2 will allow us to extract more elements and the smallest changes among them, such as isotope ratios (Figure Credits: Sven Buder and Thomas Nordlander as well as <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.7940M">McKenzie et al. 2024</a>).</em></p>
 </div>
 
@@ -36,8 +36,8 @@ Together, these observations transform GALAH from a population-mapping survey in
 
 
 <div style="text-align: center;">
-<img src="galah_2/img/06_alfCenA_rainbow.png" width="30%" alt="High-resolution Veloce um of Alpha Centauri A" style='text-align:center'/>
-<img src="galah_2/img/07_HD140283_rainbow.png" width="30%" alt="High-resolution Veloce um of HD140283" />
+<img src="/galah_2/img/06_alfCenA_rainbow.png" width="30%" alt="High-resolution Veloce um of Alpha Centauri A" style='text-align:center'/>
+<img src="/galah_2/img/07_HD140283_rainbow.png" width="30%" alt="High-resolution Veloce um of HD140283" />
 <p><em>High-resolution Veloce spectra illustrating the information content accessible beyond multiplex survey spectroscopy (Figure Credit: Sven Buder).</em></p>
 </div>
 
@@ -54,7 +54,7 @@ By improving both spectral precision and calibration consistency, GALAH 2 enable
 Rather than identifying population trends alone, GALAH 2 enables reconstruction of individual formation pathways across the Galaxy.
 
 <div style="text-align: center;">
-<img src="galah_2/img/kobayashi2020_origin_of_elements.jpg" width="55%" alt="The periodic table with each element showing the contribution of enrichment sources across cosmic time." />
+<img src="/galah_2/img/kobayashi2020_origin_of_elements.jpg" width="55%" alt="The periodic table with each element showing the contribution of enrichment sources across cosmic time." />
 <p><em>The periodic table with each element showing the contribution of enrichment sources across cosmic time (Figure Credit:  <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...900..179K">Kobayashi, Karakas, and Lugaro 2020</a>).</em></p>
 </div>
 
@@ -64,6 +64,6 @@ Rather than identifying population trends alone, GALAH 2 enables reconstruction 
 Observations with the Veloce spectrograph are already underway, and the first several hundred spectra have been reduced and are being analysed. These data form the foundation of the precision calibration framework that underpins GALAH 2, while additional HERMES observations continue to expand the calibration network across stellar evolutionary phases and Galactic populations.
 
 <div style="text-align: center;">
-<img src="galah_2/img/veloce_spectra_HIP56343_0113_001122_stitched.png" width="95%" alt="Quality of the Veloce spectra across the wavelength range of 360nm to 940 nm." />
+<img src="/galah_2/img/veloce_spectra_HIP56343_0113_001122_stitched.png" width="95%" alt="Quality of the Veloce spectra across the wavelength range of 360nm to 940 nm." />
 <p><em>Quality of the Veloce spectra across the wavelength range of 360nm to 940 nm (Figure Credit: Sven Buder).</em></p>
 </div>
