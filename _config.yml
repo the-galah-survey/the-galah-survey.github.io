@@ -14,6 +14,8 @@ author: GALAH Survey
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  GALAH&nbsp;2:
+    - Overview: "galah_2/overview"
   Data&nbsp;Release&nbsp;4:
     - Overview: "dr4/overview"
     - The catalogues: "dr4/the_catalogues"
