@@ -1,17 +1,75 @@
 ---
 layout: home
 title: GALAH Survey
-subtitle: GALactic Archaeology with HERMES
+subtitle: Galactic Archaeology with HERMES
 cover-img: assets/img/pic01.png
 ---
+
 {: .main_blockquote}
-The formation and evolution of galaxies is one of the great outstanding problems of modern astrophysics. The goal of galactic archaeology is to uncover the history of the Milky Way and how it formed and evolved. The GALactic Archaeology with HERMES (GALAH) survey is a Large Observing Program using the HERMES instrument with the Anglo-Australian Telescope. HERMES provides simultaneous spectra for 400 stars at a time. We are using this to obtain the highest spectral resolution multi-dimensional datasets for over a million stars of all ages and locations in the Milky Way to trace the full history of the Galaxy.
+How did the Milky Way form?  
+Which mergers shaped it?  
+Where were its stars born?
+
+For the past decade, the GALactic Archaeology with HERMES (GALAH) survey has mapped the chemical fingerprints of nearly one million stars, transforming our view of the Milky Way by turning stellar spectra into a fossil record of Galactic history.
+
+
+<div style="text-align:center; margin-bottom: 25px;">
+<img src="assets/img/logo_desktop.png" style="height:75px; margin-right:30px;">
+<span style="font-size:2.2rem; margin: 0 0px; vertical-align:middle;">
+→
+</span>
+<img src="galah_2/img/galah_2_logo.png" style="height:190px;">
+<p style="margin-top:8px; font-size:1.1rem;">
+GALAH: Mapping Elements → GALAH 2: Precision Galactic Archaeology
+</p>
+</div>
+
+**GALAH 2 now marks the next step: moving from mapping elements to precision Galactic Archaeology.**
+
+Instead of surveying as many stars as possible, GALAH 2 focuses on extracting the *maximum physical information* from stellar spectra — enabling measurements precise enough to trace stellar birth environments, reconstruct merger events, and connect stellar physics to galaxy evolution across cosmic time.
+
+---
+
+{: .box-note}
+**GALAH 2: Precision Galactic Archaeology**{: style="font-size: 1.5rem; font-weight: 800; line-height: 1.1;"}<br/><br/>
+
+GALAH 2 combines:
+
+• high-signal-to-noise multi-object spectroscopy with **HERMES** (≈350 stars per field, R≈30,000)  
+• ultra-high-precision single-object spectroscopy with **Veloce** (390–950 nm, R≈80,000)
+
+to create a new calibration backbone for stellar spectroscopy across the Hertzsprung–Russell diagram.
+
+The programme is flexible and science-driven, including benchmark stars, stellar twins, and community-led target selection. These observations enable abundance measurements with unprecedented internal consistency and precision, allowing us to move beyond population trends toward reconstructing the detailed formation history of the Galaxy.
+
+Observations with Veloce are already underway, and the first reduced spectra are now being analysed.
+
+<br/>
+
+<a class="btn btn-primary btn-lg get-started-btn center" href="galah_2/overview">
+<i class="fa fa-compass"></i> Explore GALAH 2
+</a>
+
+---
 
 {: .box-error}
-**Want to start working right now with GALAH DR4?**{: style="font-size: 1.5rem;  font-weight: 800; line-height: 1.1;"}<br/><br/>
-The GALAH survey published our fourth data release on 1 October 2024. For 917,588 stars, we provide reduced spectra, stellar parameters and up to 31 elemental abundances.<br/><br/>
-If you want our best effort stellar parameters and elemental abundances, we recommend the `galah_dr4_allstar_240705.fits` catalogue.
-<br/><br/>
-<a class="btn btn-success btn-lg get-started-btn center" href="dr4/the_catalogues"><i class="fa fa-download"></i> Get GALAH DR4 catalogues</a><br/>
-<a class="btn btn-secondary btn-lg get-started-btn center" href="dr4/the_spectra"><i class="fa fa-download"></i> Get GALAH DR4 spectra</a><br/>
-<a class="btn btn-info btn-lg get-started-btn center" href="dr4/overview"><i class="fa fa-book"></i> Read the DR4 documentation</a>
+**Start working with GALAH DR4**{: style="font-size: 1.5rem; font-weight: 800; line-height: 1.1;"}<br/><br/>
+
+The fourth GALAH data release (DR4), published 1 October 2024, provides reduced spectra, stellar parameters, and up to 31 elemental abundances for **917,588 stars** across the Milky Way.
+
+For most applications we recommend the catalogue  
+`galah_dr4_allstar_240705.fits`.
+
+<br/>
+
+<a class="btn btn-success btn-lg get-started-btn center" href="dr4/the_catalogues">
+<i class="fa fa-download"></i> Get GALAH DR4 catalogues
+</a><br/>
+
+<a class="btn btn-secondary btn-lg get-started-btn center" href="dr4/the_spectra">
+<i class="fa fa-download"></i> Get GALAH DR4 spectra
+</a><br/>
+
+<a class="btn btn-info btn-lg get-started-btn center" href="dr4/overview">
+<i class="fa fa-book"></i> Read the DR4 documentation
+</a>
