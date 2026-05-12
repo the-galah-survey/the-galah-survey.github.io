@@ -141,6 +141,38 @@ We recommend choosing only stars with `flag_ALi < 2` when using Li abundances an
 
 ----
 
+#### BSTEP Ages and Masses
+##### [Download `galah_dr4_vac_ages_massses_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (174 MB)
+{:.no_toc}
+
+This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma *et al.* (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
+
+For each star, we give the following parameters found by BSTEP:
+* identifiers (GALAH's `sobject_id`, 2MASS `tmass_id`, and Gaia DR3's `gaiadr3_source_id`)
+* age (`age_bstep`)
+* actual and initial stellar mass (`m_act_bstep` and `m_ini_bstep`)
+* stellar radius (`radius_bstep`)
+* a probability of whether this is a red clump star (`is_redclump_bstep`)
+* BSTEP's best-fit effective temperature (`teff_bstep`)
+* BSTEP's best-fit surface gravity (`logg_bstep`)
+* BSTEP's best-fit initial and current metallicity (`meh_ini_bstep` and `meh_act_bstep`)
+* BSTEP's best-fit logarithmic stellar luminosity (`log_lum_bstep`)
+* BSTEP's best-fit distance (`distance_bstep`)
+* BSTEP's best-fit absolute *J* and *K<sub>S</sub>* magnitudes (`abs_j_bstep` and `abs_ks_bstep`)
+* BSTEP's best-fit reddening E(B-V) (`ebv_bstep`)
+* Number of used isochrone `grid_points`
+* Number of fitting `iterations`
+* Reduced `chi2red`
+
+For each estimated parameter we also report the 1-sigma uncertainty (prefix `e_`), and the 16th (`e16_`), 50th (`e50_`), and 84th (`e84_`) percentiles.
+
+{: .box-warning}
+We recommend to always compare both the BSTEP ages and masses as well as the on-the-fly estimates of the GALAH DR4 pipeline (`age` and `mass` in the main catalogues), as inconsistencies between them can be a useful indicator of reliability. We do not recommend using BSTEP values for stellar parameters like effective temperature and surface gravity.
+
+For details of the adopted priors see [Sharma *et al.* (2018)](https://doi.org/10.1093/mnras/stx2582). Briefly, a flat prior on age and metallicity was used and for density distribution of stars a combination of an exponential stellar disc and a diffuse stellar halo was used. For results presented in this paper, we use the PARSEC release v1.2S + COLIBRI stellar isochrone ([Marigo *et al.* 2017](https://doi.org/10.3847/1538-4357/835/1/77)). We use the following observables, T<sub>eff</sub> , log *g*, [Fe/H], [α/Fe] , 2MASS *J* and *K<sub>S</sub>* photometry, and parallax from Gaia. The effective observed metallicity, log(Z/Z<sub>⊙</sub>), was estimated from [Fe/H] and [α/Fe] using the formula by [Salaris (2006)](https://books.google.de/books?id=A5DvAAAAMAAJ). This was compared with the surface metallicity reported by the isochrones, which takes the evolutionary changes in surface metallicity Z into account.
+
+----
+
 #### Recomputed Eu abundances
 ##### [Download files from `galah_dr4_vac_europium/`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/galah_dr4_vac_europium/) (168 MB)
 {:.no_toc}
