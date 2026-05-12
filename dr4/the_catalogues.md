@@ -142,7 +142,7 @@ We recommend choosing only stars with `flag_ALi < 2` when using Li abundances an
 ----
 
 #### BSTEP Ages and Masses
-##### [Download `galah_dr4_vac_ages_massses_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (174 MB)
+##### [Download `galah_dr4_vac_ages_masses_240705.fits`](https://cloud.datacentral.org.au/teamdata/GALAH/public/GALAH_DR4/catalogs/) (174 MB)
 {:.no_toc}
 
 This catalogue uses the Bayesian Stellar Parameter Estimation code (BSTEP) from [Sharma *et al.* (2018)](http://doi.org/10.1093/mnras/stx2582) to provide  a Bayesian estimate of intrinsic stellar parameters from observed parameters by making use of stellar isochrones.
